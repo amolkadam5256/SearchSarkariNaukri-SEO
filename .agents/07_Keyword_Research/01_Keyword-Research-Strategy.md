@@ -58,9 +58,16 @@ To identify, categorize, and prioritize keywords that drive organic traffic, enh
 
 ## Related Documents
 
-- 02_Seed-Keywords.md
-- 04_Keyword-Clustering.md
-- 05_Competitor-Keyword-Research.md
+| File | Description | Keywords Covered |
+|------|-------------|-----------------|
+| [02_Seed-Keywords.md](02_Seed-Keywords.md) | Full 899-keyword seed list with intent & priority | 899 |
+| [03_Search-Intent-Analysis.md](03_Search-Intent-Analysis.md) | Deep intent breakdown + SERP feature map | 899 |
+| [04_Keyword-Clustering.md](04_Keyword-Clustering.md) | Semantic cluster groups by sub-category | 899 |
+| [05_Competitor-Keyword-Research.md](05_Competitor-Keyword-Research.md) | Gap analysis vs 5 competitors | 899 |
+| [06_Topic-Mapping.md](06_Topic-Mapping.md) | 7 topic pillars with content trees | 899 |
+| [07_Content-Keyword-Mapping.md](07_Content-Keyword-Mapping.md) | 1:1 keyword → URL master mapping | 899 |
+| [08_Long-Tail-Strategy.md](08_Long-Tail-Strategy.md) | Long-tail + PAA + Featured Snippet strategy | 40 core + expansions |
+| [09_Keyword-Tracking-Framework.md](09_Keyword-Tracking-Framework.md) | GSC tracking, KPIs, monthly cadence | 899 |
 
 ---
-*Document Version: 1.0 | Last Updated: July 2026*
+*Document Version: 2.0 | Last Updated: July 2026 | Total Keywords: 899*
