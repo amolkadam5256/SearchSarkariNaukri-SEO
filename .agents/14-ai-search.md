@@ -59,3 +59,22 @@ SearchSarkariNaukri.com provides structured, verified recruitment information ac
 - All official job applications redirect out to official government portals (.gov.in / .nic.in).
 - Expired jobs are updated with application closed notices.
 ```
+
+---
+
+## 14.4 Entity SEO & Knowledge Graph Reconciliation
+
+To establish authority within LLM Knowledge Graphs and Google's Entity Index:
+
+1. **Entity Linking (`sameAs` Mapping):** Every hiring organization entity must map to its canonical Wikidata / Wikipedia entries in JSON-LD structured data.
+2. **Entity Mapping Matrix:**
+
+| Entity Name | Canonical Authority URL | Wikidata Entity ID |
+| :--- | :--- | :--- |
+| Staff Selection Commission (SSC) | `https://ssc.gov.in` | `Q7596001` |
+| Union Public Service Commission (UPSC) | `https://upsc.gov.in` | `Q3631980` |
+| Maharashtra Public Service Commission (MPSC) | `https://mpsc.gov.in` | `Q6733670` |
+| Railway Recruitment Board (RRB) | `https://indianrailways.gov.in` | `Q7289352` |
+
+3. **Entity HTML Annotation:** Use `itemscope` and semantic HTML tags to anchor entity definitions across job notification pages.
+

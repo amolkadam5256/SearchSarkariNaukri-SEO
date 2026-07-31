@@ -125,6 +125,45 @@
 
 ---
 
+### 5. SpeakableSpecification Schema JSON-LD (Voice Search & Google Assistant)
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "MPSC Subordinate Services Recruitment 2026 Notification",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".job-summary-headline",
+      ".important-dates-list",
+      ".eligibility-criteria"
+    ]
+  },
+  "url": "https://www.searchsarkarinaukri.com/jobs/mpsc-subordinate-2026"
+}
+```
+
+---
+
+### 6. VideoObject Schema JSON-LD (YouTube Video SEO & Exam Guide Embeds)
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "How to Fill MPSC Subordinate Application Form 2026 Step-by-Step",
+  "description": "Complete guide on online application procedure, document upload, and fee payment for MPSC 2026.",
+  "thumbnailUrl": [
+    "https://www.searchsarkarinaukri.com/images/mpsc-video-thumb.jpg"
+  ],
+  "uploadDate": "2026-07-15T08:00:00+05:30",
+  "duration": "PT8M45S",
+  "contentUrl": "https://www.youtube.com/watch?v=example123",
+  "embedUrl": "https://www.youtube.com/embed/example123"
+}
+```
+
+---
+
 ## 12.2 Schema Validation SOP
 
 1. **Test Tooling:** Validate all JSON-LD templates using [Google Rich Results Test](https://search.google.com/test/rich-results) and [Schema.org Validator](https://validator.schema.org/).
