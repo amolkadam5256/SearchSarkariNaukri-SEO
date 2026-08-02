@@ -82,23 +82,25 @@ Before closing any issue:
 - [ ] Documentation updated
 
 ---
+
 # 🔴 LIVE SITE VERIFICATION UPDATE — 2 August 2026
 
 > Re-checked directly against the live site as part of this revision. Several original audit figures did not match current production and have been corrected below. A **new Critical (P0) issue** was discovered and is now the top priority.
 
 ## What changed since the original audit
 
-| Item | Original Audit Said | Live Check (2 Aug 2026) Found |
-|------|---------------------|-------------------------------|
-| Homepage `<title>` | 75 chars, "Sarkari Naukri 2026 — Latest Government Jobs in India \| SearchSarkariNaukri" | 55 chars, "SearchSarkariNaukri — Latest Government Jobs in India" — **already within the 50–60 char target** |
-| Homepage meta description | 205 chars, English | ~140 chars, **Marathi** text — different content than documented |
-| Job detail pages (e.g. `/jobs/3553`) | Assumed unique per-job content | Serves the **exact same generic homepage shell** as `/` — no unique job title, dates, or eligibility text visible to a non-JS fetch |
-| `/admit-cards` and `/results` | Assumed to have on-page content matching site structure | Both return an **identical title and meta description** to each other, in Marathi, and **zero body content** — just frontmatter, no H1, no text |
-| Language consistency | `en-IN` declared sitewide | Live pages mix **English** (homepage) and **Marathi** (admit-cards, results, jobs listing chrome) inconsistently across templates |
+| Item                                 | Original Audit Said                                                                      | Live Check (2 Aug 2026) Found                                                                                                                   |
+| ------------------------------------ | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Homepage `<title>`                   | 75 chars, "Sarkari Naukri 2026 — Latest Government Jobs in India \| SearchSarkariNaukri" | 55 chars, "SearchSarkariNaukri — Latest Government Jobs in India" — **already within the 50–60 char target**                                    |
+| Homepage meta description            | 205 chars, English                                                                       | ~140 chars, **Marathi** text — different content than documented                                                                                |
+| Job detail pages (e.g. `/jobs/3553`) | Assumed unique per-job content                                                           | Serves the **exact same generic homepage shell** as `/` — no unique job title, dates, or eligibility text visible to a non-JS fetch             |
+| `/admit-cards` and `/results`        | Assumed to have on-page content matching site structure                                  | Both return an **identical title and meta description** to each other, in Marathi, and **zero body content** — just frontmatter, no H1, no text |
+| Language consistency                 | `en-IN` declared sitewide                                                                | Live pages mix **English** (homepage) and **Marathi** (admit-cards, results, jobs listing chrome) inconsistently across templates               |
 
 ## New Critical Finding (supersedes/expands HP-007, MP-003, PERF-009's "837% rendered HTML")
 
 **The 837% rendered-HTML figure understates the real problem.** It's not just that pages are heavy to render — for a large share of URL types (individual job pages, `/admit-cards`, `/results`), the content that reaches a non-JavaScript crawler (which is how most AI crawlers, and many Googlebot passes, fetch pages) is either:
+
 1. An identical generic "homepage shell" (job pages), or
 2. Duplicate title/meta with **no body content at all** (admit-cards, results)
 
@@ -109,7 +111,6 @@ This is a **duplicate content + thin content + doorway-page-like pattern at scal
 Move "Fix client-side-only rendering of unique page content" to the **top of the P0 list**, above HTTP/2 and SPF — it is now assessed as higher business impact than any other single item, because it likely explains why organic keyword coverage is stuck at 9 keywords despite ~3,281 words of content existing somewhere in the rendered DOM.
 
 ---
-
 
 # Executive Summary
 
@@ -125,62 +126,62 @@ Overall, the website requires medium to high optimization before it can compete 
 
 # Website Information
 
-| Item | Value |
-|-------|-------|
-| Website | https://www.searchsarkarinaukri.com |
-| Industry | Government Jobs |
-| Niche | Sarkari Naukri |
-| Target Country | India |
-| Primary Language | English |
-| Framework | Next.js |
-| SSL | Enabled |
-| Canonical | Implemented |
-| Robots.txt | Available |
-| XML Sitemap | Available |
-| llms.txt | Available |
-| JSON-LD Schema | Available |
+| Item             | Value                               |
+| ---------------- | ----------------------------------- |
+| Website          | https://www.searchsarkarinaukri.com |
+| Industry         | Government Jobs                     |
+| Niche            | Sarkari Naukri                      |
+| Target Country   | India                               |
+| Primary Language | English                             |
+| Framework        | Next.js                             |
+| SSL              | Enabled                             |
+| Canonical        | Implemented                         |
+| Robots.txt       | Available                           |
+| XML Sitemap      | Available                           |
+| llms.txt         | Available                           |
+| JSON-LD Schema   | Available                           |
 
 ---
 
 # Overall SEO Status
 
-| Category | Status |
-|------------|------------|
-| Technical SEO | 🟡 Good |
-| On-Page SEO | 🟡 Good |
-| Content SEO | 🟡 Moderate |
+| Category             | Status               |
+| -------------------- | -------------------- |
+| Technical SEO        | 🟡 Good              |
+| On-Page SEO          | 🟡 Good              |
+| Content SEO          | 🟡 Moderate          |
 | Keyword Optimization | 🔴 Needs Improvement |
-| Backlinks | 🔴 Weak |
-| Performance | 🟡 Moderate |
-| Core Web Vitals | 🔴 Failed |
-| GEO / AI SEO | 🟡 Moderate |
-| Local SEO | 🔴 Missing |
-| Analytics | 🔴 Missing |
-| Social Signals | 🔴 Missing |
+| Backlinks            | 🔴 Weak              |
+| Performance          | 🟡 Moderate          |
+| Core Web Vitals      | 🔴 Failed            |
+| GEO / AI SEO         | 🟡 Moderate          |
+| Local SEO            | 🔴 Missing           |
+| Analytics            | 🔴 Missing           |
+| Social Signals       | 🔴 Missing           |
 
 ---
 
 # Executive Scorecard
 
-| Area | Status |
-|------|---------|
-| Website Accessibility | ✅ Good |
-| HTTPS | ✅ Good |
-| Crawlability | ✅ Good |
-| Indexability | ✅ Good |
-| Canonicalization | ✅ Good |
-| XML Sitemap | ✅ Good |
-| Robots.txt | ✅ Good |
-| Structured Data | ✅ Good |
-| AI Crawlers | ✅ Allowed |
-| llms.txt | ✅ Implemented |
-| Core Web Vitals | ❌ Failed |
-| Organic Visibility | ❌ Very Low |
-| Authority | ❌ Very Low |
-| Keyword Rankings | ❌ Very Low |
-| Referring Domains | ❌ Low |
-| Analytics | ❌ Missing |
-| Social Profiles | ❌ Missing |
+| Area                  | Status         |
+| --------------------- | -------------- |
+| Website Accessibility | ✅ Good        |
+| HTTPS                 | ✅ Good        |
+| Crawlability          | ✅ Good        |
+| Indexability          | ✅ Good        |
+| Canonicalization      | ✅ Good        |
+| XML Sitemap           | ✅ Good        |
+| Robots.txt            | ✅ Good        |
+| Structured Data       | ✅ Good        |
+| AI Crawlers           | ✅ Allowed     |
+| llms.txt              | ✅ Implemented |
+| Core Web Vitals       | ❌ Failed      |
+| Organic Visibility    | ❌ Very Low    |
+| Authority             | ❌ Very Low    |
+| Keyword Rankings      | ❌ Very Low    |
+| Referring Domains     | ❌ Low         |
+| Analytics             | ❌ Missing     |
+| Social Profiles       | ❌ Missing     |
 
 ---
 
@@ -232,14 +233,14 @@ The website already has several enterprise-level SEO implementations completed.
 
 The following issues have the highest impact on rankings and business growth.
 
-| Priority | Issue | Impact |
-|----------|-------|--------|
-| P0 | Core Web Vitals Failed | Very High |
-| P0 | Organic Traffic Nearly Zero | Critical |
-| P0 | Authority Score Very Low | Critical |
-| P0 | Analytics Not Detected | Critical |
-| P0 | HTTP/2 Not Enabled | High |
-| P0 | SPF Record Missing | High |
+| Priority | Issue                       | Impact    |
+| -------- | --------------------------- | --------- |
+| P0       | Core Web Vitals Failed      | Very High |
+| P0       | Organic Traffic Nearly Zero | Critical  |
+| P0       | Authority Score Very Low    | Critical  |
+| P0       | Analytics Not Detected      | Critical  |
+| P0       | HTTP/2 Not Enabled          | High      |
+| P0       | SPF Record Missing          | High      |
 
 ---
 
@@ -364,41 +365,41 @@ Website has extremely limited organic discoverability.
 
 ## Current Status
 
-| Feature | Status |
-|----------|--------|
-| llms.txt | ✅ |
-| AI Crawlers | ✅ |
-| Organization Schema | ✅ |
-| AI Visibility | ❌ |
-| ChatGPT Citations | ❌ |
-| Gemini Visibility | ❌ |
-| AI Overview Presence | ❌ |
+| Feature              | Status |
+| -------------------- | ------ |
+| llms.txt             | ✅     |
+| AI Crawlers          | ✅     |
+| Organization Schema  | ✅     |
+| AI Visibility        | ❌     |
+| ChatGPT Citations    | ❌     |
+| Gemini Visibility    | ❌     |
+| AI Overview Presence | ❌     |
 
 ---
 
 # Performance Overview
 
-| Metric | Current |
-|---------|---------|
-| Server Response | 0.813 s |
-| Fully Loaded | 2.5 s |
-| Scripts Completed | 5.5 s |
-| Download Size | 0.87 MB |
-| Compression | 45% |
+| Metric            | Current |
+| ----------------- | ------- |
+| Server Response   | 0.813 s |
+| Fully Loaded      | 2.5 s   |
+| Scripts Completed | 5.5 s   |
+| Download Size     | 0.87 MB |
+| Compression       | 45%     |
 
 ---
 
 # Backlink Summary
 
-| Metric | Value |
-|---------|------|
-| Authority Score | 2 |
-| Backlinks | 54 |
-| Referring Domains | 26 |
-| Dofollow Links | 10 |
-| Nofollow Links | 25 |
-| EDU Links | 0 |
-| GOV Links | 0 |
+| Metric            | Value |
+| ----------------- | ----- |
+| Authority Score   | 2     |
+| Backlinks         | 54    |
+| Referring Domains | 26    |
+| Dofollow Links    | 10    |
+| Nofollow Links    | 25    |
+| EDU Links         | 0     |
+| GOV Links         | 0     |
 
 ---
 
