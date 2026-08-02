@@ -10,6 +10,107 @@
 
 ---
 
+# Developer Instructions
+
+This document is a high-level executive summary only.
+
+Developers should NOT implement changes directly from this report.
+
+Instead, use this document to understand:
+
+- Current SEO health
+- Overall priorities
+- Business impact
+- Implementation order
+
+For detailed implementation, refer to the corresponding documents listed in the "Next Documents" section.
+
+Implementation must follow the recommended order:
+
+1. Critical Issues (P0)
+2. High Priority Issues (P1)
+3. Technical SEO
+4. On-Page SEO
+5. Content SEO
+6. Schema
+7. Performance
+8. AI Search
+9. Backlinks
+10. Monitoring
+
+Do not skip dependencies.
+
+Always validate changes before deployment.
+
+# How to Use This Report
+
+This document is intended for:
+
+- SEO Managers
+- Developers
+- Project Managers
+- QA Engineers
+- Technical Leads
+- Stakeholders
+
+It provides an executive overview only.
+
+Detailed implementation instructions are available in the supporting reports.
+
+# Implementation Rules
+
+Before making any SEO changes:
+
+- Review the related detailed report.
+- Verify current production behavior.
+- Test changes in staging.
+- Validate with Google Rich Results Test.
+- Validate using PageSpeed Insights.
+- Confirm Search Console indexing.
+- Record implementation status.
+
+# Verification Checklist
+
+Before closing any issue:
+
+- [ ] Development completed
+- [ ] QA completed
+- [ ] SEO validation completed
+- [ ] Performance verified
+- [ ] Schema validated
+- [ ] Search Console verified
+- [ ] Documentation updated
+
+---
+# 🔴 LIVE SITE VERIFICATION UPDATE — 2 August 2026
+
+> Re-checked directly against the live site as part of this revision. Several original audit figures did not match current production and have been corrected below. A **new Critical (P0) issue** was discovered and is now the top priority.
+
+## What changed since the original audit
+
+| Item | Original Audit Said | Live Check (2 Aug 2026) Found |
+|------|---------------------|-------------------------------|
+| Homepage `<title>` | 75 chars, "Sarkari Naukri 2026 — Latest Government Jobs in India \| SearchSarkariNaukri" | 55 chars, "SearchSarkariNaukri — Latest Government Jobs in India" — **already within the 50–60 char target** |
+| Homepage meta description | 205 chars, English | ~140 chars, **Marathi** text — different content than documented |
+| Job detail pages (e.g. `/jobs/3553`) | Assumed unique per-job content | Serves the **exact same generic homepage shell** as `/` — no unique job title, dates, or eligibility text visible to a non-JS fetch |
+| `/admit-cards` and `/results` | Assumed to have on-page content matching site structure | Both return an **identical title and meta description** to each other, in Marathi, and **zero body content** — just frontmatter, no H1, no text |
+| Language consistency | `en-IN` declared sitewide | Live pages mix **English** (homepage) and **Marathi** (admit-cards, results, jobs listing chrome) inconsistently across templates |
+
+## New Critical Finding (supersedes/expands HP-007, MP-003, PERF-009's "837% rendered HTML")
+
+**The 837% rendered-HTML figure understates the real problem.** It's not just that pages are heavy to render — for a large share of URL types (individual job pages, `/admit-cards`, `/results`), the content that reaches a non-JavaScript crawler (which is how most AI crawlers, and many Googlebot passes, fetch pages) is either:
+1. An identical generic "homepage shell" (job pages), or
+2. Duplicate title/meta with **no body content at all** (admit-cards, results)
+
+This is a **duplicate content + thin content + doorway-page-like pattern at scale**, which is more severe than a slow-rendering issue — it directly threatens indexing quality, keyword relevance signals, and AI citation eligibility for every non-homepage URL. This has been logged as **CR-007** in `01_CRITICAL_ISSUES.md` and **GEO-013** in `10_GEO_AI_ISSUES.md`.
+
+## Revised Priority Call
+
+Move "Fix client-side-only rendering of unique page content" to the **top of the P0 list**, above HTTP/2 and SPF — it is now assessed as higher business impact than any other single item, because it likely explains why organic keyword coverage is stuck at 9 keywords despite ~3,281 words of content existing somewhere in the rendered DOM.
+
+---
+
+
 # Executive Summary
 
 This document provides a high-level overview of the SEO health of **SearchSarkariNaukri.com** based on the initial website audit.
@@ -333,6 +434,7 @@ Website has extremely limited organic discoverability.
 
 ## P0 — Critical
 
+- **Fix duplicate/thin content served to non-JS crawlers on job, admit-card, and result pages (NEW — CR-007, see `01_CRITICAL_ISSUES.md`)**
 - Fix Core Web Vitals
 - Install Analytics
 - Enable HTTP/2 or HTTP/3

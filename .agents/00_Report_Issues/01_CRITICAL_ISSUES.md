@@ -14,6 +14,47 @@
 
 ---
 
+# 🔴 LIVE VERIFICATION UPDATE — 2 August 2026
+
+Direct fetches of `/`, `/jobs/3553`, `/admit-cards`, and `/results` (simulating a non-JS crawler, similar to how many AI crawlers and some Googlebot passes see the site) confirm a **new Critical issue, CR-007**, added below. It is assessed as **higher impact than CR-005 and CR-006** and should be actioned first, right after CR-001/CR-002/CR-003/CR-004.
+
+---
+
+# CR-007 — Duplicate & Thin Content in Non-JS Rendered Output (NEW)
+
+## Current Status
+
+❌ Confirmed via live fetch, 2 Aug 2026
+
+## Findings
+
+- `https://www.searchsarkarinaukri.com/jobs/3553` returns **identical title, meta description, and body content** to the homepage — no unique job title, vacancy count, eligibility, or last date visible without JavaScript execution.
+- `https://www.searchsarkarinaukri.com/admit-cards` and `https://www.searchsarkarinaukri.com/results` return the **same title and meta description as each other** (in Marathi) and contain **no body content whatsoever** — just frontmatter metadata, no H1, no text.
+- Homepage title/meta differ from what earlier audit tooling captured, and are inconsistently bilingual (English on `/`, Marathi on `/admit-cards`, `/results`).
+
+## Business Impact
+
+- Search engines and AI crawlers relying on non-JS fetches see **duplicate titles and meta descriptions across distinct URLs** — a classic duplicate-content signal that suppresses rankings for all but one competing URL.
+- Job, admit card, and result pages — the actual money pages for a Sarkari Naukri site — currently look **empty or generic to crawlers**, which likely explains the extremely low organic keyword count (9) despite high word count elsewhere.
+- Directly undermines GEO/AI citation potential (see `10_GEO_AI_ISSUES.md`, GEO-013): an LLM crawler fetching these URLs today would have no unique facts to cite.
+
+## Root Cause
+
+Client-side rendering (Next.js) without adequate Server-Side Rendering / Static Generation for dynamic route types (`/jobs/:id`) and for section index pages (`/admit-cards`, `/results`). This is the same underlying cause flagged more mildly in HP-007 (837% rendered HTML) but the live check shows the practical effect is worse than a performance metric implies — it is a content-visibility failure, not just a speed one.
+
+## Recommended Actions (Immediate)
+
+- Implement SSR or SSG (`getServerSideProps` / `generateStaticParams` in Next.js App Router) for all `/jobs/:id` pages so each serves its own unique title, meta description, H1, and body text without requiring JS execution.
+- Ensure `/admit-cards` and `/results` render their own unique title, meta description, and at least a summary list of items server-side.
+- Re-run a raw HTML (non-JS) fetch against a sample of 10–20 URLs across job pages, admit cards, results, and district pages to confirm each returns unique, substantive content before closing this issue.
+- Decide on and enforce one consistent primary content language per template (see language-consistency note); if bilingual by design, implement proper hreflang rather than silently mixing languages by page type.
+
+## Estimated Impact
+
+⭐⭐⭐⭐⭐ Very High — likely the single largest blocker to organic and AI visibility growth.
+
+---
+
 # Overview
 
 This document contains the **highest priority SEO issues** identified during the initial enterprise SEO audit.
@@ -34,25 +75,26 @@ These problems should be fixed **before any keyword research, content creation, 
 
 # Priority Legend
 
-| Priority | Meaning | Timeline |
-|----------|----------|----------|
-| 🔴 P0 | Critical | Immediately |
-| 🟠 P1 | High | Within 7 Days |
-| 🟡 P2 | Medium | Within 30 Days |
-| 🟢 P3 | Low | Future Optimization |
+| Priority | Meaning  | Timeline            |
+| -------- | -------- | ------------------- |
+| 🔴 P0    | Critical | Immediately         |
+| 🟠 P1    | High     | Within 7 Days       |
+| 🟡 P2    | Medium   | Within 30 Days      |
+| 🟢 P3    | Low      | Future Optimization |
 
 ---
 
 # Critical Issues Dashboard
 
-| ID | Issue | Category | Priority | Status |
-|----|---------|------------|------------|------------|
-| CR-001 | Core Web Vitals Failed | Performance | 🔴 P0 | Open |
-| CR-002 | Organic Visibility Extremely Low | SEO | 🔴 P0 | Open |
-| CR-003 | Authority Score Very Low | Authority | 🔴 P0 | Open |
-| CR-004 | Analytics Not Detected | Analytics | 🔴 P0 | Open |
-| CR-005 | HTTP/2 Protocol Not Enabled | Infrastructure | 🔴 P0 | Open |
-| CR-006 | SPF Record Missing | Security | 🔴 P0 | Open |
+| ID     | Issue                                                    | Category            | Priority | Status |
+| ------ | -------------------------------------------------------- | ------------------- | -------- | ------ |
+| CR-001 | Core Web Vitals Failed                                   | Performance         | 🔴 P0    | Open   |
+| CR-002 | Organic Visibility Extremely Low                         | SEO                 | 🔴 P0    | Open   |
+| CR-003 | Authority Score Very Low                                 | Authority           | 🔴 P0    | Open   |
+| CR-004 | Analytics Not Detected                                   | Analytics           | 🔴 P0    | Open   |
+| CR-005 | HTTP/2 Protocol Not Enabled                              | Infrastructure      | 🔴 P0    | Open   |
+| CR-006 | SPF Record Missing                                       | Security            | 🔴 P0    | Open   |
+| CR-007 | Duplicate & Thin Content in Non-JS Rendered Output (NEW) | Rendering / Content | 🔴 P0    | Open   |
 
 ---
 
@@ -66,11 +108,11 @@ These problems should be fixed **before any keyword research, content creation, 
 
 ## Current Metrics
 
-| Metric | Current | Google Target | Status |
-|----------|---------|----------------|---------|
-| Largest Contentful Paint | 6.0s | <2.5s | ❌ |
-| Interaction to Next Paint | 272ms | <200ms | ❌ |
-| Cumulative Layout Shift | 0.19 | <0.10 | ❌ |
+| Metric                    | Current | Google Target | Status |
+| ------------------------- | ------- | ------------- | ------ |
+| Largest Contentful Paint  | 6.0s    | <2.5s         | ❌     |
+| Interaction to Next Paint | 272ms   | <200ms        | ❌     |
+| Cumulative Layout Shift   | 0.19    | <0.10         | ❌     |
 
 ---
 
@@ -383,13 +425,13 @@ Missing SPF records can cause
 
 # Critical Issue Summary
 
-| Category | Total Issues |
-|------------|--------------|
-| Technical | 2 |
-| Performance | 1 |
-| Analytics | 1 |
-| Authority | 1 |
-| Security | 1 |
+| Category    | Total Issues |
+| ----------- | ------------ |
+| Technical   | 2            |
+| Performance | 1            |
+| Analytics   | 1            |
+| Authority   | 1            |
+| Security    | 1            |
 
 ---
 
@@ -452,18 +494,44 @@ Missing SPF records can cause
 
 The following targets should be achieved before moving to the next implementation phase.
 
-| KPI | Current | Target |
-|------|----------|----------|
-| Core Web Vitals | Failed | Pass |
-| LCP | 6.0s | <2.5s |
-| INP | 272ms | <200ms |
-| CLS | 0.19 | <0.10 |
-| Authority Score | 2 | 20+ |
-| Referring Domains | 26 | 100+ |
-| Organic Keywords | 9 | 500+ |
-| Analytics | Missing | Fully Configured |
-| HTTP Protocol | HTTP/1.x | HTTP/2 or HTTP/3 |
-| SPF Record | Missing | Configured |
+| KPI               | Current  | Target           |
+| ----------------- | -------- | ---------------- |
+| Core Web Vitals   | Failed   | Pass             |
+| LCP               | 6.0s     | <2.5s            |
+| INP               | 272ms    | <200ms           |
+| CLS               | 0.19     | <0.10            |
+| Authority Score   | 2        | 20+              |
+| Referring Domains | 26       | 100+             |
+| Organic Keywords  | 9        | 500+             |
+| Analytics         | Missing  | Fully Configured |
+| HTTP Protocol     | HTTP/1.x | HTTP/2 or HTTP/3 |
+| SPF Record        | Missing  | Configured       |
+
+---
+
+# Implementation Rules
+
+Before making any SEO changes:
+
+- Review the related detailed report.
+- Verify current production behavior.
+- Test changes in staging.
+- Validate with Google Rich Results Test.
+- Validate using PageSpeed Insights.
+- Confirm Search Console indexing.
+- Record implementation status.
+
+# Verification Checklist
+
+Before closing any issue:
+
+- [ ] Development completed
+- [ ] QA completed
+- [ ] SEO validation completed
+- [ ] Performance verified
+- [ ] Schema validated
+- [ ] Search Console verified
+- [ ] Documentation updated
 
 ---
 

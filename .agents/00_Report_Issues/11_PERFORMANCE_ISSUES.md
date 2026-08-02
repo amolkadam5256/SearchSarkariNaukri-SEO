@@ -14,6 +14,13 @@
 
 ---
 
+
+# 🟡 LIVE VERIFICATION UPDATE — 2 August 2026
+
+**PERF-009 (Rendered HTML, 837%)** is confirmed as a real issue but the live check shows it's more severe on certain templates than others: the homepage returns a reasonable non-JS fallback, while `/jobs/:id`, `/admit-cards`, and `/results` return generic or empty content without JS (tracked as new Critical issue **CR-007** in `01_CRITICAL_ISSUES.md`). Recommend prioritizing SSR/SSG fixes for those three template types first, since they are both the highest-traffic-intent pages (jobs, admit cards, results) and currently the worst-affected. Core Web Vitals (LCP 6.0s, INP 272ms, CLS 0.19) were not independently re-measured in this pass — a Lighthouse/PageSpeed re-run is recommended before closing PERF-001–003.
+
+---
+
 # Overview
 
 Website performance directly impacts:

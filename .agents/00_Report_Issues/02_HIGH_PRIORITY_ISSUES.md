@@ -12,6 +12,16 @@
 
 ---
 
+
+# 🟠 LIVE VERIFICATION UPDATE — 2 August 2026
+
+- **HP-004 (Title Tag Too Long) — status changed.** Live fetch of the homepage shows the current title is `SearchSarkariNaukri — Latest Government Jobs in India`, **55 characters** — already inside the 50–60 char target. This item can likely be marked **Resolved** for the homepage; verify other templates (job pages currently don't render unique titles at all — see CR-007 in `01_CRITICAL_ISSUES.md`).
+- **HP-005 (Meta Description Too Long) — status changed.** The live homepage meta description is Marathi text, roughly 140 characters — also within the 120–160 target range, though content differs from what was documented. Recommend re-confirming this was measured on the correct page/version before closing.
+- **HP-007 (High Rendered HTML 837%) is now understood to be part of a larger issue.** See new **CR-007** in `01_CRITICAL_ISSUES.md`: several page types serve duplicate or empty content to non-JS crawlers, not just "heavy" content. Treat HP-007's SSR/SSG recommendation as directly linked to fixing CR-007, and prioritize job detail pages and section index pages first.
+- **HP-001 (Weak Backlink Profile) and HP-002 (Poor Keyword Distribution)** — no live signal contradicts these; current metrics (Authority Score 2, 26 referring domains) stand as documented pending a fresh backlink tool pull.
+
+---
+
 # Purpose
 
 This document contains all **High Priority (P1)** SEO issues that should be completed immediately after resolving all Critical (P0) issues.

@@ -14,6 +14,15 @@
 
 ---
 
+
+# 🟡 LIVE VERIFICATION UPDATE — 2 August 2026
+
+- Confirms **TECH-011 (Core Web Vitals Failed)** framing is directionally right, but live inspection adds a sharper technical detail: the LCP/rendering problem is concentrated in dynamic routes. The homepage renders a reasonable non-JS fallback; `/jobs/:id`, `/admit-cards`, and `/results` do not render meaningful server-side content at all (see CR-007 in `01_CRITICAL_ISSUES.md`). Recommend the engineering team check whether SSR/SSG is enabled per-route rather than sitewide — it appears to be inconsistently applied.
+- Language declaration (`en-IN`, TECH-008) is technically present, but live content is **not consistently English** — several templates (admit-cards, results, jobs listing chrome) render Marathi text. Recommend confirming whether `lang="en-IN"` is accurate for pages whose primary visible content is Marathi, or whether a `lang="mr-IN"` / hreflang split is more correct.
+- HTTP/2, Analytics, SPF, and Hreflang status were not independently re-tested in this pass (these require header/DNS inspection tools beyond a content fetch) — they stand as originally documented.
+
+---
+
 # Overview
 
 Technical SEO ensures search engines can efficiently discover, crawl, render, understand, and index website content.

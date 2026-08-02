@@ -14,6 +14,13 @@
 
 ---
 
+
+# 🟡 LIVE VERIFICATION UPDATE — 2 August 2026
+
+Live fetches confirm a content issue more severe than "readability" or "distribution" concerns raised in this document: for job detail pages and section index pages (`/admit-cards`, `/results`), there is currently **no unique crawlable content to be readable, distributed, or optimized** — see the new CR-007 finding in `01_CRITICAL_ISSUES.md`. Recommend sequencing CNT-001 through CNT-010 **after** the rendering fix, since content-quality work on templates that don't render server-side won't affect crawler/AI visibility until that's resolved. The homepage itself does render substantive content and the existing CNT recommendations apply there as documented.
+
+---
+
 # Overview
 
 Content is one of the strongest ranking signals used by Google and AI-powered search engines.

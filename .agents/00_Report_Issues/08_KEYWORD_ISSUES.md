@@ -14,6 +14,13 @@
 
 ---
 
+
+# 🟡 LIVE VERIFICATION UPDATE — 2 August 2026
+
+The live check helps explain **KW-001 (Low Organic Keyword Coverage, 9 keywords)**: if job detail pages, admit card pages, and result pages aren't serving unique, crawlable content (see CR-007 in `01_CRITICAL_ISSUES.md`), then the site effectively has only one meaningfully indexable page (the homepage) from a content-uniqueness standpoint — which is consistent with a near-zero keyword footprint despite thousands of underlying job records. Recommend treating the CR-007 rendering fix as a **precondition** for KW-009 (Programmatic SEO Opportunities) — programmatic pages are pointless if they render identically to each other.
+
+---
+
 # Overview
 
 Keywords are the foundation of every successful SEO strategy.

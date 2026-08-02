@@ -14,6 +14,27 @@
 
 ---
 
+
+# 🔴 LIVE VERIFICATION UPDATE — 2 August 2026
+
+## New Finding: GEO-013 — Non-JS Crawl Path Has No Unique Content Per Page
+
+Live fetches (2 Aug 2026) of `/jobs/3553`, `/admit-cards`, and `/results` show that in the version of the page an AI crawler without JavaScript execution would see:
+
+- Job detail pages render the **generic homepage shell**, not the specific job's title, department, eligibility, or dates.
+- `/admit-cards` and `/results` render **identical title/meta to each other and no body content**.
+
+## Why This Matters for GEO Specifically
+
+AI answer engines (ChatGPT, Gemini, Perplexity, Copilot, AI Overviews) generally rely on crawled/indexed text rather than executing JavaScript. If the crawlable version of a job or admit-card page contains no unique facts, **there is nothing for an LLM to cite**, regardless of how good the `llms.txt` file or Organization Schema is. This is very likely the primary reason AI Visibility, ChatGPT Mentions, Gemini Visibility, and AI Overview Presence are all currently at 0 (as reported in `00_EXECUTIVE_SUMMARY.md`).
+
+## Recommended Actions (adds to GEO-001/GEO-002)
+
+- Fix server-side rendering for job/admit-card/result templates (tracked as CR-007 in `01_CRITICAL_ISSUES.md`) before investing further in schema expansion or FAQ content for those templates — the rendering fix is the higher-leverage first step.
+- Once fixed, re-test with a plain HTTP fetch (no JS) against a sample of job, admit card, and result URLs to confirm unique title, meta description, H1, and structured facts (department, last date, vacancy count) are present before considering GEO work "done" for that template.
+
+---
+
 # Overview
 
 Generative Engine Optimization (GEO) is the practice of optimizing content so it can be understood, trusted, and cited by AI-powered search engines and Large Language Models (LLMs).

@@ -14,6 +14,24 @@
 
 ---
 
+
+# 🟡 LIVE VERIFICATION UPDATE — 2 August 2026
+
+## Corrected Findings
+
+| Item | Document Said | Live Check Found (2 Aug 2026) |
+|------|----------------|-------------------------------|
+| Homepage title | "Sarkari Naukri 2026 — Latest Government Jobs in India \| SearchSarkariNaukri", 75 chars | "SearchSarkariNaukri — Latest Government Jobs in India", 55 chars — **within target already** |
+| Homepage meta description | 205 chars, English | ~140 chars, Marathi — within length target but different content than documented |
+| H1 | "Multiple H1 tags detected" | Homepage renders exactly **one** H1 ("SearchSarkariNaukri — Latest Government Jobs in India") in the non-JS fetch. `/admit-cards` and `/results` render **zero** H1s (no body content at all) — a different but more serious problem than duplicate H1s. Recommend re-verifying OP-003 on category/job template pages specifically, since the homepage no longer shows the duplicate-H1 pattern described. |
+| Content length (3,281 words) | Homepage | Not independently re-counted in this pass; the non-JS fetch of the homepage is well under 3,281 words, but that's expected since additional content likely loads client-side — this itself reinforces the CR-007 rendering issue in `01_CRITICAL_ISSUES.md`. |
+
+## New Note
+
+Section index pages (`/admit-cards`, `/results`) currently have **no on-page SEO to evaluate** — no title uniqueness, no H1, no body copy — because nothing renders server-side. Fixing this (see CR-007) is a prerequisite before most on-page recommendations in this document can even apply to those templates.
+
+---
+
 # Overview
 
 This document contains the complete On-Page SEO audit findings for SearchSarkariNaukri.com.

@@ -12,6 +12,15 @@
 
 ---
 
+
+# 🟡 LIVE VERIFICATION UPDATE — 2 August 2026
+
+- **MP-003 (Reduce Rendered HTML, 837%)** — confirmed still relevant, but re-scoped: the live check found this isn't only a size/performance issue. `/admit-cards` and `/results` render **no body content at all** without JavaScript, and `/jobs/:id` pages render **generic homepage content** instead of unique job data. This has been escalated to a new Critical issue (**CR-007** in `01_CRITICAL_ISSUES.md`) — recommend re-classifying MP-003 as a sub-task of CR-007 rather than a standalone P2.
+- **MP-002 (Friendly URL Structure)** — URLs observed during the live check (`/jobs/3553`, `/admit-cards`, `/results`, `/jobs?category=mpsc`, `/jobs?district_slug=pune`) are reasonably clean, though job detail URLs use numeric IDs (`/jobs/3553`) rather than descriptive slugs. Recommend adding descriptive slugs (e.g. `/jobs/mpsc-recruitment-2026-3553`) for both usability and keyword relevance.
+- Other MP items (site speed, internal linking, content hierarchy, keyword coverage, entity optimization) were not independently re-measured in this pass and stand as originally documented.
+
+---
+
 # Purpose
 
 This document contains all **Medium Priority (P2)** SEO issues identified during the audit.
