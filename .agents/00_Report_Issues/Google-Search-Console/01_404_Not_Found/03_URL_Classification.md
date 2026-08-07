@@ -36,15 +36,15 @@ All **607 URLs** from the report have been classified.
 
 # Classification Results Summary
 
-| Category | Type | Count |
-|----------|------|-------|
-| B | Legacy Numeric Job URLs | **552** |
-| C | SEO Slug URLs (with ID, slug changed) | **30** |
-| C | SEO Slug URLs (no ID, slug truncated) | **9** |
-| G | District Pages | **4** |
-| H | City / Location Pages | **11** |
-| E | Category Pages | **1** |
-| **TOTAL** | | **607** |
+| Category  | Type                                  | Count   |
+| --------- | ------------------------------------- | ------- |
+| B         | Legacy Numeric Job URLs               | **552** |
+| C         | SEO Slug URLs (with ID, slug changed) | **30**  |
+| C         | SEO Slug URLs (no ID, slug truncated) | **9**   |
+| G         | District Pages                        | **4**   |
+| H         | City / Location Pages                 | **11**  |
+| E         | Category Pages                        | **1**   |
+| **TOTAL** |                                       | **607** |
 
 ---
 
@@ -59,11 +59,13 @@ All **607 URLs** from the report have been classified.
 These are old-format numeric-only job URLs from before the website migrated to SEO-friendly slug URLs.
 
 **Pattern:**
+
 ```
 /jobs/{number}
 ```
 
 **Examples:**
+
 ```
 /jobs/858
 /jobs/983
@@ -134,6 +136,7 @@ For each numeric ID, query the database:
 These are job URLs where the slug was previously indexed with one format, and the current slug in the database is different (usually shorter/longer or reformatted). The numeric ID at the end is still valid and can be used to find the correct current URL.
 
 **Pattern:**
+
 ```
 /jobs/{old-slug}-{id}
 ```
@@ -182,6 +185,7 @@ Extract the numeric ID from the end of each URL. Query the database for the curr
 ```
 
 **Notable Organizations:**
+
 - IBPS (Institute of Banking Personnel Selection)
 - SAI (Sports Authority of India)
 - UCO Bank (United Commercial Bank)
@@ -204,6 +208,7 @@ Extract the numeric ID from the end of each URL. Query the database for the curr
 These are job URLs where the slug was truncated (cut short). The URL does not contain a numeric ID at the end and does not match any current route. These appear to be from an earlier period when the slug generation had a character limit that was later increased.
 
 **Pattern:**
+
 ```
 /jobs/{truncated-slug-without-id}
 ```
@@ -231,6 +236,7 @@ Attempt a database prefix search on each truncated slug to find the matching job
 ```
 
 **Notable Organizations:**
+
 - IBPS
 - SAI
 - UCO Bank
@@ -248,6 +254,7 @@ Attempt a database prefix search on each truncated slug to find the matching job
 District-level job listing pages that were previously indexed by Google. These pages no longer exist or the routing has changed.
 
 **Pattern:**
+
 ```
 /districts/{district-slug}
 ```
@@ -262,6 +269,7 @@ District-level job listing pages that were previously indexed by Google. These p
 ```
 
 **Notes:**
+
 - `/districts/all-districts` appears to be a listing of all districts — may have been removed
 - The other 3 are specific district pages
 
@@ -282,6 +290,7 @@ Verify whether the district routing exists in the current application. If distri
 City-based job listing pages in the format `/jobs-in-{city}`. These were previously crawled and indexed by Google but are now returning 404.
 
 **Pattern:**
+
 ```
 /jobs-in-{city-slug}
 ```
@@ -303,6 +312,7 @@ City-based job listing pages in the format `/jobs-in-{city}`. These were previou
 ```
 
 **Cities affected:**
+
 - Maharashtra: Akola, Mumbai Suburban, Palghar, Sangli, Kolhapur, Satara, Mumbai City, Solapur, Chandrapur
 - Delhi: New Delhi
 - Uttar Pradesh: Kanpur Nagar
@@ -324,6 +334,7 @@ Verify if the `/jobs-in-{city}` routing exists in the current application. If ci
 A category listing page that was previously indexed.
 
 **Pattern:**
+
 ```
 /category/{category-slug}
 ```
@@ -342,28 +353,28 @@ Check if State Government Jobs category exists under a different URL (e.g., `/ca
 
 # Classification Checklist
 
-| Item | Status |
-|------|--------|
-| All 607 URLs reviewed | ✅ Done |
-| Every URL assigned a category | ✅ Done |
-| No URL in multiple categories | ✅ Done |
-| Priority assigned to each group | ✅ Done |
-| Investigation notes documented | ✅ Done |
-| Unknown URLs | None — all classified |
+| Item                            | Status                |
+| ------------------------------- | --------------------- |
+| All 607 URLs reviewed           | ✅ Done               |
+| Every URL assigned a category   | ✅ Done               |
+| No URL in multiple categories   | ✅ Done               |
+| Priority assigned to each group | ✅ Done               |
+| Investigation notes documented  | ✅ Done               |
+| Unknown URLs                    | None — all classified |
 
 ---
 
 # Classification Summary Table
 
-| Category | Type | Count | Priority | Action |
-|----------|------|-------|----------|--------|
-| B | Legacy Numeric URLs | 552 | 🔴 Critical | 301 or 410 per ID |
-| C (with ID) | Old Slug with ID | 30 | 🔴 Critical | 301 to new slug |
-| C (no ID) | Truncated Slug | 9 | 🟡 High | Prefix match → 301 or 410 |
-| G | District Pages | 4 | 🟡 High | 301 or 410 |
-| H | City Pages | 11 | 🟡 High | 301 or 410 |
-| E | Category Pages | 1 | 🟡 High | 301 or 410 |
-| **TOTAL** | | **607** | | |
+| Category    | Type                | Count   | Priority    | Action                    |
+| ----------- | ------------------- | ------- | ----------- | ------------------------- |
+| B           | Legacy Numeric URLs | 552     | 🔴 Critical | 301 or 410 per ID         |
+| C (with ID) | Old Slug with ID    | 30      | 🔴 Critical | 301 to new slug           |
+| C (no ID)   | Truncated Slug      | 9       | 🟡 High     | Prefix match → 301 or 410 |
+| G           | District Pages      | 4       | 🟡 High     | 301 or 410                |
+| H           | City Pages          | 11      | 🟡 High     | 301 or 410                |
+| E           | Category Pages      | 1       | 🟡 High     | 301 or 410                |
+| **TOTAL**   |                     | **607** |             |                           |
 
 ---
 
