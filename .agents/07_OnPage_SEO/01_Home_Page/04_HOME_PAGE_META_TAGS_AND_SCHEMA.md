@@ -49,6 +49,7 @@ twitter:image = https://www.searchsarkarinaukri.com/og-image.png?v=2
 Developers should inject the following JSON-LD scripts into the `<head>` of the root homepage component:
 
 ### 1. Organization Schema
+
 ```json
 {
   "@context": "https://schema.org",
@@ -79,6 +80,7 @@ Developers should inject the following JSON-LD scripts into the `<head>` of the 
 ```
 
 ### 2. WebSite Schema with SearchAction Deep Linking
+
 ```json
 {
   "@context": "https://schema.org",
@@ -103,6 +105,7 @@ Developers should inject the following JSON-LD scripts into the `<head>` of the 
 ```
 
 ### 3. BreadcrumbList Schema
+
 ```json
 {
   "@context": "https://schema.org",
@@ -120,6 +123,7 @@ Developers should inject the following JSON-LD scripts into the `<head>` of the 
 ```
 
 ### 4. FAQPage Schema (For Google Search Rich Snippets)
+
 ```json
 {
   "@context": "https://schema.org",
@@ -160,4 +164,8 @@ Developers should inject the following JSON-LD scripts into the `<head>` of the 
     }
   ]
 }
+```
+
 ```Add a minimum of 10 to 12 detailed FAQs. Ensure all questions are elaborate and contain relevant keywords, and that all answers are comprehensive and keyword-rich.
+
+```
