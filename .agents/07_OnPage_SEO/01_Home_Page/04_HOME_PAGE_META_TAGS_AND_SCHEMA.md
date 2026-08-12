@@ -160,4 +160,4 @@ Developers should inject the following JSON-LD scripts into the `<head>` of the 
     }
   ]
 }
-```
+```Add a minimum of 10 to 12 detailed FAQs. Ensure all questions are elaborate and contain relevant keywords, and that all answers are comprehensive and keyword-rich.
