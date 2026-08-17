@@ -1,0 +1,15 @@
+﻿===========================================================================
+URL AUDIT - OTHER STATUS CODE URLS (410, 500, etc.)
+Website  : https://www.searchsarkarinaukri.com
+Source   : GSC Coverage Drilldown - August 17 2026
+Status   : Other HTTP codes (not 200, 301, 302, 404, or error)
+Total    : 4 URLs
+===========================================================================
+
+   1. HTTP 410 | https://www.searchsarkarinaukri.com/jobs-in-new-delhi
+   2. HTTP 410 | https://www.searchsarkarinaukri.com/districts/new-delhi
+   3. HTTP 410 | https://www.searchsarkarinaukri.com/districts/kanpur-nagar
+   4. HTTP 410 | https://www.searchsarkarinaukri.com/jobs-in-kanpur-nagar
+
+NOTE: HTTP 410 = Permanently Gone. This is CORRECT for deleted pages.
+These URLs should be removed from XML sitemap and internal links.

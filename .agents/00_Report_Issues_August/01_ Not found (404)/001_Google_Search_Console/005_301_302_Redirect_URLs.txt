@@ -1,0 +1,9 @@
+﻿===========================================================================
+URL AUDIT - HTTP 301/302 REDIRECT URLS
+Website  : https://www.searchsarkarinaukri.com
+Source   : GSC Coverage Drilldown - August 17 2026
+Status   : HTTP 301 or 302 REDIRECT
+Total    : 0 URLs
+===========================================================================
+
+RESULT: ZERO URLs returning 301 or 302 redirect at time of testing.

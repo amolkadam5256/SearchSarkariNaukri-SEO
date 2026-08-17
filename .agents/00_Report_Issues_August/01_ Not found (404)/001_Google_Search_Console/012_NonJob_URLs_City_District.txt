@@ -1,0 +1,22 @@
+﻿===========================================================================
+NON-JOB URLS (City, District, Category pages)
+These are not /jobs/ URLs - need separate frontend route check
+Total    : 16 URLs
+===========================================================================
+
+   1. https://www.searchsarkarinaukri.com/category/state-government-jobs
+   2. https://www.searchsarkarinaukri.com/jobs-in-new-delhi
+   3. https://www.searchsarkarinaukri.com/jobs-in-akola
+   4. https://www.searchsarkarinaukri.com/jobs-in-mumbai-suburban
+   5. https://www.searchsarkarinaukri.com/jobs-in-palghar
+   6. https://www.searchsarkarinaukri.com/jobs-in-sangli
+   7. https://www.searchsarkarinaukri.com/jobs-in-kolhapur
+   8. https://www.searchsarkarinaukri.com/jobs-in-satara
+   9. https://www.searchsarkarinaukri.com/districts/new-delhi
+  10. https://www.searchsarkarinaukri.com/jobs-in-mumbai-city
+  11. https://www.searchsarkarinaukri.com/districts/all-districts
+  12. https://www.searchsarkarinaukri.com/districts/kanpur-nagar
+  13. https://www.searchsarkarinaukri.com/jobs-in-kanpur-nagar
+  14. https://www.searchsarkarinaukri.com/districts/mumbai
+  15. https://www.searchsarkarinaukri.com/jobs-in-solapur
+  16. https://www.searchsarkarinaukri.com/jobs-in-chandrapur
