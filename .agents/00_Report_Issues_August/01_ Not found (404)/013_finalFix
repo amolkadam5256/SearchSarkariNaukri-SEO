@@ -1,0 +1,649 @@
+# SearchSarkariNaukri.com
+# Developer Action Plan – GSC 404 Resolution, Soft 404 Fixes & Indexing Recovery
+
+Version: 3.0
+Priority: 🔴 Critical
+Project: SearchSarkariNaukri.com
+Status: Immediate Development Required
+
+---
+
+# ISSUE SUMMARY
+
+Google Search Console currently reports:
+
+- 613 URLs under "Not Found (404)"
+
+However latest audit confirms:
+
+- 609 URLs returning HTTP 200
+- 0 URLs returning HTTP 404
+- 0 URLs returning HTTP 301/302
+- 4 URLs intentionally returning HTTP 410
+
+This means Google is showing historical data and requires re-crawling.
+
+Major remaining issue:
+
+- Soft 404 Pages
+- Historical Job Preservation
+- Canonical Consolidation
+- Sitemap Cleanup
+- Internal Linking Improvements
+
+---
+
+# CRITICAL RULES
+
+DO NOT:
+
+- Delete expired jobs
+- Delete historical notifications
+- Delete admit cards
+- Delete results
+- Delete blogs
+- Delete news pages
+- Change UI
+- Change UX
+- Change URL structure
+- Change filters
+- Change search functionality
+
+---
+
+# TASK 1 – SOFT 404 AUDIT
+
+Current Problem:
+
+Many job pages return:
+
+HTTP 200
+
+But internally:
+
+- Job record missing
+- API returns 404
+- Content empty
+- Google detects Soft 404
+
+Examples:
+
+/jobs/1701
+/jobs/1515
+/jobs/1511
+/jobs/110
+
+Required:
+
+Identify every page returning:
+
+HTTP 200
+
+But displaying:
+
+- Job Not Found
+- Empty Content
+- No Vacancy Details
+- Missing Structured Data
+
+Generate report:
+
+soft-404-report.json
+
+---
+
+# TASK 2 – HISTORICAL JOB RESTORATION
+
+For every missing historical job:
+
+Attempt recovery from:
+
+- Database backups
+- Previous exports
+- Cached content
+- Notification PDFs
+- Archive records
+
+Restore content.
+
+Never delete.
+
+Required sections:
+
+## Recruitment Overview
+
+## Vacancy Details
+
+## Important Dates
+
+## Eligibility Criteria
+
+## Educational Qualification
+
+## Age Limit
+
+## Age Relaxation
+
+## Salary Details
+
+## Selection Process
+
+## Application Fee
+
+## Exam Pattern
+
+## Syllabus
+
+## Required Documents
+
+## Official Notification
+
+## Important Links
+
+## Related Jobs
+
+## Related Results
+
+## Related Admit Cards
+
+## FAQs
+
+Target:
+
+1200–2500+ words
+
+---
+
+# TASK 3 – EXPIRED JOB SYSTEM
+
+Expired jobs must remain live.
+
+Display banner:
+
+Application Status: Closed
+
+Include:
+
+- Notification Date
+- Last Date
+- Status
+- Recruitment Closed
+
+Required:
+
+HTTP 200
+
+Required Meta:
+
+<meta name="robots" content="index,follow">
+
+Never:
+
+noindex
+
+---
+
+# TASK 4 – NUMERIC URL CANONICAL FIX
+
+Current Issue:
+
+Both URLs exist:
+
+/jobs/858
+
+and
+
+/jobs/institute-of-banking-personnel-selectionibps-research-associate-faculty-technica-858
+
+Required:
+
+Canonical URL:
+
+SEO Slug URL
+
+Example:
+
+Canonical:
+
+/jobs/institute-of-banking-personnel-selectionibps-research-associate-faculty-technica-858
+
+Redirect:
+
+301
+/jobs/858
+→
+/jobs/institute-of-banking-personnel-selectionibps-research-associate-faculty-technica-858
+
+---
+
+# TASK 5 – SELF REFERENCING CANONICALS
+
+Every page requires:
+
+<link rel="canonical" href="CURRENT_PAGE_URL" />
+
+Fix:
+
+- Missing Canonicals
+- Canonical Chains
+- Canonical Loops
+- Incorrect Canonicals
+
+---
+
+# TASK 6 – TRUNCATED SLUG HANDLING
+
+Examples:
+
+/jobs/institute-of-banking-personnel-selectionibps-research-associate-facult
+
+/jobs/united-commercial-bank-uco-bank-scribe-declaration-for-recruitment-of-
+
+Required:
+
+Extract ID if available.
+
+Redirect:
+
+301
+
+Broken URL
+→
+Correct SEO URL
+
+Prevent duplicate indexing.
+
+---
+
+# TASK 7 – CITY PAGE RECOVERY
+
+Validate routes:
+
+/jobs-in-akola
+
+/jobs-in-palghar
+
+/jobs-in-sangli
+
+/jobs-in-kolhapur
+
+/jobs-in-solapur
+
+/jobs-in-chandrapur
+
+Requirements:
+
+- HTTP 200
+- Indexable
+- Canonical
+- Unique content
+- Internal links
+
+---
+
+# TASK 8 – DISTRICT PAGE RECOVERY
+
+Validate routes:
+
+/districts/mumbai
+
+/districts/all-districts
+
+Requirements:
+
+- HTTP 200
+- Dynamic jobs listing
+- Canonical
+- Structured Data
+
+---
+
+# TASK 9 – CATEGORY PAGE VALIDATION
+
+Validate:
+
+/category/state-government-jobs
+
+Requirements:
+
+- HTTP 200
+- Unique content
+- Internal links
+- CollectionPage schema
+
+---
+
+# TASK 10 – SITEMAP VALIDATION ENGINE
+
+Before sitemap generation:
+
+Validate:
+
+- HTTP Status
+- Canonical URL
+- Duplicate URL
+- Empty URL
+- Redirect URL
+
+Rules:
+
+Only include:
+
+HTTP 200
+
+Never include:
+
+404
+410
+500
+301
+302
+
+---
+
+# TASK 11 – DYNAMIC SITEMAP SYSTEM
+
+Auto regenerate sitemap when:
+
+- Job Added
+- Job Updated
+- Job Archived
+- Result Added
+- Admit Card Added
+- Blog Added
+- News Added
+
+No manual updates.
+
+---
+
+# TASK 12 – SITEMAP SPLITTING
+
+Maximum:
+
+5000 URLs
+
+If exceeded:
+
+Generate:
+
+sitemap-jobs-1.xml
+
+sitemap-jobs-2.xml
+
+sitemap-jobs-3.xml
+
+Automatically.
+
+---
+
+# TASK 13 – INTERNAL LINKING ENGINE
+
+Every Job Page Must Link To:
+
+- Related Jobs
+- State Jobs
+- Qualification Jobs
+- Department Jobs
+- Latest Jobs
+- Results
+- Admit Cards
+
+Minimum:
+
+15–20 internal links
+
+per page.
+
+---
+
+# TASK 14 – FAQ SYSTEM
+
+Generate:
+
+12–15 FAQs
+
+On:
+
+- Jobs
+- Results
+- Admit Cards
+- News
+- Blogs
+
+Schema Required:
+
+FAQPage
+
+JSON-LD
+
+---
+
+# TASK 15 – JOBPOSTING SCHEMA
+
+Required Fields:
+
+- title
+- description
+- hiringOrganization
+- jobLocation
+- validThrough
+- employmentType
+- datePosted
+- identifier
+
+Validate:
+
+Google Rich Results Test
+
+---
+
+# TASK 16 – STRUCTURED DATA IMPROVEMENT
+
+Required:
+
+- Organization
+- Website
+- SearchAction
+- Breadcrumb
+- CollectionPage
+- ItemList
+- FAQPage
+- Article
+- NewsArticle
+- JobPosting
+
+All pages must validate.
+
+---
+
+# TASK 17 – ARCHIVE SYSTEM
+
+Create:
+
+/archive/jobs
+
+/archive/results
+
+/archive/admit-cards
+
+/archive/news
+
+/archive/blogs
+
+Important:
+
+DO NOT redirect original URLs.
+
+Original URLs remain active.
+
+---
+
+# TASK 18 – ROBOTS.TXT VALIDATION
+
+Required:
+
+User-agent: *
+
+Allow: /
+
+Disallow:
+
+/admin/
+/api/internal/
+/private/
+
+Include:
+
+Sitemap:
+https://www.searchsarkarinaukri.com/sitemap.xml
+
+---
+
+# TASK 19 – LASTMOD FIX
+
+Use real database timestamp.
+
+Never use fake dates.
+
+Format:
+
+YYYY-MM-DD
+
+Example:
+
+<lastmod>2026-08-18</lastmod>
+
+---
+
+# TASK 20 – ORPHAN PAGE DETECTION
+
+Create script:
+
+Find pages with:
+
+- No internal links
+- Not in sitemap
+
+Automatically reconnect.
+
+No orphan pages allowed.
+
+---
+
+# TASK 21 – SOFT 404 PREVENTION
+
+Never return:
+
+HTTP 200
+
+for:
+
+- Missing jobs
+- Missing category pages
+- Missing district pages
+
+Rules:
+
+If recoverable:
+
+Return 200 + content
+
+If permanently removed:
+
+Return 410
+
+Never fake 200 pages.
+
+---
+
+# TASK 22 – INDEXING RECOVERY PLAN
+
+After deployment:
+
+1. Regenerate sitemap
+2. Submit sitemap in GSC
+3. Remove 410 URLs
+4. Click Validate Fix
+5. Request indexing for important pages
+6. Monitor coverage report daily
+
+---
+
+# TASK 23 – MONITORING DASHBOARD
+
+Track:
+
+- Indexed URLs
+- Submitted URLs
+- 404 URLs
+- Soft 404 URLs
+- 410 URLs
+- Canonical Issues
+- Sitemap Errors
+- Crawl Errors
+
+Store logs daily.
+
+---
+
+# TASK 24 – AI SEARCH OPTIMIZATION
+
+Optimize for:
+
+- Google AI Overviews
+- Gemini
+- ChatGPT Search
+- Perplexity
+- Bing Copilot
+
+Implement:
+
+- FAQ content
+- Entity headings
+- Rich schema
+- Structured content
+
+---
+
+# FINAL SUCCESS CRITERIA
+
+✓ 0 Real 404 URLs
+
+✓ 0 Sitemap Errors
+
+✓ 0 Redirect URLs In Sitemap
+
+✓ 0 Soft 404 Pages
+
+✓ All Historical Jobs Preserved
+
+✓ All Expired Jobs Return 200
+
+✓ Canonical System Working
+
+✓ FAQ Schema Valid
+
+✓ JobPosting Schema Valid
+
+✓ Internal Linking Active
+
+✓ Robots.txt Valid
+
+✓ Sitemap Fully Valid
+
+✓ Google Search Console Validation Passed
+
+✓ Improved Crawl Budget
+
+✓ Improved Indexing Rate
+
+✓ Better Government Job Rankings
+
+✓ Better Historical Content Preservation
+
+✓ Better Organic Traffic Growth
+
+✓ Better AI Search Visibility
+
+END OF DOCUMENT
