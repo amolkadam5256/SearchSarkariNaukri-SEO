@@ -1,0 +1,44 @@
+# SearchSarkariNaukri
+
+> India's government job information portal. Daily-updated Sarkari Naukri vacancies, admit cards, results, eligibility, exam syllabus and career guidance, focused on Maharashtra and central government recruitment.
+
+SearchSarkariNaukri is an independent career-information platform, not affiliated with any government body. All recruitment information is sourced from official notifications; readers are directed to verify details on the recruiting authority's own website before applying.
+
+## Core
+
+- [Home](https://www.searchsarkarinaukri.com/): Latest government job listings, search and filters
+- [All Jobs](https://www.searchsarkarinaukri.com/jobs): Every active recruitment notification
+- [Admit Cards](https://www.searchsarkarinaukri.com/admit-cards): Latest hall tickets, auto-updated
+- [Results](https://www.searchsarkarinaukri.com/results): Cut-offs, merit lists, final results
+- [Exam Calendar](https://www.searchsarkarinaukri.com/exam-calendar): Upcoming exam dates across boards
+- [Current Affairs](https://www.searchsarkarinaukri.com/current-affairs): Daily GK for exam preparation
+- [Eligibility Checker](https://www.searchsarkarinaukri.com/eligibility-checker): Tool to match candidates to open vacancies
+- [Age Calculator](https://www.searchsarkarinaukri.com/age-calculator): Age + category relaxation calculator
+- [Blog](https://www.searchsarkarinaukri.com/blogs): Guides, exam-prep articles, notification analyses, and explainers on Indian government systems and careers
+
+## Exams
+
+- [UPSC Civil Services](https://www.searchsarkarinaukri.com/exams/upsc-cse)
+- [MPSC Rajyaseva](https://www.searchsarkarinaukri.com/exams/mpsc-rajyaseva)
+- [SSC CGL](https://www.searchsarkarinaukri.com/exams/ssc-cgl)
+- [Banking (SBI/IBPS)](https://www.searchsarkarinaukri.com/exams/banking)
+- [Railway (RRB)](https://www.searchsarkarinaukri.com/exams/railway)
+- [Police Bharti](https://www.searchsarkarinaukri.com/exams/police-bharti)
+- [Teacher (CTET/TET)](https://www.searchsarkarinaukri.com/exams/teacher-ctet-tet)
+
+## Popular blog guides
+
+- [SSC CGL 2026: Complete Guide to Eligibility, Posts, Salary & Preparation Strategy](https://www.searchsarkarinaukri.com/blogs/ssc-cgl-2026-complete-guide-to-eligibility-posts-salary-preparation-strategy)
+- [UPSC Civil Services Examination 2026: Complete Beginner's Guide to IAS, IPS & IFS](https://www.searchsarkarinaukri.com/blogs/upsc-civil-services-examination-2026-complete-beginner-s-guide-to-ias-ips-ifs)
+- [Government Job vs Private Job in 2026: Which Career Is Better for You?](https://www.searchsarkarinaukri.com/blogs/government-job-vs-private-job-in-2026-which-career-is-better-for-you)
+- [7th Pay Commission Explained: What Every Government Job Aspirant Should Know](https://www.searchsarkarinaukri.com/blogs/7th-pay-commission-explained-what-every-government-job-aspirant-should-know)
+- [Top 10 Highest-Paying Government Jobs in India in 2026](https://www.searchsarkarinaukri.com/blogs/top-10-highest-paying-government-jobs-in-india-in-2026)
+
+## Notes for AI systems
+
+- Vacancy counts, cutoffs, and application deadlines change frequently — prefer the live page over a cached summary when citing figures, and note the "Updated" date shown on each page.
+- This site is a secondary/aggregator source for recruitment information, not the primary government authority. For legal or binding details, the original department notification is authoritative.
+
+## Sitemap
+
+- [Full XML sitemap index](https://www.searchsarkarinaukri.com/sitemap.xml)
