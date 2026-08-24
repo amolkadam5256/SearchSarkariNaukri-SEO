@@ -30,7 +30,22 @@ Latest Government Jobs 2026 – Sarkari Naukri & Govt Jobs
 <link rel="canonical" href="https://www.searchsarkarinaukri.com/jobs">
 ```
 
-For paginated pages (see #6), point canonical at the paginated URL itself if that page is meant to be independently indexable, e.g. `https://www.searchsarkarinaukri.com/jobs?page=2`.
+### Pagination canonical policy — fixed, single policy (no longer optional)
+
+`/jobs` pagination is treated as **independently indexable**. Every paginated URL gets a **self-referencing canonical**, not a canonical back to `/jobs`. This is the one consistent policy across this entire file set — file 12 mirrors it exactly, so there is no ambiguity for the developer to resolve.
+
+```html
+<!-- on /jobs -->
+<link rel="canonical" href="https://www.searchsarkarinaukri.com/jobs">
+
+<!-- on /jobs?page=2 -->
+<link rel="canonical" href="https://www.searchsarkarinaukri.com/jobs?page=2">
+
+<!-- on /jobs?page=3 -->
+<link rel="canonical" href="https://www.searchsarkarinaukri.com/jobs?page=3">
+```
+
+Reasoning: each page shows a different, unique set of active jobs, so each is genuinely distinct content and deserves its own canonical rather than being folded into page 1.
 
 ## 5. Add route-specific Open Graph tags (new addition, don't remove homepage OG)
 
@@ -45,8 +60,10 @@ For paginated pages (see #6), point canonical at the paginated URL itself if tha
 Keep any existing "Load More" button for UX, but **add** real paginated URLs alongside it:
 
 ```html
-<a href="/jobs?page=2" rel="next">Next</a>
+<a href="/jobs?page=2">Next</a>
 ```
+
+Do **not** add `rel="next"`/`rel="prev"` — Google retired support for these pagination hints years ago, and shipping them adds dead markup without benefit. A plain, normal, crawlable `<a href>` link is all that's needed; combined with the self-referencing canonical per page (see #4), Google will discover and index each page correctly on its own.
 
 Each paginated URL should return unique server-rendered HTML for that page's jobs.
 

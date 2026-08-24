@@ -2,7 +2,7 @@
 
 > **This is the master, final-run document.** Give this file to the developer or AI coding agent doing the actual implementation. It consolidates files 01–11 into one execution prompt, adds a full-site crawlability/indexability audit (not just `/jobs`), and defines the sign-off criteria before calling the work done.
 >
-> **Hard constraint, repeated because it overrides everything else:** every change must be a pure **addition** — new sections, new pages, new schema, new meta tags, new sitemap entries, new internal links. **Do not delete, rename, move, or restructure any existing file, folder, route, component, or UI element.** Do not redesign anything visually. If a fix genuinely requires changing an existing line (e.g. a broken canonical, an incorrect `noindex`, a wrong `validThrough` date), treat it as a **bug fix**, isolate it in its own commit, and call it out explicitly in the PR description — never bundle it silently into a "content update."
+> **Hard constraint, repeated because it overrides everything else:** every change must be a pure **addition** — new sections, new pages, new schema, new meta tags, new sitemap entries, new internal links. **Do not delete, rename, move, or restructure any existing file, folder, route, component, or UI element.** Do not redesign anything visually. The one controlled exception is file 01's **Category 2** rule: a *demonstrably incorrect* existing SEO element (a broken canonical, a stray `noindex`, a fabricated `validThrough` date, a wrongly-converted sitemap) may be corrected — but only as an isolated, labeled `fix:` commit, called out explicitly in the PR description, never bundled silently into a `feat:` content update.
 
 ---
 
@@ -11,10 +11,12 @@
 1. No existing file/folder/route is deleted, renamed, or moved.
 2. No existing UI section, component, filter, or design element is removed or restyled.
 3. No existing indexed URL changes or redirects unless it is currently broken (404/500) — and even then, flag before acting.
-4. No existing working meta tag, schema block, or copy is overwritten — only extended or added to.
+4. No existing working meta tag, schema block, or copy is overwritten — only extended or added to, **except** where file 01's Category 2 exception applies (demonstrably incorrect canonical, noindex, structured data, or sitemap entries) — and even then, isolated and labeled per rule 5.
 5. Every commit/PR should read as additions in the diff, with any true fix isolated and labeled `fix:` separately from `feat:` additions.
 6. Work in a branch. Do not force-push over the main branch. Get the changes reviewed as a diff before merge.
 7. Test every change on a staging URL with Google's **URL Inspection → Test Live URL** and **Rich Results Test** before it goes live.
+8. Pagination policy is fixed and non-negotiable across this doc set: `/jobs?page=N` pages are independently indexable and **self-canonicalize** (never canonicalize back to `/jobs`), use plain crawlable `<a href>` links with **no `rel="next"`/`rel="prev"`** (see file 02).
+9. Before adding any new JSON-LD block, audit the target page for an existing block of the same `@type` first — never ship duplicate/competing schema of the same type on one page (see file 05 Step 0).
 
 ---
 
@@ -50,14 +52,16 @@ For each template — homepage, `/jobs`, job detail, category, qualification, di
 - [ ] Every indexable page has a self-referencing canonical, unless it's a deliberate near-duplicate pointing to a stronger version (file 09 Group D).
 - [ ] No canonical points to the homepage from a deep content page by mistake.
 - [ ] No canonical loop (A → B → A) or chain (A → B → C).
-- [ ] Paginated `/jobs?page=2` etc. either self-canonicalize (if independently indexable) or canonicalize to `/jobs` (if not) — pick one policy and apply it consistently.
+- [ ] Paginated `/jobs?page=2`, `?page=3`, etc. each **self-canonicalize** — this is the fixed policy (file 02), not a choice to be made per-page. No pagination URL canonicalizes back to `/jobs`.
+- [ ] No `rel="next"`/`rel="prev"` present on pagination links — plain `<a href>` only.
 
 ### 2.5 Sitemap audit
 
+- [ ] `sitemap.xml` fetched and inspected **before any change**: determine whether it's already a `<sitemapindex>` or a flat `<urlset>` (see file 08 Part B, Step 1). Do not convert a flat sitemap into an index as part of this rollout — that's a separate, explicitly approved change if it's ever done.
 - [ ] `sitemap.xml` (or index) is reachable, valid XML, and lists only 200-status, canonical, non-`noindex` URLs.
 - [ ] No 404s, redirects, or `noindex` URLs are present in any sitemap.
-- [ ] Every new page type from file 07 has (or will have) a corresponding sitemap entry once built.
-- [ ] Sitemap is submitted in Google Search Console and Bing Webmaster Tools.
+- [ ] Every new page type from file 07 has (or will have) a corresponding sitemap entry, submitted either as a new child of an existing index, or as a standalone additional sitemap file if the existing one is flat.
+- [ ] Sitemap(s) are submitted in Google Search Console and Bing Webmaster Tools.
 
 ### 2.6 HTTP status & redirect audit
 
@@ -74,8 +78,10 @@ For each template — homepage, `/jobs`, job detail, category, qualification, di
 
 - [ ] Run Rich Results Test on: homepage, `/jobs`, one job detail page, one category page, one qualification page, one district page.
 - [ ] Confirm zero errors and note any warnings.
-- [ ] Confirm no page has more than one conflicting schema type doing the same job (e.g. two competing `BreadcrumbList` blocks).
+- [ ] For each page checked, list existing `@type` values present **before** adding anything (file 05 Step 0) — confirm no duplicate/competing schema of the same type ends up on one page (e.g. two `BreadcrumbList` or two `Organization` blocks).
 - [ ] Confirm `JobPosting` schema appears **only** on individual job pages, never on `/jobs`, category, qualification, or district pages (file 05/06 rule).
+- [ ] Spot-check a sample of `JobPosting` blocks for field accuracy: `validThrough` matches the actual notification deadline (never calculated/invented), and `employmentType` matches the notification's stated type or is omitted entirely — never defaulted to `FULL_TIME`.
+- [ ] Spot-check a sample of recently-closed jobs: `JobPosting` schema removed, page still returns 200 and remains indexable (Case A in file 06 §2) unless it was a deliberate, separately-reviewed Case B removal.
 
 ---
 
@@ -105,14 +111,16 @@ Each step must pass its own checklist (already listed in that file) before movin
 
 ### Indexability
 - [ ] Every indexable page has a correct, non-conflicting canonical
-- [ ] Sitemap contains only clean, indexable, 200-status URLs
+- [ ] `/jobs` pagination self-canonicalizes per page, with no `rel="next"`/`rel="prev"` markup
+- [ ] Sitemap contains only clean, indexable, 200-status URLs; existing `sitemap.xml` structure was inspected, not blindly converted
 - [ ] No redirect chains or orphaned pages in the new architecture
 - [ ] "Crawled – currently not indexed" URLs from file 09 have been reclassified and improved, not deleted
 
 ### On-page & structured data
 - [ ] `/jobs` and all new landing pages have unique titles, meta descriptions, H1s per the keyword map (file 07)
-- [ ] `JobPosting` schema is present only on job detail pages, with accurate `validThrough`
-- [ ] `/jobs`, category, and qualification pages carry CollectionPage/ItemList/FAQPage schema, not JobPosting
+- [ ] `JobPosting` schema is present only on job detail pages, with accurate `validThrough` sourced from the actual notification (never calculated) and `employmentType` sourced from the notification or omitted (never defaulted to `FULL_TIME`)
+- [ ] Closed-job pages follow Case A (schema removed, page stays live) by default; Case B (page actually removed/noindexed) only used as a rare, separately reviewed decision
+- [ ] `/jobs`, category, and qualification pages carry CollectionPage/ItemList/FAQPage schema, not JobPosting, with no duplicate schema types stacked on the same page
 - [ ] FAQ visible text matches FAQ schema text exactly, everywhere it's used
 
 ### Content & linking

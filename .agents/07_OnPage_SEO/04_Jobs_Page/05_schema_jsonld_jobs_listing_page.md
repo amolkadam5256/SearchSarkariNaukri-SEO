@@ -1,6 +1,16 @@
 # 05 — `/jobs` Page: JSON-LD Structured Data (New Addition)
 
-> Add these `<script type="application/ld+json">` blocks to the `/jobs` page `<head>` or end of `<body>`. **Do not add `JobPosting` schema to this page** — that belongs only on individual job pages (file 06). These blocks are pure additions; they don't touch any existing schema you may already have (Organization/WebSite on the homepage, etc.) — if `/jobs` has none today, all of this is new.
+> Add these `<script type="application/ld+json">` blocks to the `/jobs` page `<head>` or end of `<body>`. **Do not add `JobPosting` schema to this page** — that belongs only on individual job pages (file 06).
+
+## Step 0 — Audit before adding (do this first, every time)
+
+Before adding any block below, view-source the live `/jobs` page and list every existing `<script type="application/ld+json">` block already present.
+
+- **If a schema type below doesn't exist yet on the page** (e.g. no `WebSite` block at all) — add it as specified, no conflict possible.
+- **If a schema type already exists** (e.g. the page already has an `Organization` or `BreadcrumbList` block, perhaps site-wide from a shared layout) — do **not** add a second, duplicate block of the same type. Instead, either leave the existing one alone if it's already correct, or **extend/correct the existing block in place** (documented as an isolated fix per file 01's exception) rather than stacking a competing block next to it.
+- Two `BreadcrumbList` or two `Organization` blocks on the same page is an error state, not harmless redundancy — it creates ambiguity for Google about which is authoritative. Never end up with duplicates.
+
+With that check done, the blocks below are pure additions for whichever schema types are actually missing.
 
 ## 1. WebSite
 

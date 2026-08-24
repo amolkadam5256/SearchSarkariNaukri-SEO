@@ -45,12 +45,23 @@ Already specified in file 04 §6–7. Populate based on the job's own department
 
 Never use "Click Here" or "Read More" for new links. Use descriptive text, e.g. "Latest MPSC Government Jobs 2026" instead of "Click Here".
 
-## Part B — Sitemap architecture (additive)
+## Part B — Sitemap architecture (additive — inspect before touching)
 
-Do not delete or truncate the existing `sitemap.xml`. Convert it into an index (if it isn't already) and add new child sitemaps alongside whatever it currently references.
+**Do not delete, truncate, or automatically convert the existing `sitemap.xml`.** The earlier instruction to "convert it into an index if it isn't already" is removed — that action modifies an existing file's structure and conflicts with the ground rules in file 01. Replace it with an inspect-first process:
+
+### Step 1 — Inspect what currently exists (read-only, no changes yet)
+
+- Fetch `https://www.searchsarkarinaukri.com/sitemap.xml` and determine which of these two cases applies:
+  - **Case 1 — already an index**: it contains `<sitemapindex>` with `<sitemap>` entries pointing to child files. If so, skip straight to Step 2 — just add new `<sitemap>` entries for the new page types, don't touch existing entries.
+  - **Case 2 — a flat `<urlset>`**: it lists URLs directly, with no index layer. If so, **do not restructure it.** Leave `sitemap.xml` exactly as it is and instead:
+    - Create new, separate sitemap files for the new content only (`sitemap-categories.xml`, `sitemap-qualifications.xml`, `sitemap-recruiters.xml`, etc.).
+    - Submit these new sitemap files to Google Search Console / Bing Webmaster Tools **individually, alongside** the existing `sitemap.xml` — most search engines accept multiple submitted sitemaps per property without requiring a single master index.
+    - Converting `sitemap.xml` into an index is a legitimate future improvement, but it's a structural change to an existing file and must be proposed and approved separately from this additive content rollout — do not do it as a side effect of adding new pages.
+
+### Step 2 — If already an index (Case 1), add new child sitemaps only
 
 ```
-/sitemap.xml (index — keep existing entries, add new ones below)
+/sitemap.xml (index — existing entries untouched, new ones added below)
    ├── sitemap-jobs-1.xml, sitemap-jobs-2.xml, ... (existing job URLs, unchanged)
    ├── sitemap-categories.xml       [NEW]
    ├── sitemap-qualifications.xml   [NEW]
@@ -83,5 +94,7 @@ Do not delete or truncate the existing `sitemap.xml`. Convert it into an index (
 - [ ] District pages get new category/qualification cross-links
 - [ ] Job pages get Related Jobs + Related Exam links
 - [ ] No new link anywhere uses "Click Here" / "Read More"
-- [ ] Sitemap index extended with new child sitemaps, existing entries untouched
+- [ ] Existing `sitemap.xml` inspected first — index vs. flat `<urlset>` determined
+- [ ] If already an index: extended with new child sitemaps, existing entries untouched
+- [ ] If flat `<urlset>`: left as-is; new sitemap files created and submitted separately, no structural conversion performed without separate approval
 - [ ] New sitemap entries only include indexable, canonical, 200-status URLs

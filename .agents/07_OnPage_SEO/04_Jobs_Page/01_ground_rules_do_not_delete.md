@@ -28,11 +28,29 @@ These rules apply to **every file in this set (01–11)** and override anything 
 
 Each file is a self-contained work order for one part of the site. They are numbered in a safe implementation sequence (see file 11 for the master checklist), but each can be handed to a developer independently. Every file repeats the "additive only" instruction at the top so it survives being copy-pasted out of context.
 
-## One explicitly approved exception
+## Approved exceptions — where a controlled edit is allowed
 
-The only two copy changes flagged as *recommended edits* (not pure additions) across this whole doc set are:
+Two categories of non-additive change are explicitly approved. Everything else in files 02–12 is a **pure addition**: new sections, new pages, new schema, new links, new sitemap entries.
+
+### Category 1 — Two specific copy changes
 
 - The `/jobs` page `<title>` tag and meta description (currently homepage-oriented — see file 02).
 - The `/jobs` page `<h1>` text (from "All Active Government Jobs" to "Latest Government Jobs 2026 – Sarkari Naukri" — see file 02).
 
-Everything else in files 02–11 is a **pure addition**: new sections, new pages, new schema, new links, new sitemap entries. If anything in another file reads like it requires deleting or restructuring something, stop and treat it as informational context only, not an instruction to act on.
+### Category 2 — Demonstrably incorrect existing SEO implementations
+
+The additive-only rule is meant to prevent *unnecessary* restructuring and content churn — it is not meant to force the site to keep a **genuinely broken** SEO element in place. Editing is allowed when an existing element is **factually wrong or actively harmful**, for example:
+
+- A canonical tag pointing to the wrong URL (e.g. a job page canonicalizing to the homepage by mistake).
+- A `noindex` directive left on a page that should be indexable (e.g. leftover from staging).
+- Structured data with fabricated, expired, or clearly incorrect field values (a fake `validThrough` date, a hardcoded `employmentType` that doesn't match the notification).
+- A sitemap listing dead/redirected/`noindex` URLs.
+- A robots.txt rule accidentally blocking an important section of the site.
+
+**Conditions for using this exception:**
+
+1. The issue must be demonstrably incorrect, not a stylistic preference or a "could be better" judgment call.
+2. The fix must be isolated in its own commit/PR, labeled `fix:`, and called out explicitly in the change description — never silently folded into a `feat:` content addition.
+3. When in doubt about whether something qualifies, treat it as informational and flag it for review rather than editing it unilaterally.
+
+This exception is what lets files 02, 05, 06, 08, and 12 correctly instruct fixes to things like pagination canonicals, hardcoded schema fields, and sitemap/noindex errors, without contradicting the no-deletion/no-restructure rule.

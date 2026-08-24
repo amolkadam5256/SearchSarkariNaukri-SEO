@@ -17,7 +17,7 @@
   },
   "datePosted": "{ISO_date_posted}",
   "validThrough": "{ISO_last_date}",
-  "employmentType": "FULL_TIME",
+  "employmentType": "{ACTUAL_EMPLOYMENT_TYPE_OR_OMIT}",
   "hiringOrganization": {
     "@type": "Organization",
     "name": "{organization}",
@@ -41,18 +41,33 @@
 ### Field notes
 
 - `description` must be genuinely unique per job — not a copy-pasted template with only the organization swapped. Use the original-content sections from file 04 as the source text.
-- `validThrough` is required and time-critical — Google actively checks this against the current date and can suppress stale postings from job-related search features.
+- `validThrough` is required and time-critical — Google actively checks this against the current date and can suppress stale postings from job-related search features. **`validThrough` must come only from the actual official application deadline stated in the recruitment notification.** Never calculate, estimate, default, or auto-generate this date (e.g. "posted date + 30 days") — a fabricated deadline is worse than no deadline, since it can misrepresent the recruitment and get the page penalized for inaccurate structured data.
+- **`employmentType` must reflect the actual type stated in the notification** (`FULL_TIME`, `PART_TIME`, `CONTRACTOR`, `TEMPORARY`, etc. — see schema.org's `EmploymentType` enum for valid values). Do **not** hardcode `FULL_TIME` as a default. If the notification doesn't specify an employment type, **omit the field entirely** rather than guessing — an omitted optional field is safe; an incorrect one is inaccurate structured data.
 - Only populate `baseSalary` if the notification actually states a figure. Don't estimate or invent one.
-- Use real data only — no placeholder/fake values, per Google's structured data guidelines.
+- Use real data only — no placeholder/fake values, per Google's structured data guidelines. This applies to every field in this template, not just the two called out above — if a value isn't confirmed from the source notification, omit the field rather than filling in a plausible-looking placeholder.
 
-## 2. Expiration handling (the one approved "removal")
+## 2. Expiration handling — two distinct cases, do not conflate them
 
-When a job's `last_date` passes:
+A closed job and a removed job are **not the same thing**. Implement them as two clearly separate states so the "keep pages live" rule and the "clean up genuinely dead content" rule don't get tangled together.
 
-1. Remove the `JobPosting` `<script>` block from the page (do not remove any other content, per file 04 §8).
-2. Update the visible status badge to "Closed".
-3. Keep the page live and indexable unless it is genuinely thin/duplicate, in which case follow file 09's classification process — don't delete on a schedule.
-4. If you have Indexing API access set up (see §3), send a `URL_UPDATED` notification when the schema changes.
+### Case A — Job closed, page stays live (the default, expected case)
+
+This is what should happen for the overwhelming majority of expired jobs.
+
+1. Remove the `JobPosting` `<script>` block from the page (this is the one schema removal this file set calls for — everything else on the page, per file 04 §8, stays).
+2. Update the visible status badge to "Closed" / "Recruitment Closed".
+3. Page remains live, indexable, and reachable via internal links and the sitemap — it retains historical/informational value, may hold backlinks, and can still rank for the organization/post name.
+4. If Indexing API is wired up (§3), send `URL_UPDATED` — not `URL_DELETED` — because the URL still exists and now has different (schema-less, "closed") content.
+
+### Case B — Page actually removed (rare, deliberate, separately reviewed)
+
+Only applies when a page is genuinely thin, duplicate, or has no standalone value even after the content upgrades in file 09 — this is a judgment call made per file 09's classification process, never an automatic side effect of a job closing.
+
+1. If the decision is to remove the page: return an appropriate status (`410 Gone` is preferable to `404` for a deliberately retired job page) and add `noindex` if the route is being kept alive for any short-term reason.
+2. Send `URL_DELETED` via the Indexing API if wired up.
+3. This is the one place in the entire doc set where a page's indexability is intentionally reduced — it should be a rare, reviewed, logged decision, not the default expiration behavior.
+
+**Do not use Case B as the standard flow.** The default for every expiring job is Case A.
 
 ## 3. Indexing API (optional, for eligible JobPosting pages only)
 
