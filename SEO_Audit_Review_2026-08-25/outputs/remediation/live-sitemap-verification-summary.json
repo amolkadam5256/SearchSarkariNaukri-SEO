@@ -1,0 +1,18 @@
+{
+  "verified_at_utc": "2026-08-25T08:42:10.508Z",
+  "sitemap_index_status": 200,
+  "child_sitemaps": 12,
+  "child_sitemap_failures": 0,
+  "sitemap_url_occurrences": 1124,
+  "unique_sitemap_urls": 1057,
+  "duplicate_sitemap_urls": 0,
+  "verified_urls": 1057,
+  "urls_with_issues": 0,
+  "http_non_200": 0,
+  "redirects_in_sitemap": 0,
+  "noindex_in_sitemap": 0,
+  "missing_canonical": 0,
+  "non_self_canonical": 0,
+  "invalid_x_default": 0,
+  "expired_jobposting": 0
+}

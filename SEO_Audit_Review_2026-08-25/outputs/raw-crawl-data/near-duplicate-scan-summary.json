@@ -1,0 +1,10 @@
+{
+  "scanned": 4793,
+  "successful": 4793,
+  "errors": 0,
+  "exact_duplicate_groups": 41,
+  "exact_duplicate_affected_urls": 550,
+  "lsh_candidate_pairs": 120278,
+  "near_duplicate_pairs_over_80_excluding_exact": 1955,
+  "method": "Normalized main/body text; nav/header/footer/scripts/forms removed; dates/numbers normalized; exact SHA-256 groups plus 64-minhash LSH candidates verified by 5-word-shingle Jaccard >= 0.80."
+}

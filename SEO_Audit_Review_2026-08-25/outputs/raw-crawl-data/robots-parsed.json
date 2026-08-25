@@ -1,0 +1,112 @@
+{
+  "groups": [
+    {
+      "agents": [
+        "*"
+      ],
+      "rules": [
+        {
+          "type": "allow",
+          "value": "/"
+        },
+        {
+          "type": "disallow",
+          "value": "/admin/"
+        },
+        {
+          "type": "disallow",
+          "value": "/dashboard"
+        },
+        {
+          "type": "disallow",
+          "value": "/saved-jobs"
+        },
+        {
+          "type": "disallow",
+          "value": "/my-saved-jobs"
+        },
+        {
+          "type": "disallow",
+          "value": "/profile-setup"
+        },
+        {
+          "type": "disallow",
+          "value": "/preferences"
+        },
+        {
+          "type": "disallow",
+          "value": "/reminders"
+        },
+        {
+          "type": "disallow",
+          "value": "/api/"
+        },
+        {
+          "type": "disallow",
+          "value": "/login"
+        },
+        {
+          "type": "disallow",
+          "value": "/register"
+        },
+        {
+          "type": "disallow",
+          "value": "/*?utm_*"
+        }
+      ]
+    }
+  ],
+  "wildcardRules": [
+    {
+      "type": "allow",
+      "value": "/"
+    },
+    {
+      "type": "disallow",
+      "value": "/admin/"
+    },
+    {
+      "type": "disallow",
+      "value": "/dashboard"
+    },
+    {
+      "type": "disallow",
+      "value": "/saved-jobs"
+    },
+    {
+      "type": "disallow",
+      "value": "/my-saved-jobs"
+    },
+    {
+      "type": "disallow",
+      "value": "/profile-setup"
+    },
+    {
+      "type": "disallow",
+      "value": "/preferences"
+    },
+    {
+      "type": "disallow",
+      "value": "/reminders"
+    },
+    {
+      "type": "disallow",
+      "value": "/api/"
+    },
+    {
+      "type": "disallow",
+      "value": "/login"
+    },
+    {
+      "type": "disallow",
+      "value": "/register"
+    },
+    {
+      "type": "disallow",
+      "value": "/*?utm_*"
+    }
+  ],
+  "sitemapLines": [
+    "https://www.searchsarkarinaukri.com/sitemap.xml"
+  ]
+}

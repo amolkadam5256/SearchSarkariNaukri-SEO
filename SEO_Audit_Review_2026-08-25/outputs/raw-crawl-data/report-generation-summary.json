@@ -1,0 +1,18 @@
+{
+  "generated_utc": "2026-08-25T07:05:47.908Z",
+  "total_items": 238,
+  "totals": {
+    "pass": 87,
+    "warning": 49,
+    "fail": 60,
+    "na": 42
+  },
+  "issue_severity": {
+    "critical": 0,
+    "high": 15,
+    "medium": 89,
+    "low": 5
+  },
+  "weighted_deduction": 255.5,
+  "health_score": 0
+}
