@@ -1,0 +1,39 @@
+﻿evidence_set	id	type	exam_name	status	released_date	exam_date	link	source
+homepage_results_rows	79	result	SBI CBO Result 2026	out	2026-07-25	NULL	https://sbi.co.in	sbi.co.in
+homepage_results_rows	74	result	SBI CBO Result 2026	out	2026-07-25	NULL	https://sbi.co.in	sbi.co.in
+homepage_results_rows	70	result	SBI CBO Result 2026	out	2026-07-25	NULL	https://sbi.co.in	sbi.co.in
+homepage_results_rows	63	result	SBI CBO Result 2026	out	2026-07-25	NULL	https://sbi.co.in	sbi.co.in
+homepage_results_rows	55	result	SBI CBO Result 2026	out	2026-07-25	NULL	https://sbi.co.in	sbi.co.in
+homepage_results_rows	67	result	MPSC Rajyaseva Result 2026	out	2026-07-15	NULL	https://mpsc.gov.in	mpsc.gov.in
+homepage_results_rows	60	result	MPSC Rajyaseva Result 2026	out	2026-07-15	NULL	https://mpsc.gov.in	mpsc.gov.in
+homepage_results_rows	52	result	MPSC Rajyaseva Result 2026	out	2026-07-15	NULL	https://mpsc.gov.in	mpsc.gov.in
+homepage_results_rows	77	result	MPSC Result 2026	out	2026-06-22	NULL	https://mpsc.gov.in	mpsc.gov.in
+homepage_results_rows	66	result	MPSC Result 2026	out	2026-06-22	NULL	https://mpsc.gov.in	mpsc.gov.in
+evidence_set	id	type	exam_name	status	released_date	exam_date	link	source
+homepage_admit_card_rows	7	admit_card	RRB NTPC 2026	expected	NULL	2026-09-15	https://rrbcdg.gov.in	rrbcdg.gov.in
+homepage_admit_card_rows	3	admit_card	SSC CGL Tier 1 2026	expected	NULL	2026-07-10	https://ssc.nic.in	ssc.nic.in
+homepage_admit_card_rows	1	admit_card	MPSC Rajyaseva Prelims 2026	expected	NULL	2026-06-15	https://mpsc.gov.in	mpsc.gov.in
+homepage_admit_card_rows	5	admit_card	SBI PO Prelims 2026	expected	NULL	2026-06-01	https://sbi.co.in	sbi.co.in
+homepage_admit_card_rows	2	admit_card	UPSC CSE Prelims 2026	expected	NULL	2026-05-25	https://upsc.gov.in	upsc.gov.in
+homepage_admit_card_rows	48	admit_card	UPSC CSE Admit Card 2026	out	2026-05-15	NULL	https://upsc.gov.in	upsc.gov.in
+homepage_admit_card_rows	40	admit_card	UPSC CSE Admit Card 2026	out	2026-05-15	NULL	https://upsc.gov.in	upsc.gov.in
+homepage_admit_card_rows	33	admit_card	UPSC CSE Admit Card 2026	out	2026-05-15	NULL	https://upsc.gov.in	upsc.gov.in
+homepage_admit_card_rows	27	admit_card	UPSC CSE Admit Card 2026	out	2026-05-15	NULL	https://upsc.gov.in	upsc.gov.in
+homepage_admit_card_rows	19	admit_card	UPSC CSE Admit Card 2026	out	2026-05-15	NULL	https://upsc.gov.in	upsc.gov.in
+evidence_set	type	exam_name	status	released_date	exam_date	link	source	duplicate_count	row_ids
+duplicate_exam_records	admit_card	MPSC Admit Card 2026	out	2026-01-10		https://mpsc.gov.in	mpsc.gov.in	10	17,24,31,38,47,53,61,68,73,81
+duplicate_exam_records	result	SSC CGL Result 2025	out	2025-11-03		https://ssc.nic.in	ssc.nic.in	10	18,26,35,41,49,54,62,69,75,80
+duplicate_exam_records	admit_card	SSC MTS Admit Card 2025	out	2025-10-06		https://ssc.nic.in	ssc.nic.in	5	36,43,50,56,64
+duplicate_exam_records	admit_card	UPSC CSE Admit Card 2026	out	2026-05-15		https://upsc.gov.in	upsc.gov.in	5	19,27,33,40,48
+duplicate_exam_records	result	SBI CBO Result 2026	out	2026-07-25		https://sbi.co.in	sbi.co.in	5	55,63,70,74,79
+duplicate_exam_records	admit_card	MPSC Rajyaseva Admit Card 2025	out	2025-11-09		https://mpsc.gov.in	mpsc.gov.in	4	20,39,76,82
+duplicate_exam_records	result	MPSC Rajyaseva Result 2026	out	2026-06-22		https://mpsc.gov.in	mpsc.gov.in	4	23,30,37,46
+duplicate_exam_records	result	SSC CPO Result 2025	out	2025-03-05		https://ssc.nic.in	ssc.nic.in	4	45,51,58,65
+duplicate_exam_records	result	MPSC Rajyaseva Result 2024	out	2026-01-05		https://mpsc.gov.in	mpsc.gov.in	3	16,72,78
+duplicate_exam_records	result	MPSC Rajyaseva Result 2026	out	2026-07-15		https://mpsc.gov.in	mpsc.gov.in	3	52,60,67
+duplicate_exam_records	result	MPSC Result 2026	out	2026-06-22		https://mpsc.gov.in	mpsc.gov.in	3	59,66,77
+duplicate_exam_records	admit_card	SSC MTS Admit Card 2025	out	2026-02-02		https://ssc.nic.in	ssc.nic.in	2	22,29
+duplicate_exam_records	result	UPSC CSE Result 2026	out	2026-06-15		https://upsc.gov.in	upsc.gov.in	2	21,28
+duplicate_exam_records	result	UPSC CSE Result 2026	out	2026-06-16		https://upsc.gov.in	upsc.gov.in	2	34,44
+evidence_set	jobs	results	admit_cards	blogs
+database_counts	3844	45	37	67

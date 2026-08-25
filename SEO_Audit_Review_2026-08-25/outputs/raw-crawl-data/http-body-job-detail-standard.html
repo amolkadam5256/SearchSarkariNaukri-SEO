@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#003366" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16"   href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32"   href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Title: 54 chars (Google truncates over ~60). Drops the trailing
+         exam-list to stop mid-word truncation in SERPs. -->
+    <title>Sarkari Naukri 2026 — Latest Government Jobs in India | SearchSarkariNaukri</title>
+    <!-- Description: 121 chars (social previews truncate over ~125).
+         Keeps both English keywords and Marathi exam terms. -->
+    <meta name="description" content="Sarkari Naukri 2026: Search latest government jobs, MPSC, Police Bharti, SSC, Railway &amp; Banking recruitment with apply online links. महाराष्ट्रातील नवीन सरकारी नोकऱ्या — रोज अपडेट." />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <!-- INTENTIONALLY no hardcoded <link rel="canonical"> here.
+         Bots reach the route via the prerender backend (which composes the
+         correct per-route canonical), and real users get one injected by
+         react-helmet-async at component mount. Hardcoding one would
+         silently fall through to the homepage canonical on any route that
+         forgets to wrap in <Helmet> — better to omit than to mislabel. -->
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sarkari Naukri 2026 — Latest Government Jobs in India | SearchSarkariNaukri" />
+    <meta property="og:description" content="Sarkari Naukri 2026: Search latest government jobs, MPSC, Police Bharti, SSC, Railway &amp; Banking recruitment with apply online links. महाराष्ट्रातील नवीन सरकारी नोकऱ्या — रोज अपडेट." />
+    <meta property="og:url" content="https://www.searchsarkarinaukri.com/" />
+    <!-- og-image is 1200×630 (1.91:1), the ratio Facebook/WhatsApp/
+         LinkedIn/Twitter all expect for `summary_large_image`. Cache
+         is busted via ?v=2 because old links to /og-image.png are
+         already cached at the CDNs with the previous 983×254 image. -->
+    <meta property="og:image" content="https://www.searchsarkarinaukri.com/og-image.png?v=2" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="SearchSarkariNaukri" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sarkari Naukri 2026 — Latest Government Jobs in India | SearchSarkariNaukri" />
+    <meta name="twitter:description" content="Sarkari Naukri 2026: Search latest government jobs, MPSC, Police Bharti, SSC, Railway &amp; Banking recruitment with apply online links. महाराष्ट्रातील नवीन सरकारी नोकऱ्या — रोज अपडेट." />
+    <link rel="alternate" hreflang="x-default" href="https://www.searchsarkarinaukri.com/" />
+    <meta name="twitter:image" content="https://www.searchsarkarinaukri.com/og-image.png?v=2" />
+
+    <!-- ╔═══════════════════════════════════════════════════════════════╗
+         ║  Resource hints to shave first-paint latency.                 ║
+         ║                                                               ║
+         ║  preconnect = open TCP + TLS upfront so the first request is  ║
+         ║                free of handshake cost (saves 100-300 ms RTT). ║
+         ║  dns-prefetch = lighter fallback for browsers that ignore     ║
+         ║                preconnect or hit the connection cap.          ║
+         ║                                                               ║
+         ║  Targeted origins:                                            ║
+         ║   • api.searchsarkarinaukri.com — every page hits /api/v1/    ║
+         ║     immediately after JS hydrates (stats, jobs, buckets).     ║
+         ║   • cdn.onesignal.com — push SDK loads with defer; getting    ║
+         ║     the TLS handshake ready avoids blocking the SDK's first   ║
+         ║     subscribe call when the user clicks Allow.                ║
+         ║   • fonts.googleapis.com / fonts.gstatic.com — only used if   ║
+         ║     a downstream component imports a Google Font.             ║
+         ╚═══════════════════════════════════════════════════════════════╝ -->
+    <link rel="dns-prefetch" href="https://api.searchsarkarinaukri.com" />
+    <link rel="preconnect"   href="https://api.searchsarkarinaukri.com" crossorigin />
+    <link rel="dns-prefetch" href="https://cdn.onesignal.com" />
+    <link rel="preconnect"   href="https://cdn.onesignal.com" crossorigin />
+    <link rel="preconnect"   href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect"   href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Site-wide Organization + WebSite schema (server-rendered fallback for crawlers) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SearchSarkariNaukri",
+      "url": "https://www.searchsarkarinaukri.com/",
+      "logo": "https://www.searchsarkarinaukri.com/logo.png",
+      "description": "SearchSarkariNaukri वर महाराष्ट्रातील नवीन सरकारी नोकरीच्या संधी, पोलीस भरती, जिल्हा परिषद निकाल, MPSC, UPSC, SSC, Railway आणि Banking updates पहा.",
+      "address": { "@type": "PostalAddress", "addressCountry": "IN", "addressRegion": "Maharashtra" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "SearchSarkariNaukri",
+      "url": "https://www.searchsarkarinaukri.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.searchsarkarinaukri.com/jobs?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- OneSignal Web Push (v16). The page SDK auto-registers its own
+         service worker at /OneSignalSDKWorker.js — that file MUST be
+         served from the site root (we ship it from frontend/public/).
+         App ID is the public web app id and is safe to ship to the
+         client; the REST API key is server-only and lives in the
+         ssn-cron service env, never here. -->
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(async function(OneSignal) {
+        await OneSignal.init({
+          appId: "dd0c4b7d-7c7f-44a8-b2fd-dc4aba8be373",
+          notifyButton: { enable: false },
+          allowLocalhostAsSecureOrigin: true,
+        });
+
+        // Load production diagnostics only for an explicit ?osdebug=1 session.
+        // Normal visitors do not download or parse the diagnostic module.
+        if (/[?&]osdebug=1/.test(location.search)) {
+          const { default: runOneSignalDebug } = await import("/onesignal-debug.js");
+          await runOneSignalDebug(OneSignal);
+        }
+      });
+    </script>
+    <script type="module" crossorigin src="/assets/index-BBgGLYXr.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/router-Ct-Q5xQe.js">
+    <link rel="modulepreload" crossorigin href="/assets/helmet-8OVgcFGU.js">
+    <link rel="modulepreload" crossorigin href="/assets/i18n-iSCWMWci.js">
+    <link rel="modulepreload" crossorigin href="/assets/icons-hoHiyqr7.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-tASA5WEB.css">
+  </head>
+  <body>
+    <noscript>
+      <div style="max-width:980px;margin:0 auto;padding:24px 20px;font-family:system-ui,'Segoe UI',Roboto,sans-serif;line-height:1.6;color:#1a1a1a">
+
+        <header style="border-bottom:3px solid #c8a951;padding-bottom:16px;margin-bottom:24px">
+          <h1 style="color:#003366;font-size:1.9rem;margin:0 0 8px">Sarkari Naukri 2026 — Search Latest Government Jobs &amp; Vacancies in India</h1>
+          <p style="color:#444;margin:0">India's trusted Sarkari Naukri portal — daily-updated government job vacancies, eligibility, last dates &amp; apply links across MPSC, UPSC, SSC, RRB Railway, IBPS, SBI, State PSC, Police Bharti and more.</p>
+        </header>
+
+        <section style="margin-bottom:24px">
+          <h2 style="color:#003366;font-size:1.3rem;margin:0 0 10px">Browse Government Jobs by Exam &amp; Department</h2>
+          <ul style="columns:2;-webkit-columns:2;-moz-columns:2;list-style:disc;padding-left:20px;margin:0">
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?category=mpsc" style="color:#003366">MPSC Bharti 2026 — Maharashtra PSC</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?category=upsc" style="color:#003366">UPSC Civil Services &amp; Engineering</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?category=ssc" style="color:#003366">SSC CGL / CHSL / MTS / GD</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?category=railway" style="color:#003366">RRB Railway Recruitment 2026</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?category=banking" style="color:#003366">IBPS PO / Clerk / SBI / RBI</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?category=police" style="color:#003366">Police Bharti — Maharashtra &amp; All India</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?category=talathi" style="color:#003366">Talathi Bharti 2026</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?category=zp" style="color:#003366">Zilla Parishad (ZP) Recruitment</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?category=forest" style="color:#003366">Forest Department Vacancies</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?category=health" style="color:#003366">NHM &amp; Health Department</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?category=education" style="color:#003366">Education Department / Teacher Bharti</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?category=central" style="color:#003366">Central Government Jobs</a></li>
+          </ul>
+        </section>
+
+        <section style="margin-bottom:24px">
+          <h2 style="color:#003366;font-size:1.3rem;margin:0 0 10px">Sarkari Naukri by Maharashtra District</h2>
+          <ul style="columns:3;-webkit-columns:3;-moz-columns:3;list-style:disc;padding-left:20px;margin:0;font-size:0.95rem">
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?district_slug=pune" style="color:#003366">Pune</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?district_slug=mumbai-city" style="color:#003366">Mumbai</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?district_slug=nagpur" style="color:#003366">Nagpur</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?district_slug=nashik" style="color:#003366">Nashik</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?district_slug=thane" style="color:#003366">Thane</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?district_slug=chhatrapati-sambhajinagar" style="color:#003366">Chh. Sambhajinagar</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?district_slug=solapur" style="color:#003366">Solapur</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?district_slug=kolhapur" style="color:#003366">Kolhapur</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?district_slug=amravati" style="color:#003366">Amravati</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?district_slug=satara" style="color:#003366">Satara</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?district_slug=sangli" style="color:#003366">Sangli</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?district_slug=ahmednagar" style="color:#003366">Ahilyanagar</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?district_slug=jalgaon" style="color:#003366">Jalgaon</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?district_slug=latur" style="color:#003366">Latur</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?district_slug=nanded" style="color:#003366">Nanded</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?district_slug=yavatmal" style="color:#003366">Yavatmal</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?district_slug=ratnagiri" style="color:#003366">Ratnagiri</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/jobs?district_slug=raigad" style="color:#003366">Raigad</a></li>
+          </ul>
+          <p style="margin-top:8px"><a href="https://www.searchsarkarinaukri.com/districts" style="color:#003366;font-weight:600">→ See all 36 Maharashtra districts</a></p>
+        </section>
+
+        <section style="margin-bottom:24px">
+          <h2 style="color:#003366;font-size:1.3rem;margin:0 0 10px">Quick Links</h2>
+          <ul style="list-style:disc;padding-left:20px;margin:0">
+            <li><a href="https://www.searchsarkarinaukri.com/jobs" style="color:#003366">All Active Government Job Vacancies</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/admit-cards" style="color:#003366">Admit Cards / Hall Tickets</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/results" style="color:#003366">Government Exam Results</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/exam-calendar" style="color:#003366">Exam Calendar 2026</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/current-affairs" style="color:#003366">Daily Current Affairs</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/eligibility-checker" style="color:#003366">Eligibility Checker</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/study-material" style="color:#003366">Study Material &amp; Guides</a></li>
+            <li><a href="https://www.searchsarkarinaukri.com/sitemap.xml" style="color:#003366">XML Sitemap (all pages)</a></li>
+          </ul>
+        </section>
+
+        <section style="margin-bottom:24px">
+          <h2 style="color:#003366;font-size:1.3rem">Frequently Asked Questions — Sarkari Naukri 2026</h2>
+          <h3>Is SearchSarkariNaukri.com a government website?</h3><p>No. It is an independent career-information portal. Always verify the recruiting authority's official notification before applying.</p>
+          <h3>How are government job notifications checked?</h3><p>Information is organized using available source details, but the original department notice is always final.</p>
+          <h3>How can I find jobs by qualification?</h3><p>Use the 10th, 12th, ITI, Diploma and Graduate qualification links, then confirm eligibility in the official notice.</p>
+          <h3>How can I find Maharashtra government jobs by district?</h3><p>Use the district links for Pune, Mumbai, Nashik, Nagpur and other Maharashtra locations.</p>
+          <h3>How can I apply for MPSC Rajyaseva Bharti 2026 online?</h3><p>Open the MPSC category, select the relevant notice and follow its verified official application link.</p>
+          <h3>What is the age limit for government jobs in Maharashtra?</h3><p>It varies by post and category. Use the Eligibility Checker, then confirm relaxation rules in the official notice.</p>
+          <h3>Are government jobs available without a written exam?</h3><p>Some posts may use interviews, merit lists or document verification. Selection rules vary by notification.</p>
+          <h3>How do I prepare for the Police Bharti 2026 physical test?</h3><p>Review the current official physical standards and use relevant study material to plan fitness and running practice.</p>
+          <h3>What documents are required for Talathi Bharti?</h3><p>Common documents include marksheets, domicile, applicable category certificates, ID, photo and signature files.</p>
+          <h3>How often are new vacancies updated?</h3><p>Recruitment information is updated regularly as new official notices become available.</p>
+          <h3>Can I get SSC CGL, CHSL and GD updates together?</h3><p>Yes. The SSC Jobs category brings available CGL, CHSL, MTS and GD updates together.</p>
+          <h3>Which government jobs are suitable for 12th-pass candidates?</h3><p>Depending on active notices, options can include SSC CHSL, Railway posts, Police Constable and Forest Guard.</p>
+        </section>
+
+        <footer style="margin-top:24px;padding-top:16px;border-top:1px solid #ddd;color:#666;font-size:0.85rem">
+          <p>This page is best viewed with JavaScript enabled. The full interactive site offers job search, eligibility checking, daily quizzes, WhatsApp alerts, and bilingual (Marathi / English) UI. The links above lead to crawl-safe public pages for jobs, results, admit cards, study material, and district-wise job listings.</p>
+        </footer>
+      </div>
+    </noscript>
+    <div id="root"></div>
+  </body>
+</html>
