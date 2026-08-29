@@ -1,0 +1,11 @@
+Check,Result,Evidence
+Exactly 896 CSV rows,PASS,896
+Exactly 896 unique source URLs,PASS,896
+Exactly 896 markdown briefs in all-896 folder,PASS,896
+Every CSV row maps to existing markdown brief,PASS,missing=0
+No duplicate source URLs,PASS,0
+No duplicate all-896 filenames,PASS,0
+Every all-896 brief has guardrail,PASS,checked=896
+All 896 URLs have decision rows,PASS,896
+No recommended slug collisions for auto-derived local-evidence URLs,FAIL,60
+Manual review used when page entity unavailable,PASS,749 URLs require data lookup

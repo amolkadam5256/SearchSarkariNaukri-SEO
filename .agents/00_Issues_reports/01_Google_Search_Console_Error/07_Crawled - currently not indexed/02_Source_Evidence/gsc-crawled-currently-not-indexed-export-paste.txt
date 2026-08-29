@@ -1,0 +1,3318 @@
+https___www.searchsarkarinaukri.com_-Coverage-Drilldown-2026-08-29 (6).xlsx
+Spreadsheet
+
+favicon
+
+
+
+PrivacyTerms
+
+https://www.searchsarkarinaukri.com/jobs/central-vigilance-commission-central-vigilance-commission-2026--1730
+
+URL Inspection
+
+check_circle
+
+URL is on Google
+
+It can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more
+
+Page changed?
+
+check_circle
+
+Page indexing
+
+Page is indexed
+
+Enhancements and experience
+
+HTTPS
+
+Page is served over HTTPS
+
+Breadcrumbs
+
+1 valid item detected
+
+Job Postings
+
+1 valid item detected
+
+Non-critical issues detected
+
+error_outlineIndexing request rejected
+
+During live testing, indexing issues were detected with the URL
+
+URL Inspection
+
+svg
+
+svg
+
+svg
+
+svg
+favicon
+
+
+
+PrivacyTerms
+
+https://www.searchsarkarinaukri.com/jobs/central-vigilance-commission-central-vigilance-commission-2026--1730
+
+URL Inspection
+
+Tested on: 29 Aug 2026, 18:35
+
+error
+
+URL is not available to Google
+
+This page cannot be indexed. Pages that aren't indexed can't be served on Google. See the details below to learn why it can't be indexed Learn more
+
+Page changed?
+
+error
+
+Page availability
+
+Page cannot be indexed: Excluded by ‘noindex’ tag
+
+URL will be indexed only if certain conditions are met
+
+Discovery
+
+Not checked in live tests
+
+Crawl
+
+Time
+
+29 Aug 2026, 18:35:09
+
+Crawled as
+
+Google Inspection Tool smartphone
+
+Crawl allowed?
+
+Yes
+
+Page fetch
+
+Successful
+
+Indexing allowed?
+
+error
+
+No: 'noindex' detected in 'robots' meta tag
+
+Indexing
+
+User-declared canonical
+
+https://www.searchsarkarinaukri.com/jobs/central-vigilance-commission-central-vigilance-commission-2026--1730
+
+Google-selected canonical
+
+
+
+Only determined after indexing
+
+Enhancements and experience
+
+Only indexed URLs can have enhancements
+
+svg
+
+svg
+
+svg
+
+svg
+favicon
+
+
+
+PrivacyTerms
+
+https://www.searchsarkarinaukri.com/jobs/central-vigilance-commission-central-vigilance-commission-2026--1730
+
+URL InspectionJob Postings
+
+check_circle
+
+1 valid item detected
+
+Valid items are eligible for Google Search's rich results. Learn more
+
+Details
+
+Crawl
+
+check_circle
+
+Crawled successfully on 24 Aug 2026, 16:54:25
+
+Detected items
+
+check_circle
+
+१ पदांकरिता Central Vigilance Commission भरती अपडेट २०२६
+
+1 non-critical issue
+
+
+
+Missing field 'baseSalary' (optional)
+
+type
+
+JobPosting
+
+title
+
+१ पदांकरिता Central Vigilance Commission भरती अपडेट २०२६
+
+description
+
+Central Vigilance Commission कडून १ पदांच्या भरतीकरिता पात्र उमेदवारांकडून अर्ज मागविण्यात येत आहेत. पदानुसार आवश्यक शैक्षणिक पात्रता वेगवेगळी असून सविस्तर निकष अधिकृत जाहिरातीमध्ये उपलब्ध आहेत. ऑनलाईन अर्ज २५ जुलै २०२६ पूर्वी पूर्ण करणे आवश्यक आहे. शेवटच्या क्षणातील तांत्रिक अडचणी टाळण्यासाठी अर्ज वेळेत सबमिट करावा.
+
+identifier
+
+type
+
+PropertyValue
+
+name
+
+Central Vigilance Commission
+
+value
+
+1730
+
+datePosted
+
+2026-06-09T07:23:00Z
+
+validThrough
+
+2026-07-25T00:00:00Z
+
+employmentType
+
+FULL-TIME
+
+hiringOrganization
+
+type
+
+Organization
+
+name
+
+Central Vigilance Commission
+
+sameAs
+
+https://cvc.gov.in/
+
+jobLocation
+
+type
+
+Place
+
+address
+
+type
+
+PostalAddress
+
+streetAddress
+
+Central Vigilance Commission
+
+addressLocality
+
+India
+
+addressRegion
+
+India
+
+postalCode
+
+110001
+
+addressCountry
+
+type
+
+Country
+
+name
+
+IN
+
+educationRequirements
+
+type
+
+EducationalOccupationalCredential
+
+credentialCategory
+
+high school
+
+applicantLocationRequirements
+
+type
+
+Country
+
+name
+
+India
+
+directApply
+
+http://schema.org/False
+
+url
+
+https://www.searchsarkarinaukri.com/jobs/central-vigilance-commission-central-vigilance-commission-2026--1730
+
+image
+
+https://www.searchsarkarinaukri.com/og-image.png
+
+Job Postings – URL inspection
+
+svg
+
+svg
+
+svg
+
+svg
+favicon
+
+
+
+PrivacyTerms
+
+https://www.searchsarkarinaukri.com/jobs/vitthalrao-patil-mahavidyalaya-kolhapur-vitthalrao-patil-mahavidyalaya-kolhapur-2026--2126
+
+URL Inspection
+
+Tested on: 29 Aug 2026, 18:36
+
+error
+
+URL is not available to Google
+
+This page cannot be indexed. Pages that aren't indexed can't be served on Google. See the details below to learn why it can't be indexed Learn more
+
+Page changed?
+
+error
+
+Page availability
+
+Page cannot be indexed: Excluded by ‘noindex’ tag
+
+URL will be indexed only if certain conditions are met
+
+Discovery
+
+Not checked in live tests
+
+Crawl
+
+Time
+
+29 Aug 2026, 18:36:38
+
+Crawled as
+
+Google Inspection Tool smartphone
+
+Crawl allowed?
+
+Yes
+
+Page fetch
+
+Successful
+
+Indexing allowed?
+
+error
+
+No: 'noindex' detected in 'robots' meta tag
+
+Indexing
+
+User-declared canonical
+
+https://www.searchsarkarinaukri.com/jobs/vitthalrao-patil-mahavidyalaya-kolhapur-vitthalrao-patil-mahavidyalaya-k--2126
+
+Google-selected canonical
+
+
+
+Only determined after indexing
+
+Enhancements and experience
+
+Only indexed URLs can have enhancements
+
+URL Inspection
+
+svg
+
+svg
+
+svg
+
+svg
+favicon
+
+
+
+PrivacyTerms
+
+https://www.searchsarkarinaukri.com/12th-pass-jobs-in-kolkata
+
+URL Inspection
+
+info
+
+URL is not on Google
+
+This page is not indexed. Pages that aren't indexed can't be served on Google. See the details below to learn why it wasn't indexed. Learn more
+
+Page changed?
+
+info
+
+Page indexing
+
+Page is not indexed: Crawled - currently not indexed
+
+Discovery
+
+Sitemaps
+
+Temporary processing error
+
+Referring page
+
+None detected
+
+URL might be known from other sources that are currently not reported
+
+Crawl
+
+Last crawl
+
+10 Jun 2026, 10:14:50
+
+Crawled as
+
+Googlebot smartphone
+
+Crawl allowed?
+
+Yes
+
+Page fetch
+
+Successful
+
+Indexing allowed?
+
+N/A
+
+Indexing
+
+User-declared canonical
+
+N/A
+
+Google-selected canonical
+
+
+
+N/A
+
+Enhancements and experience
+
+Only indexed URLs can have enhancements
+
+URL Inspection
+
+svg
+
+svg
+
+svg
+
+svg
+favicon
+
+
+
+PrivacyTerms
+
+https://www.searchsarkarinaukri.com/12th-pass-jobs-in-kolkata
+
+URL Inspection
+
+info
+
+URL is not on Google
+
+This page is not indexed. Pages that aren't indexed can't be served on Google. See the details below to learn why it wasn't indexed. Learn more
+
+Page changed?
+
+info
+
+Page indexing
+
+Page is not indexed: Crawled - currently not indexed
+
+Discovery
+
+Sitemaps
+
+Temporary processing error
+
+Referring page
+
+None detected
+
+URL might be known from other sources that are currently not reported
+
+Crawl
+
+Last crawl
+
+10 Jun 2026, 10:14:50
+
+Crawled as
+
+Googlebot smartphone
+
+Crawl allowed?
+
+Yes
+
+Page fetch
+
+Successful
+
+Indexing allowed?
+
+N/A
+
+Indexing
+
+User-declared canonical
+
+N/A
+
+Google-selected canonical
+
+
+
+N/A
+
+Enhancements and experience
+
+Only indexed URLs can have enhancements
+
+URL Inspection
+
+svg
+
+svg
+
+svg
+Crawled - currently not indexed
+
+svg
+
+favicon
+
+
+
+PrivacyTerms
+
+https://www.searchsarkarinaukri.com/jobs?category=banking
+
+URL Inspection
+
+Tested on: 29 Aug 2026, 18:41
+
+error
+
+URL is not available to Google
+
+This page cannot be indexed. Pages that aren't indexed can't be served on Google. See the details below to learn why it can't be indexed Learn more
+
+Page changed?
+
+error
+
+Page availability
+
+Page cannot be crawled: Blocked by robots.txt
+
+URL will be indexed only if certain conditions are met
+
+Discovery
+
+Not checked in live tests
+
+Crawl
+
+Time
+
+29 Aug 2026, 18:41:27
+
+Crawled as
+
+Google Inspection Tool smartphone
+
+Crawl allowed?
+
+error
+
+No: blocked by robots.txt
+
+Page fetch
+
+error
+
+Failed: Blocked by robots.txt
+
+Indexing allowed?
+
+N/A
+
+Indexing
+
+User-declared canonical
+
+N/A
+
+Google-selected canonical
+
+
+
+Only determined after indexing
+
+Enhancements and experience
+
+Only indexed URLs can have enhancements
+
+URL Inspection
+
+svg
+
+svg
+
+svg
+
+svg
+
+svg
+
+reCAPTCHA
+favicon
+
+
+
+PrivacyTerms
+
+Page indexingCrawled - currently not indexed
+
+Last update: 21/08/2026
+
+info
+
+Crawled - currently not indexed
+
+These pages aren't indexed or served on Google
+
+
+
+Validation Started
+
+Started: 24/08/2026
+
+Affected pages
+
+136
+
+31/05/202611/06/202622/06/202603/07/202614/07/202625/07/202605/08/202616/08/2026180120600
+
+Examples
+
+
+
+URLsvgsvgLast crawled	
+https://www.searchsarkarinaukri.com/jobs/central-vigilance-commission-central-vigilance-commission-2026--1730	22 Aug 2026
+https://www.searchsarkarinaukri.com/jobs/vitthalrao-patil-mahavidyalaya-kolhapur-vitthalrao-patil-mahavidyalaya-kolhapur-2026--2126	22 Aug 2026
+https://www.searchsarkarinaukri.com/districts/thane/upsc	19 Aug 2026
+https://www.searchsarkarinaukri.com/department/maharashtra-police	4 Aug 2026
+https://www.searchsarkarinaukri.com/results/13	4 Aug 2026
+https://www.searchsarkarinaukri.com/results/14	3 Aug 2026
+https://www.searchsarkarinaukri.com/districts/sindhudurg/talathi	31 Jul 2026
+https://www.searchsarkarinaukri.com/districts/beed/ssc	31 Jul 2026
+https://www.searchsarkarinaukri.com/districts/nandurbar/ssc	31 Jul 2026
+https://www.searchsarkarinaukri.com/districts/gadchiroli/mpsc	31 Jul 2026
+
+Rows per page:
+
+1-10 of 136
+
+Page indexing
+
+svg
+
+svg
+
+svg
+
+svg
+
+svg
+
+reCAPTCHA read thi ll
+favicon
+
+
+
+PrivacyTerms
+
+https://www.searchsarkarinaukri.com/districts/latur/central
+
+URL Inspection
+
+Tested on: 29 Aug 2026, 18:43
+
+error
+
+URL is not available to Google
+
+This page cannot be indexed. Pages that aren't indexed can't be served on Google. See the details below to learn why it can't be indexed Learn more
+
+Page changed?
+
+error
+
+Page availability
+
+Page cannot be indexed: Excluded by ‘noindex’ tag
+
+URL will be indexed only if certain conditions are met
+
+Discovery
+
+Not checked in live tests
+
+Crawl
+
+Time
+
+29 Aug 2026, 18:43:05
+
+Crawled as
+
+Google Inspection Tool smartphone
+
+Crawl allowed?
+
+Yes
+
+Page fetch
+
+Successful
+
+Indexing allowed?
+
+error
+
+No: 'noindex' detected in 'robots' meta tag
+
+Indexing
+
+User-declared canonical
+
+None
+
+Google-selected canonical
+
+
+
+Only determined after indexing
+
+Enhancements and experience
+
+Only indexed URLs can have enhancements
+
+URL Inspection
+
+svg
+
+svg
+
+svg
+
+svg
+
+svg
+
+reCAPTCHA
+favicon
+
+
+
+PrivacyTerms
+
+https://www.searchsarkarinaukri.com/mbbs-medical-jobs-in-gujarat
+
+URL Inspection
+
+info
+
+URL is not on Google
+
+This page is not indexed. Pages that aren't indexed can't be served on Google. See the details below to learn why it wasn't indexed. Learn more
+
+Page changed?
+
+info
+
+Page indexing
+
+Page is not indexed: Crawled - currently not indexed
+
+Discovery
+
+Sitemaps
+
+No referring sitemaps detected
+
+Referring page
+
+None detected
+
+URL might be known from other sources that are currently not reported
+
+Crawl
+
+Last crawl
+
+10 Jun 2026, 03:28:39
+
+Crawled as
+
+Googlebot smartphone
+
+Crawl allowed?
+
+Yes
+
+Page fetch
+
+Successful
+
+Indexing allowed?
+
+N/A
+
+Indexing
+
+User-declared canonical
+
+N/A
+
+Google-selected canonical
+
+
+
+N/A
+
+Enhancements and experience
+
+Only indexed URLs can have enhancements
+
+URL Inspection
+
+svg
+
+svg
+
+svg
+
+svg
+
+svg
+
+reCAPTCHA
+favicon
+
+
+
+PrivacyTerms
+
+https://www.searchsarkarinaukri.com/jobs-in-dehradun
+
+URL Inspection
+
+info
+
+URL is not on Google
+
+This page is not indexed. Pages that aren't indexed can't be served on Google. See the details below to learn why it wasn't indexed. Learn more
+
+Page changed?
+
+info
+
+Page indexing
+
+Page is not indexed: Crawled - currently not indexed
+
+Discovery
+
+Sitemaps
+
+No referring sitemaps detected
+
+Referring page
+
+None detected
+
+URL might be known from other sources that are currently not reported
+
+Crawl
+
+Last crawl
+
+8 Jun 2026, 19:21:15
+
+Crawled as
+
+Googlebot smartphone
+
+Crawl allowed?
+
+Yes
+
+Page fetch
+
+Successful
+
+Indexing allowed?
+
+N/A
+
+Indexing
+
+User-declared canonical
+
+N/A
+
+Google-selected canonical
+
+
+
+N/A
+
+Enhancements and experience
+
+Only indexed URLs can have enhancements
+
+error_outlineIndexing request rejected
+
+During live testing, indexing issues were detected with the URL
+
+svg
+
+svg
+
+svg
+
+svg
+
+svg
+
+reCAPTCHA
+favicon
+
+
+
+PrivacyTerms
+
+https://www.searchsarkarinaukri.com/jobs-in-dehradun
+
+URL Inspection
+
+Tested on: 29 Aug 2026, 18:44
+
+error
+
+URL is not available to Google
+
+This page cannot be indexed. Pages that aren't indexed can't be served on Google. See the details below to learn why it can't be indexed Learn more
+
+Page changed?
+
+error
+
+Page availability
+
+Page cannot be indexed: Excluded by ‘noindex’ tag
+
+URL will be indexed only if certain conditions are met
+
+Discovery
+
+Not checked in live tests
+
+Crawl
+
+Time
+
+29 Aug 2026, 18:44:12
+
+Crawled as
+
+Google Inspection Tool smartphone
+
+Crawl allowed?
+
+Yes
+
+Page fetch
+
+Successful
+
+Indexing allowed?
+
+error
+
+No: 'noindex' detected in 'robots' meta tag
+
+Indexing
+
+User-declared canonical
+
+https://www.searchsarkarinaukri.com/jobs-in-dehradun
+
+Google-selected canonical
+
+
+
+Only determined after indexing
+
+Enhancements and experience
+
+Only indexed URLs can have enhancements
+
+URL Inspection
+
+svg
+
+svg
+
+svg
+
+svg
+
+svg
+
+reCAPTCHA i share smoe samle page fro not index and resona n add aother reson what nned to cehck what thi not indexed pages and expla hoe to soal this all from devlop site all in details alal cehck list and all in details check list for tallin detail as seo expoer devlep ai engine and all
+
+Yes. I read the Search Console examples, the supplied HTML for the Central Vigilance Commission page, and the 136-URL “Crawled – currently not indexed” export. The important point is that you do not have one single indexing problem. You have several different classes of problems that need to be separated and fixed at the site/application level.
+
+The strongest confirmed issue is extremely clear in your supplied HTML:
+
+The page is crawlable.
+The server successfully returns the page.
+Canonical exists and points to itself.
+The page contains an H1 and substantial HTML content.
+Breadcrumb and JobPosting structured data are detected.
+But the HTML explicitly contains noindex, follow.
+
+That alone explains the live-test result “Excluded by ‘noindex’ tag.”
+
+At the same time, the 136 URLs in your export are reported as “Crawled – currently not indexed”, which is a different problem. Google has crawled those URLs but has decided not to index them. Removing noindex alone will therefore not automatically solve all 136 URLs.
+
+1. What is actually happening
+
+I would divide your current situation into 6 separate indexing buckets.
+
+Bucket	Example	Primary problem	Priority
+A	Job URL	Explicit noindex	🔴 Critical
+B	District/category pages	Explicit noindex	🔴 Critical
+C	136 URLs	Crawled but currently not indexed	🔴 Critical
+D	/jobs?category=banking	robots.txt blocked	🟠 High
+E	Expired job pages	Content/JobPosting lifecycle problem	🟠 High
+F	Sitemap/discovery	Temporary/no referring sitemap / weak discovery	🟠 High
+
+Your examples prove that the site has multiple indexing-control mechanisms interacting with each other.
+
+2. Confirmed problem #1 — noindex is being generated
+
+This is the biggest immediate technical problem.
+
+Your actual HTML contains:
+
+<meta name="robots" content="noindex, follow" />
+
+That is not a Google interpretation. That is literally being sent by your website.
+
+Therefore Google correctly reports:
+
+Indexing allowed? No: 'noindex' detected in 'robots' meta tag
+
+What developer must find
+
+Do not simply delete this one line.
+
+Find where the application generates it.
+
+Search the entire project for:
+
+noindex
+
+and also:
+
+robots
+
+and:
+
+indexable
+
+and:
+
+isIndexable
+
+and:
+
+noIndex
+
+and:
+
+robotsMeta
+
+and:
+
+generateMetadata
+
+and:
+
+robots: { index: false
+
+and:
+
+index: false
+
+and:
+
+content="noindex
+
+If this is a React/Vite/SPA-style application, inspect:
+
+route metadata logic
+SEO component
+<Helmet>
+custom <SEO />
+page template
+job detail template
+category template
+district template
+department template
+result template
+admit-card template
+exam template
+eligibility template
+global <head>
+environment-based SEO rules
+
+Your supplied HTML looks like a generated SPA document rather than a conventional Next.js server-rendered document, because it contains the Vite-style assets:
+
+/assets/index-Bjn-Dk2M.css
+/assets/index-CyiglMr9.js
+
+at lines 55–56.
+
+So the developer must inspect the actual routing/SEO implementation rather than assuming this is only a Search Console problem.
+
+3. Do NOT remove noindex globally without classification
+
+This is extremely important.
+
+You have pages that potentially should be indexed and pages that potentially should not.
+
+For example:
+
+Should normally be indexable
+/jobs/{job-slug}
+/jobs-in-{city}
+/12th-pass-jobs-in-{city}
+/mbbs-medical-jobs-in-{state}
+/department/{department}
+/districts/{district}/{category}
+/results/{id}
+/admit-cards/{slug}
+/exams/{slug}
+
+if the page provides genuine useful content and is intended as a search landing page.
+
+May intentionally be non-indexable
+/jobs?category=banking
+/jobs?search=...
+/jobs?page=2
+/jobs?sort=...
+/internal-search
+/filter pages
+
+depending on your SEO architecture.
+
+Google explicitly treats sorting/filtering variants as potential duplicate URL variants and canonicalization needs to be handled carefully.
+
+Therefore the correct solution is:
+
+Create an explicit URL indexability policy by route type.
+
+Not:
+
+Delete every noindex.
+
+4. Problem #2 — “Crawled – currently not indexed” is NOT the same as noindex
+
+This is the most important distinction in your 136-page report.
+
+For example:
+
+/12th-pass-jobs-in-kolkata
+
+Search Console says:
+
+Crawled – currently not indexed
+
+and:
+
+Crawl allowed: Yes
+
+Page fetch: Successful
+
+Indexing allowed: N/A
+
+This means Google was able to crawl it but did not choose to put it into the index.
+
+The same happens for:
+
+/mbbs-medical-jobs-in-gujarat
+
+and:
+
+/jobs-in-dehradun
+
+The last crawl dates are also old:
+
+Kolkata: 10 June
+Gujarat: 10 June
+Dehradun: 8 June
+
+So this is not simply a robots.txt problem.
+
+5. Why Google can crawl a page but still not index it
+
+For your site, I would investigate these causes in this exact order.
+
+A. Thin content
+
+This is potentially a major issue.
+
+Your supplied job page has:
+
+H1
+one job description
+basic metadata
+five FAQ questions
+category links
+
+But much of the content is generic/template-generated.
+
+For example:
+
+“Salary follows the 7th Pay Commission scale applicable to Central Vigilance Commission.”
+
+and:
+
+“The selection typically involves a written examination followed by document verification and possibly an interview or physical test.”
+
+Those statements may not actually be specific to the particular recruitment.
+
+This is dangerous for an SEO system producing hundreds of programmatic pages.
+
+Google's current spam guidance explicitly warns against scaled content where many pages are generated primarily for search rankings while providing little original value.
+
+Developer/content system must therefore check:
+
+Every page needs genuine entity-specific information.
+
+Not:
+
+Organization
+Vacancies
+Qualification
+Last date
+generic FAQ
+generic salary
+generic selection process
+
+repeated across hundreds of pages.
+
+Instead:
+
+Recruitment overview
+Post-wise vacancies
+Exact eligibility
+Age limit
+Salary/pay level
+Application fee
+Important dates
+Selection process
+Application procedure
+Official notification
+Official website
+Documents required
+Exam pattern
+Job location
+Category/reservation information
+Post-specific information
+
+Only populate a field when the source data actually supports it.
+
+Never invent generic recruitment information.
+
+6. Problem #3 — Expired job pages need a lifecycle strategy
+
+Your Central Vigilance Commission page is already expired.
+
+The HTML says:
+
+application deadline has passed (25 Jul 2026)
+
+and:
+
+validThrough: 2026-07-25
+
+Search Console nevertheless detected the JobPosting structured data.
+
+The page therefore has an awkward state:
+
+URL exists
++
+page is crawlable
++
+job schema exists
++
+job is expired
++
+page says deadline passed
++
+noindex
+
+This needs a deliberate lifecycle architecture.
+
+Do not automatically delete every expired job URL
+
+Old recruitment URLs can still have SEO value because people search:
+
+recruitment name
+notification
+eligibility
+result
+previous recruitment
+answer key
+selection process
+
+Instead use a lifecycle:
+
+Active
+index = true
+JobPosting = valid
+sitemap = yes
+Recently expired
+index = true
+JobPosting = handled according to current Google requirements
+sitemap = policy-dependent
+
+Page should clearly say:
+
+Application deadline has passed.
+
+And provide useful next actions:
+
+official notification
+result
+related recruitment
+same department jobs
+current openings
+Permanently obsolete / no useful value
+
+Possibly:
+
+410
+
+or:
+
+301
+
+to a highly relevant replacement page only when a genuinely equivalent destination exists.
+
+Do not redirect every expired job to the homepage.
+
+Google specifically warns against irrelevant redirects because they can be treated as soft 404-like behavior.
+
+7. Problem #4 — JobPosting structured data needs a full audit
+
+Search Console shows:
+
+1 valid item detected
+
+but:
+
+Missing field baseSalary (optional)
+
+This particular warning is not the reason the page isn't indexed.
+
+It is a non-critical structured-data issue.
+
+So:
+
+Do not prioritize this above noindex.
+
+But you should audit JobPosting schema across all job pages.
+
+The developer should verify:
+
+@type
+title
+description
+identifier
+datePosted
+validThrough
+employmentType
+hiringOrganization
+jobLocation
+applicantLocationRequirements
+directApply
+url
+
+And where authoritative data exists:
+
+baseSalary
+
+The critical rule:
+
+Never fabricate salary data merely to eliminate the warning.
+
+If salary isn't in the official notification, don't manufacture a salary.
+
+8. Problem #5 — Your canonical is not the main problem on this sample
+
+The CVC page has:
+
+<link rel="canonical"
+href="https://www.searchsarkarinaukri.com/jobs/central-vigilance-commission-central-vigilance-commission-2026--1730">
+
+which matches the inspected URL.
+
+That is good.
+
+But canonical must be audited across all route types.
+
+For every indexable page:
+
+HTTP 200
++
+self canonical
++
+index,follow
++
+not blocked robots.txt
++
+in XML sitemap
++
+internally linked
++
+unique useful content
+
+Google treats canonicalization as a signal rather than an absolute command, and content similarity/quality also affects canonical selection.
+
+9. Problem #6 — /jobs?category=banking is blocked by robots.txt
+
+This is a completely different problem.
+
+Search Console says:
+
+Page cannot be crawled: Blocked by robots.txt
+
+So investigate:
+
+robots.txt
+
+specifically for rules involving:
+
+/jobs?
+
+or:
+
+Disallow: /jobs
+
+or query-string handling.
+
+Decide first
+
+If this URL is not supposed to rank, blocking it may be intentional.
+
+If /jobs?category=banking is intended to be a major SEO landing page, then don't leave it as a query parameter unless that architecture is intentional.
+
+I would strongly consider creating a clean static SEO URL such as:
+
+/jobs/banking
+
+or an existing equivalent route.
+
+Then:
+
+/jobs/banking
+
+becomes the indexable landing page.
+
+The query URL can remain a functional filter.
+
+This gives you a cleaner architecture:
+
+SEO landing page
+/jobs/banking
+
+Functional/filter URL
+/jobs?category=banking
+10. Problem #7 — Sitemap signals are weak/inconsistent
+
+Your Search Console examples show:
+
+/12th-pass-jobs-in-kolkata
+Sitemaps
+Temporary processing error
+/mbbs-medical-jobs-in-gujarat
+No referring sitemaps detected
+/jobs-in-dehradun
+No referring sitemaps detected
+
+This deserves a full sitemap audit.
+
+Your sitemap system needs to answer:
+
+If this URL is important enough to index, why isn't it clearly present in the correct sitemap?
+
+For every indexable URL:
+
+HTTP 200
+canonical = self
+robots = index,follow
+sitemap = included
+internal links = yes
+
+Do not put these into XML sitemaps:
+
+noindex URLs
+redirect URLs
+404 URLs
+410 URLs
+canonicalized duplicates
+blocked URLs
+parameter variants
+11. Your 136 URLs need to be classified individually
+
+The Excel export contains 136 affected URLs.
+
+I would not ask the developer to manually fix 136 URLs one at a time.
+
+Instead, generate an automated audit table.
+
+For every URL, calculate:
+
+Check	Required
+HTTP status	200
+Final URL	same expected URL
+Redirect chain	0
+robots.txt	allowed
+meta robots	index
+X-Robots-Tag	index
+canonical	self
+sitemap	yes
+internal links	≥1
+H1	exactly 1
+title	unique
+meta description	unique
+word/content depth	sufficient
+main content	unique
+schema	valid
+schema/page consistency	yes
+hreflang	if applicable
+JS-rendered content	visible
+mobile rendering	valid
+orphan status	no
+lastmod	accurate
+image	useful/valid
+404 links	0
+5xx resources	0
+expired status	classified
+thin-content score	pass/fail
+duplicate-content score	pass/fail
+12. Build an “Indexability Decision Engine”
+
+This is what I would have your AI/developer system implement.
+
+For each URL:
+
+IF HTTP != 200
+    classify = HTTP_ERROR
+
+ELSE IF robots.txt blocks
+    classify = ROBOTS_BLOCKED
+
+ELSE IF x-robots-tag = noindex
+    classify = NOINDEX_HEADER
+
+ELSE IF meta robots contains noindex
+    classify = NOINDEX_META
+
+ELSE IF canonical != self
+    classify = CANONICALIZED
+
+ELSE IF duplicate similarity > threshold
+    classify = DUPLICATE
+
+ELSE IF content depth < minimum
+    classify = THIN_CONTENT
+
+ELSE IF page is search/filter/parameter
+    classify = FUNCTIONAL_URL
+
+ELSE IF page has expired recruitment
+    classify = EXPIRED_CONTENT
+
+ELSE IF orphan page
+    classify = ORPHAN
+
+ELSE
+    classify = INDEX_CANDIDATE
+
+Then produce:
+
+INDEX
+NOINDEX
+CANONICALIZE
+REDIRECT
+410
+CONTENT_REWRITE
+TECHNICAL_FIX
+MONITOR
+
+This is much better than treating all “Crawled – currently not indexed” URLs as identical.
+
+13. Very important: inspect rendered HTML AND raw HTML
+
+Your supplied HTML is useful because it shows that the crawler can see the page content.
+
+But your developer should test both:
+
+Raw response
+curl -I https://...
+curl -s https://... 
+Rendered DOM
+
+Googlebot smartphone / browser rendering.
+
+Check:
+
+<title>
+<meta name="robots">
+<link rel="canonical">
+<h1>
+main content
+structured data
+internal links
+
+Google's current documentation specifically notes that JavaScript and noindex interactions can be problematic; if a page should be indexed, don't rely on JavaScript to remove a noindex from the original HTML.
+
+Therefore:
+
+Indexability directives must be correct in the initial HTML response.
+
+Do not do:
+
+<meta name="robots" content="noindex">
+
+and then use JavaScript to change it to:
+
+<meta name="robots" content="index">
+
+That is a bad architecture.
+
+14. Your page content also needs a serious quality audit
+
+This is probably the second-biggest issue after noindex.
+
+Your CVC example contains:
+
+Job Description
+FAQ
+Latest by category
+
+but the actual unique recruitment information is quite limited.
+
+The FAQ also contains generic statements such as:
+
+“The selection typically involves…”
+
+That is not safe unless the official notification actually says that.
+
+Your AI content system should therefore have:
+
+Source-of-truth rule
+
+Every important recruitment field must have:
+
+source URL
+source document
+source date
+extracted value
+confidence
+
+For example:
+
+{
+  "vacancies": 1,
+  "source": "official notification",
+  "sourceUrl": "...",
+  "confidence": "high"
+}
+
+If unavailable:
+
+salary = null
+
+not:
+
+salary = generic 7th Pay Commission
+15. H1–H6 architecture
+
+You previously asked for meaningful H1 through H6.
+
+For these pages, don't mechanically add six headings.
+
+Use semantic hierarchy.
+
+For a job page:
+
+H1
+Central Vigilance Commission Recruitment 2026 – 1 Vacancy
+
+Then:
+
+H2
+Central Vigilance Commission Recruitment 2026 Overview
+
+H2
+Vacancy Details
+
+H3
+Post-wise Vacancy
+
+H2
+Eligibility Criteria
+
+H3
+Educational Qualification
+
+H3
+Age Limit
+
+H3
+Experience
+
+H2
+Salary and Pay Scale
+
+H2
+Important Dates
+
+H2
+Application Fee
+
+H2
+Selection Process
+
+H2
+How to Apply
+
+H2
+Important Documents
+
+H2
+Official Notification and Website
+
+H2
+Frequently Asked Questions
+
+H2
+Related Government Jobs
+
+Only add H4/H5/H6 when there is a genuine subsection.
+
+Do not add headings purely for keyword density.
+
+16. Internal linking is a major part of the solution
+
+Every important indexable URL should have contextual links.
+
+For a job page:
+
+Home
+ ↓
+Government Jobs
+ ↓
+Department
+ ↓
+State
+ ↓
+Category
+ ↓
+Specific Job
+
+And the job should link back to:
+
+latest government jobs
+department jobs
+state jobs
+qualification jobs
+district jobs
+related jobs
+
+For example:
+
+CVC Recruitment
+→ Central Government Jobs
+→ Government Jobs in India
+→ Latest Government Jobs
+→ Related CVC Recruitment
+
+This creates a real site architecture instead of a collection of isolated programmatic URLs.
+
+17. Orphan-page detection
+
+This must be automated.
+
+For every one of the 136 URLs calculate:
+
+incoming internal links
+
+If:
+
+incoming_links = 0
+
+classify:
+
+ORPHAN
+
+If:
+
+incoming_links = 1
+
+check whether the link is merely a generic footer link.
+
+Important pages should have contextual discovery paths.
+
+18. District pages need special attention
+
+You showed:
+
+/districts/thane/upsc
+/districts/sindhudurg/talathi
+/districts/beed/ssc
+/districts/nandurbar/ssc
+/districts/gadchiroli/mpsc
+/districts/latur/central
+
+This looks like a large programmatic SEO structure.
+
+That can be powerful if each page has genuine useful inventory/content.
+
+But it becomes dangerous if thousands of combinations are generated:
+
+district × category
+district × department
+district × qualification
+
+with little unique content.
+
+For each combination ask:
+
+Does this page actually help a user find meaningful jobs?
+
+If there are zero relevant jobs and no meaningful evergreen information, don't automatically create an indexable page.
+
+19. City pages have the same problem
+
+Examples:
+
+/jobs-in-dehradun
+/12th-pass-jobs-in-kolkata
+/mbbs-medical-jobs-in-gujarat
+
+These can be excellent SEO pages.
+
+But each should have:
+
+Unique title
+12th Pass Government Jobs in Kolkata 2026
+Unique H1
+12th Pass Government Jobs in Kolkata
+Intro
+
+Actual information about:
+
+current openings
+departments
+common employers
+qualification
+application process
+Dynamic inventory
+
+Current relevant jobs.
+
+Supporting content
+Eligibility
+How to Apply
+Documents
+Salary
+Selection
+FAQ
+Related Jobs
+Internal links
+Kolkata jobs
+West Bengal jobs
+12th pass jobs
+central government jobs
+latest jobs
+20. Don't use the same template paragraph everywhere
+
+This is critical for your AI-generated system.
+
+Bad:
+
+Candidates should check the official notification...
+Applications should be submitted before the last date...
+Keep documents ready...
+
+on 896 pages.
+
+Good:
+
+Each page gets facts derived from the specific recruitment.
+
+Google's current guidance explicitly warns about scaled content produced at scale without sufficient added value.
+
+21. Sitemap architecture I recommend
+
+Instead of one huge ambiguous sitemap:
+
+/sitemap.xml
+
+build a sitemap index:
+
+/sitemap-index.xml
+
+with:
+
+/sitemap-jobs-active.xml
+/sitemap-jobs-archive.xml
+/sitemap-results.xml
+/sitemap-admit-cards.xml
+/sitemap-exams.xml
+/sitemap-departments.xml
+/sitemap-districts.xml
+/sitemap-cities.xml
+
+Only include URLs that are genuine index candidates.
+
+Then submit the sitemap index in Search Console.
+
+22. Robots.txt architecture
+
+Your robots.txt should distinguish:
+
+Block
+
+Potentially:
+
+/filter parameters
+/internal search
+/admin
+private routes
+Do not block
+
+Important SEO pages:
+
+/jobs/
+/results/
+/admit-cards/
+/exams/
+/department/
+/districts/
+/state/
+/city landing pages
+
+Also remember:
+
+robots.txt is a crawling control, not the preferred mechanism for removing a page from Google's index.
+
+If Google needs to see a noindex, it needs to be able to crawl the page.
+
+23. Search Console workflow after fixes
+
+Do not submit all 896 pages individually.
+
+First fix the system.
+
+Then:
+
+Phase 1
+
+Test:
+
+5 job pages
+5 district pages
+5 department pages
+5 city pages
+5 result pages
+5 admit-card pages
+Phase 2
+
+Live Test each representative URL.
+
+Confirm:
+
+URL available to Google
+Page fetch successful
+Crawl allowed
+Indexing allowed
+Canonical correct
+Phase 3
+
+Request indexing for representative high-value URLs.
+
+Phase 4
+
+Submit sitemap.
+
+Phase 5
+
+Wait for Google to recrawl.
+
+Phase 6
+
+Monitor:
+
+Crawled – currently not indexed
+Excluded by noindex
+Blocked by robots.txt
+Duplicate
+Alternate page
+Soft 404
+Indexed
+
+Google recommends using URL Inspection after technical changes and notes that re-evaluation of canonical/content clusters can take time.
+
+24. Your 136 URLs should become a remediation spreadsheet
+
+Have the developer generate:
+
+URL	Type	Current GSC status	HTTP	Robots	Meta robots	Canonical	Sitemap	H1	Content	Internal links	Schema	Decision	Fix
+URL	Job	Crawled	200	Allow	noindex	Self	Yes	1	Thin	3	Valid	Index	Remove noindex + enrich
+URL	District	Crawled	200	Allow	noindex	None	Yes	1	Thin	1	—	Rewrite	Add content
+URL	City	Crawled	200	Allow	index	Self	No	1	Medium	0	—	Index	Sitemap + links
+URL	Filter	Blocked	200	Block	N/A	—	—	—	—	—	—	Noindex/Canonical	SEO architecture
+
+This will tell you exactly why each page isn't indexed.
+
+25. The developer should implement automated regression tests
+
+Every deployment should run tests such as:
+
+indexable page:
+HTTP 200
+meta robots = index,follow
+canonical = expected URL
+sitemap inclusion = true
+H1 count = 1
+title exists
+description exists
+
+For non-indexable pages:
+
+noindex = intentional
+
+For robots-blocked pages:
+
+blocked = intentional
+
+For redirects:
+
+redirect destination = relevant
+
+For expired jobs:
+
+expired state = correct
+schema state = correct
+
+This prevents another deployment from accidentally putting noindex back onto all 896 pages.
+
+26. I would add a hard “SEO Safety Gate” to your AI developer workflow
+
+Before deployment:
+
+FAIL BUILD if:
+
+>10% of intended indexable URLs return noindex
+
+OR
+
+>5% of intended indexable URLs are blocked by robots
+
+OR
+
+any production route has unexpected noindex
+
+OR
+
+canonical points outside expected URL
+
+OR
+
+indexable sitemap URLs are not HTTP 200
+
+OR
+
+indexable pages have no H1
+
+OR
+
+indexable pages have duplicate titles above threshold
+
+OR
+
+important pages have zero internal incoming links
+
+OR
+
+JobPosting schema exists on invalid/non-job pages
+
+This is especially important because your website is being generated/managed heavily through AI.
+
+27. Full developer audit prompt
+
+Below is the prompt I recommend giving your AI coding/developer agent. It is deliberately written as an audit + implementation + verification task, not just an SEO suggestion.
+
+SEARCHSARKARINAUKRI — COMPLETE GOOGLE INDEXING + SEO ENGINEERING AUDIT & FIX
+ROLE
+
+Act as a senior:
+
+Technical SEO engineer
+Google Search technical specialist
+Senior web developer
+SEO architect
+JavaScript SEO specialist
+Programmatic SEO engineer
+Information architecture specialist
+Structured-data engineer
+Crawl/indexation specialist
+QA engineer
+
+You are auditing and fixing a production government-jobs website:
+
+https://www.searchsarkarinaukri.com/
+
+The website contains large numbers of programmatically generated:
+
+Job pages
+Recruitment pages
+Result pages
+Admit-card pages
+Exam pages
+Department pages
+District pages
+State pages
+City pages
+Qualification pages
+Category pages
+Search/filter pages
+
+The current Google Search Console data shows multiple indexing states including:
+
+Excluded by noindex
+Crawled – currently not indexed
+Blocked by robots.txt
+Sitemap/discovery problems
+Valid JobPosting structured data with non-critical warnings
+
+Do NOT assume that all non-indexed URLs have the same problem.
+
+The objective is to identify the exact cause by URL class, fix the application architecture, improve indexability and page quality, and prevent regression.
+
+1. FIRST: AUDIT BEFORE MODIFYING CODE
+
+Do not immediately remove noindex.
+
+First inspect the complete repository.
+
+Search the entire project for:
+
+noindex
+nofollow
+robots
+X-Robots-Tag
+index: false
+index:false
+noIndex
+isIndexable
+robotsMeta
+generateMetadata
+<meta name="robots"
+<Helmet
+SEO components
+canonical generation
+sitemap generation
+robots.txt generation
+route-level SEO logic
+environment-specific SEO logic
+job status logic
+expiry logic
+JobPosting schema
+BreadcrumbList schema
+FAQ schema
+internal linking logic
+
+Create an audit report before changing anything.
+
+2. BUILD A COMPLETE ROUTE INVENTORY
+
+Identify every route pattern.
+
+Examples:
+
+/jobs/...
+/jobs
+/jobs?category=...
+/results/...
+/admit-cards/...
+/exams/...
+/department/...
+/districts/...
+/jobs-in-...
+/12th-pass-jobs-in-...
+/mbbs-medical-jobs-in-...
+
+Do not assume these are the only route types.
+
+Generate a table:
+
+Route pattern	Page type	Intended indexability	Canonical strategy	Sitemap strategy	Content requirements
+3. CREATE AN EXPLICIT INDEXABILITY POLICY
+
+Every route must have a deliberate indexability state.
+
+Allowed states:
+
+INDEX
+NOINDEX
+CANONICALIZE
+REDIRECT
+404
+410
+BLOCK
+CONTENT_REWRITE
+MONITOR
+
+Do not allow accidental indexability decisions.
+
+For every route type document:
+
+Why should this page be indexed?
+Why should it not be indexed?
+What is the canonical?
+Should it be in sitemap?
+Should it receive internal links?
+What minimum content is required?
+4. FIX THE CONFIRMED noindex PROBLEM
+
+The production HTML currently contains:
+
+<meta name="robots" content="noindex, follow">
+
+on an important job URL.
+
+Find the exact source of this directive.
+
+Do NOT simply remove one hardcoded tag.
+
+Determine why the application is generating it.
+
+For pages intentionally intended to rank, generate:
+
+<meta name="robots" content="index, follow">
+
+or omit the robots meta entirely when appropriate.
+
+The directive MUST be correct in the initial HTML response.
+
+Do not depend on JavaScript to remove or change noindex after page load.
+
+Verify both:
+
+raw server HTML
+rendered DOM
+5. CHECK HTTP RESPONSE HEADERS
+
+For every important route inspect:
+
+HTTP status
+Content-Type
+X-Robots-Tag
+Location
+Cache-Control
+ETag
+Last-Modified
+
+Specifically detect:
+
+X-Robots-Tag: noindex
+
+because fixing the HTML meta tag will not solve a header-level noindex.
+
+6. ROBOTS.TXT AUDIT
+
+Inspect the production:
+
+/robots.txt
+
+Test all important route types.
+
+Find:
+
+accidental Disallow
+/jobs blocks
+query parameter blocks
+category blocks
+district blocks
+department blocks
+sitemap declaration problems
+environment-specific robots rules
+
+Separate:
+
+URLs that should be crawlable
+
+from:
+
+URLs that should intentionally be blocked.
+
+Do not block URLs merely because they are not intended for indexing.
+
+If a URL should be removed from search, prefer the correct indexing-control mechanism instead of blindly blocking crawling.
+
+7. SEARCH/FILTER URL ARCHITECTURE
+
+Audit:
+
+/jobs?category=banking
+/jobs?search=...
+/jobs?page=...
+/jobs?sort=...
+
+Determine which are:
+
+functional URLs
+SEO landing pages
+duplicate variants
+
+For important SEO categories, create clean crawlable URLs where appropriate.
+
+Example:
+
+/jobs/banking
+
+instead of relying exclusively on:
+
+/jobs?category=banking
+
+Functional filter URLs should not accidentally become thousands of indexable duplicate pages.
+
+8. CANONICAL AUDIT
+
+For every indexable URL:
+
+canonical must resolve
+canonical must return HTTP 200
+canonical should normally be self-referencing
+canonical must use HTTPS
+canonical must use the preferred hostname
+canonical must not point to an unrelated page
+canonical must not point to a noindex page
+canonical must not point to a redirect
+
+Detect:
+
+missing canonical
+wrong canonical
+duplicate canonical
+cross-route canonical
+canonical to homepage
+canonical to category
+canonical mismatch
+canonical URL normalization issues
+trailing slash inconsistencies
+uppercase/lowercase variants
+query-string variants
+9. CONTENT QUALITY AUDIT
+
+This is mandatory.
+
+Do not assume that a page is index-worthy merely because it has:
+
+H1
+title
+meta description
+schema
+FAQ
+
+Measure actual useful content.
+
+For every indexable page calculate:
+
+unique text length
+main-content length
+boilerplate ratio
+template ratio
+duplicate similarity
+entity-specific facts
+number of useful sections
+number of internal links
+number of relevant related pages
+
+Flag:
+
+thin pages
+near-duplicate pages
+empty district/category combinations
+pages with generic paragraphs
+pages created only from keyword substitutions
+pages with no useful inventory
+pages with inaccurate/generated facts
+10. NEVER FABRICATE RECRUITMENT DATA
+
+Do not generate generic claims when the source notification does not provide them.
+
+Do NOT invent:
+
+salary
+selection process
+age limit
+qualification
+application fee
+experience
+number of vacancies
+exam pattern
+physical requirements
+
+Each field should have a source of truth.
+
+Preferred data model:
+
+field
+value
+source URL
+source document
+source date
+confidence
+
+If the official source does not provide a value:
+
+value = unavailable
+
+Do not guess.
+
+11. JOB PAGE CONTENT TEMPLATE
+
+For indexable job pages, build useful semantic structure.
+
+Recommended:
+
+H1:
+
+{Organization} Recruitment {Year} – {Vacancy/Role}
+
+H2:
+
+Recruitment Overview
+
+H2:
+
+Vacancy Details
+
+H3:
+
+Post-wise Vacancy
+
+H2:
+
+Eligibility Criteria
+
+H3:
+
+Educational Qualification
+
+H3:
+
+Age Limit
+
+H3:
+
+Experience
+
+H2:
+
+Salary / Pay Scale
+
+H2:
+
+Important Dates
+
+H2:
+
+Application Fee
+
+H2:
+
+Selection Process
+
+H2:
+
+How to Apply
+
+H2:
+
+Required Documents
+
+H2:
+
+Official Notification
+
+H2:
+
+Official Website
+
+H2:
+
+Frequently Asked Questions
+
+H2:
+
+Related Government Jobs
+
+Only create H4-H6 where a real subsection exists.
+
+Do not add headings solely for SEO keywords.
+
+12. EXPIRED JOB LIFECYCLE
+
+Create explicit states:
+
+DRAFT
+ACTIVE
+APPLICATION_CLOSED
+RESULT_PENDING
+RESULT_AVAILABLE
+ARCHIVED
+REMOVED
+
+For expired jobs:
+
+clearly display that the deadline has passed
+preserve useful historical information where valuable
+link to current relevant jobs
+link to results when available
+link to official notification
+prevent outdated application instructions from misleading users
+handle JobPosting structured data according to Google's current requirements
+decide sitemap inclusion based on the page's continuing search value
+do not blindly noindex every expired job
+do not blindly delete every expired job
+
+For obsolete pages with no useful replacement, use the appropriate HTTP lifecycle such as 410 where justified.
+
+Never redirect all expired jobs to the homepage.
+
+13. JOBPOSTING STRUCTURED DATA AUDIT
+
+Validate every JobPosting page.
+
+Check:
+
+@type
+title
+description
+identifier
+datePosted
+validThrough
+employmentType
+hiringOrganization
+jobLocation
+applicantLocationRequirements
+directApply
+url
+image
+baseSalary
+
+Important:
+
+Do not fabricate optional fields.
+
+If salary is unknown, do not invent it merely to remove a warning.
+
+Ensure structured data exactly matches visible page content.
+
+Remove JobPosting schema from pages that are no longer valid JobPosting entities if required by Google's current guidelines.
+
+14. BREADCRUMB STRUCTURED DATA
+
+Validate:
+
+Home
+>
+Category
+>
+Page
+
+Every breadcrumb URL must:
+
+exist
+return 200
+be canonical
+be relevant
+match visible breadcrumbs
+
+Do not create fake breadcrumb levels.
+
+15. FAQ AUDIT
+
+Do not generate generic FAQs on every page.
+
+FAQ questions must be:
+
+useful
+specific
+supported by actual page information
+not contradictory to the notification
+
+Do not use generic statements such as:
+
+Selection typically involves...
+Salary follows...
+Candidates should...
+
+unless supported by the source.
+
+Also check current Google eligibility for FAQ rich results before assuming FAQ schema provides a search enhancement.
+
+16. CITY / STATE / DISTRICT / DEPARTMENT PAGES
+
+Audit programmatic SEO pages individually.
+
+Examples:
+
+/districts/thane/upsc
+/districts/sindhudurg/talathi
+/districts/beed/ssc
+/jobs-in-dehradun
+/12th-pass-jobs-in-kolkata
+/mbbs-medical-jobs-in-gujarat
+
+For each page ask:
+
+Does meaningful content exist?
+Are relevant jobs actually available?
+Does the page contain unique information?
+Does the page satisfy a real search intent?
+Does it have internal links?
+Is it included in the correct sitemap?
+Is it canonical?
+Is it indexable?
+
+If a generated combination has little/no useful content, do not automatically make it an indexable SEO page.
+
+17. ORPHAN PAGE DETECTION
+
+Build a crawler or route analysis system.
+
+For every URL calculate:
+
+incoming internal links
+outgoing internal links
+contextual internal links
+sitemap presence
+
+Flag:
+
+incoming_links = 0
+
+as orphan.
+
+Important SEO pages must have discoverable internal paths.
+
+18. INTERNAL LINKING SYSTEM
+
+Create contextual links between:
+
+Home
+→ Jobs
+→ State
+→ District
+→ Department
+→ Category
+→ Qualification
+→ Specific Job
+
+Every important job should link to relevant:
+
+department pages
+state pages
+qualification pages
+category pages
+related jobs
+latest jobs
+results
+admit cards
+
+Avoid footer-only internal linking.
+
+19. SITEMAP SYSTEM
+
+Create a proper sitemap architecture.
+
+Recommended:
+
+/sitemap-index.xml
+
+with relevant child sitemaps such as:
+
+/sitemap-jobs-active.xml
+/sitemap-jobs-archive.xml
+/sitemap-results.xml
+/sitemap-admit-cards.xml
+/sitemap-exams.xml
+/sitemap-departments.xml
+/sitemap-districts.xml
+/sitemap-cities.xml
+
+Only include genuine index candidates.
+
+Never include:
+
+noindex pages
+robots-blocked pages
+redirects
+404
+410
+duplicate URLs
+non-canonical URLs
+parameter duplicates
+
+Validate every sitemap URL automatically.
+
+20. LASTMOD POLICY
+
+Do not update <lastmod> on every deployment.
+
+Use meaningful dates:
+
+source update
+recruitment update
+result update
+deadline change
+content revision
+
+False freshness signals should be avoided.
+
+21. TITLE / META DESCRIPTION AUDIT
+
+For every indexable page:
+
+unique title
+unique meta description
+correct language
+correct entity
+correct year
+correct location
+correct search intent
+
+Detect:
+
+duplicate titles
+duplicate descriptions
+truncated titles
+keyword stuffing
+organization-name repetition
+meaningless autogenerated text
+mixed-language garbage
+duplicated Marathi/Hindi/English phrases
+22. H1 AUDIT
+
+Every important indexable page:
+
+exactly one meaningful H1
+
+Detect:
+
+zero H1
+multiple H1
+generic H1
+title/H1 mismatch
+H1 not matching search intent
+23. LANGUAGE QUALITY
+
+Audit:
+
+en-IN
+mr-IN
+hi-IN
+
+Ensure pages do not contain accidental language mixing such as:
+
+English + Marathi duplication + untranslated template fragments
+
+Use language appropriate to the page.
+
+Do not generate nonsense multilingual combinations merely to target keywords.
+
+24. JAVASCRIPT SEO
+
+Determine whether important content is available in:
+
+initial HTML
+rendered DOM
+
+Important SEO content must not depend entirely on delayed client-side execution.
+
+Test:
+
+Googlebot smartphone
+normal browser
+view-source
+rendered DOM
+
+Compare:
+
+title
+robots
+canonical
+H1
+main content
+links
+structured data
+
+Do not rely on JavaScript to repair indexability directives.
+
+25. CORE WEB VITALS / PERFORMANCE
+
+Audit:
+
+LCP
+INP
+CLS
+TTFB
+HTML response time
+JS bundle size
+CSS size
+image size
+third-party scripts
+lazy loading
+font loading
+
+Especially inspect:
+
+/assets/index-CyiglMr9.js
+
+and other large bundles.
+
+Do not sacrifice SEO content rendering for unnecessary client-side complexity.
+
+26. HTTP / SERVER AUDIT
+
+Check:
+
+200
+301
+302
+307
+308
+404
+410
+429
+500
+502
+503
+504
+
+Detect:
+
+redirect chains
+redirect loops
+soft 404s
+intermittent 5xx
+incorrect content types
+inconsistent caching
+inconsistent hostname
+HTTP → HTTPS
+www → non-www or reverse
+trailing slash inconsistency
+27. IMAGE / OG AUDIT
+
+Validate:
+
+og:title
+og:description
+og:url
+og:image
+twitter:card
+twitter:title
+twitter:description
+twitter:image
+
+Check:
+
+image returns 200
+image is crawlable
+correct dimensions
+no broken OG image
+canonical OG URL matches canonical page
+28. INDEXABILITY SCORING ENGINE
+
+Create an automated score for every URL.
+
+Example:
+
+Technical accessibility       20
+Indexability directives       20
+Canonical                      10
+Content quality                20
+Internal linking               10
+Sitemap/discovery              10
+Structured data                 5
+Page metadata                   5
+--------------------------------
+Total                          100
+
+Classify:
+
+90–100 = Strong index candidate
+75–89  = Fix minor issues
+60–74  = Content/technical review
+40–59  = Rewrite before indexing
+0–39   = Do not prioritize indexing
+29. CLASSIFICATION OUTPUT
+
+Generate:
+
+URL
+Page Type
+HTTP Status
+Robots.txt
+Meta Robots
+X-Robots-Tag
+Canonical
+Sitemap
+Internal Links
+Title
+Description
+H1
+Content Length
+Unique Content %
+Schema
+Expired?
+Orphan?
+Indexability Score
+Recommended Action
+
+Recommended action must be one of:
+
+INDEX
+FIX_NOINDEX
+FIX_ROBOTS
+FIX_CANONICAL
+ADD_TO_SITEMAP
+ADD_INTERNAL_LINKS
+REWRITE_CONTENT
+REMOVE_DUPLICATE
+REDIRECT
+410
+MONITOR
+30. TEST THE CURRENT 136 GSC URLs
+
+Use the supplied Google Search Console export containing 136:
+
+Crawled – currently not indexed
+
+Do not guess the reason.
+
+For every URL perform the technical audit.
+
+Group the 136 URLs into root causes.
+
+Produce counts such as:
+
+Noindex: X
+Robots blocked: X
+Canonical issue: X
+Thin content: X
+Duplicate content: X
+Orphan: X
+Missing sitemap: X
+Weak internal links: X
+Expired content: X
+Technical error: X
+Healthy but currently not indexed: X
+31. IMPORTANT: DO NOT CALL ALL “CRAWLED – CURRENTLY NOT INDEXED” PAGES A GOOGLE ERROR
+
+This is a classification status.
+
+Google may crawl a page and still decide not to index it.
+
+Therefore investigate:
+
+quality
+uniqueness
+duplication
+internal linking
+canonicalization
+content usefulness
+search intent
+site architecture
+sitemap discovery
+rendering
+page lifecycle
+
+Do not create fake technical fixes merely to force indexing.
+
+32. IMPLEMENT FIXES
+
+After the audit:
+
+Fix root-cause SEO code.
+Fix route-specific metadata.
+Fix robots.txt.
+Fix sitemap generation.
+Fix canonical generation.
+Fix internal linking.
+Fix content templates.
+Fix expired-job lifecycle.
+Fix structured-data generation.
+Fix duplicate/parameter architecture.
+Add automated tests.
+Build production.
+Crawl production.
+Compare expected vs actual HTML.
+Verify no regressions.
+33. PRODUCTION VERIFICATION
+
+After deployment, test representative URLs from every route class.
+
+For each URL confirm:
+
+HTTP 200
+crawl allowed
+index allowed
+no unintended noindex
+no unintended X-Robots-Tag
+self canonical
+sitemap inclusion
+internal links
+unique title
+unique description
+one H1
+useful content
+valid structured data
+correct breadcrumbs
+34. SEARCH CONSOLE VERIFICATION PLAN
+
+Do NOT request indexing for hundreds of URLs immediately.
+
+First test representative URLs.
+
+Minimum:
+
+5 job pages
+5 department pages
+5 district pages
+5 city pages
+5 qualification pages
+5 result pages
+5 admit-card pages
+5 exam pages
+
+For each:
+
+Live Test
+Inspect indexing status
+Inspect rendered HTML
+Inspect canonical
+Inspect enhancements
+
+Then request indexing only for high-priority corrected pages.
+
+Submit the corrected sitemap.
+
+Monitor the affected URL categories over the following recrawl cycles.
+
+35. REGRESSION TESTS
+
+Create automated SEO tests that fail deployment when an indexable route unexpectedly produces:
+
+noindex
+X-Robots-Tag noindex
+robots block
+wrong canonical
+missing H1
+missing title
+missing description
+broken sitemap entry
+404 sitemap URL
+redirect sitemap URL
+duplicate canonical
+invalid JobPosting schema
+
+Also test that intentionally non-indexable routes remain correctly controlled.
+
+36. DO NOT USE THESE BAD FIXES
+
+Never:
+
+remove all noindex directives blindly
+allow every query parameter to index
+generate thousands of thin pages
+fabricate salary information
+fabricate eligibility
+fabricate selection process
+fabricate vacancies
+redirect every expired job to homepage
+put every URL into sitemap
+block all unwanted URLs with robots.txt
+create fake H2/H3 sections
+repeat the same paragraph across hundreds of pages
+request indexing for every URL before fixing architecture
+assume structured-data warnings are indexing errors
+assume “Crawled – currently not indexed” means robots blocking
+assume sitemap submission guarantees indexing
+37. FINAL DELIVERABLE
+
+After completing the audit, return:
+
+A. Root Cause Summary
+
+Exact reasons why pages are not indexed.
+
+B. Route Indexability Matrix
+
+Every route class and intended behavior.
+
+C. 136 URL Classification
+
+Every affected URL classified by root cause.
+
+D. Code Changes
+
+Files changed and exact purpose of each change.
+
+E. SEO Architecture Changes
+
+Explain:
+
+robots
+canonical
+sitemap
+internal linking
+metadata
+content
+JobPosting
+expired pages
+F. Validation Results
+
+Show before/after.
+
+G. Remaining Risks
+
+Anything that cannot be safely fixed automatically.
+
+H. Search Console Verification Plan
+
+Exact URLs/categories to test after deployment.
+
+I. Regression Test Results
+
+All automated SEO checks must pass.
+
+J. Git Summary
+
+Show:
+
+git status
+git diff --stat
+git diff
+
+Do NOT commit or push unless explicitly instructed.
+
+SUCCESS CONDITION
+
+The task is NOT considered complete merely because Search Console accepts an indexing request.
+
+The task is complete only when:
+
+Important pages are intentionally indexable
++
+No accidental noindex
++
+No accidental robots block
++
+Canonical architecture is correct
++
+Sitemaps contain correct URLs
++
+Important pages are internally discoverable
++
+Pages contain genuinely useful unique content
++
+Programmatic pages are not thin/duplicated
++
+Expired jobs have a correct lifecycle
++
+Structured data matches page content
++
+JavaScript does not hide critical SEO directives/content
++
+Automated SEO regression tests exist
++
+Production HTML matches expected SEO behavior
+
+Treat Google indexing as an outcome of a technically correct, useful website—not as something that can be forced by repeated “Request Indexing” clicks.
+
+32. What I would fix FIRST on your site
+
+Based on the evidence you provided, my priority order is:
+
+🔴 P0 — Immediate
+
+1. Find why noindex is being generated.
+
+This is definitely happening.
+
+2. Determine which route classes are intentionally indexable.
+
+Do not globally remove noindex.
+
+3. Audit robots.txt.
+
+Especially /jobs?category=banking.
+
+4. Audit all 136 affected URLs programmatically.
+
+Do not manually troubleshoot 136 URLs.
+
+🔴 P1 — Very high
+
+5. Fix sitemap generation/discovery.
+
+6. Fix internal linking/orphan pages.
+
+7. Audit thin/duplicate programmatic pages.
+
+This is particularly important because your site appears to generate many location/category combinations.
+
+8. Fix city/district/department page quality.
+
+🟠 P2 — High
+
+9. Build proper expired-job lifecycle.
+
+10. Audit JobPosting schema.
+
+11. Audit canonical consistency.
+
+12. Audit title/H1/meta descriptions.
+
+🟡 P3 — Optimization
+
+13. Core Web Vitals
+
+14. JS rendering
+
+15. Image/OG optimization
+
+16. Better internal-link graph
+
+17. Automated SEO regression testing
+
+One especially important finding
+
+The supplied CVC HTML demonstrates that the page itself is actually fairly discoverable from a technical rendering perspective:
+
+HTML exists
+H1 exists
+H2 exists
+content exists
+canonical exists
+breadcrumb exists
+JobPosting exists
+internal links exist
+
+But the same document explicitly says:
+
+<meta name="robots" content="noindex, follow">
+
+So Google is not “failing to understand” this page. Your application is explicitly telling Google not to index it.
+
+Then, separately, the 136-page report demonstrates a broader “Crawled – currently not indexed” population. Therefore, after fixing the explicit noindex, you should expect some improvement but not necessarily all 136 URLs to become indexed. Those remaining URLs need the content, canonical, sitemap, internal-linking, duplication, and page-quality investigation described above.
+
+Also, Google's current documentation makes clear that canonicalization is influenced by multiple signals and that pages in similar/duplicate clusters can remain unindexed even after technical changes; content differentiation matters.
+
+Bottom line: don't treat this as a single Search Console error. Treat it as an indexability architecture problem across the entire site. The correct solution is to build a route-level indexability engine, audit all 136 URLs against it, fix the production SEO generation logic, and then validate representative pages before asking Google to recrawl the wider set.
