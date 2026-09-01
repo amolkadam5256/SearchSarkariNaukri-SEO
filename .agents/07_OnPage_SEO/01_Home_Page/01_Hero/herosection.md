@@ -544,64 +544,7 @@ Do not hard-code a date that becomes stale.
 
 ---
 
-# 17. Hero Benefit Strip
-
-The supplied design includes:
-
-- 10th Pass to Graduation
-- 500+ Exams Tracked
-- Daily Job Updates
-- Official Notifications
-- 100% Free to Use
-
-These can remain as supporting UX signals **only when factually
-accurate**.
-
-## Important
-
-Every number must be dynamically derived from the application/database
-where possible.
-
-Do not hard-code:
-
-`500+ Exams Tracked`
-
-unless the site's actual inventory supports it.
-
-Do not claim:
-
-`100% Free to Use`
-
-if any required feature or service has a paid component.
-
-The most important benefit is:
-
-**Official Notifications**
-
-but the wording should not imply that SearchSarkariNaukri itself is the
-recruiting authority.
-
----
-
-# 18. Recommended Benefit Strip
-
-If the existing facts are verified, use:
-
-```text
-10th Pass to Graduation
-500+ Exams Tracked
-Daily Job Updates
-Official Notifications
-100% Free to Use
-```
-
-Keep the wording concise.
-
-Do not turn these into keyword blocks.
-
----
-
-# 19. Hero Visual Hierarchy
+# 17. Hero Visual Hierarchy
 
 The supplied design should follow this hierarchy:
 
@@ -647,8 +590,6 @@ Top update ticker
 
  [ Independent job information portal... ]
 
- [10th] [500+ Exams] [Daily Updates]
- [Official] [Free]
 -----------------------------------------------------
 ```
 
@@ -656,7 +597,7 @@ Use the supplied PNG as the visual composition reference.
 
 ---
 
-# 21. Hero Mobile Layout
+# 19. Hero Mobile Layout
 
 Mobile order must be:
 
@@ -1588,12 +1529,15 @@ Conceptually:
 
 ```css
 .hero {
-  background-image: url("...");
+  background-image: url("./search-sarkari-naukri-homepage-hero-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 ```
+
+Use `search-sarkari-naukri-homepage-hero-bg.png` as the Hero background
+image asset.
 
 Adapt to the existing design system.
 
