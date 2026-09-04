@@ -1,0 +1,1657 @@
+# SearchSarkariNaukri — Complete District URL, Redirect, Indexing & Location SEO Fix Specification
+
+## 1. PRIMARY ISSUE
+
+Google Search Console currently reports:
+
+**URL:**
+`https://www.searchsarkarinaukri.com/jobs?district_slug=pune`
+
+**Status:**
+`URL is not on Google`
+
+**Page indexing reason:**
+`Redirect error`
+
+**Google crawl:**
+
+* Googlebot smartphone
+* Crawl allowed: Yes
+* Last crawl: 7 June 2026
+* Page fetch: Failed — Redirect error
+* Indexing: N/A
+* Canonical: N/A
+
+The expected URL architecture is:
+
+`/jobs?district_slug=pune`
+→ `301`
+→ `/districts/pune`
+
+The destination page should be the canonical, indexable district landing page.
+
+IMPORTANT:
+
+Do not try to make the query-parameter URL indexable.
+
+The clean URL:
+
+`https://www.searchsarkarinaukri.com/districts/pune`
+
+must be the permanent SEO URL.
+
+---
+
+# 2. FIRST PRIORITY — FIX REDIRECT LOGIC
+
+Audit the complete redirect implementation.
+
+Find every place where the application handles:
+
+* `/jobs`
+* `district_slug`
+* query parameters
+* district filters
+* middleware redirects
+* Next.js redirects
+* route handlers
+* server components
+* client-side navigation
+* canonical generation
+* trailing slash handling
+* locale handling
+* authentication redirects
+* expired/invalid district redirects
+
+Do NOT have multiple redirect layers.
+
+Bad:
+
+`/jobs?district_slug=pune`
+→ `/jobs?district=pune`
+→ `/districts/pune`
+→ `/districts/pune/`
+
+Good:
+
+`/jobs?district_slug=pune`
+→ `301`
+→ `/districts/pune`
+
+Only one canonical redirect.
+
+---
+
+# 3. REDIRECT MUST BE SERVER-SIDE
+
+The redirect must happen before the page renders.
+
+Do NOT implement this as:
+
+* JavaScript redirect
+* `window.location`
+* client `useEffect`
+* loading-page redirect
+* meta refresh
+* client router redirect after rendering
+
+Use the framework/server routing layer.
+
+For Next.js, inspect:
+
+* `next.config.*`
+* `middleware.*`
+* App Router route files
+* route handlers
+* server components
+* existing redirect utilities
+
+The redirect must return a permanent HTTP redirect.
+
+Expected behavior:
+
+```text
+GET /jobs?district_slug=pune
+HTTP 301/308
+Location: /districts/pune
+```
+
+Use one permanent redirect strategy consistently.
+
+Do not create a redirect loop.
+
+---
+
+# 4. TEST THE EXACT URL
+
+After implementation, test:
+
+```text
+https://www.searchsarkarinaukri.com/jobs?district_slug=pune
+```
+
+Expected:
+
+```text
+HTTP 301/308
+Location: https://www.searchsarkarinaukri.com/districts/pune
+```
+
+Then test:
+
+```text
+https://www.searchsarkarinaukri.com/districts/pune
+```
+
+Expected:
+
+```text
+HTTP 200
+```
+
+It must NOT redirect again.
+
+It must NOT return:
+
+* 404
+* 410
+* 500
+* redirect chain
+* redirect loop
+* soft 404
+* empty page
+* client-only rendered page
+
+---
+
+# 5. QUERY PARAMETER LOGIC
+
+Audit all URLs using `district_slug`.
+
+Examples:
+
+```text
+/jobs?district_slug=pune
+/jobs?district_slug=mumbai
+/jobs?district_slug=nagpur
+/jobs?district_slug=nashik
+```
+
+The application should map each valid district to its clean location URL.
+
+Example:
+
+```text
+/jobs?district_slug=pune
+→ /districts/pune
+
+/jobs?district_slug=mumbai
+→ /districts/mumbai
+
+/jobs?district_slug=nagpur
+→ /districts/nagpur
+```
+
+Do not hard-code only Pune.
+
+Build a reusable district mapping function.
+
+Example conceptual logic:
+
+```text
+district slug
+↓
+validate against district database/config
+↓
+resolve canonical district
+↓
+301/308 redirect
+↓
+/districts/{slug}
+```
+
+---
+
+# 6. INVALID DISTRICT LOGIC
+
+Test:
+
+```text
+/jobs?district_slug=
+/jobs?district_slug=invalid
+/jobs?district_slug=abc123
+/jobs?district_slug=Pune
+/jobs?district_slug=%20pune
+```
+
+Do not create broken redirects.
+
+For invalid districts, return the appropriate response based on the site's intended UX.
+
+Do NOT redirect every invalid value to Pune.
+
+Do NOT redirect invalid values to the homepage merely to avoid 404s.
+
+Use a consistent invalid-resource strategy.
+
+---
+
+# 7. QUERY PARAMETERS OTHER THAN DISTRICT
+
+Do not blindly redirect every `/jobs?...` URL.
+
+Audit parameters such as:
+
+```text
+page
+search
+keyword
+category
+qualification
+location
+department
+job_type
+district_slug
+```
+
+Separate:
+
+### SEO landing-page parameters
+
+These should map to dedicated clean URLs where an SEO page exists.
+
+### Functional search/filter parameters
+
+These may remain non-indexable/search URLs.
+
+The developer must create an explicit URL policy.
+
+Example:
+
+```text
+SEO URL:
+ /districts/pune
+
+Functional filtering:
+ /jobs?district_slug=pune&keyword=teacher
+```
+
+Do not allow thousands of filter combinations to become crawlable/indexable pages.
+
+---
+
+# 8. DISTRICT PAGE MUST BE THE CANONICAL LANDING PAGE
+
+Canonical:
+
+```html
+<link
+  rel="canonical"
+  href="https://www.searchsarkarinaukri.com/districts/pune"
+/>
+```
+
+The canonical must be absolute and production-safe.
+
+Do not canonicalize Pune to:
+
+```text
+/jobs?district_slug=pune
+```
+
+Do not canonicalize all districts to the homepage.
+
+Do not use dynamic canonical URLs that accidentally include tracking parameters.
+
+---
+
+# 9. DISTRICT PAGE INDEXABILITY
+
+For:
+
+```text
+/districts/pune
+```
+
+verify:
+
+```text
+HTTP 200
+index,follow
+self-referencing canonical
+```
+
+Check that there is no:
+
+```html
+<meta name="robots" content="noindex">
+```
+
+and no conflicting HTTP header:
+
+```text
+X-Robots-Tag: noindex
+```
+
+Also verify robots.txt does not block:
+
+```text
+/districts/
+```
+
+---
+
+# 10. SITEMAP
+
+The canonical district URLs should be included in XML sitemap(s).
+
+Example:
+
+```text
+https://www.searchsarkarinaukri.com/districts/pune
+https://www.searchsarkarinaukri.com/districts/mumbai
+https://www.searchsarkarinaukri.com/districts/nagpur
+...
+```
+
+Do NOT put the redirect URL in the sitemap:
+
+```text
+/jobs?district_slug=pune
+```
+
+Sitemaps must contain canonical 200-status URLs.
+
+Every sitemap URL must satisfy:
+
+```text
+HTTP 200
+indexable
+canonical
+not redirected
+```
+
+Also verify:
+
+* sitemap index
+* district sitemap
+* sitemap generation
+* lastmod logic
+* duplicate URLs
+* invalid/expired URLs
+* query-string URLs accidentally entering sitemap
+
+---
+
+# 11. INTERNAL LINKS
+
+This is critical.
+
+Search the entire repository for:
+
+```text
+/jobs?district_slug=
+```
+
+Replace SEO-facing internal links with:
+
+```text
+/districts/{districtSlug}
+```
+
+Do not make Google discover the old query URL through internal navigation.
+
+Audit:
+
+* homepage
+* district directory
+* jobs page
+* job detail pages
+* category pages
+* Maharashtra pages
+* breadcrumbs
+* footer
+* related jobs
+* related districts
+* sitemap UI
+* navigation
+* search components
+* cards
+* filters
+* mobile navigation
+
+All SEO links should point directly to the canonical clean URL.
+
+---
+
+# 12. DISTRICT PAGE CONTENT — CURRENT ISSUE
+
+The live `/districts/pune` page is already structured as a district landing page and contains:
+
+* Pune Government Jobs 2026
+* Pune district description
+* active jobs
+* category links
+* Maharashtra-related searches
+* FAQ section
+
+The page currently references Pune-specific recruitment categories including ZP, police, health, education, MPSC, municipal and local recruitment.
+
+However, the page needs stronger location-specific topical depth.
+
+Do NOT create generic AI filler.
+
+Content must be generated from actual district/job/category data wherever possible.
+
+---
+
+# 13. DISTRICT PAGE SEO STRUCTURE
+
+Recommended structure:
+
+```text
+H1
+Pune Government Jobs 2026 — Latest Sarkari Naukri
+
+Intro
+
+Current Pune Government Job Statistics
+
+Latest Pune Government Jobs
+
+Pune Government Jobs by Department
+
+Pune Government Jobs by Qualification
+
+Pune Government Jobs by Job Type
+
+Pune Government Jobs by Recruitment Authority
+
+Pune Taluka / Local Area Jobs
+
+How to Find Government Jobs in Pune
+
+How to Apply for Pune Government Jobs
+
+Important Pune Recruitment Resources
+
+Related Maharashtra Government Jobs
+
+Pune Jobs FAQ
+```
+
+Use headings naturally.
+
+Do not keyword-stuff.
+
+---
+
+# 14. LOCATION KEYWORDS
+
+For each district page, build keyword coverage from the actual location.
+
+For Pune, naturally cover relevant variants such as:
+
+* Pune government jobs
+* Pune Sarkari Naukri
+* government jobs in Pune
+* Pune district government jobs
+* Pune government vacancy
+* Pune recruitment 2026
+* Pune job vacancy
+* Pune government recruitment
+* latest government jobs in Pune
+* Maharashtra government jobs in Pune
+* Pune ZP jobs
+* Pune Police Bharti
+* Pune municipal jobs
+* PMC recruitment
+* PCMC recruitment
+* Pune health department jobs
+* Pune education department jobs
+* Pune MPSC jobs
+* Pune railway jobs
+* Pune banking jobs
+* Pune central government jobs
+* Pune defence jobs
+* Pune government jobs after 10th
+* Pune government jobs after 12th
+* Pune government jobs for graduates
+* Pune government jobs for postgraduate candidates
+
+Use only keywords supported by actual content.
+
+Do not insert keywords merely to increase keyword count.
+
+---
+
+# 15. LOCAL ENTITY COVERAGE
+
+Where supported by actual jobs/data, mention relevant Pune organizations and authorities.
+
+Examples already represented on the current page include:
+
+* Pune Municipal Corporation
+* Pune Zilla Parishad
+* PCMC
+* PMRDA
+* Savitribai Phule Pune University
+* defence establishments
+* health institutions
+
+The current live page already describes these Pune recruitment sources.
+
+Entity names should only be included when relevant to the available recruitment data.
+
+---
+
+# 16. ADD 10–15 LOCATION-SPECIFIC FAQS
+
+Add approximately 12–15 useful FAQs to each eligible district page.
+
+For Pune, use questions such as:
+
+### 1. What government jobs are available in Pune in 2026?
+
+Answer from the live job dataset and show the current count dynamically.
+
+### 2. Where can I find the latest Pune government job vacancies?
+
+Explain that the Pune district page aggregates currently available Pune-linked recruitment updates.
+
+### 3. Which government departments recruit in Pune?
+
+Mention departments/organizations only when represented by current or historically supported site data.
+
+### 4. Are Pune Zilla Parishad government jobs listed here?
+
+Explain how Pune ZP recruitment is surfaced when active.
+
+### 5. Where can I find Pune Police Bharti updates?
+
+Link to the relevant Pune police/category page if it exists.
+
+### 6. Are PMC government jobs available in Pune?
+
+Explain how Pune Municipal Corporation recruitment is listed when active.
+
+### 7. Can I find Pune government jobs for 10th-pass candidates?
+
+Answer based on actual qualification data.
+
+### 8. Can I find Pune government jobs for 12th-pass candidates?
+
+Answer based on actual qualification data.
+
+### 9. Are graduate government jobs available in Pune?
+
+Link to the relevant qualification page when available.
+
+### 10. Are postgraduate government jobs available in Pune?
+
+Link to the relevant qualification page when available.
+
+### 11. How often is the Pune government jobs page updated?
+
+Use the site's actual data refresh process.
+
+### 12. How do I apply for Pune government jobs?
+
+Explain that users should open the relevant recruitment and follow the official recruiting authority's application instructions.
+
+### 13. Are Pune government job application links official?
+
+Clarify that SearchSarkariNaukri is an information portal and users should verify the final application destination against the official recruiting authority.
+
+### 14. Which Pune areas are covered by this district page?
+
+Explain district-level coverage and use actual location data from jobs.
+
+### 15. Where can I find Maharashtra government jobs related to Pune?
+
+Provide relevant Maharashtra/district/category navigation.
+
+FAQ answers must be genuinely useful.
+
+Do not repeat the same answer with different keyword variations.
+
+---
+
+# 17. FAQ SCHEMA
+
+Only add FAQ structured data if the visible FAQ content is actually present on the page.
+
+Use valid:
+
+```json
+{
+  "@type": "FAQPage"
+}
+```
+
+Every schema question must exactly correspond to visible page content.
+
+Do not create hidden FAQ content solely for schema.
+
+Validate the final JSON-LD.
+
+Do not generate FAQ schema if the site's current Google eligibility strategy does not warrant it; structured data must accurately represent the visible content.
+
+---
+
+# 18. TITLE TAG
+
+For Pune:
+
+```text
+Pune Government Jobs 2026 | Latest Sarkari Naukri
+```
+
+Keep it concise and location-focused.
+
+Do not create excessively long titles.
+
+Use the same reusable template for other districts:
+
+```text
+{District} Government Jobs {Year} | Latest Sarkari Naukri
+```
+
+---
+
+# 19. META DESCRIPTION
+
+Recommended pattern:
+
+```text
+Find the latest government jobs in Pune 2026. Check Pune district vacancies, ZP, police, health, education, municipal and other government recruitment updates.
+```
+
+Generate dynamically per district.
+
+Do not duplicate one exact meta description across every district.
+
+---
+
+# 20. H1 RULE
+
+Exactly one primary H1.
+
+Example:
+
+```text
+Pune Government Jobs 2026 — Latest District Sarkari Naukri
+```
+
+Do not render multiple H1s from components.
+
+---
+
+# 21. BREADCRUMBS
+
+Use:
+
+```text
+Home
+→ District Jobs
+→ Pune
+```
+
+Breadcrumb URLs:
+
+```text
+/
+ /districts
+ /districts/pune
+```
+
+Do not use:
+
+```text
+/jobs?district_slug=pune
+```
+
+Breadcrumb structured data should match visible breadcrumbs.
+
+---
+
+# 22. DISTRICT TEMPLATE MUST BE DYNAMIC
+
+Do not build Pune as a one-off page.
+
+Create one reusable district page architecture:
+
+```text
+/districts/[slug]
+```
+
+Data:
+
+```text
+district
+slug
+state
+description
+jobs
+categories
+departments
+localities
+faq
+seo metadata
+```
+
+Then generate:
+
+```text
+/districts/pune
+/districts/mumbai
+/districts/nagpur
+/districts/nashik
+...
+```
+
+---
+
+# 23. DISTRICT DATA VALIDATION
+
+For every district:
+
+```text
+slug must exist
+name must exist
+state must exist
+jobs must resolve
+SEO metadata must exist
+canonical must resolve
+page must return 200
+```
+
+Do not generate pages for nonexistent districts.
+
+Do not generate thousands of thin district/location combinations.
+
+---
+
+# 24. EMPTY DISTRICT PAGES
+
+A major SEO risk is thin pages.
+
+If a district has:
+
+```text
+0 active jobs
+```
+
+do not automatically create a useless page containing only:
+
+"No active jobs found."
+
+The current Pune page previously showed zero active jobs in one crawl, while the live query URL now resolves to a version showing active jobs.
+
+This demonstrates that the page is dynamic and freshness must be handled correctly.
+
+For all district pages:
+
+* preserve useful evergreen location information
+* show historical/contextual recruitment categories where appropriate
+* provide useful navigation
+* clearly show current job availability
+* avoid fabricated vacancies
+* avoid misleading counts
+
+---
+
+# 25. JOB COUNT CONSISTENCY
+
+The displayed count must come from the same source as the job listing.
+
+Do not allow:
+
+```text
+Header: 48 jobs
+Listing: 30 jobs
+FAQ: 50 jobs
+```
+
+All count references should use the same calculated dataset.
+
+Prefer one server-side computed value:
+
+```text
+activeDistrictJobCount
+```
+
+and reuse it.
+
+If pagination exists, ensure the count represents the full matching dataset rather than only the current page.
+
+---
+
+# 26. LOCATION MATCHING LOGIC
+
+Audit how jobs are assigned to districts.
+
+A Pune job may have:
+
+```text
+Pune
+Khadki, Pune
+Bibvewadi, Pune
+Sutarwadi, Pune
+Khodad
+Pune / Khodad
+```
+
+The location matching system must be deterministic.
+
+Do not simply perform:
+
+```text
+location.includes("pune")
+```
+
+without considering normalized location data.
+
+Create normalized location fields where possible:
+
+```text
+district
+city
+state
+locality
+```
+
+Then use structured matching.
+
+---
+
+# 27. DO NOT CREATE DUPLICATE DISTRICT PAGES
+
+Avoid combinations such as:
+
+```text
+/districts/pune
+/district/pune
+/pune-government-jobs
+/jobs-in-pune
+/jobs?district_slug=pune
+```
+
+unless each URL has a clearly different search intent.
+
+If multiple legacy URLs exist, establish one canonical SEO destination and permanently redirect unnecessary duplicates.
+
+The current site already has `/jobs-in-pune`, which is a separate Pune jobs landing page.
+
+This must be reviewed carefully.
+
+Do NOT blindly create another Pune page targeting the same intent.
+
+Determine whether:
+
+```text
+/districts/pune
+```
+
+and:
+
+```text
+/jobs-in-pune
+```
+
+serve distinct search intent.
+
+If not, consolidate.
+
+---
+
+# 28. AVOID KEYWORD CANNIBALIZATION
+
+Audit all Pune-related URLs:
+
+```text
+/districts/pune
+/jobs-in-pune
+/post-graduate-jobs-in-pune
+/districts/pune/zp
+/jobs?district_slug=pune
+```
+
+The current site already has separate Pune-specific category pages such as ZP and postgraduate jobs.
+
+Therefore:
+
+### `/districts/pune`
+
+Target:
+
+```text
+Pune government jobs
+Pune Sarkari Naukri
+Pune district government jobs
+```
+
+### `/districts/pune/zp`
+
+Target:
+
+```text
+Pune ZP jobs
+Pune Zilla Parishad recruitment
+```
+
+### `/post-graduate-jobs-in-pune`
+
+Target:
+
+```text
+postgraduate government jobs in Pune
+```
+
+Each page needs unique intent.
+
+Do not make all pages target the exact same primary keyword.
+
+---
+
+# 29. INTERNAL LINKING ARCHITECTURE
+
+Build a logical SEO graph:
+
+```text
+Homepage
+   ↓
+Maharashtra Government Jobs
+   ↓
+District Jobs
+   ↓
+Pune
+   ↓
+Pune Categories
+   ↓
+Individual Jobs
+```
+
+Also:
+
+```text
+Pune
+↔ MPSC Pune
+↔ Police Pune
+↔ ZP Pune
+↔ Health Pune
+↔ Education Pune
+```
+
+Use direct canonical URLs.
+
+---
+
+# 30. PAGINATION
+
+If district pages have pagination, define canonical/pagination behavior explicitly.
+
+Example:
+
+```text
+/districts/pune
+/districts/pune?page=2
+```
+
+Do not accidentally canonicalize every page to page 1 if the paginated pages contain unique crawlable job listings and are intended for discovery.
+
+Alternatively, use server-side pagination/infinite loading carefully while ensuring important jobs remain discoverable through canonical links and sitemaps.
+
+---
+
+# 31. JOB EXPIRY LOGIC
+
+When jobs expire:
+
+* remove from active count
+* remove from active listing
+* update freshness date
+* preserve useful historical job detail only if the page has continuing search value
+* avoid broken internal links
+* update sitemap according to the site's URL policy
+
+Do not automatically delete every expired job URL if historical indexing is strategically useful.
+
+---
+
+# 32. CANONICAL NORMALIZATION
+
+Normalize:
+
+```text
+http → https
+www/non-www
+trailing slash
+uppercase/lowercase
+duplicate query parameters
+tracking parameters
+```
+
+Choose one production canonical hostname.
+
+Expected:
+
+```text
+https://www.searchsarkarinaukri.com/
+```
+
+All SEO URLs must consistently use the chosen canonical hostname.
+
+---
+
+# 33. REDIRECT CHAIN AUDIT
+
+Run a complete crawler against the production site.
+
+Find:
+
+```text
+redirect → redirect
+redirect → canonical
+redirect → 404
+redirect → 500
+redirect loops
+```
+
+Maximum target:
+
+```text
+old URL → final 200 canonical URL
+```
+
+Prefer one hop.
+
+---
+
+# 34. GOOGLEBOT TEST
+
+Test the exact affected URL with:
+
+```text
+Googlebot smartphone
+```
+
+Verify:
+
+```text
+robots allowed
+HTTP response valid
+redirect resolves
+final URL returns 200
+HTML is accessible
+canonical is present
+content is rendered server-side
+```
+
+Do not rely only on browser behavior.
+
+---
+
+# 35. NEXT.JS SPECIFIC AUDIT
+
+Because this site uses Next.js, inspect:
+
+```text
+app/
+pages/
+middleware.ts
+next.config.js
+next.config.mjs
+next.config.ts
+generateMetadata()
+redirect()
+permanentRedirect()
+headers()
+rewrites()
+redirects()
+sitemap.ts
+robots.ts
+```
+
+Also inspect dynamic routes:
+
+```text
+app/districts/[slug]/
+```
+
+and any jobs route.
+
+Search repository for:
+
+```text
+district_slug
+redirect(
+permanentRedirect(
+NextResponse.redirect
+redirects()
+rewrites()
+canonical
+alternates
+metadataBase
+generateMetadata
+sitemap
+robots
+```
+
+---
+
+# 36. DO NOT USE REWRITE WHERE REDIRECT IS REQUIRED
+
+A rewrite is not equivalent to a canonical redirect.
+
+If:
+
+```text
+/jobs?district_slug=pune
+```
+
+is an old URL that should permanently move to:
+
+```text
+/districts/pune
+```
+
+use a permanent redirect.
+
+Do not internally rewrite it while leaving the old URL visible.
+
+---
+
+# 37. METADATA GENERATION
+
+Use dynamic metadata for district pages.
+
+Conceptual:
+
+```text
+metadataBase
+title
+description
+alternates.canonical
+robots
+openGraph
+```
+
+Canonical must resolve from the district slug.
+
+Example:
+
+```text
+/districts/pune
+→ canonical = https://www.searchsarkarinaukri.com/districts/pune
+```
+
+---
+
+# 38. OPEN GRAPH
+
+Each district page should have location-specific OG metadata.
+
+Example:
+
+```text
+og:title:
+Pune Government Jobs 2026 | Latest Sarkari Naukri
+
+og:description:
+Latest government job vacancies and recruitment updates in Pune district, Maharashtra.
+
+og:url:
+https://www.searchsarkarinaukri.com/districts/pune
+```
+
+Do not use query URLs.
+
+---
+
+# 39. ROBOTS.TXT
+
+Audit robots.txt.
+
+Make sure the following are not accidentally blocked:
+
+```text
+/districts/
+/districts/pune
+```
+
+Review parameter crawling rules carefully.
+
+Do not use an overly broad:
+
+```text
+Disallow: /
+```
+
+or:
+
+```text
+Disallow: /districts
+```
+
+---
+
+# 40. SITEMAP + ROBOTS CONSISTENCY
+
+Robots:
+
+```text
+Allow district pages
+```
+
+Sitemap:
+
+```text
+Include district pages
+```
+
+Internal links:
+
+```text
+Point directly to district pages
+```
+
+Canonical:
+
+```text
+Self-reference district pages
+```
+
+This creates a consistent indexing signal.
+
+---
+
+# 41. ADD LOCATION-BASED RELATED LINKS
+
+At the bottom of Pune page, include only relevant pages.
+
+Examples:
+
+```text
+Maharashtra Government Jobs
+Pune ZP Jobs
+Pune Police Jobs
+Pune MPSC Jobs
+Pune Railway Jobs
+Pune Banking Jobs
+Pune Health Jobs
+Pune Education Jobs
+Central Government Jobs in Pune
+```
+
+Only link when the destination page actually exists and has meaningful content.
+
+---
+
+# 42. LOCATION PAGE CONTENT MUST BE DATA-DRIVEN
+
+Do not use the same paragraph for every district with only the city name replaced.
+
+Bad:
+
+```text
+Pune is a great city for government jobs...
+```
+
+copied to every district.
+
+Good:
+
+```text
+District-specific organizations
+district-specific recruitment categories
+district-specific localities
+district-specific current vacancies
+district-specific qualification patterns
+district-specific FAQs
+```
+
+---
+
+# 43. AVOID AI CONTENT SPAM
+
+The site is AI-assisted, so enforce strict content quality controls.
+
+Every generated district page must pass:
+
+```text
+factuality
+location relevance
+uniqueness
+usefulness
+keyword naturalness
+duplicate-content detection
+job-data consistency
+entity validation
+link validation
+```
+
+Do not generate text merely to satisfy word count.
+
+---
+
+# 44. PROGRAMMATIC SEO QA
+
+Create an automated SEO validation script.
+
+For every district:
+
+```text
+URL status = 200
+canonical = expected URL
+robots = index,follow
+title exists
+description exists
+H1 count = 1
+breadcrumb exists
+FAQ visible
+FAQ schema valid
+sitemap inclusion = true
+internal links = true
+job count consistent
+no broken links
+no redirect
+```
+
+Run this in CI/CD.
+
+---
+
+# 45. REDIRECT QA MATRIX
+
+Create tests:
+
+```text
+/jobs?district_slug=pune
+/jobs?district_slug=mumbai
+/jobs?district_slug=nagpur
+/jobs?district_slug=nashik
+/jobs?district_slug=invalid
+```
+
+Expected:
+
+| URL                                  | Expected                |
+| ------------------------------------ | ----------------------- |
+| valid district query URL             | permanent redirect      |
+| final district URL                   | 200                     |
+| invalid district                     | controlled error        |
+| district URL with tracking parameter | canonical normalization |
+| duplicate slash URL                  | normalized              |
+| HTTP URL                             | HTTPS                   |
+| alternate hostname                   | canonical hostname      |
+
+---
+
+# 46. SEARCH CONSOLE RECOVERY
+
+After deployment:
+
+1. Deploy the fix.
+2. Confirm production HTTP behavior.
+3. Confirm `/districts/pune` returns 200.
+4. Confirm canonical.
+5. Confirm robots.
+6. Confirm sitemap.
+7. Confirm internal links.
+8. Inspect the old query URL.
+9. Inspect the final district URL.
+10. Request indexing for the canonical URL.
+11. Validate the Redirect Error issue.
+12. Monitor affected URLs.
+
+Do not repeatedly request indexing before the technical issue is fixed.
+
+---
+
+# 47. IMPORTANT SEARCH CONSOLE EXPECTATION
+
+The old URL:
+
+```text
+/jobs?district_slug=pune
+```
+
+does NOT need to become indexed.
+
+The desired outcome is:
+
+```text
+Old URL
+   ↓ permanent redirect
+Canonical district URL
+   ↓
+HTTP 200
+   ↓
+Indexable
+   ↓
+Google indexes /districts/pune
+```
+
+Search Console may continue to report the old URL as redirected/non-indexed. That is not itself a problem if the redirect is valid and the canonical destination is indexed.
+
+---
+
+# 48. VALIDATION OF THE DESTINATION PAGE
+
+The live Pune district page is currently a substantially better SEO destination than the old query URL. It contains a location-specific H1, explanatory content, active job listings, category links, related Maharashtra searches and FAQs.
+
+However, the content and count must remain synchronized with the live job dataset.
+
+The site currently exposes other Pune-specific landing pages, including `/jobs-in-pune` and `/districts/pune/zp`, so the developer must also audit URL intent and avoid cannibalization.
+
+---
+
+# 49. REQUIRED REPOSITORY SEARCH
+
+Before changing code, search the entire project for:
+
+```text
+district_slug
+/jobs?
+/districts/
+/jobs-in-pune
+district
+canonical
+metadata
+generateMetadata
+redirect
+permanentRedirect
+NextResponse.redirect
+middleware
+sitemap
+robots
+FAQPage
+BreadcrumbList
+```
+
+Map every usage.
+
+Do not change one redirect in isolation.
+
+---
+
+# 50. DO NOT DELETE EXISTING SEO IMPLEMENTATION
+
+Preserve all existing:
+
+* metadata
+* canonical implementation
+* sitemap
+* robots
+* structured data
+* analytics
+* Search Console verification
+* internal linking
+* job pages
+* category pages
+* district pages
+
+Modify only what is required.
+
+Do not create duplicate SEO utilities.
+
+Do not create duplicate sitemap systems.
+
+Do not rename existing routes without auditing their inbound links and Search Console history.
+
+---
+
+# 51. FINAL ARCHITECTURE
+
+Target architecture:
+
+```text
+                    ┌──────────────────┐
+                    │   Search / User  │
+                    └────────┬─────────┘
+                             │
+                             ▼
+              /jobs?district_slug=pune
+                             │
+                             │ Permanent Redirect
+                             ▼
+                    /districts/pune
+                             │
+             ┌───────────────┼────────────────┐
+             ▼               ▼                ▼
+        Job Listings      Categories       FAQs
+             │               │                │
+             └───────────────┼────────────────┘
+                             ▼
+                     Canonical 200 URL
+                             │
+                             ▼
+                         Sitemap
+                             │
+                             ▼
+                       Google Crawl
+                             │
+                             ▼
+                          Indexing
+```
+
+---
+
+# 52. DEFINITION OF DONE
+
+The task is NOT complete merely because the browser opens `/districts/pune`.
+
+It is complete only when all of the following pass:
+
+### Redirect
+
+```text
+/jobs?district_slug=pune
+→ one permanent redirect
+→ /districts/pune
+```
+
+### Destination
+
+```text
+/districts/pune
+→ HTTP 200
+→ indexable
+→ self canonical
+```
+
+### Google signals
+
+```text
+Internal links → /districts/pune
+Sitemap → /districts/pune
+Canonical → /districts/pune
+Breadcrumb → /districts/pune
+```
+
+### Content
+
+```text
+Pune-specific
+Useful
+Unique
+Data-driven
+10–15 useful FAQs
+Relevant location keywords
+Relevant category links
+```
+
+### Technical
+
+```text
+No redirect loop
+No redirect chain
+No noindex
+No robots block
+No duplicate canonical
+No broken sitemap
+No broken internal links
+No duplicate Pune landing-page intent
+```
+
+### Automated QA
+
+Every district must pass the same validation suite.
+
+---
+
+# 53. FINAL DEVELOPER INSTRUCTION
+
+Do not simply patch the Pune URL.
+
+Fix the underlying district URL architecture globally.
+
+The implementation must solve:
+
+```text
+URL routing
++
+redirect behavior
++
+canonicalization
++
+district page generation
++
+metadata
++
+robots
++
+sitemap
++
+internal linking
++
+location data matching
++
+job count consistency
++
+FAQ/content architecture
++
+keyword targeting
++
+duplicate URL prevention
++
+Googlebot crawlability
++
+Search Console validation
+```
+
+The final goal is:
+
+```text
+One district
+→ One primary SEO landing URL
+→ One canonical
+→ One indexable destination
+→ Consistent internal links
+→ Consistent sitemap
+→ Data-driven content
+→ Strong local search intent
+```
+
+Do this as a site-wide reusable architecture, not as a Pune-only workaround.

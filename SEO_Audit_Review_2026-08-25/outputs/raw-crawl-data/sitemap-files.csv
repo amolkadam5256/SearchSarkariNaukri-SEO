@@ -1,0 +1,13 @@
+url,status,root_type,entry_count,valid_basic_xml,content_type,elapsed_ms,error
+https://www.searchsarkarinaukri.com/sitemap.xml,200,sitemapindex,11,true,application/xml; charset=utf-8,28,
+https://www.searchsarkarinaukri.com/sitemap-static.xml,200,urlset,37,true,application/xml; charset=utf-8,20,
+https://www.searchsarkarinaukri.com/sitemap-jobs.xml,200,urlset,3475,true,application/xml; charset=utf-8,134,
+https://www.searchsarkarinaukri.com/sitemap-locations.xml,200,urlset,29,true,application/xml; charset=utf-8,560,
+https://www.searchsarkarinaukri.com/sitemap-qualifications.xml,200,urlset,10,true,application/xml; charset=utf-8,304,
+https://www.searchsarkarinaukri.com/sitemap-departments.xml,200,urlset,12,true,application/xml; charset=utf-8,336,
+https://www.searchsarkarinaukri.com/sitemap-cross-filter.xml,200,urlset,109,true,application/xml; charset=utf-8,14594,
+https://www.searchsarkarinaukri.com/sitemap-news.xml,200,urlset,0,true,application/xml; charset=utf-8,20,
+https://www.searchsarkarinaukri.com/sitemap-blogs.xml,200,urlset,67,true,application/xml; charset=utf-8,23,
+https://www.searchsarkarinaukri.com/sitemap-results.xml,200,urlset,45,true,application/xml; charset=utf-8,22,
+https://www.searchsarkarinaukri.com/sitemap-admit-cards.xml,200,urlset,37,true,application/xml; charset=utf-8,28,
+https://www.searchsarkarinaukri.com/sitemap-districts.xml,200,urlset,50,true,application/xml; charset=utf-8,1648,

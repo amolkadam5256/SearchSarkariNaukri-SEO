@@ -1,0 +1,1368 @@
+# SearchSarkariNaukri — Fix “Alternative Page with Proper Canonical Tag” for Job Detail URLs
+
+## 1. SEARCH CONSOLE ISSUE
+
+Google Search Console currently reports:
+
+**Issue:**
+`Alternative page with proper canonical tag`
+
+**Affected URL:**
+
+`https://www.searchsarkarinaukri.com/jobs/862`
+
+**Last crawl:**
+18 May 2026
+
+**Google's interpretation:**
+
+Google considers `/jobs/862` an alternative URL and has selected another URL as canonical.
+
+This must NOT be treated as automatically correct.
+
+The developer must determine whether `/jobs/862` is:
+
+1. a genuinely duplicate/alternate URL, OR
+2. a unique job detail page that should itself be indexed.
+
+If `/jobs/862` contains a unique government-job posting, the canonical should normally point to the unique canonical job URL for that posting, not to a generic jobs page, category page, district page, or homepage.
+
+---
+
+# 2. FIRST CHECK — INSPECT THE ACTUAL CANONICAL
+
+Open:
+
+`https://www.searchsarkarinaukri.com/jobs/862`
+
+Inspect the final HTML.
+
+Find:
+
+```html
+<link rel="canonical" href="..." />
+```
+
+Record the exact canonical target.
+
+Do NOT assume what it is.
+
+The developer must report:
+
+```text
+Source URL:
+https://www.searchsarkarinaukri.com/jobs/862
+
+HTTP status:
+____
+
+Canonical:
+____
+
+Canonical HTTP status:
+____
+
+Canonical indexable:
+YES / NO
+
+Canonical page type:
+____
+```
+
+---
+
+# 3. DETERMINE WHETHER JOB 862 IS UNIQUE
+
+Inspect the actual job record associated with ID `862`.
+
+Determine:
+
+```text
+job ID
+job title
+organization
+department
+location
+district
+state
+qualification
+job type
+vacancy count
+application start date
+application end date
+official notification URL
+official application URL
+description
+```
+
+The developer must determine whether job `862` represents a unique recruitment posting.
+
+If it is unique, `/jobs/862` should NOT canonicalize to a generic listing page.
+
+---
+
+# 4. CORRECT CANONICAL MODEL
+
+For a unique job:
+
+```text
+/job/unique-slug
+```
+
+or:
+
+```text
+/jobs/862
+```
+
+should be the canonical SEO URL.
+
+Preferred architecture:
+
+```text
+/jobs/[id-or-slug]
+```
+
+with:
+
+```text
+HTTP 200
+index,follow
+self-referencing canonical
+```
+
+Example:
+
+```html
+<link
+  rel="canonical"
+  href="https://www.searchsarkarinaukri.com/jobs/862"
+/>
+```
+
+If the site has a better permanent SEO slug, such as:
+
+```text
+/jobs/pune-municipal-corporation-recruitment-2026
+```
+
+then use that as the canonical **only if it is the site's deliberate primary job URL** and `/jobs/862` permanently redirects to it.
+
+Do not maintain two competing canonical job URLs.
+
+---
+
+# 5. DO NOT CANONICALIZE UNIQUE JOBS TO LISTING PAGES
+
+Never do this for unique job detail pages:
+
+```text
+/jobs/862
+→ canonical /jobs
+```
+
+or:
+
+```text
+/jobs/862
+→ canonical /districts/pune
+```
+
+or:
+
+```text
+/jobs/862
+→ canonical /jobs-in-pune
+```
+
+or:
+
+```text
+/jobs/862
+→ canonical /
+```
+
+Those pages have different search intent.
+
+A job detail page should target the individual recruitment/search intent.
+
+---
+
+# 6. AUDIT ALL JOB URL VARIANTS
+
+Search the entire codebase and database for all URL patterns associated with jobs.
+
+Examples:
+
+```text
+/jobs/862
+/job/862
+/jobs?id=862
+/jobs?job_id=862
+/jobs?jobId=862
+/jobs/[slug]
+/job/[slug]
+```
+
+Determine whether multiple routes expose the same job.
+
+If duplicate routes exist, establish ONE primary URL.
+
+Example:
+
+```text
+/jobs/862
+        ↓
+canonical job URL
+        ↓
+HTTP 200
+```
+
+All legacy duplicates should permanently redirect to the primary URL where appropriate.
+
+---
+
+# 7. IMPORTANT — DO NOT FIX THIS BY REMOVING THE CANONICAL
+
+Do NOT remove canonical tags merely to make the page eligible for indexing.
+
+A canonical tag should remain.
+
+The problem is potentially that the canonical target is wrong.
+
+Correct solution:
+
+```text
+Unique job page
+↓
+self canonical
+↓
+indexable
+```
+
+Not:
+
+```text
+Unique job page
+↓
+remove canonical
+```
+
+---
+
+# 8. SELF-REFERENCING CANONICAL
+
+For every indexable unique job page:
+
+```text
+URL:
+https://www.searchsarkarinaukri.com/jobs/862
+
+Canonical:
+https://www.searchsarkarinaukri.com/jobs/862
+```
+
+Canonical must exactly match the normalized production URL.
+
+Check:
+
+* HTTPS
+* hostname
+* path
+* trailing slash policy
+* uppercase/lowercase
+* query parameters
+
+---
+
+# 9. QUERY PARAMETER HANDLING
+
+Job URLs may acquire tracking/query parameters.
+
+Examples:
+
+```text
+/jobs/862?utm_source=google
+/jobs/862?utm_campaign=...
+/jobs/862?ref=...
+```
+
+These should NOT become separate canonical URLs.
+
+Canonical should remain:
+
+```text
+/jobs/862
+```
+
+Example:
+
+```text
+/jobs/862?utm_source=facebook
+        ↓
+canonical
+/jobs/862
+```
+
+Do not allow tracking parameters to enter canonical URLs.
+
+---
+
+# 10. JOB DETAIL PAGE MUST RETURN HTTP 200
+
+Test:
+
+```text
+GET /jobs/862
+```
+
+Expected:
+
+```text
+HTTP 200
+```
+
+It must not return:
+
+```text
+301
+302
+307
+308
+404
+410
+500
+```
+
+unless `/jobs/862` is intentionally a legacy URL.
+
+If the job URL redirects to another unique canonical URL, ensure the redirect is intentional and there is no redirect chain.
+
+---
+
+# 11. IF /jobs/862 IS A LEGACY URL
+
+If `/jobs/862` is NOT the intended public URL anymore, determine the correct destination.
+
+Example:
+
+```text
+/jobs/862
+→ 301
+→ /jobs/pune-municipal-corporation-recruitment-2026
+```
+
+Then:
+
+```text
+/jobs/pune-municipal-corporation-recruitment-2026
+→ HTTP 200
+→ self canonical
+```
+
+Do not:
+
+```text
+/jobs/862
+→ /jobs
+→ /districts/pune
+```
+
+Avoid redirect chains.
+
+---
+
+# 12. JOB TITLE AND URL ARCHITECTURE
+
+If the current system uses only numeric IDs:
+
+```text
+/jobs/862
+```
+
+do not change all existing URLs unnecessarily.
+
+Numeric URLs can still be indexed.
+
+A slug-based URL can be introduced only if there is a strong architectural reason.
+
+If introducing slugs, implement:
+
+```text
+/jobs/[slug]
+```
+
+with stable canonicalization and permanent redirects from old URLs.
+
+Do NOT create multiple indexable URLs for the same job.
+
+---
+
+# 13. JOB PAGE TITLE
+
+Every unique job page needs a unique title.
+
+Bad:
+
+```text
+Government Jobs 2026 | Search Sarkari Naukri
+```
+
+on every job.
+
+Good pattern:
+
+```text
+{Job Title} Recruitment 2026 | Vacancy, Eligibility & Apply
+```
+
+Use actual job information.
+
+Example:
+
+```text
+Pune Municipal Corporation Recruitment 2026 | Vacancy, Eligibility & Apply
+```
+
+Do not stuff keywords into titles.
+
+---
+
+# 14. META DESCRIPTION
+
+Generate a unique description from the job data.
+
+Recommended structure:
+
+```text
+Check {Organization} {Job Title} Recruitment 2026, including vacancies, eligibility, important dates, salary and official application details.
+```
+
+Only include information actually present in the job record.
+
+---
+
+# 15. H1
+
+Each job detail page must have one primary H1.
+
+Example:
+
+```text
+Pune Municipal Corporation Recruitment 2026
+```
+
+or the actual official recruitment/job title.
+
+Do not use generic:
+
+```text
+Latest Government Jobs
+```
+
+as the only H1.
+
+---
+
+# 16. JOB PAGE CONTENT
+
+The job page should provide substantial, useful information.
+
+Recommended structure:
+
+```text
+H1 — Job Title
+
+Quick Job Overview
+
+Organization
+Post Name
+Vacancies
+Qualification
+Age Limit
+Salary
+Job Location
+Job Type
+Application Start Date
+Application Last Date
+
+Eligibility
+
+Educational Qualification
+
+Age Limit
+
+Application Fee
+
+Selection Process
+
+Salary / Pay Scale
+
+Important Dates
+
+How to Apply
+
+Official Notification
+
+Official Application Link
+
+Important Links
+
+Related Government Jobs
+
+Related Pune / Maharashtra Jobs
+
+FAQs
+```
+
+Use actual data.
+
+Never fabricate missing recruitment information.
+
+---
+
+# 17. JOB SCHEMA
+
+Audit structured data.
+
+If the page represents a job vacancy, evaluate implementation of:
+
+```text
+JobPosting
+```
+
+Use only valid, visible, accurate information.
+
+Important fields should come from the job record.
+
+For example:
+
+```text
+title
+description
+datePosted
+validThrough
+hiringOrganization
+jobLocation
+employmentType
+baseSalary
+```
+
+Do not put fake values into structured data.
+
+---
+
+# 18. JOB POSTING VALIDITY
+
+The `validThrough` value must reflect the actual application deadline where available.
+
+Do NOT leave expired jobs marked indefinitely as active.
+
+Create an automated rule:
+
+```text
+current date > application deadline
+        ↓
+job expired
+        ↓
+update JobPosting eligibility/schema
+        ↓
+update listing
+```
+
+Do not generate misleading active-job structured data.
+
+---
+
+# 19. EXPIRED JOB URL STRATEGY
+
+Do NOT automatically delete every expired job page.
+
+Decide based on SEO value.
+
+If the job page has:
+
+* backlinks
+* search traffic
+* useful historical information
+* unique recruitment information
+* significant impressions
+
+it may remain accessible as an archived job page.
+
+Clearly label it:
+
+```text
+Application Closed
+```
+
+If the page has no continuing value and is permanently removed, return an appropriate status.
+
+Do not mass-redirect expired jobs to unrelated pages.
+
+---
+
+# 20. INTERNAL LINKS TO JOB 862
+
+Search the entire project/database for:
+
+```text
+/jobs/862
+```
+
+Determine where this job is linked.
+
+Internal links should point directly to the canonical job URL.
+
+Audit:
+
+* homepage
+* latest jobs
+* district pages
+* category pages
+* qualification pages
+* search results
+* related jobs
+* breadcrumbs
+* sitemap UI
+* navigation
+
+Avoid linking to redirect URLs.
+
+---
+
+# 21. JOB SITEMAP
+
+If individual job URLs are intended to be indexed, include canonical job URLs in the sitemap.
+
+Example:
+
+```text
+/jobs/862
+```
+
+must only appear in the sitemap if:
+
+```text
+HTTP 200
+indexable
+canonical = itself
+```
+
+Never put:
+
+```text
+redirecting job URLs
+404 job URLs
+noindex job URLs
+```
+
+in the sitemap.
+
+---
+
+# 22. CANONICAL + SITEMAP CONSISTENCY
+
+For an indexable job:
+
+```text
+Internal link
+      ↓
+canonical job URL
+      ↓
+sitemap
+      ↓
+HTTP 200
+      ↓
+self canonical
+      ↓
+indexable
+```
+
+All signals must agree.
+
+---
+
+# 23. ROBOTS
+
+Verify:
+
+```text
+robots.txt
+meta robots
+X-Robots-Tag
+```
+
+The unique job page must not accidentally contain:
+
+```text
+noindex
+```
+
+unless the page is intentionally excluded.
+
+Also ensure robots.txt does not block:
+
+```text
+/jobs/
+```
+
+if individual jobs are intended to be indexed.
+
+---
+
+# 24. NEXT.JS METADATA AUDIT
+
+Because the site is built using Next.js, inspect:
+
+```text
+generateMetadata()
+metadata
+alternates.canonical
+robots
+metadataBase
+```
+
+The developer must verify that dynamic job metadata does not accidentally inherit the canonical from:
+
+* `/jobs`
+* parent layout
+* district page
+* category page
+* homepage
+* another job
+* previous route
+
+This is a common dynamic-route implementation failure.
+
+---
+
+# 25. DYNAMIC CANONICAL LOGIC
+
+For:
+
+```text
+/jobs/[id]
+```
+
+canonical generation must use the current job.
+
+Conceptually:
+
+```text
+job = getJobById(id)
+
+canonical =
+https://www.searchsarkarinaukri.com/jobs/{job.id}
+```
+
+Do not hard-code:
+
+```text
+/jobs
+```
+
+inside a shared job layout.
+
+Do not use a stale parent canonical.
+
+---
+
+# 26. PARENT LAYOUT AUDIT
+
+Inspect nested Next.js layouts.
+
+Example:
+
+```text
+app/
+  jobs/
+    layout.tsx
+    [id]/
+      page.tsx
+```
+
+Make sure the parent layout does not define a canonical that overrides the job detail page.
+
+Audit:
+
+```text
+app/layout
+app/jobs/layout
+app/jobs/[id]/page
+```
+
+and every metadata-generating utility.
+
+---
+
+# 27. STATIC VS DYNAMIC JOB PAGES
+
+Determine whether jobs are generated with:
+
+```text
+generateStaticParams()
+```
+
+or dynamically at request time.
+
+If using static generation, verify new jobs receive pages correctly.
+
+If using ISR/cache, verify job updates invalidate/revalidate metadata.
+
+Important:
+
+A newly updated job must not retain an old canonical/title/description from cached data.
+
+---
+
+# 28. JOB ID REUSE
+
+Critical database audit:
+
+Ensure job IDs are immutable.
+
+Never reuse:
+
+```text
+ID 862
+```
+
+for another recruitment after the original job is deleted.
+
+Otherwise, Google could associate old indexed content with a completely different job.
+
+Job IDs must be stable.
+
+---
+
+# 29. DUPLICATE JOB DETECTION
+
+Check whether the database contains duplicate postings.
+
+Example:
+
+```text
+Job A:
+Pune Municipal Corporation — Clerk — 2026
+
+Job B:
+Pune Municipal Corporation — Clerk — 2026
+```
+
+If both URLs contain essentially identical content, determine whether they are genuinely separate recruitment records.
+
+If duplicate records represent the same recruitment, consolidate them.
+
+Do not solve database duplication using canonical tags alone.
+
+---
+
+# 30. JOB TITLE DUPLICATION
+
+Do not assume two identical titles are duplicate pages.
+
+Different:
+
+```text
+organizations
+notification numbers
+application deadlines
+vacancy IDs
+recruitment notices
+```
+
+may represent legitimate separate jobs.
+
+Use the official recruitment/notification identity to determine uniqueness.
+
+---
+
+# 31. NOTIFICATION NUMBER
+
+Where available, prominently display the official:
+
+```text
+Advertisement No.
+Notification No.
+Recruitment No.
+```
+
+This improves uniqueness and helps users identify the exact recruitment.
+
+It can also help detect duplicate job records.
+
+---
+
+# 32. OFFICIAL SOURCE
+
+Every job should identify its official recruitment authority.
+
+Example:
+
+```text
+Recruiting Organization:
+[Actual Organization]
+
+Official Notification:
+[Official URL]
+
+Official Application:
+[Official URL]
+```
+
+Do not fabricate official URLs.
+
+Do not replace official links with generic search pages.
+
+---
+
+# 33. BREADCRUMB
+
+Recommended:
+
+```text
+Home
+→ Government Jobs
+→ Pune Government Jobs
+→ {Job Title}
+```
+
+The final breadcrumb must point to the actual job URL.
+
+Use `BreadcrumbList` structured data matching the visible breadcrumb.
+
+---
+
+# 34. RELATED JOBS
+
+Add useful related jobs.
+
+For a Pune job:
+
+```text
+Related Pune Government Jobs
+Related Maharashtra Government Jobs
+Related Jobs in Same Department
+Related Jobs by Qualification
+```
+
+Do not create random internal links.
+
+Use actual relevance.
+
+---
+
+# 35. LOCATION SIGNAL
+
+If job location is Pune, display structured location information.
+
+Example:
+
+```text
+Job Location:
+Pune, Maharashtra
+```
+
+If multiple locations:
+
+```text
+Pune, Mumbai and other Maharashtra locations
+```
+
+Use actual recruitment data.
+
+Do not force every job into a district based solely on the page URL.
+
+---
+
+# 36. JOB + DISTRICT RELATIONSHIP
+
+A job detail page may link to:
+
+```text
+/jobs/862
+       ↓
+/districts/pune
+```
+
+But the district page must NOT become the canonical for the job.
+
+Correct:
+
+```text
+Job page
+canonical → Job page
+
+District page
+canonical → District page
+```
+
+They serve different search intents.
+
+---
+
+# 37. SEARCH RESULTS PAGES
+
+Audit whether internal search/filter pages can generate duplicate job URLs.
+
+Examples:
+
+```text
+/jobs?keyword=clerk
+/jobs?district_slug=pune
+/jobs?category=police
+```
+
+These should not accidentally generate alternate canonical versions of:
+
+```text
+/jobs/862
+```
+
+The job detail page remains the canonical representation of the job itself.
+
+---
+
+# 38. PAGINATION
+
+Audit:
+
+```text
+/jobs?page=2
+/jobs?page=3
+```
+
+and filtered pages.
+
+Make sure listing pages do not create multiple duplicate representations of the same job detail URL.
+
+All job cards should link directly to:
+
+```text
+/jobs/{id}
+```
+
+---
+
+# 39. SOCIAL/SHARE URLS
+
+If the site generates:
+
+```text
+/jobs/862?share=...
+```
+
+or similar URLs, ensure canonical remains the primary job URL.
+
+Do not allow social tracking parameters into canonical URLs.
+
+---
+
+# 40. PERFORMANCE
+
+Job pages must be crawlable without requiring client-side interactions.
+
+Important job information should be present in server-rendered HTML where practical.
+
+Googlebot should be able to retrieve:
+
+```text
+title
+H1
+job description
+organization
+location
+dates
+application information
+canonical
+structured data
+```
+
+without depending on a user clicking a button.
+
+---
+
+# 41. 404/DELETED JOB HANDLING
+
+Create explicit rules.
+
+### Job exists:
+
+```text
+200
+index,follow
+self canonical
+```
+
+### Job intentionally moved:
+
+```text
+301
+→ new canonical job URL
+```
+
+### Job expired but valuable:
+
+```text
+200
+clearly marked expired
+```
+
+### Job permanently removed and no useful replacement:
+
+```text
+appropriate 404/410
+```
+
+Do not redirect all missing jobs to:
+
+```text
+/
+```
+
+or:
+
+```text
+/jobs
+```
+
+This can create soft-404 and irrelevant redirect behavior.
+
+---
+
+# 42. AUTOMATED SEO TEST
+
+Create an automated job-page SEO validator.
+
+For every job URL:
+
+```text
+HTTP status
+canonical
+canonical status
+robots
+title
+meta description
+H1 count
+JobPosting schema
+Breadcrumb schema
+official links
+job location
+organization
+application deadline
+sitemap inclusion
+internal links
+```
+
+Expected for active indexable job:
+
+```text
+status = 200
+canonical = self
+robots = index,follow
+title = unique
+description = unique
+H1 = 1
+JobPosting = valid
+```
+
+---
+
+# 43. GOOGLE SEARCH CONSOLE VALIDATION
+
+After fixing the implementation:
+
+1. Deploy.
+2. Test `/jobs/862`.
+3. Test the canonical target.
+4. Inspect the live URL in Search Console.
+5. Confirm Google's rendered/fetched page.
+6. Confirm canonical selection.
+7. Request indexing if appropriate.
+8. Validate the issue.
+9. Monitor whether additional job URLs show the same problem.
+
+Do NOT repeatedly request indexing without fixing the canonical architecture.
+
+---
+
+# 44. SITE-WIDE CANONICAL AUDIT
+
+This is extremely important.
+
+Do not fix only:
+
+```text
+/jobs/862
+```
+
+Search all dynamic pages.
+
+Audit:
+
+```text
+/jobs/[id]
+/districts/[slug]
+/categories/[slug]
+/qualifications/[slug]
+/departments/[slug]
+/locations/[slug]
+```
+
+Look for incorrect shared canonical metadata.
+
+A single metadata bug can cause hundreds or thousands of URLs to appear under:
+
+**Alternative page with proper canonical tag**
+
+---
+
+# 45. SEARCH CONSOLE SAMPLE EXPANSION
+
+Search Console currently reports one example:
+
+```text
+/jobs/862
+```
+
+Do not assume there is only one affected URL.
+
+Use:
+
+* Page Indexing report
+* URL Inspection
+* sitemap
+* crawler
+* database URL inventory
+
+to determine the actual number of affected job pages.
+
+Create a report:
+
+```text
+Total job URLs:
+____
+
+HTTP 200:
+____
+
+Self canonical:
+____
+
+Canonical to another URL:
+____
+
+Noindex:
+____
+
+Redirect:
+____
+
+404:
+____
+
+Blocked:
+____
+```
+
+---
+
+# 46. FINAL EXPECTED STATE
+
+For a unique active job:
+
+```text
+https://www.searchsarkarinaukri.com/jobs/862
+```
+
+must resolve as:
+
+```text
+HTTP 200
+```
+
+with:
+
+```text
+canonical:
+https://www.searchsarkarinaukri.com/jobs/862
+
+robots:
+index,follow
+```
+
+and contain:
+
+```text
+Unique title
+Unique description
+One H1
+Complete job information
+JobPosting schema
+Breadcrumb schema
+Official recruitment links
+Relevant internal links
+```
+
+The URL should be included in the job sitemap if it is intended to be indexed.
+
+---
+
+# 47. FINAL DEVELOPER COMMAND
+
+Do NOT simply change the canonical for `/jobs/862`.
+
+Perform a **site-wide job URL canonical audit**.
+
+Trace the complete chain:
+
+```text
+Database job record
+        ↓
+Job route
+        ↓
+Rendered URL
+        ↓
+HTTP response
+        ↓
+Metadata generation
+        ↓
+Canonical
+        ↓
+Robots
+        ↓
+Structured data
+        ↓
+Internal links
+        ↓
+Sitemap
+        ↓
+Googlebot
+        ↓
+Google-selected canonical
+```
+
+The goal is:
+
+```text
+ONE UNIQUE JOB
+        ↓
+ONE PRIMARY JOB URL
+        ↓
+HTTP 200
+        ↓
+SELF-REFERENCING CANONICAL
+        ↓
+INDEXABLE
+        ↓
+SITEMAP
+        ↓
+INTERNAL LINKS
+        ↓
+GOOGLE INDEX
+```
+
+Do not use canonical tags to hide technical duplication.
+
+Fix the underlying routing, metadata, database duplication, internal-linking and sitemap problems wherever they exist.

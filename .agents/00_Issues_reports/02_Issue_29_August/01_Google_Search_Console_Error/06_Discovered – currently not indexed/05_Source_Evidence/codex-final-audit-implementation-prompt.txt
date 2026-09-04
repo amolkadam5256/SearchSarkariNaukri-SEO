@@ -1,0 +1,1379 @@
+# CODEX MASTER PROMPT — FINAL AUDIT & IMPLEMENTATION PLAN
+
+## SearchSarkariNaukri — All 896 Admit Card URLs
+
+You are acting as a **Senior Technical SEO Engineer, Information Architect, Next.js Developer, Content Quality Auditor, and Google Search Console Indexing Specialist**.
+
+The project is:
+
+**SearchSarkariNaukri**
+Domain: `https://www.searchsarkarinaukri.com`
+
+The complete audit input has now been prepared.
+
+### IMPORTANT — COMPLETE DATASET
+
+Previously, only 37 URL briefs existed. That was incomplete.
+
+The audit dataset has now been corrected and contains **all 896 unique URLs**.
+
+Use the following existing audit structure as the source of truth:
+
+* `01_URL_Briefs_All_896/` — all 896 individual URL markdown briefs
+* `00_Master_Index/admit-card-url-brief-index-896.csv`
+* `00_Master_Index/01_896-url-generation-summary.md`
+* `README.md`
+* Existing `01_URL_Briefs/` — older 37 detailed briefs retained for reference
+* All other existing files inside the audit/issue-report directory
+
+Do **not** assume that only the older 37 URLs need auditing.
+
+The scope is **all 896 URLs**.
+
+---
+
+# PRIMARY OBJECTIVE
+
+Perform a **final, implementation-ready SEO + URL architecture + content quality + indexability audit of all 896 admit-card pages**, then organize the findings into a clear developer-fix plan.
+
+The most important issue to investigate is that URLs must not remain generic/numeric such as:
+
+`/admit-cards/17`
+
+The final URL architecture must use a **meaningful, descriptive, human-readable slug based on the actual admit-card page/entity**, wherever technically and logically appropriate.
+
+For example, instead of:
+
+`/admit-cards/17`
+
+the system should generate something conceptually similar to:
+
+`/admit-cards/[meaningful-exam-or-recruitment-name]-admit-card`
+
+Do **NOT** blindly copy this example format.
+
+Determine the correct slug from the **actual page content, title, exam name, organization, recruitment name, year, and search intent**.
+
+The URL must accurately describe the page.
+
+---
+
+# PHASE 1 — READ AND UNDERSTAND THE ENTIRE EXISTING AUDIT
+
+Before making recommendations:
+
+1. Read `README.md`.
+2. Read the master CSV.
+3. Read `01_896-url-generation-summary.md`.
+4. Inspect the structure and naming convention of `01_URL_Briefs_All_896/`.
+5. Review the older 37 detailed briefs in `01_URL_Briefs/`.
+6. Review every other relevant audit/report file already present.
+7. Identify whether any existing audit contains contradictory recommendations.
+8. Consolidate duplicate findings.
+9. Preserve useful findings rather than replacing them with generic SEO advice.
+10. Treat the existing 896 URL dataset as the canonical audit scope.
+
+Do not create a new audit based only on a random crawl subset.
+
+---
+
+# PHASE 2 — VERIFY THE 896 URL DATASET
+
+Perform a strict dataset validation.
+
+Confirm:
+
+* Exactly 896 unique source URLs exist.
+* Exactly 896 individual URL briefs exist.
+* Exactly 896 rows exist in the master index.
+* Every CSV URL maps to exactly one markdown brief.
+* Every markdown brief maps to exactly one CSV record.
+* No duplicate URL.
+* No duplicate ID representing different pages.
+* No missing ID.
+* No missing page name.
+* No malformed filename.
+* No orphan markdown file.
+* No orphan CSV row.
+* No missing metadata.
+* No accidental truncation of URLs.
+* No inconsistent URL normalization.
+* No duplicate slug recommendation.
+
+Produce a clear validation result:
+
+`PASS / FAIL`
+
+for each condition.
+
+---
+
+# PHASE 3 — AUDIT THE CURRENT URL ARCHITECTURE
+
+This is a critical phase.
+
+Audit all 896 current URLs.
+
+Classify every URL into categories such as:
+
+* Numeric/generic URL
+* Meaningful URL
+* Duplicate URL
+* Near-duplicate URL
+* Incorrect slug
+* Weak slug
+* Keyword-stuffed slug
+* Missing primary entity
+* Wrong entity in slug
+* Temporary/technical URL
+* Redirect candidate
+* Canonical conflict candidate
+* URL requiring no change
+
+For every URL, determine:
+
+### Current URL
+
+### Recommended URL
+
+### URL Change Required?
+
+### Reason
+
+### Redirect Required?
+
+### Priority
+
+---
+
+# PHASE 4 — CREATE A MEANINGFUL URL FOR EVERY PAGE
+
+For every one of the 896 pages, inspect the available information in the corresponding brief and determine the correct canonical URL.
+
+Do not create URLs merely by converting the numeric ID into a word.
+
+For example, do NOT do:
+
+`/admit-cards/17` → `/admit-cards/17-admit-card`
+
+That does not solve the problem.
+
+Instead, derive the slug from the actual page/entity.
+
+Use available page information such as:
+
+* Exam name
+* Recruitment name
+* Organization
+* Commission/board
+* Department
+* Post name
+* Exam stage
+* Admit card name
+* Recruitment year
+* Examination year
+* Relevant distinguishing information
+
+The slug should be:
+
+* descriptive
+* stable
+* readable
+* unique
+* relevant to search intent
+* concise
+* natural
+* lowercase
+* hyphen-separated
+* free from unnecessary parameters
+* free from numeric IDs unless the number is genuinely part of the official entity name
+* free from keyword stuffing
+* free from unnecessary stop words
+* consistent with the website's information architecture
+
+Do not add a year unless the year materially distinguishes the page.
+
+Do not remove a year if removing it would cause ambiguity between separate editions.
+
+---
+
+# PHASE 5 — DO NOT CHANGE URLS BLINDLY
+
+Before recommending a URL migration, verify that the proposed slug represents the actual page.
+
+For each URL:
+
+1. Identify the page's actual subject.
+2. Identify the primary search intent.
+3. Identify the entity users would search for.
+4. Identify the organization/exam/recruitment.
+5. Check whether another page already represents the same entity.
+6. Check whether the recommended slug conflicts with another page.
+7. Check whether a historical page already owns a similar slug.
+8. Check whether changing the URL could create a duplicate.
+9. Check whether the proposed URL could accidentally represent a different exam/year.
+10. Confirm that the URL is semantically aligned with the page.
+
+If the data is insufficient to safely generate a URL, explicitly mark:
+
+`NEEDS MANUAL REVIEW`
+
+Do not invent facts.
+
+---
+
+# PHASE 6 — PAGE CONTENT AUDIT
+
+Do not audit URLs independently from their page content.
+
+For all 896 pages, determine whether the content actually supports the proposed URL.
+
+Audit:
+
+* H1
+* Page title
+* Meta title
+* Meta description
+* Introduction
+* Exam/recruitment name
+* Organization
+* Post name
+* Exam date
+* Admit card release date
+* Application information
+* Download instructions
+* Official website
+* Important dates
+* Eligibility information where applicable
+* Required documents
+* Instructions
+* FAQs
+* Internal links
+* Breadcrumbs
+* Structured content
+* Update information
+* Content freshness
+* Duplicate content
+* Thin content
+* Boilerplate content
+* Missing content
+* Incorrect content
+* Contradictory content
+* Outdated information
+
+The URL, title, H1, page body, breadcrumb and internal-link anchor should all communicate the **same primary entity**.
+
+---
+
+# PHASE 7 — H1 TO H6 HEADING ARCHITECTURE
+
+Audit and improve heading hierarchy for every page.
+
+Each page should have:
+
+### H1
+
+One meaningful, page-specific H1 describing the exact admit-card page.
+
+Do not use:
+
+* `Admit Card`
+* `Admit Card Details`
+* `Download Admit Card`
+
+as the only H1.
+
+The H1 should identify the actual exam/recruitment/admit card.
+
+Example pattern:
+
+`[Exam/Recruitment Name] Admit Card [Year]`
+
+Only use year where relevant.
+
+### H2–H6
+
+Use headings to create a logical information hierarchy.
+
+Potential sections:
+
+* Admit Card Overview
+* Important Dates
+* How to Download
+* Direct Download Link
+* Exam Details
+* Documents Required
+* Important Instructions
+* Exam Pattern
+* Related Recruitment Information
+* Frequently Asked Questions
+
+Do not create headings merely to insert keywords.
+
+Do not use H3 before H2.
+
+Do not create dozens of headings where content does not justify them.
+
+Do not use heading tags for visual styling.
+
+---
+
+# PHASE 8 — TITLE TAG AUDIT
+
+For all 896 pages:
+
+Audit and recommend a unique title.
+
+The title must:
+
+* describe the exact page
+* contain the primary entity
+* match search intent
+* avoid duplicate titles
+* avoid keyword stuffing
+* avoid generic titles
+* include year only when meaningful
+* be written for users, not only search engines
+
+Flag:
+
+* duplicate title
+* missing title
+* generic title
+* misleading title
+* excessively long title
+* keyword-stuffed title
+* title/content mismatch
+
+---
+
+# PHASE 9 — META DESCRIPTION AUDIT
+
+For every page:
+
+Check:
+
+* missing description
+* duplicate description
+* generic description
+* misleading description
+* keyword stuffing
+* poor search intent alignment
+* lack of useful information
+
+Create a meaningful recommendation where necessary.
+
+The description should accurately summarize what the user can find on that specific page.
+
+Do not create 896 descriptions by blindly replacing the exam name in one template.
+
+---
+
+# PHASE 10 — CANONICAL AUDIT
+
+For all 896 pages, determine:
+
+* canonical URL
+* whether canonical points to itself
+* whether canonical points to another page
+* whether canonical conflicts with recommended URL
+* whether canonical points to a redirect
+* whether canonical points to a 404
+* whether canonical creates a cluster incorrectly
+* whether canonical is missing
+* whether canonical uses HTTP instead of HTTPS
+* whether canonical uses the wrong hostname
+* whether canonical uses inconsistent trailing slash rules
+
+After URL migration, canonical must point to the **final preferred URL**, not the old numeric URL.
+
+---
+
+# PHASE 11 — REDIRECT STRATEGY
+
+For every URL requiring migration, create an explicit redirect recommendation.
+
+Example:
+
+OLD:
+
+`/admit-cards/17`
+
+NEW:
+
+`/admit-cards/[meaningful-slug]`
+
+Required:
+
+`301 permanent redirect`
+
+Do not recommend:
+
+* 302
+* meta refresh
+* JavaScript redirect
+* redirect chains
+
+Ensure:
+
+`old URL → final URL`
+
+and NOT:
+
+`old URL → intermediate URL → final URL`
+
+Audit redirect risks including:
+
+* loops
+* chains
+* collisions
+* old URLs reused
+* multiple old URLs mapping incorrectly
+* redirecting unrelated pages
+* redirecting everything to the homepage
+* redirecting all pages to one generic admit-card page
+
+---
+
+# PHASE 12 — INTERNAL LINKING
+
+For every page, determine whether the page can be discovered through internal links.
+
+Audit:
+
+* homepage/category links
+* admit-card listing pages
+* exam pages
+* organization pages
+* related posts
+* breadcrumb links
+* related admit cards
+* contextual links
+* navigation
+* footer where appropriate
+
+The goal is to eliminate pages that are technically live but effectively orphaned.
+
+For each page classify:
+
+* Strongly internally linked
+* Moderately internally linked
+* Weakly linked
+* Orphan candidate
+
+Recommend contextual internal links, not artificial keyword stuffing.
+
+---
+
+# PHASE 13 — BREADCRUMB STRUCTURE
+
+Audit breadcrumb hierarchy.
+
+Recommended conceptual architecture:
+
+Home
+→ Admit Cards
+→ [Exam/Recruitment]
+→ [Current Page]
+
+Ensure breadcrumb labels are meaningful.
+
+Do not expose numeric IDs as the primary breadcrumb label.
+
+Check BreadcrumbList structured data where applicable.
+
+---
+
+# PHASE 14 — XML SITEMAP
+
+Audit sitemap handling after URL migration.
+
+Ensure:
+
+* only canonical URLs are included
+* no numeric old URLs remain after migration
+* no redirected URLs are in sitemap
+* no 404 URLs are in sitemap
+* no duplicate URLs
+* no parameter URLs
+* no non-indexable URLs
+* correct HTTPS hostname
+* correct final URL
+* sitemap automatically updates when content changes
+
+The sitemap must represent the site's preferred indexable URL set.
+
+---
+
+# PHASE 15 — ROBOTS.TXT
+
+Audit whether robots.txt accidentally blocks:
+
+* admit-card pages
+* important assets
+* JavaScript required for rendering
+* CSS
+* relevant crawling paths
+
+Do not use robots.txt as a substitute for canonicalization or noindex.
+
+---
+
+# PHASE 16 — INDEXABILITY
+
+For every one of the 896 pages, audit:
+
+* HTTP status
+* indexability
+* robots meta
+* X-Robots-Tag
+* canonical
+* sitemap inclusion
+* internal linking
+* redirect status
+* content availability
+* renderability
+* duplicate status
+* thin-content risk
+
+Classify each page:
+
+`INDEX`
+
+`NOINDEX`
+
+`REDIRECT`
+
+`MERGE`
+
+`MANUAL REVIEW`
+
+Do not automatically recommend indexing every page.
+
+The goal is **high-quality indexable pages**, not simply increasing indexed URL count.
+
+---
+
+# PHASE 17 — GOOGLE DISCOVERED — CURRENTLY NOT INDEXED
+
+Because these URLs are connected to the GSC "Discovered – currently not indexed" problem, investigate the likely reasons.
+
+For each page evaluate:
+
+* uniqueness
+* content depth
+* internal links
+* crawl priority
+* sitemap presence
+* canonical consistency
+* URL quality
+* duplication
+* thin content
+* template-heavy content
+* freshness
+* page usefulness
+* entity clarity
+* search demand alignment
+
+Do not assume Google will index a page simply because:
+
+* it is in sitemap
+* it returns 200
+* it has a canonical
+* it has an H1
+
+Explain what makes the page useful and discoverable.
+
+---
+
+# PHASE 18 — CONTENT QUALITY / THIN CONTENT
+
+Identify pages that contain mostly boilerplate.
+
+Compare pages across the 896 dataset.
+
+Detect:
+
+* duplicate paragraphs
+* repeated introductions
+* identical FAQs
+* identical metadata
+* copied instructions
+* pages where only the exam name changes
+* pages where only one date changes
+* pages with very little unique information
+
+Classify:
+
+### Unique / Strong
+
+### Acceptable
+
+### Thin
+
+### Duplicate
+
+### Near Duplicate
+
+### Requires Consolidation
+
+### Manual Review
+
+For thin pages, recommend **specific content improvements**, not simply "add more content."
+
+---
+
+# PHASE 19 — ENTITY CONSISTENCY
+
+For every page verify consistency among:
+
+* URL
+* title
+* H1
+* breadcrumbs
+* page body
+* metadata
+* structured data
+* internal anchor text
+
+The same entity should be represented consistently.
+
+Example problem:
+
+URL says:
+
+`ssc-cgl-admit-card`
+
+but H1 says:
+
+`UPSC Admit Card`
+
+This must be flagged as a critical mismatch.
+
+---
+
+# PHASE 20 — STRUCTURED DATA
+
+Audit relevant structured data.
+
+Check whether the implementation is:
+
+* valid
+* relevant
+* consistent with visible content
+* free from fabricated information
+* free from unsupported fields
+* attached to the correct page
+
+Check appropriate schemas such as:
+
+* BreadcrumbList
+* WebPage
+* Article where genuinely applicable
+* FAQPage only where eligible and appropriate
+* Organization/WebSite sitewide markup where relevant
+
+Do not add structured data merely because it exists.
+
+Do not fabricate ratings, reviews, dates, organizations or other entities.
+
+---
+
+# PHASE 21 — NEXT.JS IMPLEMENTATION AUDIT
+
+Inspect the actual Next.js implementation.
+
+Audit:
+
+* dynamic routes
+* route parameters
+* metadata generation
+* generateMetadata
+* canonical generation
+* sitemap generation
+* robots generation
+* redirects
+* notFound handling
+* static generation
+* dynamic rendering
+* caching
+* revalidation
+* internal links
+* breadcrumb implementation
+* structured data
+* duplicate route handling
+
+Determine the safest way to migrate:
+
+`/admit-cards/[id]`
+
+to a meaningful slug architecture.
+
+If IDs are still required internally, they may remain in the database/backend.
+
+Do not expose database IDs unnecessarily in public SEO URLs.
+
+---
+
+# PHASE 22 — URL MIGRATION SAFETY
+
+Before recommending implementation, create a migration strategy that prevents SEO loss.
+
+Required safeguards:
+
+1. Generate old → new URL mapping.
+2. Ensure every old URL has exactly one destination.
+3. Ensure every new URL is unique.
+4. Ensure every new URL resolves with 200.
+5. Ensure every old URL returns 301.
+6. Ensure canonical points to the new URL.
+7. Update internal links.
+8. Update breadcrumbs.
+9. Update sitemap.
+10. Update structured data.
+11. Update metadata.
+12. Remove old URLs from sitemap.
+13. Preserve valuable historical URLs through redirects.
+14. Avoid redirect chains.
+15. Validate after deployment.
+
+Do not implement a URL migration without a deterministic mapping.
+
+---
+
+# PHASE 23 — DUPLICATE / COLLISION DETECTION
+
+This is mandatory.
+
+Before finalizing all 896 slugs, compare them against one another.
+
+Detect:
+
+* exact duplicates
+* singular/plural conflicts
+* year conflicts
+* organization conflicts
+* abbreviation conflicts
+* similar slugs
+* old existing routes
+* category route conflicts
+
+Example:
+
+`/admit-cards/ssc-cgl-admit-card`
+
+and
+
+`/admit-cards/ssc-cgl-admit-card-2026`
+
+may represent separate pages or may accidentally duplicate the same page.
+
+Do not decide blindly.
+
+Use the actual page entity and chronology.
+
+---
+
+# PHASE 24 — SEO PRIORITY
+
+Assign priority to each issue.
+
+### P0 — Critical
+
+Issues that can cause major indexing/crawling/URL loss.
+
+Examples:
+
+* incorrect canonical
+* broken route
+* redirect loop
+* duplicate destination
+* wrong page entity
+* accidental noindex
+* 404
+* URL collision
+
+### P1 — High
+
+Issues likely to materially affect organic performance.
+
+Examples:
+
+* generic numeric URL
+* orphan page
+* severe content duplication
+* wrong H1/title
+* missing internal links
+* thin content
+* sitemap inconsistency
+
+### P2 — Medium
+
+Optimization opportunities.
+
+Examples:
+
+* metadata improvements
+* heading refinements
+* breadcrumb improvements
+* contextual internal links
+
+### P3 — Low
+
+Polish and long-term improvements.
+
+---
+
+# PHASE 25 — DEVELOPER IMPLEMENTATION REQUIREMENTS
+
+The final audit must be written so a developer can implement it without guessing.
+
+For every technical change provide:
+
+### Problem
+
+What is wrong?
+
+### Evidence
+
+Which URL(s), files, routes or patterns demonstrate the problem?
+
+### Root Cause
+
+Why is this happening?
+
+### Required Fix
+
+What exactly must change?
+
+### Implementation Location
+
+Which route/component/configuration/data structure is likely involved?
+
+### Expected Result
+
+What should happen after implementation?
+
+### Validation
+
+How should the developer verify it?
+
+### SEO Risk
+
+What happens if it is not fixed?
+
+### Priority
+
+P0/P1/P2/P3
+
+---
+
+# PHASE 26 — DO NOT MAKE GENERIC RECOMMENDATIONS
+
+Avoid statements such as:
+
+"Improve SEO."
+
+"Add keywords."
+
+"Improve content."
+
+"Fix URLs."
+
+"Add internal links."
+
+Every recommendation must be actionable.
+
+Instead specify:
+
+* which URL
+* current issue
+* exact recommended URL
+* exact title direction
+* exact H1 direction
+* content sections required
+* redirect requirement
+* canonical requirement
+* internal-link requirement
+* sitemap requirement
+* validation requirement
+
+---
+
+# PHASE 27 — FINAL 896-URL MASTER TABLE
+
+Create a final master audit dataset containing at least:
+
+| Field                   |
+| ----------------------- |
+| ID                      |
+| Current URL             |
+| Recommended URL         |
+| URL Change              |
+| URL Reason              |
+| Page Entity             |
+| Organization            |
+| Exam/Recruitment        |
+| Year                    |
+| Current Title           |
+| Recommended Title       |
+| Current H1              |
+| Recommended H1          |
+| H2/H3 Issues            |
+| Meta Description Status |
+| Canonical Status        |
+| Recommended Canonical   |
+| Redirect Required       |
+| Redirect Target         |
+| Indexability            |
+| Sitemap Status          |
+| Internal Linking Status |
+| Orphan Risk             |
+| Content Quality         |
+| Duplicate Risk          |
+| Thin Content Risk       |
+| Breadcrumb Status       |
+| Structured Data Status  |
+| Primary Search Intent   |
+| Priority                |
+| Developer Action        |
+| Validation Method       |
+| Manual Review Required  |
+
+Do not omit the URL mapping.
+
+The URL mapping is one of the most important outputs.
+
+---
+
+# PHASE 28 — FINAL URL RULES
+
+Apply these rules consistently:
+
+### GOOD
+
+`/admit-cards/[meaningful-exam-name]-admit-card`
+
+### POSSIBLY GOOD
+
+`/admit-cards/[organization]-[exam]-admit-card-[year]`
+
+only when necessary to distinguish pages.
+
+### BAD
+
+`/admit-cards/17`
+
+### BAD
+
+`/admit-cards/18`
+
+### BAD
+
+`/admit-cards/17-admit-card`
+
+### BAD
+
+`/admit-cards/admit-card-admit-card-download`
+
+### BAD
+
+`/admit-cards/best-latest-new-admit-card-2026`
+
+Do not keyword-stuff URLs.
+
+---
+
+# PHASE 29 — PAGE TEMPLATE REQUIREMENTS
+
+Where pages use a common Next.js template, improve the template at the component/data-model level rather than manually duplicating code 896 times.
+
+The template should dynamically generate:
+
+* page title
+* H1
+* metadata
+* canonical
+* breadcrumb
+* structured data
+* internal links
+* sitemap entry
+* meaningful URL
+* page-specific content
+
+But the underlying data for each page must remain accurate and unique.
+
+Do not create 896 pages that look identical except for one entity name.
+
+---
+
+# PHASE 30 — CONTENT TEMPLATE QUALITY
+
+Create a reusable content framework while preserving page-specific information.
+
+Every page should clearly answer:
+
+1. What admit card is this?
+2. Which organization issued it?
+3. Which exam/recruitment does it belong to?
+4. Who can use/download it?
+5. When was it released?
+6. What is the exam date, where applicable?
+7. How can the user download it?
+8. Where is the official download link?
+9. What documents/information are required?
+10. What important instructions apply?
+11. What related information should the user see next?
+
+Only include sections when the underlying information exists.
+
+Never fabricate missing facts.
+
+---
+
+# PHASE 31 — SEARCH INTENT
+
+Determine the dominant intent for every page.
+
+Potential intents:
+
+* `[exam] admit card`
+* `[exam] hall ticket`
+* `[exam] call letter`
+* `[recruitment] admit card`
+* `[organization] admit card`
+* `[post] admit card`
+* `[exam] exam date + admit card`
+* `[exam] download admit card`
+
+Ensure:
+
+URL + title + H1 + content all align with the dominant intent.
+
+---
+
+# PHASE 32 — PERFORMANCE / TECHNICAL SEO
+
+Audit whether the 896 pages introduce:
+
+* excessive client-side rendering
+* slow API calls
+* unnecessary JavaScript
+* duplicated data fetching
+* unstable dynamic metadata
+* rendering errors
+* poor caching
+* unnecessary server work
+* layout shifts
+* image problems
+* crawl inefficiencies
+
+Do not sacrifice page quality merely to make pages technically indexable.
+
+---
+
+# PHASE 33 — POST-IMPLEMENTATION VALIDATION
+
+Provide a developer QA checklist.
+
+After implementation, test:
+
+### URL
+
+* New URL returns 200.
+* Old URL returns 301.
+* No redirect chain.
+* No redirect loop.
+* No duplicate URL.
+* No accidental 404.
+
+### Metadata
+
+* Unique title.
+* Correct H1.
+* Correct meta description.
+* Correct canonical.
+
+### Content
+
+* Correct exam.
+* Correct organization.
+* Correct year.
+* Correct dates.
+* Correct download information.
+
+### Crawlability
+
+* Page is crawlable.
+* No unintended noindex.
+* Sitemap contains final URL.
+* Internal links use final URL.
+
+### Structured data
+
+* Valid JSON-LD.
+* Correct entity.
+* No fabricated values.
+
+### Rendering
+
+* Server-rendered content is available.
+* Metadata is present in rendered HTML.
+* Important content does not depend entirely on client-side execution.
+
+---
+
+# PHASE 34 — GOOGLE SEARCH CONSOLE VALIDATION
+
+After deployment, provide a process for validating the migration in GSC.
+
+Check:
+
+* Page indexing
+* URL Inspection
+* Crawled — currently not indexed
+* Discovered — currently not indexed
+* Duplicate without user-selected canonical
+* Google-selected canonical
+* Redirect errors
+* Not found
+* Server errors
+
+Do not expect all 896 pages to index immediately.
+
+Track improvement by URL cohort and priority.
+
+---
+
+# PHASE 35 — FINAL AUDIT ORGANIZATION
+
+Organize the final developer-facing audit into these sections:
+
+## 1. Executive Summary
+
+Explain the overall state.
+
+## 2. Scope
+
+State clearly:
+
+**896 URLs audited.**
+
+## 3. Dataset Validation
+
+Show the 896/896 verification.
+
+## 4. Critical Findings
+
+P0/P1 issues.
+
+## 5. URL Architecture Findings
+
+Current vs recommended URL architecture.
+
+## 6. 896-URL URL Mapping
+
+Every URL.
+
+## 7. Content Audit
+
+Page-specific content problems.
+
+## 8. H1–H6 Audit
+
+Heading architecture.
+
+## 9. Metadata Audit
+
+Title + description.
+
+## 10. Canonical Audit
+
+Canonical corrections.
+
+## 11. Redirect Plan
+
+Old → new mapping.
+
+## 12. Internal Linking
+
+Discovery improvements.
+
+## 13. Breadcrumbs
+
+Architecture + schema.
+
+## 14. Sitemap
+
+Required changes.
+
+## 15. Robots
+
+Required changes.
+
+## 16. Indexability
+
+Index/noindex/redirect/merge/manual review.
+
+## 17. Duplicate & Thin Content
+
+Consolidation/improvement recommendations.
+
+## 18. Structured Data
+
+Required implementation.
+
+## 19. Next.js Developer Fixes
+
+Exact technical changes.
+
+## 20. Migration Plan
+
+Safe rollout sequence.
+
+## 21. QA Checklist
+
+Pre-deployment and post-deployment.
+
+## 22. GSC Validation Plan
+
+Post-release monitoring.
+
+## 23. Priority Matrix
+
+P0 → P3.
+
+## 24. Final Developer Action List
+
+A concise ordered implementation checklist.
+
+---
+
+# PHASE 36 — IMPORTANT: DO NOT DELETE EXISTING AUDIT INFORMATION
+
+The old 37 detailed briefs are intentionally retained.
+
+Do not delete them.
+
+Use them as additional reference where they contain deeper information than the automatically generated 896 briefs.
+
+Where information conflicts:
+
+1. Verify against actual project code/data.
+2. Prefer verified current data.
+3. Document the conflict.
+4. Do not silently discard useful information.
+
+---
+
+# PHASE 37 — IMPORTANT: AUDIT THE ACTUAL PROJECT, NOT JUST MARKDOWN
+
+The markdown briefs are audit inputs, not absolute truth.
+
+Inspect the actual application wherever available.
+
+Check:
+
+* route files
+* page components
+* data source
+* database/API mapping
+* metadata implementation
+* sitemap
+* robots
+* redirect configuration
+* middleware
+* navigation
+* breadcrumbs
+* structured data
+* content rendering
+
+If a markdown brief says something different from the implementation, identify the discrepancy.
+
+---
+
+# PHASE 38 — DO NOT IMPLEMENT UNSAFE MASS CHANGES
+
+Before changing 896 URLs:
+
+Calculate:
+
+* total URLs changing
+* total URLs staying unchanged
+* total redirects
+* total collisions
+* total manual-review URLs
+* total duplicate-content candidates
+* total merge candidates
+* total index candidates
+* total noindex candidates
+
+If any new slug collision exists, stop that portion of the migration and mark it for resolution.
+
+Do not mass-deploy unsafe mappings.
+
+---
+
+# PHASE 39 — FINAL ACCEPTANCE CRITERIA
+
+The audit is considered complete only when:
+
+* [ ] All 896 URLs are accounted for.
+* [ ] All 896 markdown briefs are mapped.
+* [ ] All 896 URLs have a URL decision.
+* [ ] Numeric/generic URLs are identified.
+* [ ] Meaningful replacement URLs are proposed where appropriate.
+* [ ] URL collisions are checked.
+* [ ] Old → new redirects are mapped.
+* [ ] Canonicals are checked.
+* [ ] Titles are checked.
+* [ ] H1s are checked.
+* [ ] H2–H6 hierarchy is checked.
+* [ ] Meta descriptions are checked.
+* [ ] Content quality is checked.
+* [ ] Thin/duplicate pages are identified.
+* [ ] Internal linking is checked.
+* [ ] Breadcrumbs are checked.
+* [ ] Sitemap is checked.
+* [ ] Robots is checked.
+* [ ] Structured data is checked.
+* [ ] Next.js routing is checked.
+* [ ] Indexability is classified.
+* [ ] GSC discovered-not-indexed causes are investigated.
+* [ ] Developer fixes are prioritized.
+* [ ] Migration safety is documented.
+* [ ] Post-deployment QA is documented.
+
+---
+
+# FINAL INSTRUCTION TO CODEX
+
+Do not give me a generic SEO report.
+
+Perform a **forensic, URL-by-URL, page-by-page audit of the complete 896-page dataset**, using the existing audit files plus the actual project implementation.
+
+The most important deliverable is a **safe, accurate, meaningful URL architecture for all 896 admit-card pages**, with complete old → new redirect mapping and corresponding page-content/metadata/canonical/internal-link changes.
+
+Do not use generic numeric public URLs such as:
+
+`/admit-cards/17`
+
+when the page has enough information to create a meaningful semantic URL.
+
+However, **do not invent names or blindly rename pages**. Derive every recommended URL from the actual page entity and verify uniqueness across all 896 pages.
+
+Treat URL migration as an SEO-critical operation.
+
+Do not delete existing audit material.
+
+Do not assume the old 37-page audit represents the full dataset.
+
+Do not stop after reviewing a sample.
+
+**All 896 URLs must be accounted for.**
+
+The final output must be sufficiently detailed that a developer can take the audit and implement the fixes without guessing what each issue means or which URL/page it applies to.
+
+Before declaring completion, explicitly report:
+
+**896 URLs in scope → 896 URLs audited → 896 URL decisions → 896 content/SEO records checked → final implementation plan ready.**

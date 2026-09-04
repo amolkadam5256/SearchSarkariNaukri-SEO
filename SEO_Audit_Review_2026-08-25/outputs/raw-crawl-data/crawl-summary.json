@@ -1,0 +1,124 @@
+{
+  "run_started_utc": "2026-08-25T06:11:57.541Z",
+  "run_finished_utc": "2026-08-25T06:25:15.098Z",
+  "site": "https://www.searchsarkarinaukri.com",
+  "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+  "robots_status": 200,
+  "robots_sitemap_lines": [
+    "https://www.searchsarkarinaukri.com/sitemap.xml"
+  ],
+  "sitemap_file_count": 12,
+  "sitemap_entry_count_including_duplicates": 3871,
+  "sitemap_unique_url_count": 3871,
+  "sitemap_duplicate_url_occurrences": 0,
+  "all_audited_internal_url_count": 5540,
+  "internally_linked_unique_url_count": 2429,
+  "crawl_error_count": 0,
+  "sitemap_non_200_count": 11,
+  "sitemap_noindex_or_blocked_count": 0,
+  "sitemap_orphan_count": 3111,
+  "crawlable_missing_from_sitemap_count": 933,
+  "redirect_count": 231,
+  "duplicate_title_url_count": 764,
+  "duplicate_meta_description_url_count": 719,
+  "image_occurrence_count": 67,
+  "image_missing_alt_attribute_count": 0,
+  "image_empty_alt_count": 0,
+  "structured_data_script_count": 22363,
+  "structured_data_invalid_json_count": 0,
+  "external_unique_url_count": 1480,
+  "external_error_or_4xx_5xx_count": 502,
+  "by_page_type": {
+    "homepage": {
+      "total": 2,
+      "in_sitemap": 1,
+      "crawlable_linked": 1,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 0
+    },
+    "qualification": {
+      "total": 5,
+      "in_sitemap": 5,
+      "crawlable_linked": 5,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 0
+    },
+    "other": {
+      "total": 152,
+      "in_sitemap": 138,
+      "crawlable_linked": 26,
+      "missing_from_sitemap": 2,
+      "broken_in_sitemap": 0
+    },
+    "static-policy": {
+      "total": 4,
+      "in_sitemap": 4,
+      "crawlable_linked": 2,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 0
+    },
+    "admit-card": {
+      "total": 39,
+      "in_sitemap": 38,
+      "crawlable_linked": 1,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 0
+    },
+    "blog": {
+      "total": 520,
+      "in_sitemap": 68,
+      "crawlable_linked": 512,
+      "missing_from_sitemap": 451,
+      "broken_in_sitemap": 0
+    },
+    "feature-page": {
+      "total": 6,
+      "in_sitemap": 3,
+      "crawlable_linked": 2,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 0
+    },
+    "department": {
+      "total": 14,
+      "in_sitemap": 12,
+      "crawlable_linked": 5,
+      "missing_from_sitemap": 2,
+      "broken_in_sitemap": 0
+    },
+    "location": {
+      "total": 958,
+      "in_sitemap": 80,
+      "crawlable_linked": 520,
+      "missing_from_sitemap": 443,
+      "broken_in_sitemap": 0
+    },
+    "category-filter": {
+      "total": 12,
+      "in_sitemap": 0,
+      "crawlable_linked": 12,
+      "missing_from_sitemap": 12,
+      "broken_in_sitemap": 0
+    },
+    "job-listing": {
+      "total": 3729,
+      "in_sitemap": 3475,
+      "crawlable_linked": 582,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 11
+    },
+    "news": {
+      "total": 52,
+      "in_sitemap": 1,
+      "crawlable_linked": 51,
+      "missing_from_sitemap": 50,
+      "broken_in_sitemap": 0
+    },
+    "results": {
+      "total": 47,
+      "in_sitemap": 46,
+      "crawlable_linked": 1,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 0
+    }
+  }
+}

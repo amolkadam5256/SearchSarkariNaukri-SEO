@@ -1,0 +1,117 @@
+{
+  "run_started_utc": "2026-08-25T06:03:58.305Z",
+  "run_finished_utc": "2026-08-25T06:05:14.411Z",
+  "site": "https://www.searchsarkarinaukri.com",
+  "user_agent": "SearchSarkariNaukri-SEO-Audit/2026-08-25",
+  "robots_status": 200,
+  "robots_sitemap_lines": [
+    "https://www.searchsarkarinaukri.com/sitemap.xml"
+  ],
+  "sitemap_file_count": 12,
+  "sitemap_entry_count_including_duplicates": 3871,
+  "sitemap_unique_url_count": 3871,
+  "sitemap_duplicate_url_occurrences": 0,
+  "all_audited_internal_url_count": 3871,
+  "internally_linked_unique_url_count": 0,
+  "crawl_error_count": 0,
+  "sitemap_non_200_count": 0,
+  "sitemap_noindex_or_blocked_count": 0,
+  "sitemap_orphan_count": 3870,
+  "crawlable_missing_from_sitemap_count": 0,
+  "redirect_count": 0,
+  "duplicate_title_url_count": 3871,
+  "duplicate_meta_description_url_count": 3871,
+  "image_occurrence_count": 0,
+  "image_missing_alt_attribute_count": 0,
+  "image_empty_alt_count": 0,
+  "structured_data_script_count": 7742,
+  "structured_data_invalid_json_count": 0,
+  "external_unique_url_count": 0,
+  "external_error_or_4xx_5xx_count": 0,
+  "by_page_type": {
+    "homepage": {
+      "total": 1,
+      "in_sitemap": 1,
+      "crawlable_linked": 0,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 0
+    },
+    "qualification": {
+      "total": 5,
+      "in_sitemap": 5,
+      "crawlable_linked": 0,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 0
+    },
+    "other": {
+      "total": 138,
+      "in_sitemap": 138,
+      "crawlable_linked": 0,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 0
+    },
+    "static-policy": {
+      "total": 4,
+      "in_sitemap": 4,
+      "crawlable_linked": 0,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 0
+    },
+    "admit-card": {
+      "total": 38,
+      "in_sitemap": 38,
+      "crawlable_linked": 0,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 0
+    },
+    "blog": {
+      "total": 68,
+      "in_sitemap": 68,
+      "crawlable_linked": 0,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 0
+    },
+    "feature-page": {
+      "total": 3,
+      "in_sitemap": 3,
+      "crawlable_linked": 0,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 0
+    },
+    "department": {
+      "total": 12,
+      "in_sitemap": 12,
+      "crawlable_linked": 0,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 0
+    },
+    "location": {
+      "total": 80,
+      "in_sitemap": 80,
+      "crawlable_linked": 0,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 0
+    },
+    "job-listing": {
+      "total": 3475,
+      "in_sitemap": 3475,
+      "crawlable_linked": 0,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 0
+    },
+    "news": {
+      "total": 1,
+      "in_sitemap": 1,
+      "crawlable_linked": 0,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 0
+    },
+    "results": {
+      "total": 46,
+      "in_sitemap": 46,
+      "crawlable_linked": 0,
+      "missing_from_sitemap": 0,
+      "broken_in_sitemap": 0
+    }
+  }
+}

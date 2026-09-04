@@ -1,0 +1,569 @@
+Job ID,URL,Current HTTP Status,Exists in DB,Gate,Block Reason,Job Status,Desc Chars,Final Category,Reason
+14,https://www.searchsarkarinaukri.com/jobs/14,410,YES,BLOCKED,needs_review,Closed,451,RESTORE_200,Blocked by needs_review; Closed; desc 451 chars
+16,https://www.searchsarkarinaukri.com/jobs/16,410,YES,BLOCKED,needs_review,Closed,451,RESTORE_200,Blocked by needs_review; Closed; desc 451 chars
+18,https://www.searchsarkarinaukri.com/jobs/18,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+19,https://www.searchsarkarinaukri.com/jobs/19,410,YES,BLOCKED,needs_review,Closed,451,RESTORE_200,Blocked by needs_review; Closed; desc 451 chars
+25,https://www.searchsarkarinaukri.com/jobs/25,410,YES,BLOCKED,needs_review,Closed,450,RESTORE_200,Blocked by needs_review; Closed; desc 450 chars
+29,https://www.searchsarkarinaukri.com/jobs/29,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+58,https://www.searchsarkarinaukri.com/jobs/58,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+110,https://www.searchsarkarinaukri.com/jobs/110,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+226,https://www.searchsarkarinaukri.com/jobs/226,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+252,https://www.searchsarkarinaukri.com/jobs/252,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+253,https://www.searchsarkarinaukri.com/jobs/253,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+276,https://www.searchsarkarinaukri.com/jobs/276,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+282,https://www.searchsarkarinaukri.com/jobs/282,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+297,https://www.searchsarkarinaukri.com/jobs/297,410,YES,BLOCKED,needs_review,Closed,473,RESTORE_200,Blocked by needs_review; Closed; desc 473 chars
+304,https://www.searchsarkarinaukri.com/jobs/304,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+313,https://www.searchsarkarinaukri.com/jobs/313,410,YES,BLOCKED,needs_review,Closed,461,RESTORE_200,Blocked by needs_review; Closed; desc 461 chars
+317,https://www.searchsarkarinaukri.com/jobs/317,410,YES,BLOCKED,needs_review,Closed,463,RESTORE_200,Blocked by needs_review; Closed; desc 463 chars
+832,https://www.searchsarkarinaukri.com/jobs/832,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+835,https://www.searchsarkarinaukri.com/jobs/835,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+839,https://www.searchsarkarinaukri.com/jobs/839,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+847,https://www.searchsarkarinaukri.com/jobs/847,410,YES,BLOCKED,needs_review,Closed,533,RESTORE_200,Blocked by needs_review; Closed; desc 533 chars
+854,https://www.searchsarkarinaukri.com/jobs/854,410,YES,BLOCKED,needs_review,Closed,495,RESTORE_200,Blocked by needs_review; Closed; desc 495 chars
+855,https://www.searchsarkarinaukri.com/jobs/855,410,YES,BLOCKED,needs_review,Closed,509,RESTORE_200,Blocked by needs_review; Closed; desc 509 chars
+856,https://www.searchsarkarinaukri.com/jobs/856,410,YES,BLOCKED,needs_review,Closed,459,RESTORE_200,Blocked by needs_review; Closed; desc 459 chars
+857,https://www.searchsarkarinaukri.com/jobs/857,410,YES,BLOCKED,needs_review,Closed,477,RESTORE_200,Blocked by needs_review; Closed; desc 477 chars
+858,https://www.searchsarkarinaukri.com/jobs/858,410,YES,BLOCKED,needs_review,Closed,490,RESTORE_200,Blocked by needs_review; Closed; desc 490 chars
+860,https://www.searchsarkarinaukri.com/jobs/860,410,YES,BLOCKED,needs_review,Closed,470,RESTORE_200,Blocked by needs_review; Closed; desc 470 chars
+862,https://www.searchsarkarinaukri.com/jobs/862,410,YES,BLOCKED,needs_review,Closed,573,RESTORE_200,Blocked by needs_review; Closed; desc 573 chars
+863,https://www.searchsarkarinaukri.com/jobs/863,410,YES,BLOCKED,needs_review,Closed,571,RESTORE_200,Blocked by needs_review; Closed; desc 571 chars
+875,https://www.searchsarkarinaukri.com/jobs/875,410,YES,BLOCKED,needs_review,Closed,431,RESTORE_200,Blocked by needs_review; Closed; desc 431 chars
+880,https://www.searchsarkarinaukri.com/jobs/880,410,YES,BLOCKED,needs_review,Closed,512,RESTORE_200,Blocked by needs_review; Closed; desc 512 chars
+883,https://www.searchsarkarinaukri.com/jobs/883,410,YES,BLOCKED,needs_review,Closed,571,RESTORE_200,Blocked by needs_review; Closed; desc 571 chars
+887,https://www.searchsarkarinaukri.com/jobs/887,410,YES,BLOCKED,needs_review,Closed,490,RESTORE_200,Blocked by needs_review; Closed; desc 490 chars
+895,https://www.searchsarkarinaukri.com/jobs/895,410,YES,BLOCKED,needs_review,Closed,534,RESTORE_200,Blocked by needs_review; Closed; desc 534 chars
+898,https://www.searchsarkarinaukri.com/jobs/898,410,YES,BLOCKED,needs_review,Closed,526,RESTORE_200,Blocked by needs_review; Closed; desc 526 chars
+973,https://www.searchsarkarinaukri.com/jobs/973,301,YES,PASS,,Closed,524,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+974,https://www.searchsarkarinaukri.com/jobs/974,410,YES,BLOCKED,not_auto_published,Closed,591,RESTORE_200,Blocked by not_auto_published; Closed; desc 591 chars
+975,https://www.searchsarkarinaukri.com/jobs/975,410,YES,BLOCKED,not_auto_published,Closed,512,RESTORE_200,Blocked by not_auto_published; Closed; desc 512 chars
+977,https://www.searchsarkarinaukri.com/jobs/977,301,YES,PASS,,Closed,456,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+978,https://www.searchsarkarinaukri.com/jobs/978,301,YES,PASS,,Closed,442,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+980,https://www.searchsarkarinaukri.com/jobs/980,301,YES,PASS,,Closed,440,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+981,https://www.searchsarkarinaukri.com/jobs/981,301,YES,PASS,,Closed,481,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+983,https://www.searchsarkarinaukri.com/jobs/983,410,YES,BLOCKED,not_auto_published,Closed,496,RESTORE_200,Blocked by not_auto_published; Closed; desc 496 chars
+984,https://www.searchsarkarinaukri.com/jobs/984,410,YES,BLOCKED,not_auto_published,Closed,463,RESTORE_200,Blocked by not_auto_published; Closed; desc 463 chars
+986,https://www.searchsarkarinaukri.com/jobs/986,410,YES,BLOCKED,not_auto_published,Closed,473,RESTORE_200,Blocked by not_auto_published; Closed; desc 473 chars
+988,https://www.searchsarkarinaukri.com/jobs/988,410,YES,BLOCKED,not_auto_published,Closed,488,RESTORE_200,Blocked by not_auto_published; Closed; desc 488 chars
+989,https://www.searchsarkarinaukri.com/jobs/989,410,YES,BLOCKED,not_auto_published,Closed,433,RESTORE_200,Blocked by not_auto_published; Closed; desc 433 chars
+990,https://www.searchsarkarinaukri.com/jobs/990,410,YES,BLOCKED,not_auto_published,Closed,505,RESTORE_200,Blocked by not_auto_published; Closed; desc 505 chars
+991,https://www.searchsarkarinaukri.com/jobs/991,410,YES,BLOCKED,not_auto_published,Closed,491,RESTORE_200,Blocked by not_auto_published; Closed; desc 491 chars
+993,https://www.searchsarkarinaukri.com/jobs/993,410,YES,BLOCKED,not_auto_published,Closed,511,RESTORE_200,Blocked by not_auto_published; Closed; desc 511 chars
+994,https://www.searchsarkarinaukri.com/jobs/994,410,YES,BLOCKED,not_auto_published,Closed,465,RESTORE_200,Blocked by not_auto_published; Closed; desc 465 chars
+995,https://www.searchsarkarinaukri.com/jobs/995,410,YES,BLOCKED,not_auto_published,Closed,558,RESTORE_200,Blocked by not_auto_published; Closed; desc 558 chars
+996,https://www.searchsarkarinaukri.com/jobs/996,301,YES,PASS,,Closed,472,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+997,https://www.searchsarkarinaukri.com/jobs/997,301,YES,PASS,,Closed,507,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+998,https://www.searchsarkarinaukri.com/jobs/998,410,YES,BLOCKED,not_auto_published,Closed,475,RESTORE_200,Blocked by not_auto_published; Closed; desc 475 chars
+999,https://www.searchsarkarinaukri.com/jobs/999,410,YES,BLOCKED,not_auto_published,Closed,469,RESTORE_200,Blocked by not_auto_published; Closed; desc 469 chars
+1015,https://www.searchsarkarinaukri.com/jobs/1015,301,YES,PASS,,Closed,471,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1016,https://www.searchsarkarinaukri.com/jobs/1016,301,YES,PASS,,Closed,485,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1017,https://www.searchsarkarinaukri.com/jobs/1017,301,YES,PASS,,Closed,470,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1018,https://www.searchsarkarinaukri.com/jobs/1018,301,YES,PASS,,Closed,496,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1019,https://www.searchsarkarinaukri.com/jobs/1019,301,YES,PASS,,Closed,467,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1021,https://www.searchsarkarinaukri.com/jobs/1021,301,YES,PASS,,Closed,499,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1022,https://www.searchsarkarinaukri.com/jobs/1022,301,YES,PASS,,Closed,467,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1025,https://www.searchsarkarinaukri.com/jobs/1025,301,YES,PASS,,Closed,490,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1026,https://www.searchsarkarinaukri.com/jobs/1026,301,YES,PASS,,Closed,466,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1028,https://www.searchsarkarinaukri.com/jobs/1028,301,YES,PASS,,Closed,473,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1030,https://www.searchsarkarinaukri.com/jobs/1030,301,YES,PASS,,Closed,469,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1031,https://www.searchsarkarinaukri.com/jobs/1031,301,YES,PASS,,Closed,460,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1032,https://www.searchsarkarinaukri.com/jobs/1032,301,YES,PASS,,Closed,509,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1033,https://www.searchsarkarinaukri.com/jobs/1033,301,YES,PASS,,Open,487,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1035,https://www.searchsarkarinaukri.com/jobs/1035,410,YES,BLOCKED,needs_review,Open,489,RESTORE_200,Blocked by needs_review; Open; desc 489 chars
+1036,https://www.searchsarkarinaukri.com/jobs/1036,410,YES,BLOCKED,needs_review,Closed,502,RESTORE_200,Blocked by needs_review; Closed; desc 502 chars
+1037,https://www.searchsarkarinaukri.com/jobs/1037,301,YES,PASS,,Closed,464,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1038,https://www.searchsarkarinaukri.com/jobs/1038,301,YES,PASS,,Open,508,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1040,https://www.searchsarkarinaukri.com/jobs/1040,410,YES,BLOCKED,needs_review,Closed,477,RESTORE_200,Blocked by needs_review; Closed; desc 477 chars
+1041,https://www.searchsarkarinaukri.com/jobs/1041,301,YES,PASS,,Open,509,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1042,https://www.searchsarkarinaukri.com/jobs/1042,301,YES,PASS,,Closed,493,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1043,https://www.searchsarkarinaukri.com/jobs/1043,301,YES,PASS,,Closed,498,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1045,https://www.searchsarkarinaukri.com/jobs/1045,410,YES,BLOCKED,needs_review,Closed,84,REMOVE_410,Blocked by needs_review; Closed; desc 84 chars
+1073,https://www.searchsarkarinaukri.com/jobs/1073,301,YES,PASS,,Closed,474,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1078,https://www.searchsarkarinaukri.com/jobs/1078,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1079,https://www.searchsarkarinaukri.com/jobs/1079,301,YES,PASS,,Closed,462,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1081,https://www.searchsarkarinaukri.com/jobs/1081,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1082,https://www.searchsarkarinaukri.com/jobs/1082,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1084,https://www.searchsarkarinaukri.com/jobs/1084,301,YES,PASS,,Closed,494,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1085,https://www.searchsarkarinaukri.com/jobs/1085,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1087,https://www.searchsarkarinaukri.com/jobs/1087,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1088,https://www.searchsarkarinaukri.com/jobs/1088,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1090,https://www.searchsarkarinaukri.com/jobs/1090,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1091,https://www.searchsarkarinaukri.com/jobs/1091,301,YES,PASS,,Closed,488,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1092,https://www.searchsarkarinaukri.com/jobs/1092,301,YES,PASS,,Closed,481,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1093,https://www.searchsarkarinaukri.com/jobs/1093,301,YES,PASS,,Closed,486,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1094,https://www.searchsarkarinaukri.com/jobs/1094,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1095,https://www.searchsarkarinaukri.com/jobs/1095,301,YES,PASS,,Closed,475,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1096,https://www.searchsarkarinaukri.com/jobs/1096,410,YES,BLOCKED,needs_review,Closed,472,RESTORE_200,Blocked by needs_review; Closed; desc 472 chars
+1097,https://www.searchsarkarinaukri.com/jobs/1097,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1098,https://www.searchsarkarinaukri.com/jobs/1098,301,YES,PASS,,Closed,511,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1100,https://www.searchsarkarinaukri.com/jobs/1100,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1101,https://www.searchsarkarinaukri.com/jobs/1101,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1103,https://www.searchsarkarinaukri.com/jobs/1103,301,YES,PASS,,Closed,485,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1104,https://www.searchsarkarinaukri.com/jobs/1104,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1105,https://www.searchsarkarinaukri.com/jobs/1105,301,YES,PASS,,Closed,330,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1108,https://www.searchsarkarinaukri.com/jobs/1108,301,YES,PASS,,Open,324,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1109,https://www.searchsarkarinaukri.com/jobs/1109,301,YES,PASS,,Closed,241,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1110,https://www.searchsarkarinaukri.com/jobs/1110,410,YES,BLOCKED,needs_review,Closed,326,RESTORE_200,Blocked by needs_review; Closed; desc 326 chars
+1111,https://www.searchsarkarinaukri.com/jobs/1111,301,YES,PASS,,Closed,321,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1112,https://www.searchsarkarinaukri.com/jobs/1112,301,YES,PASS,,Closed,310,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1113,https://www.searchsarkarinaukri.com/jobs/1113,410,YES,BLOCKED,needs_review,Closed,340,RESTORE_200,Blocked by needs_review; Closed; desc 340 chars
+1114,https://www.searchsarkarinaukri.com/jobs/1114,301,YES,PASS,,Closed,290,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1116,https://www.searchsarkarinaukri.com/jobs/1116,410,YES,BLOCKED,needs_review,Closed,345,RESTORE_200,Blocked by needs_review; Closed; desc 345 chars
+1118,https://www.searchsarkarinaukri.com/jobs/1118,301,YES,PASS,,Closed,319,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1120,https://www.searchsarkarinaukri.com/jobs/1120,301,YES,PASS,,Closed,310,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1123,https://www.searchsarkarinaukri.com/jobs/1123,301,YES,PASS,,Closed,306,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1128,https://www.searchsarkarinaukri.com/jobs/1128,301,YES,PASS,,Closed,296,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1133,https://www.searchsarkarinaukri.com/jobs/1133,410,YES,BLOCKED,needs_review,Closed,183,REMOVE_410,Blocked by needs_review; Closed; desc 183 chars
+1134,https://www.searchsarkarinaukri.com/jobs/1134,410,YES,BLOCKED,needs_review,Closed,186,REMOVE_410,Blocked by needs_review; Closed; desc 186 chars
+1135,https://www.searchsarkarinaukri.com/jobs/1135,410,YES,BLOCKED,needs_review,Closed,195,REMOVE_410,Blocked by needs_review; Closed; desc 195 chars
+1136,https://www.searchsarkarinaukri.com/jobs/1136,410,YES,BLOCKED,needs_review,Closed,195,REMOVE_410,Blocked by needs_review; Closed; desc 195 chars
+1290,https://www.searchsarkarinaukri.com/jobs/1290,301,YES,PASS,,Closed,1186,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1291,https://www.searchsarkarinaukri.com/jobs/1291,301,YES,PASS,,Closed,745,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1292,https://www.searchsarkarinaukri.com/jobs/1292,301,YES,PASS,,Closed,1376,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1293,https://www.searchsarkarinaukri.com/jobs/1293,301,YES,PASS,,Closed,683,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1295,https://www.searchsarkarinaukri.com/jobs/1295,301,YES,PASS,,Closed,635,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1296,https://www.searchsarkarinaukri.com/jobs/1296,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1299,https://www.searchsarkarinaukri.com/jobs/1299,301,YES,PASS,,Closed,597,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1301,https://www.searchsarkarinaukri.com/jobs/1301,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1304,https://www.searchsarkarinaukri.com/jobs/1304,301,YES,PASS,,Closed,568,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1305,https://www.searchsarkarinaukri.com/jobs/1305,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1307,https://www.searchsarkarinaukri.com/jobs/1307,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1308,https://www.searchsarkarinaukri.com/jobs/1308,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1310,https://www.searchsarkarinaukri.com/jobs/1310,301,YES,PASS,,Closed,694,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1311,https://www.searchsarkarinaukri.com/jobs/1311,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1313,https://www.searchsarkarinaukri.com/jobs/1313,301,YES,PASS,,Closed,621,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1317,https://www.searchsarkarinaukri.com/jobs/1317,301,YES,PASS,,Closed,620,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1322,https://www.searchsarkarinaukri.com/jobs/1322,301,YES,PASS,,Closed,591,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1361,https://www.searchsarkarinaukri.com/jobs/1361,301,YES,PASS,,Closed,569,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1363,https://www.searchsarkarinaukri.com/jobs/1363,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1365,https://www.searchsarkarinaukri.com/jobs/1365,301,YES,PASS,,Closed,463,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1366,https://www.searchsarkarinaukri.com/jobs/1366,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1373,https://www.searchsarkarinaukri.com/jobs/1373,301,YES,PASS,,Closed,702,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1376,https://www.searchsarkarinaukri.com/jobs/1376,301,YES,PASS,,Closed,727,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1383,https://www.searchsarkarinaukri.com/jobs/1383,301,YES,PASS,,Closed,623,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1386,https://www.searchsarkarinaukri.com/jobs/1386,410,YES,BLOCKED,needs_review,Closed,241,RESTORE_200,Blocked by needs_review; Closed; desc 241 chars
+1387,https://www.searchsarkarinaukri.com/jobs/1387,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1388,https://www.searchsarkarinaukri.com/jobs/1388,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1389,https://www.searchsarkarinaukri.com/jobs/1389,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1391,https://www.searchsarkarinaukri.com/jobs/1391,301,YES,PASS,,Closed,290,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1396,https://www.searchsarkarinaukri.com/jobs/1396,301,YES,PASS,,Closed,1067,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1397,https://www.searchsarkarinaukri.com/jobs/1397,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1398,https://www.searchsarkarinaukri.com/jobs/1398,301,YES,PASS,,Closed,826,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1401,https://www.searchsarkarinaukri.com/jobs/1401,301,YES,PASS,,Closed,325,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1402,https://www.searchsarkarinaukri.com/jobs/1402,301,YES,PASS,,Closed,258,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1403,https://www.searchsarkarinaukri.com/jobs/1403,301,YES,PASS,,Closed,287,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1404,https://www.searchsarkarinaukri.com/jobs/1404,301,YES,PASS,,Closed,294,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1405,https://www.searchsarkarinaukri.com/jobs/1405,301,YES,PASS,,Closed,290,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1407,https://www.searchsarkarinaukri.com/jobs/1407,301,YES,PASS,,Closed,286,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1408,https://www.searchsarkarinaukri.com/jobs/1408,301,YES,PASS,,Closed,291,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1409,https://www.searchsarkarinaukri.com/jobs/1409,301,YES,PASS,,Closed,285,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1410,https://www.searchsarkarinaukri.com/jobs/1410,301,YES,PASS,,Closed,284,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1411,https://www.searchsarkarinaukri.com/jobs/1411,301,YES,PASS,,Closed,278,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1412,https://www.searchsarkarinaukri.com/jobs/1412,301,YES,PASS,,Closed,287,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1413,https://www.searchsarkarinaukri.com/jobs/1413,301,YES,PASS,,Closed,294,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1414,https://www.searchsarkarinaukri.com/jobs/1414,301,YES,PASS,,Closed,304,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1416,https://www.searchsarkarinaukri.com/jobs/1416,301,YES,PASS,,Closed,286,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1417,https://www.searchsarkarinaukri.com/jobs/1417,301,YES,PASS,,Closed,284,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1418,https://www.searchsarkarinaukri.com/jobs/1418,301,YES,PASS,,Closed,291,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1420,https://www.searchsarkarinaukri.com/jobs/1420,301,YES,PASS,,Closed,287,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1421,https://www.searchsarkarinaukri.com/jobs/1421,301,YES,PASS,,Closed,304,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1422,https://www.searchsarkarinaukri.com/jobs/1422,301,YES,PASS,,Closed,284,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1423,https://www.searchsarkarinaukri.com/jobs/1423,301,YES,PASS,,Closed,306,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1424,https://www.searchsarkarinaukri.com/jobs/1424,301,YES,PASS,,Closed,286,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1425,https://www.searchsarkarinaukri.com/jobs/1425,301,YES,PASS,,Closed,293,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1427,https://www.searchsarkarinaukri.com/jobs/1427,301,YES,PASS,,Closed,243,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1428,https://www.searchsarkarinaukri.com/jobs/1428,301,YES,PASS,,Closed,278,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1429,https://www.searchsarkarinaukri.com/jobs/1429,301,YES,PASS,,Closed,247,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1431,https://www.searchsarkarinaukri.com/jobs/1431,301,YES,PASS,,Closed,255,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1432,https://www.searchsarkarinaukri.com/jobs/1432,301,YES,PASS,,Closed,274,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1433,https://www.searchsarkarinaukri.com/jobs/1433,301,YES,PASS,,Closed,289,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1434,https://www.searchsarkarinaukri.com/jobs/1434,301,YES,PASS,,Closed,250,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1436,https://www.searchsarkarinaukri.com/jobs/1436,301,YES,PASS,,Closed,268,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1438,https://www.searchsarkarinaukri.com/jobs/1438,301,YES,PASS,,Closed,285,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1439,https://www.searchsarkarinaukri.com/jobs/1439,301,YES,PASS,,Closed,250,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1440,https://www.searchsarkarinaukri.com/jobs/1440,301,YES,PASS,,Closed,243,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1442,https://www.searchsarkarinaukri.com/jobs/1442,301,YES,PASS,,Closed,252,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1443,https://www.searchsarkarinaukri.com/jobs/1443,301,YES,PASS,,Closed,255,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1444,https://www.searchsarkarinaukri.com/jobs/1444,301,YES,PASS,,Closed,288,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1445,https://www.searchsarkarinaukri.com/jobs/1445,301,YES,PASS,,Closed,250,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1447,https://www.searchsarkarinaukri.com/jobs/1447,301,YES,PASS,,Closed,320,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1448,https://www.searchsarkarinaukri.com/jobs/1448,410,YES,BLOCKED,needs_review,Closed,335,RESTORE_200,Blocked by needs_review; Closed; desc 335 chars
+1449,https://www.searchsarkarinaukri.com/jobs/1449,301,YES,PASS,,Closed,298,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1450,https://www.searchsarkarinaukri.com/jobs/1450,301,YES,PASS,,Closed,310,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1454,https://www.searchsarkarinaukri.com/jobs/1454,301,YES,PASS,,Closed,289,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1455,https://www.searchsarkarinaukri.com/jobs/1455,301,YES,PASS,,Closed,236,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1457,https://www.searchsarkarinaukri.com/jobs/1457,301,YES,PASS,,Closed,212,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1458,https://www.searchsarkarinaukri.com/jobs/1458,301,YES,PASS,,Closed,207,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1461,https://www.searchsarkarinaukri.com/jobs/1461,301,YES,PASS,,Closed,271,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1462,https://www.searchsarkarinaukri.com/jobs/1462,301,YES,PASS,,Closed,208,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1463,https://www.searchsarkarinaukri.com/jobs/1463,301,YES,PASS,,Closed,231,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1464,https://www.searchsarkarinaukri.com/jobs/1464,301,YES,PASS,,Closed,265,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1468,https://www.searchsarkarinaukri.com/jobs/1468,301,YES,PASS,,Closed,269,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1469,https://www.searchsarkarinaukri.com/jobs/1469,301,YES,PASS,,Closed,268,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1471,https://www.searchsarkarinaukri.com/jobs/1471,301,YES,PASS,,Closed,1414,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1478,https://www.searchsarkarinaukri.com/jobs/1478,410,YES,BLOCKED,needs_review,Closed,300,RESTORE_200,Blocked by needs_review; Closed; desc 300 chars
+1481,https://www.searchsarkarinaukri.com/jobs/1481,301,YES,PASS,,Closed,323,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1482,https://www.searchsarkarinaukri.com/jobs/1482,410,YES,BLOCKED,needs_review,Closed,265,RESTORE_200,Blocked by needs_review; Closed; desc 265 chars
+1483,https://www.searchsarkarinaukri.com/jobs/1483,301,YES,PASS,,Closed,252,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1484,https://www.searchsarkarinaukri.com/jobs/1484,301,YES,PASS,,Closed,269,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1485,https://www.searchsarkarinaukri.com/jobs/1485,301,YES,PASS,,Closed,1053,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1486,https://www.searchsarkarinaukri.com/jobs/1486,410,YES,BLOCKED,needs_review,Closed,644,RESTORE_200,Blocked by needs_review; Closed; desc 644 chars
+1487,https://www.searchsarkarinaukri.com/jobs/1487,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1489,https://www.searchsarkarinaukri.com/jobs/1489,301,YES,PASS,,Closed,994,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1497,https://www.searchsarkarinaukri.com/jobs/1497,410,YES,BLOCKED,needs_review,Closed,195,REMOVE_410,Blocked by needs_review; Closed; desc 195 chars
+1498,https://www.searchsarkarinaukri.com/jobs/1498,410,YES,BLOCKED,needs_review,Closed,213,RESTORE_200,Blocked by needs_review; Closed; desc 213 chars
+1499,https://www.searchsarkarinaukri.com/jobs/1499,410,YES,BLOCKED,is_duplicate,Closed,331,RESTORE_200,Blocked by is_duplicate; Closed; desc 331 chars
+1501,https://www.searchsarkarinaukri.com/jobs/1501,301,YES,PASS,,Closed,339,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1502,https://www.searchsarkarinaukri.com/jobs/1502,301,YES,PASS,,Closed,313,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1503,https://www.searchsarkarinaukri.com/jobs/1503,410,YES,BLOCKED,is_duplicate,Closed,331,RESTORE_200,Blocked by is_duplicate; Closed; desc 331 chars
+1504,https://www.searchsarkarinaukri.com/jobs/1504,301,YES,PASS,,Closed,322,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1505,https://www.searchsarkarinaukri.com/jobs/1505,301,YES,PASS,,Closed,320,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1506,https://www.searchsarkarinaukri.com/jobs/1506,410,YES,BLOCKED,needs_review,Closed,325,RESTORE_200,Blocked by needs_review; Closed; desc 325 chars
+1507,https://www.searchsarkarinaukri.com/jobs/1507,301,YES,PASS,,Closed,306,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1508,https://www.searchsarkarinaukri.com/jobs/1508,410,YES,BLOCKED,needs_review,Closed,307,RESTORE_200,Blocked by needs_review; Closed; desc 307 chars
+1509,https://www.searchsarkarinaukri.com/jobs/1509,301,YES,PASS,,Closed,298,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1510,https://www.searchsarkarinaukri.com/jobs/1510,301,YES,PASS,,Closed,338,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1511,https://www.searchsarkarinaukri.com/jobs/1511,410,YES,BLOCKED,needs_review,Closed,304,RESTORE_200,Blocked by needs_review; Closed; desc 304 chars
+1513,https://www.searchsarkarinaukri.com/jobs/1513,301,YES,PASS,,Closed,340,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1514,https://www.searchsarkarinaukri.com/jobs/1514,410,YES,BLOCKED,needs_review,Closed,302,RESTORE_200,Blocked by needs_review; Closed; desc 302 chars
+1515,https://www.searchsarkarinaukri.com/jobs/1515,410,YES,BLOCKED,is_duplicate,Closed,307,RESTORE_200,Blocked by is_duplicate; Closed; desc 307 chars
+1516,https://www.searchsarkarinaukri.com/jobs/1516,301,YES,PASS,,Closed,319,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1518,https://www.searchsarkarinaukri.com/jobs/1518,301,YES,PASS,,Closed,298,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1521,https://www.searchsarkarinaukri.com/jobs/1521,301,YES,PASS,,Closed,597,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1522,https://www.searchsarkarinaukri.com/jobs/1522,301,YES,PASS,,Closed,451,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1523,https://www.searchsarkarinaukri.com/jobs/1523,301,YES,PASS,,Closed,523,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1525,https://www.searchsarkarinaukri.com/jobs/1525,301,YES,PASS,,Closed,340,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1526,https://www.searchsarkarinaukri.com/jobs/1526,301,YES,PASS,,Closed,274,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1530,https://www.searchsarkarinaukri.com/jobs/1530,301,YES,PASS,,Closed,887,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1536,https://www.searchsarkarinaukri.com/jobs/1536,301,YES,PASS,,Closed,304,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1538,https://www.searchsarkarinaukri.com/jobs/1538,301,YES,PASS,,Closed,324,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1549,https://www.searchsarkarinaukri.com/jobs/1549,301,YES,PASS,,Closed,319,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1550,https://www.searchsarkarinaukri.com/jobs/1550,301,YES,PASS,,Closed,304,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1551,https://www.searchsarkarinaukri.com/jobs/1551,410,YES,BLOCKED,needs_review,Closed,339,RESTORE_200,Blocked by needs_review; Closed; desc 339 chars
+1552,https://www.searchsarkarinaukri.com/jobs/1552,301,YES,PASS,,Closed,318,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1555,https://www.searchsarkarinaukri.com/jobs/1555,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1556,https://www.searchsarkarinaukri.com/jobs/1556,301,YES,PASS,,Closed,1494,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1559,https://www.searchsarkarinaukri.com/jobs/1559,301,YES,PASS,,Closed,308,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1562,https://www.searchsarkarinaukri.com/jobs/1562,301,YES,PASS,,Closed,690,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1563,https://www.searchsarkarinaukri.com/jobs/1563,301,YES,PASS,,Closed,497,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1564,https://www.searchsarkarinaukri.com/jobs/1564,301,YES,PASS,,Closed,341,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1566,https://www.searchsarkarinaukri.com/jobs/1566,410,YES,BLOCKED,needs_review,Closed,340,RESTORE_200,Blocked by needs_review; Closed; desc 340 chars
+1569,https://www.searchsarkarinaukri.com/jobs/1569,301,YES,PASS,,Closed,314,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1570,https://www.searchsarkarinaukri.com/jobs/1570,301,YES,PASS,,Closed,323,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1571,https://www.searchsarkarinaukri.com/jobs/1571,301,YES,PASS,,Closed,720,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1573,https://www.searchsarkarinaukri.com/jobs/1573,301,YES,PASS,,Closed,541,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1574,https://www.searchsarkarinaukri.com/jobs/1574,301,YES,PASS,,Closed,646,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1576,https://www.searchsarkarinaukri.com/jobs/1576,301,YES,PASS,,Closed,322,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1579,https://www.searchsarkarinaukri.com/jobs/1579,301,YES,PASS,,Closed,693,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1580,https://www.searchsarkarinaukri.com/jobs/1580,301,YES,PASS,,Closed,307,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1581,https://www.searchsarkarinaukri.com/jobs/1581,301,YES,PASS,,Closed,1599,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1582,https://www.searchsarkarinaukri.com/jobs/1582,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1583,https://www.searchsarkarinaukri.com/jobs/1583,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1584,https://www.searchsarkarinaukri.com/jobs/1584,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1585,https://www.searchsarkarinaukri.com/jobs/1585,301,YES,PASS,,Closed,661,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1586,https://www.searchsarkarinaukri.com/jobs/1586,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1588,https://www.searchsarkarinaukri.com/jobs/1588,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1589,https://www.searchsarkarinaukri.com/jobs/1589,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1590,https://www.searchsarkarinaukri.com/jobs/1590,301,YES,PASS,,Closed,797,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1591,https://www.searchsarkarinaukri.com/jobs/1591,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1592,https://www.searchsarkarinaukri.com/jobs/1592,301,YES,PASS,,Closed,303,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1593,https://www.searchsarkarinaukri.com/jobs/1593,301,YES,PASS,,Closed,330,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1594,https://www.searchsarkarinaukri.com/jobs/1594,301,YES,PASS,,Closed,817,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1595,https://www.searchsarkarinaukri.com/jobs/1595,301,YES,PASS,,Closed,326,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1596,https://www.searchsarkarinaukri.com/jobs/1596,301,YES,PASS,,Closed,321,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1597,https://www.searchsarkarinaukri.com/jobs/1597,301,YES,PASS,,Closed,608,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1598,https://www.searchsarkarinaukri.com/jobs/1598,301,YES,PASS,,Closed,602,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1599,https://www.searchsarkarinaukri.com/jobs/1599,301,YES,PASS,,Closed,615,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1600,https://www.searchsarkarinaukri.com/jobs/1600,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1601,https://www.searchsarkarinaukri.com/jobs/1601,301,YES,PASS,,Closed,619,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1602,https://www.searchsarkarinaukri.com/jobs/1602,301,YES,PASS,,Closed,604,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1603,https://www.searchsarkarinaukri.com/jobs/1603,301,YES,PASS,,Closed,586,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1604,https://www.searchsarkarinaukri.com/jobs/1604,301,YES,PASS,,Closed,587,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1605,https://www.searchsarkarinaukri.com/jobs/1605,301,YES,PASS,,Closed,621,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1607,https://www.searchsarkarinaukri.com/jobs/1607,301,YES,PASS,,Closed,599,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1608,https://www.searchsarkarinaukri.com/jobs/1608,301,YES,PASS,,Closed,596,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1609,https://www.searchsarkarinaukri.com/jobs/1609,301,YES,PASS,,Closed,613,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1611,https://www.searchsarkarinaukri.com/jobs/1611,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1612,https://www.searchsarkarinaukri.com/jobs/1612,301,YES,PASS,,Closed,613,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1613,https://www.searchsarkarinaukri.com/jobs/1613,301,YES,PASS,,Closed,615,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1614,https://www.searchsarkarinaukri.com/jobs/1614,301,YES,PASS,,Closed,610,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1615,https://www.searchsarkarinaukri.com/jobs/1615,301,YES,PASS,,Closed,626,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1616,https://www.searchsarkarinaukri.com/jobs/1616,301,YES,PASS,,Closed,715,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1617,https://www.searchsarkarinaukri.com/jobs/1617,301,YES,PASS,,Closed,336,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1618,https://www.searchsarkarinaukri.com/jobs/1618,301,YES,PASS,,Closed,861,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1621,https://www.searchsarkarinaukri.com/jobs/1621,301,YES,PASS,,Closed,684,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1623,https://www.searchsarkarinaukri.com/jobs/1623,301,YES,PASS,,Closed,878,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1625,https://www.searchsarkarinaukri.com/jobs/1625,301,YES,PASS,,Closed,1145,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1627,https://www.searchsarkarinaukri.com/jobs/1627,301,YES,PASS,,Closed,622,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1628,https://www.searchsarkarinaukri.com/jobs/1628,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1630,https://www.searchsarkarinaukri.com/jobs/1630,301,YES,PASS,,Closed,1975,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1635,https://www.searchsarkarinaukri.com/jobs/1635,301,YES,PASS,,Closed,305,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1636,https://www.searchsarkarinaukri.com/jobs/1636,301,YES,PASS,,Closed,324,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1646,https://www.searchsarkarinaukri.com/jobs/1646,301,YES,PASS,,Closed,320,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1647,https://www.searchsarkarinaukri.com/jobs/1647,301,YES,PASS,,Closed,317,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1649,https://www.searchsarkarinaukri.com/jobs/1649,301,YES,PASS,,Closed,350,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1650,https://www.searchsarkarinaukri.com/jobs/1650,301,YES,PASS,,Closed,335,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1652,https://www.searchsarkarinaukri.com/jobs/1652,301,YES,PASS,,Closed,362,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1653,https://www.searchsarkarinaukri.com/jobs/1653,301,YES,PASS,,Closed,351,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1656,https://www.searchsarkarinaukri.com/jobs/1656,301,YES,PASS,,Closed,363,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1657,https://www.searchsarkarinaukri.com/jobs/1657,301,YES,PASS,,Closed,391,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1658,https://www.searchsarkarinaukri.com/jobs/1658,301,YES,PASS,,Closed,380,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1660,https://www.searchsarkarinaukri.com/jobs/1660,301,YES,PASS,,Closed,379,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1661,https://www.searchsarkarinaukri.com/jobs/1661,301,YES,PASS,,Closed,470,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1662,https://www.searchsarkarinaukri.com/jobs/1662,301,YES,PASS,,Closed,524,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1663,https://www.searchsarkarinaukri.com/jobs/1663,301,YES,PASS,,Closed,516,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1664,https://www.searchsarkarinaukri.com/jobs/1664,301,YES,PASS,,Closed,483,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1668,https://www.searchsarkarinaukri.com/jobs/1668,301,YES,PASS,,Closed,575,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1670,https://www.searchsarkarinaukri.com/jobs/1670,301,YES,PASS,,Closed,545,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1671,https://www.searchsarkarinaukri.com/jobs/1671,301,YES,PASS,,Closed,458,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1672,https://www.searchsarkarinaukri.com/jobs/1672,301,YES,PASS,,Closed,499,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1673,https://www.searchsarkarinaukri.com/jobs/1673,301,YES,PASS,,Closed,565,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1674,https://www.searchsarkarinaukri.com/jobs/1674,301,YES,PASS,,Closed,500,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1675,https://www.searchsarkarinaukri.com/jobs/1675,301,YES,PASS,,Closed,562,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1676,https://www.searchsarkarinaukri.com/jobs/1676,301,YES,PASS,,Closed,544,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1677,https://www.searchsarkarinaukri.com/jobs/1677,301,YES,PASS,,Closed,541,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1679,https://www.searchsarkarinaukri.com/jobs/1679,301,YES,PASS,,Closed,562,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1681,https://www.searchsarkarinaukri.com/jobs/1681,301,YES,PASS,,Closed,543,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1682,https://www.searchsarkarinaukri.com/jobs/1682,301,YES,PASS,,Closed,613,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1683,https://www.searchsarkarinaukri.com/jobs/1683,301,YES,PASS,,Closed,487,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1685,https://www.searchsarkarinaukri.com/jobs/1685,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1686,https://www.searchsarkarinaukri.com/jobs/1686,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1687,https://www.searchsarkarinaukri.com/jobs/1687,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1688,https://www.searchsarkarinaukri.com/jobs/1688,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1690,https://www.searchsarkarinaukri.com/jobs/1690,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1691,https://www.searchsarkarinaukri.com/jobs/1691,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1692,https://www.searchsarkarinaukri.com/jobs/1692,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1694,https://www.searchsarkarinaukri.com/jobs/1694,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1695,https://www.searchsarkarinaukri.com/jobs/1695,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1696,https://www.searchsarkarinaukri.com/jobs/1696,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1697,https://www.searchsarkarinaukri.com/jobs/1697,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1698,https://www.searchsarkarinaukri.com/jobs/1698,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1699,https://www.searchsarkarinaukri.com/jobs/1699,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1701,https://www.searchsarkarinaukri.com/jobs/1701,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1702,https://www.searchsarkarinaukri.com/jobs/1702,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1703,https://www.searchsarkarinaukri.com/jobs/1703,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1704,https://www.searchsarkarinaukri.com/jobs/1704,410,NO,,,,0,REMOVE_410,Record absent from DB — keep 410 (Gone)
+1705,https://www.searchsarkarinaukri.com/jobs/1705,301,YES,PASS,,Closed,325,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1708,https://www.searchsarkarinaukri.com/jobs/1708,301,YES,PASS,,Closed,317,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1710,https://www.searchsarkarinaukri.com/jobs/1710,301,YES,PASS,,Closed,303,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1713,https://www.searchsarkarinaukri.com/jobs/1713,301,YES,PASS,,Closed,283,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1714,https://www.searchsarkarinaukri.com/jobs/1714,301,YES,PASS,,Closed,314,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1716,https://www.searchsarkarinaukri.com/jobs/1716,301,YES,PASS,,Closed,292,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1717,https://www.searchsarkarinaukri.com/jobs/1717,301,YES,PASS,,Closed,283,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1719,https://www.searchsarkarinaukri.com/jobs/1719,301,YES,PASS,,Closed,291,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1721,https://www.searchsarkarinaukri.com/jobs/1721,301,YES,PASS,,Closed,290,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1725,https://www.searchsarkarinaukri.com/jobs/1725,301,YES,PASS,,Closed,307,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1726,https://www.searchsarkarinaukri.com/jobs/1726,301,YES,PASS,,Closed,288,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1727,https://www.searchsarkarinaukri.com/jobs/1727,301,YES,PASS,,Closed,293,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1728,https://www.searchsarkarinaukri.com/jobs/1728,301,YES,PASS,,Closed,291,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1729,https://www.searchsarkarinaukri.com/jobs/1729,301,YES,PASS,,Closed,313,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1732,https://www.searchsarkarinaukri.com/jobs/1732,301,YES,PASS,,Closed,290,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1733,https://www.searchsarkarinaukri.com/jobs/1733,301,YES,PASS,,Closed,328,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1735,https://www.searchsarkarinaukri.com/jobs/1735,301,YES,PASS,,Closed,298,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1736,https://www.searchsarkarinaukri.com/jobs/1736,301,YES,PASS,,Closed,315,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1737,https://www.searchsarkarinaukri.com/jobs/1737,301,YES,PASS,,Closed,298,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1738,https://www.searchsarkarinaukri.com/jobs/1738,301,YES,PASS,,Closed,298,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1740,https://www.searchsarkarinaukri.com/jobs/1740,301,YES,PASS,,Closed,301,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1741,https://www.searchsarkarinaukri.com/jobs/1741,301,YES,PASS,,Closed,299,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1744,https://www.searchsarkarinaukri.com/jobs/1744,301,YES,PASS,,Closed,325,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1746,https://www.searchsarkarinaukri.com/jobs/1746,301,YES,PASS,,Closed,285,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1747,https://www.searchsarkarinaukri.com/jobs/1747,301,YES,PASS,,Closed,313,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1748,https://www.searchsarkarinaukri.com/jobs/1748,301,YES,PASS,,Closed,297,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1753,https://www.searchsarkarinaukri.com/jobs/1753,301,YES,PASS,,Closed,301,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1758,https://www.searchsarkarinaukri.com/jobs/1758,301,YES,PASS,,Closed,307,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1760,https://www.searchsarkarinaukri.com/jobs/1760,301,YES,PASS,,Closed,299,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1763,https://www.searchsarkarinaukri.com/jobs/1763,301,YES,PASS,,Closed,323,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1767,https://www.searchsarkarinaukri.com/jobs/1767,410,YES,PASS,,Closed,600,REMOVE_410,Passes gate but 410 live — verify
+1768,https://www.searchsarkarinaukri.com/jobs/1768,301,YES,PASS,,Closed,523,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1769,https://www.searchsarkarinaukri.com/jobs/1769,301,YES,PASS,,Closed,532,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1770,https://www.searchsarkarinaukri.com/jobs/1770,301,YES,PASS,,Closed,548,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1772,https://www.searchsarkarinaukri.com/jobs/1772,301,YES,PASS,,Closed,557,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1774,https://www.searchsarkarinaukri.com/jobs/1774,301,YES,PASS,,Closed,612,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1777,https://www.searchsarkarinaukri.com/jobs/1777,301,YES,PASS,,Closed,477,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1779,https://www.searchsarkarinaukri.com/jobs/1779,301,YES,PASS,,Closed,529,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1780,https://www.searchsarkarinaukri.com/jobs/1780,301,YES,PASS,,Closed,466,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1781,https://www.searchsarkarinaukri.com/jobs/1781,301,YES,PASS,,Closed,526,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1782,https://www.searchsarkarinaukri.com/jobs/1782,301,YES,PASS,,Closed,629,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1783,https://www.searchsarkarinaukri.com/jobs/1783,301,YES,PASS,,Closed,499,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1785,https://www.searchsarkarinaukri.com/jobs/1785,301,YES,PASS,,Closed,565,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1786,https://www.searchsarkarinaukri.com/jobs/1786,301,YES,PASS,,Closed,549,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1787,https://www.searchsarkarinaukri.com/jobs/1787,301,YES,PASS,,Closed,464,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1791,https://www.searchsarkarinaukri.com/jobs/1791,301,YES,PASS,,Closed,465,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1799,https://www.searchsarkarinaukri.com/jobs/1799,301,YES,PASS,,Closed,294,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1800,https://www.searchsarkarinaukri.com/jobs/1800,301,YES,PASS,,Closed,314,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1804,https://www.searchsarkarinaukri.com/jobs/1804,301,YES,PASS,,Closed,288,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1805,https://www.searchsarkarinaukri.com/jobs/1805,301,YES,PASS,,Closed,303,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1809,https://www.searchsarkarinaukri.com/jobs/1809,301,YES,PASS,,Closed,315,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1810,https://www.searchsarkarinaukri.com/jobs/1810,301,YES,PASS,,Closed,306,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1811,https://www.searchsarkarinaukri.com/jobs/1811,301,YES,PASS,,Closed,272,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1814,https://www.searchsarkarinaukri.com/jobs/1814,301,YES,PASS,,Closed,292,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1815,https://www.searchsarkarinaukri.com/jobs/1815,301,YES,PASS,,Closed,309,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1816,https://www.searchsarkarinaukri.com/jobs/1816,301,YES,PASS,,Closed,328,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1817,https://www.searchsarkarinaukri.com/jobs/1817,301,YES,PASS,,Closed,332,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1819,https://www.searchsarkarinaukri.com/jobs/1819,301,YES,PASS,,Closed,817,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1826,https://www.searchsarkarinaukri.com/jobs/1826,301,YES,PASS,,Closed,282,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1827,https://www.searchsarkarinaukri.com/jobs/1827,301,YES,PASS,,Closed,284,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1828,https://www.searchsarkarinaukri.com/jobs/1828,301,YES,PASS,,Closed,284,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1829,https://www.searchsarkarinaukri.com/jobs/1829,301,YES,PASS,,Closed,293,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1831,https://www.searchsarkarinaukri.com/jobs/1831,301,YES,PASS,,Closed,307,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1835,https://www.searchsarkarinaukri.com/jobs/1835,301,YES,PASS,,Closed,322,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1836,https://www.searchsarkarinaukri.com/jobs/1836,301,YES,PASS,,Closed,321,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1837,https://www.searchsarkarinaukri.com/jobs/1837,301,YES,PASS,,Closed,273,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1838,https://www.searchsarkarinaukri.com/jobs/1838,301,YES,PASS,,Closed,288,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1839,https://www.searchsarkarinaukri.com/jobs/1839,301,YES,PASS,,Closed,293,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1841,https://www.searchsarkarinaukri.com/jobs/1841,301,YES,PASS,,Closed,351,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1844,https://www.searchsarkarinaukri.com/jobs/1844,301,YES,PASS,,Closed,295,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1847,https://www.searchsarkarinaukri.com/jobs/1847,301,YES,PASS,,Closed,295,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1850,https://www.searchsarkarinaukri.com/jobs/1850,301,YES,PASS,,Closed,305,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1851,https://www.searchsarkarinaukri.com/jobs/1851,301,YES,PASS,,Closed,296,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1852,https://www.searchsarkarinaukri.com/jobs/1852,301,YES,PASS,,Closed,296,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1854,https://www.searchsarkarinaukri.com/jobs/1854,301,YES,PASS,,Open,289,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1857,https://www.searchsarkarinaukri.com/jobs/1857,301,YES,PASS,,Closed,886,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1862,https://www.searchsarkarinaukri.com/jobs/1862,301,YES,PASS,,Closed,624,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1863,https://www.searchsarkarinaukri.com/jobs/1863,301,YES,PASS,,Closed,2072,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1864,https://www.searchsarkarinaukri.com/jobs/1864,301,YES,PASS,,Closed,493,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1865,https://www.searchsarkarinaukri.com/jobs/1865,301,YES,PASS,,Closed,437,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1868,https://www.searchsarkarinaukri.com/jobs/1868,301,YES,PASS,,Closed,535,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1870,https://www.searchsarkarinaukri.com/jobs/1870,301,YES,PASS,,Closed,531,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1871,https://www.searchsarkarinaukri.com/jobs/1871,301,YES,PASS,,Closed,516,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1872,https://www.searchsarkarinaukri.com/jobs/1872,301,YES,PASS,,Closed,551,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1873,https://www.searchsarkarinaukri.com/jobs/1873,301,YES,PASS,,Closed,396,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1874,https://www.searchsarkarinaukri.com/jobs/1874,301,YES,PASS,,Closed,426,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1875,https://www.searchsarkarinaukri.com/jobs/1875,301,YES,PASS,,Closed,544,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1876,https://www.searchsarkarinaukri.com/jobs/1876,301,YES,PASS,,Closed,307,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1877,https://www.searchsarkarinaukri.com/jobs/1877,301,YES,PASS,,Closed,265,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1878,https://www.searchsarkarinaukri.com/jobs/1878,301,YES,PASS,,Closed,290,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1879,https://www.searchsarkarinaukri.com/jobs/1879,301,YES,PASS,,Closed,275,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1881,https://www.searchsarkarinaukri.com/jobs/1881,301,YES,PASS,,Closed,311,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1882,https://www.searchsarkarinaukri.com/jobs/1882,301,YES,PASS,,Closed,285,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1885,https://www.searchsarkarinaukri.com/jobs/1885,301,YES,PASS,,Closed,334,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1887,https://www.searchsarkarinaukri.com/jobs/1887,301,YES,PASS,,Closed,318,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1889,https://www.searchsarkarinaukri.com/jobs/1889,301,YES,PASS,,Open,330,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1890,https://www.searchsarkarinaukri.com/jobs/1890,301,YES,PASS,,Closed,296,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1892,https://www.searchsarkarinaukri.com/jobs/1892,301,YES,PASS,,Closed,290,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1895,https://www.searchsarkarinaukri.com/jobs/1895,301,YES,PASS,,Closed,302,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1896,https://www.searchsarkarinaukri.com/jobs/1896,301,YES,PASS,,Closed,307,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1901,https://www.searchsarkarinaukri.com/jobs/1901,301,YES,PASS,,Closed,283,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1903,https://www.searchsarkarinaukri.com/jobs/1903,301,YES,PASS,,Closed,298,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1904,https://www.searchsarkarinaukri.com/jobs/1904,301,YES,PASS,,Closed,351,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1907,https://www.searchsarkarinaukri.com/jobs/1907,301,YES,PASS,,Closed,859,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1908,https://www.searchsarkarinaukri.com/jobs/1908,301,YES,PASS,,Closed,953,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1910,https://www.searchsarkarinaukri.com/jobs/1910,301,YES,PASS,,Closed,285,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1911,https://www.searchsarkarinaukri.com/jobs/1911,301,YES,PASS,,Closed,318,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1912,https://www.searchsarkarinaukri.com/jobs/1912,301,YES,PASS,,Closed,276,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1914,https://www.searchsarkarinaukri.com/jobs/1914,301,YES,PASS,,Closed,272,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1916,https://www.searchsarkarinaukri.com/jobs/1916,301,YES,PASS,,Closed,290,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1917,https://www.searchsarkarinaukri.com/jobs/1917,301,YES,PASS,,Closed,287,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1920,https://www.searchsarkarinaukri.com/jobs/1920,301,YES,PASS,,Closed,318,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1922,https://www.searchsarkarinaukri.com/jobs/1922,301,YES,PASS,,Closed,284,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1924,https://www.searchsarkarinaukri.com/jobs/1924,301,YES,PASS,,Closed,291,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1926,https://www.searchsarkarinaukri.com/jobs/1926,301,YES,PASS,,Open,296,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1927,https://www.searchsarkarinaukri.com/jobs/1927,301,YES,PASS,,Open,271,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1936,https://www.searchsarkarinaukri.com/jobs/1936,301,YES,PASS,,Closed,469,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1938,https://www.searchsarkarinaukri.com/jobs/1938,301,YES,PASS,,Closed,470,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1939,https://www.searchsarkarinaukri.com/jobs/1939,301,YES,PASS,,Closed,618,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1941,https://www.searchsarkarinaukri.com/jobs/1941,301,YES,PASS,,Closed,298,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1943,https://www.searchsarkarinaukri.com/jobs/1943,301,YES,PASS,,Closed,307,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1948,https://www.searchsarkarinaukri.com/jobs/1948,301,YES,PASS,,Closed,317,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1956,https://www.searchsarkarinaukri.com/jobs/1956,301,YES,PASS,,Closed,341,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1964,https://www.searchsarkarinaukri.com/jobs/1964,301,YES,PASS,,Closed,283,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1966,https://www.searchsarkarinaukri.com/jobs/1966,301,YES,PASS,,Closed,271,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1967,https://www.searchsarkarinaukri.com/jobs/1967,301,YES,PASS,,Closed,304,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1975,https://www.searchsarkarinaukri.com/jobs/1975,301,YES,PASS,,Closed,331,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1981,https://www.searchsarkarinaukri.com/jobs/1981,301,YES,PASS,,Closed,294,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1983,https://www.searchsarkarinaukri.com/jobs/1983,301,YES,PASS,,Closed,309,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1985,https://www.searchsarkarinaukri.com/jobs/1985,301,YES,PASS,,Closed,273,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1986,https://www.searchsarkarinaukri.com/jobs/1986,301,YES,PASS,,Closed,296,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1987,https://www.searchsarkarinaukri.com/jobs/1987,301,YES,PASS,,Closed,306,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1988,https://www.searchsarkarinaukri.com/jobs/1988,301,YES,PASS,,Closed,296,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1992,https://www.searchsarkarinaukri.com/jobs/1992,301,YES,PASS,,Closed,319,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1994,https://www.searchsarkarinaukri.com/jobs/1994,301,YES,PASS,,Closed,276,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1995,https://www.searchsarkarinaukri.com/jobs/1995,301,YES,PASS,,Closed,295,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1996,https://www.searchsarkarinaukri.com/jobs/1996,301,YES,PASS,,Closed,316,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1998,https://www.searchsarkarinaukri.com/jobs/1998,301,YES,PASS,,Closed,276,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+1999,https://www.searchsarkarinaukri.com/jobs/1999,301,YES,PASS,,Closed,281,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2001,https://www.searchsarkarinaukri.com/jobs/2001,301,YES,PASS,,Closed,338,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2005,https://www.searchsarkarinaukri.com/jobs/2005,301,YES,PASS,,Closed,551,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2006,https://www.searchsarkarinaukri.com/jobs/2006,410,YES,BLOCKED,needs_review,Open,642,RESTORE_200,Blocked by needs_review; Open; desc 642 chars
+2008,https://www.searchsarkarinaukri.com/jobs/2008,301,YES,PASS,,Closed,583,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2011,https://www.searchsarkarinaukri.com/jobs/2011,301,YES,PASS,,Closed,482,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2013,https://www.searchsarkarinaukri.com/jobs/2013,301,YES,PASS,,Closed,554,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2015,https://www.searchsarkarinaukri.com/jobs/2015,301,YES,PASS,,Closed,507,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2016,https://www.searchsarkarinaukri.com/jobs/2016,301,YES,PASS,,Closed,548,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2018,https://www.searchsarkarinaukri.com/jobs/2018,301,YES,PASS,,Closed,515,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2019,https://www.searchsarkarinaukri.com/jobs/2019,301,YES,PASS,,Closed,453,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2021,https://www.searchsarkarinaukri.com/jobs/2021,301,YES,PASS,,Closed,300,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2023,https://www.searchsarkarinaukri.com/jobs/2023,301,YES,PASS,,Closed,292,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2025,https://www.searchsarkarinaukri.com/jobs/2025,301,YES,PASS,,Closed,325,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2026,https://www.searchsarkarinaukri.com/jobs/2026,301,YES,PASS,,Closed,285,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2028,https://www.searchsarkarinaukri.com/jobs/2028,301,YES,PASS,,Closed,299,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2032,https://www.searchsarkarinaukri.com/jobs/2032,301,YES,PASS,,Closed,284,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2033,https://www.searchsarkarinaukri.com/jobs/2033,301,YES,PASS,,Closed,278,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2036,https://www.searchsarkarinaukri.com/jobs/2036,301,YES,PASS,,Closed,302,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2037,https://www.searchsarkarinaukri.com/jobs/2037,301,YES,PASS,,Closed,317,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2038,https://www.searchsarkarinaukri.com/jobs/2038,301,YES,PASS,,Closed,290,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2039,https://www.searchsarkarinaukri.com/jobs/2039,301,YES,PASS,,Closed,293,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2044,https://www.searchsarkarinaukri.com/jobs/2044,301,YES,PASS,,Closed,291,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2046,https://www.searchsarkarinaukri.com/jobs/2046,301,YES,PASS,,Closed,1357,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2047,https://www.searchsarkarinaukri.com/jobs/2047,301,YES,PASS,,Closed,930,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2051,https://www.searchsarkarinaukri.com/jobs/2051,301,YES,PASS,,Closed,754,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2052,https://www.searchsarkarinaukri.com/jobs/2052,301,YES,PASS,,Closed,1603,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2053,https://www.searchsarkarinaukri.com/jobs/2053,301,YES,PASS,,Closed,1660,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2055,https://www.searchsarkarinaukri.com/jobs/2055,301,YES,PASS,,Closed,311,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2056,https://www.searchsarkarinaukri.com/jobs/2056,301,YES,PASS,,Closed,289,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2065,https://www.searchsarkarinaukri.com/jobs/2065,301,YES,PASS,,Closed,269,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2067,https://www.searchsarkarinaukri.com/jobs/2067,301,YES,PASS,,Closed,314,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2068,https://www.searchsarkarinaukri.com/jobs/2068,301,YES,PASS,,Closed,273,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2070,https://www.searchsarkarinaukri.com/jobs/2070,301,YES,PASS,,Closed,298,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2071,https://www.searchsarkarinaukri.com/jobs/2071,301,YES,PASS,,Closed,307,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2072,https://www.searchsarkarinaukri.com/jobs/2072,301,YES,PASS,,Closed,319,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2074,https://www.searchsarkarinaukri.com/jobs/2074,301,YES,PASS,,Closed,337,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2078,https://www.searchsarkarinaukri.com/jobs/2078,301,YES,PASS,,Closed,316,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2079,https://www.searchsarkarinaukri.com/jobs/2079,301,YES,PASS,,Closed,294,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2080,https://www.searchsarkarinaukri.com/jobs/2080,301,YES,PASS,,Closed,292,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2081,https://www.searchsarkarinaukri.com/jobs/2081,301,YES,PASS,,Closed,333,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2083,https://www.searchsarkarinaukri.com/jobs/2083,301,YES,PASS,,Closed,350,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2084,https://www.searchsarkarinaukri.com/jobs/2084,410,YES,BLOCKED,needs_review,Closed,312,RESTORE_200,Blocked by needs_review; Closed; desc 312 chars
+2086,https://www.searchsarkarinaukri.com/jobs/2086,301,YES,PASS,,Closed,1186,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2092,https://www.searchsarkarinaukri.com/jobs/2092,301,YES,PASS,,Closed,2268,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2095,https://www.searchsarkarinaukri.com/jobs/2095,301,YES,PASS,,Closed,1317,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2096,https://www.searchsarkarinaukri.com/jobs/2096,301,YES,PASS,,Closed,2053,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2098,https://www.searchsarkarinaukri.com/jobs/2098,301,YES,PASS,,Closed,1199,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2099,https://www.searchsarkarinaukri.com/jobs/2099,301,YES,PASS,,Closed,1346,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2100,https://www.searchsarkarinaukri.com/jobs/2100,301,YES,PASS,,Closed,1912,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2102,https://www.searchsarkarinaukri.com/jobs/2102,301,YES,PASS,,Closed,521,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2104,https://www.searchsarkarinaukri.com/jobs/2104,410,YES,BLOCKED,needs_review,Closed,539,RESTORE_200,Blocked by needs_review; Closed; desc 539 chars
+2110,https://www.searchsarkarinaukri.com/jobs/2110,301,YES,PASS,,Closed,508,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2111,https://www.searchsarkarinaukri.com/jobs/2111,301,YES,PASS,,Closed,486,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2113,https://www.searchsarkarinaukri.com/jobs/2113,410,YES,BLOCKED,needs_review,Closed,523,RESTORE_200,Blocked by needs_review; Closed; desc 523 chars
+2116,https://www.searchsarkarinaukri.com/jobs/2116,301,YES,PASS,,Closed,526,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2122,https://www.searchsarkarinaukri.com/jobs/2122,301,YES,PASS,,Closed,468,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2125,https://www.searchsarkarinaukri.com/jobs/2125,301,YES,PASS,,Closed,283,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2129,https://www.searchsarkarinaukri.com/jobs/2129,301,YES,PASS,,Closed,300,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2133,https://www.searchsarkarinaukri.com/jobs/2133,301,YES,PASS,,Closed,296,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2140,https://www.searchsarkarinaukri.com/jobs/2140,301,YES,PASS,,Closed,287,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2143,https://www.searchsarkarinaukri.com/jobs/2143,301,YES,PASS,,Closed,306,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2144,https://www.searchsarkarinaukri.com/jobs/2144,301,YES,PASS,,Closed,300,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2145,https://www.searchsarkarinaukri.com/jobs/2145,301,YES,PASS,,Closed,342,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2146,https://www.searchsarkarinaukri.com/jobs/2146,301,YES,PASS,,Closed,285,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2149,https://www.searchsarkarinaukri.com/jobs/2149,301,YES,PASS,,Closed,325,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2154,https://www.searchsarkarinaukri.com/jobs/2154,301,YES,PASS,,Closed,295,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2155,https://www.searchsarkarinaukri.com/jobs/2155,301,YES,PASS,,Closed,300,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2158,https://www.searchsarkarinaukri.com/jobs/2158,301,YES,PASS,,Closed,292,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2166,https://www.searchsarkarinaukri.com/jobs/2166,301,YES,PASS,,Closed,278,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2168,https://www.searchsarkarinaukri.com/jobs/2168,301,YES,PASS,,Closed,301,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2199,https://www.searchsarkarinaukri.com/jobs/2199,410,YES,BLOCKED,needs_review,Open,645,RESTORE_200,Blocked by needs_review; Open; desc 645 chars
+2200,https://www.searchsarkarinaukri.com/jobs/2200,410,YES,BLOCKED,needs_review,Open,674,RESTORE_200,Blocked by needs_review; Open; desc 674 chars
+2201,https://www.searchsarkarinaukri.com/jobs/2201,410,YES,BLOCKED,needs_review,Open,958,RESTORE_200,Blocked by needs_review; Open; desc 958 chars
+2204,https://www.searchsarkarinaukri.com/jobs/2204,301,YES,PASS,,Closed,507,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2205,https://www.searchsarkarinaukri.com/jobs/2205,301,YES,PASS,,Closed,571,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2206,https://www.searchsarkarinaukri.com/jobs/2206,301,YES,PASS,,Closed,523,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2209,https://www.searchsarkarinaukri.com/jobs/2209,301,YES,PASS,,Closed,455,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2210,https://www.searchsarkarinaukri.com/jobs/2210,301,YES,PASS,,Closed,531,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2212,https://www.searchsarkarinaukri.com/jobs/2212,410,YES,PASS,,Closed,637,REMOVE_410,Passes gate but 410 live — verify
+2213,https://www.searchsarkarinaukri.com/jobs/2213,410,YES,PASS,,Closed,144,REMOVE_410,Passes gate but 410 live — verify
+2215,https://www.searchsarkarinaukri.com/jobs/2215,301,YES,PASS,,Closed,470,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2217,https://www.searchsarkarinaukri.com/jobs/2217,301,YES,PASS,,Closed,461,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2218,https://www.searchsarkarinaukri.com/jobs/2218,301,YES,PASS,,Closed,594,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2219,https://www.searchsarkarinaukri.com/jobs/2219,301,YES,PASS,,Closed,430,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"
+2223,https://www.searchsarkarinaukri.com/jobs/2223,301,YES,PASS,,Closed,302,REDIRECT_301,"Resolves to canonical slug — already fixed, await recrawl"

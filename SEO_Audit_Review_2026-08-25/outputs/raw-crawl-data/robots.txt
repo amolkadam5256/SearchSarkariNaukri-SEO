@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /dashboard
+Disallow: /saved-jobs
+Disallow: /my-saved-jobs
+Disallow: /profile-setup
+Disallow: /preferences
+Disallow: /reminders
+Disallow: /api/
+Disallow: /login
+Disallow: /register
+Disallow: /*?utm_*
+
+Sitemap: https://www.searchsarkarinaukri.com/sitemap.xml

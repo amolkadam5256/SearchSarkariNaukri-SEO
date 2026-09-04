@@ -1,0 +1,17 @@
+no,url,last_crawled,page_type,brief_file,primary_action,noindex_status
+1,https://www.searchsarkarinaukri.com/jobs/central-vigilance-commission-central-vigilance-commission-2026--1730,22 Aug 2026,Job detail page,001_jobs-central-vigilance-commission-central-vi.md,FIX_NOINDEX_AND_CONTENT_OR_REDIRECT,"YES - pasted live HTML shows noindex, follow"
+2,https://www.searchsarkarinaukri.com/jobs/vitthalrao-patil-mahavidyalaya-kolhapur-vitthalrao-patil-mahavidyalaya-kolhapur-2026--2126,22 Aug 2026,Job detail page,002_jobs-vitthalrao-patil-mahavidyalaya-kolhapur.md,FIX_NOINDEX_AND_CONTENT_OR_REDIRECT,TO_TEST
+3,https://www.searchsarkarinaukri.com/jobs/vitthalrao-patil-mahavidyalaya-kolhapur-vitthalrao-patil-mahavidyalaya-k--2126,TO_VERIFY_FROM_WORKBOOK,Job detail page,003_jobs-vitthalrao-patil-mahavidyalaya-kolhapur.md,FIX_NOINDEX_AND_CONTENT_OR_REDIRECT,TO_TEST
+4,https://www.searchsarkarinaukri.com/12th-pass-jobs-in-kolkata,TO_VERIFY_FROM_WORKBOOK,Qualification/location landing page,004_12th-pass-jobs-in-kolkata.md,IMPROVE_LANDING_PAGE_OR_NOINDEX_IF_THIN,TO_TEST
+5,https://www.searchsarkarinaukri.com/jobs?category=banking,TO_VERIFY_FROM_WORKBOOK,Filtered jobs/category URL,005_jobs.md,CANONICALIZE_OR_NOINDEX_FILTER,TO_TEST
+6,https://www.searchsarkarinaukri.com/districts/thane/upsc,19 Aug 2026,District/topic landing page,006_districts-thane-upsc.md,IMPROVE_LANDING_PAGE_OR_NOINDEX_IF_THIN,TO_TEST
+7,https://www.searchsarkarinaukri.com/department/maharashtra-police,4 Aug 2026,Department landing page,007_department-maharashtra-police.md,IMPROVE_LANDING_PAGE_OR_NOINDEX_IF_THIN,TO_TEST
+8,https://www.searchsarkarinaukri.com/results/13,4 Aug 2026,Result detail page,008_results-13.md,VERIFY_RESULT_RECORD_AND_INDEXABILITY,TO_TEST
+9,https://www.searchsarkarinaukri.com/results/14,3 Aug 2026,Result detail page,009_results-14.md,VERIFY_RESULT_RECORD_AND_INDEXABILITY,TO_TEST
+10,https://www.searchsarkarinaukri.com/districts/sindhudurg/talathi,31 Jul 2026,District/topic landing page,010_districts-sindhudurg-talathi.md,IMPROVE_LANDING_PAGE_OR_NOINDEX_IF_THIN,TO_TEST
+11,https://www.searchsarkarinaukri.com/districts/beed/ssc,31 Jul 2026,District/topic landing page,011_districts-beed-ssc.md,IMPROVE_LANDING_PAGE_OR_NOINDEX_IF_THIN,TO_TEST
+12,https://www.searchsarkarinaukri.com/districts/nandurbar/ssc,31 Jul 2026,District/topic landing page,012_districts-nandurbar-ssc.md,IMPROVE_LANDING_PAGE_OR_NOINDEX_IF_THIN,TO_TEST
+13,https://www.searchsarkarinaukri.com/districts/gadchiroli/mpsc,31 Jul 2026,District/topic landing page,013_districts-gadchiroli-mpsc.md,IMPROVE_LANDING_PAGE_OR_NOINDEX_IF_THIN,TO_TEST
+14,https://www.searchsarkarinaukri.com/districts/latur/central,TO_VERIFY_FROM_WORKBOOK,District/topic landing page,014_districts-latur-central.md,IMPROVE_LANDING_PAGE_OR_NOINDEX_IF_THIN,TO_TEST
+15,https://www.searchsarkarinaukri.com/mbbs-medical-jobs-in-gujarat,TO_VERIFY_FROM_WORKBOOK,Qualification/location landing page,015_mbbs-medical-jobs-in-gujarat.md,IMPROVE_LANDING_PAGE_OR_NOINDEX_IF_THIN,TO_TEST
+16,https://www.searchsarkarinaukri.com/jobs-in-dehradun,TO_VERIFY_FROM_WORKBOOK,Other page,016_jobs-in-dehradun.md,MANUAL_REVIEW,TO_TEST
