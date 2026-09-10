@@ -109,21 +109,25 @@ Transform `/job-updates` from a WhatsApp/Telegram channel landing page into a co
 1. Breadcrumb (improve semantic markup)
 2. H1 (Sarkari Naukri & Government Job Alerts 2026)
 3. Introduction (comprehensive search-focused content)
-4. First CTA (Get Free Sarkari Naukri Alerts - WhatsApp | Telegram)
-5. Latest Government Job Alerts (dynamic real job listings)
-6. Government Jobs Closing Soon (dynamic closing-soon listings)
-7. Free Sarkari Naukri Alerts on WhatsApp & Telegram (expanded section)
-8. Government Jobs by Qualification (6 qualification categories)
-9. Government Jobs by Category (9 job categories)
-10. Government Jobs by State (state-wise job discovery)
-11. Why Use Search Sarkari Naukri for Job Alerts (trust section)
-12. How Our Sarkari Naukri Alerts Work (4-step process)
-13. How to Check a Government Job Before Applying (practical guidance)
-14. Verify Recruitment Information (trust/verification section)
-15. Internal Resource Links (comprehensive linking)
-16. Sarkari Naukri 2026 FAQs (comprehensive FAQ section)
-17. Second CTA (Don't Miss the Next Government Job Notification)
-18. Final CTA (Get Daily Government Job Alerts Free)
+4. Search Sarkari Naukri at a Glance (AEO/GEO fact block)
+5. First CTA (Get Free Sarkari Naukri Alerts - WhatsApp | Telegram)
+6. Latest Government Job Alerts (dynamic real job listings)
+7. Government Jobs Closing Soon (dynamic closing-soon listings)
+8. Free Sarkari Naukri Alerts on WhatsApp & Telegram (expanded section)
+9. Government Jobs by Qualification (6 qualification categories)
+10. Government Jobs by Category (9 job categories)
+11. Government Jobs by State (state-wise job discovery)
+12. Maharashtra Government Job Alerts (GEO priority section)
+13. Why Use Search Sarkari Naukri for Job Alerts (trust section)
+14. How Our Sarkari Naukri Alerts Work (4-step process)
+15. How to Check a Government Job Before Applying (practical guidance)
+16. How We Verify Job Information (E-E-A-T section)
+17. Verify Recruitment Information (trust/verification section)
+18. Internal Resource Links (comprehensive linking)
+19. Sarkari Naukri 2026 FAQs (10+ questions — AEO + FAQPage schema)
+20. Official Government Links (curated subset — full library in file 16)
+21. Second CTA (Don't Miss the Next Government Job Notification)
+22. Final CTA (Get Daily Government Job Alerts Free)
 
 ---
 
@@ -146,6 +150,7 @@ Transform `/job-updates` from a WhatsApp/Telegram channel landing page into a co
 13. 13_TRUST_VERIFICATION_SPECIFICATION.md
 14. 14_DEVELOPER_IMPLEMENTATION_INSTRUCTIONS.md
 15. 15_FINAL_QA_CHECKLIST.md
+16. 16_PAGE_SECTION_SCOPE_AND_OFFICIAL_LINKS.md
 
 ---
 
@@ -209,8 +214,8 @@ Transform `/job-updates` from a WhatsApp/Telegram channel landing page into a co
 ## Implementation Priority
 
 ### Phase 1: Foundation (P0)
-1. Update H1 to "Sarkari Nourki & Government Job Alerts 2026"
-2. Update SEO title to "Sarkari Naukri & Government Job Alerts 2026 | Search SarkariNaukri"
+1. Update H1 to "Sarkari Naukri & Government Job Alerts 2026"
+2. Update SEO title to "Sarkari Naukri & Government Job Alerts 2026 | Search Sarkari Naukri"
 3. Update meta description to focus on job alerts and vacancies
 4. Rewrite introduction to be search-focused (not channel-focused)
 5. Improve breadcrumb with BreadcrumbList schema
