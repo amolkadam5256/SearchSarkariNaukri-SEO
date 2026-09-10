@@ -1,13 +1,14 @@
 # 02 — How It Works
 
 ## H2
-How the Daily UPSC & MPSC Assessment Works
+How the Daily UPSC & MPSC Quiz Works
 
-## Intro
-A short, focused routine designed to fit into any daily study schedule — no long mock tests, just 10 sharp questions.
+## Overview
+A short, focused routine designed to fit into any daily study schedule. Instead of demanding two or three hours for an exhaustive test, each session delivers 10 targeted questions to reinforce your memory and pinpoint specific study gaps.
 
-## Steps
-1. **Choose your exam** — Select UPSC or MPSC according to your preparation goal and exam pattern.
-2. **Answer 10 questions** — Get 5 questions from last week's current affairs and 5 from the exam syllabus.
-3. **Understand your result** — See your score, correct answers and simple explanations immediately after submitting.
-4. **Track your progress** — Review every daily result and your average score on your personal dashboard.
+## Five-Step Workflow
+1. **Choose your exam focus** — Select either UPSC Civil Services or MPSC Rajyaseva to load questions aligned with your syllabus.
+2. **Solve 10 questions** — Attempt a balanced mix of 5 recent current-affairs MCQs and 5 fundamental syllabus questions.
+3. **Review answers and explanations** — Submit your set to immediately see correct answers alongside concise, source-backed explanations for every question.
+4. **Identify weak subject areas** — Check your topic breakdown to see which areas need review in your textbooks or study notes.
+5. **Maintain your study routine** — Return each day to take on a fresh set, build consistency, and track your performance trends over time.

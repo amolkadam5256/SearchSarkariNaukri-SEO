@@ -1,12 +1,14 @@
 # 06 — Benefits
 
 ## H2
-Benefits of Solving Daily Government Exam Assessments
+Key Benefits of Regular Assessment Practice
 
-## Cards
-- **Track daily performance** — Every attempt is logged so you can see real progress, not just a one-time score.
-- **Improve accuracy** — Repeated daily current affairs questions sharpen recall and reduce careless mistakes.
-- **Reduce negative marking** — Practising daily builds the judgement to skip guesses that cost marks in the real exam.
-- **Build exam confidence** — A visible daily streak and improving scores build real confidence before exam day.
-- **Measure preparation level** — Compare your current affairs vs syllabus scores to see where you genuinely stand.
-- **Stay updated automatically** — Current affairs questions keep you aligned with the latest news relevant to UPSC and MPSC.
+## Why Daily Practice Strengthens Exam Readiness
+A short, disciplined daily quiz develops practical test-taking skills that passive reading alone cannot provide.
+
+## Core Advantages
+- **Sharpen Option Elimination** — Multiple-choice exams require discerning subtle differences between answer choices. Regular practice teaches you how to identify and eliminate distractors systematically.
+- **Manage Negative Marking Judiciously** — Both UPSC and MPSC penalize incorrect responses. Daily sets help you recognize when you have solid factual grounds to answer and when guessing poses too great a risk.
+- **Learn While Testing** — Detailed explanations follow every response, turning incorrect answers into immediate learning moments backed by official references.
+- **Balanced Syllabus & Current Events Revision** — Instead of neglecting static subjects while following the news (or vice versa), the 5+5 format balances both domains simultaneously.
+- **Consistent Preparation Record** — A clean dashboard summary logs your participation and score trends, giving you clear insight into your daily study discipline.

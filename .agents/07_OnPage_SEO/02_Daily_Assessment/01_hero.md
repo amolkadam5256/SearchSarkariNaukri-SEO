@@ -1,30 +1,33 @@
 # 01 — Hero Section
 
-Page: https://www.searchsarkarinaukri.com/daily-assessment
+**URL**: `https://www.searchsarkarinaukri.com/daily-assessment`
 
 ## H1
-Daily UPSC & MPSC Assessment — Daily Current Affairs Quiz & Government Exam Practice Questions
+Daily UPSC & MPSC Quiz – Current Affairs & Practice Questions
 
-## Intro paragraph
-Solve 10 new questions every day and build a consistent exam-preparation habit. Practice for UPSC, MPSC, SSC, Railway, Banking and Police Bharti with current-affairs and syllabus-based questions, instant scoring and a personal progress dashboard.
+## Introductory Overview
+Solve 10 fresh questions every day for UPSC and MPSC preparation. Each assessment combines recent current affairs with syllabus-based practice and gives you answers, explanations and a performance summary after submission.
 
-## Feature chips
-- New questions every day
-- No repeated questions
-- UPSC + MPSC + SSC + Railway
-- Dashboard progress tracking
-- Instant score & explanation
+## Key Highlights
+- 10 questions
+- Current affairs + syllabus
+- UPSC & MPSC
+- Answers & explanations
+- Free practice
+- Progress tracking
 
-## CTA
-Start Today's Free Assessment → (`/assessment`)
-Sub-line: Log in free and begin — no payment required
+## Action Links
+- **Primary CTA**: Start Today's Assessment → (`/assessment`)
+- **Secondary CTA**: Browse Previous Quizzes → (`#previous-assessments`)
+- **Trust Note**: Free exam practice · No payment required · Independent preparation resource
+- **Question Delivery Notice**: Questions are selected to avoid serving questions already answered by the same account, subject to question-bank availability.
 
-## Snapshot card
-- Questions today: 10
-- Current affairs questions: 5
-- Syllabus-based questions: 5
-- Average time to finish: ~10 min
-- Cost: Free
+## Daily Set Snapshot
+- **Questions per set**: 10
+- **Daily mix**: 5 current-affairs MCQs + 5 core syllabus questions
+- **Exam options**: UPSC Civil Services & MPSC Rajyaseva
+- **Average duration**: ~10 minutes
+- **Cost**: Free
 
-## Target keywords
-daily upsc assessment, daily mpsc assessment, current affairs quiz, government exam practice questions
+## Core Search Themes
+Daily UPSC quiz, daily MPSC quiz, UPSC current affairs quiz, MPSC current affairs quiz, UPSC practice questions, MPSC practice questions.

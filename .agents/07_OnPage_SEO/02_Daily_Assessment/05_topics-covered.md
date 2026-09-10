@@ -1,13 +1,16 @@
 # 05 — Topics Covered
 
 ## H2
-Topics Included in Daily Assessment
+Today's Assessment Topics
 
-## Intro
-Every daily UPSC and MPSC quiz mixes current affairs with core syllabus subjects, so your practice stays balanced.
+## Curriculum Overview
+Each daily set draws from core syllabus domains and recent news developments. The specific mix of topics updates dynamically with each day's question bank to ensure well-rounded coverage across your preparation cycle.
 
-## Topics
-Current Affairs, Indian Polity, History, Geography, Economics, Science, Environment, Maharashtra GK, Government Schemes, Constitution
-
-## Keywords
-current affairs quiz, gk quiz, mpsc current affairs, upsc practice questions
+## Core Subject Areas
+- **Current Affairs** — Recent policy announcements, national initiatives, international summits, and legal developments.
+- **Indian Polity & Governance** — Constitutional articles, fundamental rights, parliamentary procedures, and judicial landmarks.
+- **History of India** — Ancient, medieval, and modern Indian history, alongside the Indian National Movement.
+- **Geography & Environment** — Physical geography, river systems, climate patterns, national parks, and biodiversity conservation.
+- **Economic & Social Development** — Fiscal policy, banking systems, government welfare schemes, inflation, and trade indicators.
+- **General Science & Technology** — Space missions, defense technology, biotechnology, and everyday scientific principles.
+- **Maharashtra GK & Governance (MPSC track)** — State administration, regional geography, state socio-reformers, and Maharashtra government welfare programs.
