@@ -18,6 +18,7 @@
 1. `/blogs/maharashtra-government-jobs-2026` → Canonical: `https://www.searchsarkarinaukri.com/` ❌
 2. `/blogs/government-jobs-without-graduation` → Canonical: `https://www.searchsarkarinaukri.com/` ❌
 3. `/blogs/10th-pass-government-jobs-2026` → Canonical: `https://www.searchsarkarinaukri.com/` ❌
+4. `/blogs/upi-charges-october-2026` → Canonical: `https://www.searchsarkarinaukri.com/` ❌ (Tested Live in GSC on 19 Sept 2026 09:16:46)
 
 **Google Search Console Status:**
 - Crawl allowed: ✅

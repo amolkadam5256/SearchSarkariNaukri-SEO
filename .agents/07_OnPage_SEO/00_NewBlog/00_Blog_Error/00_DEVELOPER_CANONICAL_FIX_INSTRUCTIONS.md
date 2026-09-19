@@ -9,24 +9,35 @@
 - `/blogs/maharashtra-government-jobs-2026` → Canonical: `https://www.searchsarkarinaukri.com/` ❌
 - `/blogs/government-jobs-without-graduation` → Canonical: `https://www.searchsarkarinaukri.com/` ❌
 - `/blogs/10th-pass-government-jobs-2026` → Canonical: `https://www.searchsarkarinaukri.com/` ❌
+- `/blogs/upi-charges-october-2026` → Canonical: `https://www.searchsarkarinaukri.com/` ❌ (Tested Live in GSC on 19 Sept 2026 09:16:46)
 
 **Google Search Console Result:**
-- All three URLs classified as **Soft 404**
+- All URLs classified as **Soft 404**
 - Crawl allowed: ✅
-- Page fetch: ✅ Successful
+- Page fetch: ✅ Successful (HTTP 200)
 - Indexing allowed: ✅
-- User-declared canonical: ❌ Homepage (WRONG)
+- User-declared canonical: ❌ `https://www.searchsarkarinaukri.com/` (HOMEPAGE - FATAL BUG)
+- Google-selected canonical: Only determined after indexing
 
-### Root Cause
-The blog SEO template is likely generating:
-```html
-<link rel="canonical" href="https://www.searchsarkarinaukri.com/" />
-```
-
-Instead of:
-```html
-<link rel="canonical" href="https://www.searchsarkarinaukri.com/blogs/{current-slug}" />
-```
+### Root Cause (Identified in Production JS Bundle)
+The website uses a hybrid SSR / Prerender + React SPA hydration architecture.
+In `assets/index-*.js`:
+1. **Server-Side HTML Prerender:** Generates `<link data-ssn-seo="1" rel="canonical" href="https://www.searchsarkarinaukri.com/blogs/{slug}" />` (Correct).
+2. **Client-Side Hydration Hook (`K0()`):** On React mount, it executes:
+   ```javascript
+   r.querySelectorAll("[data-ssn-seo]").forEach(b => {
+     b.tagName !== "SCRIPT" && b.remove();
+   });
+   ```
+   This deletes the valid server-rendered canonical tag from the document `<head>`.
+3. **SEO Component (`$0`):** Replaces it by evaluating:
+   ```javascript
+   const J = f || o || "/";
+   const ee = J.startsWith("http") ? J : `${siteUrl}${J.startsWith("/") ? J : `/${J}`}`;
+   ```
+   When `f` (`url`) or `o` (`path`) is not passed synchronously while loading blog posts, `J` falls back to `"/"`!
+   React then injects `<link rel="canonical" href="https://www.searchsarkarinaukri.com/">`.
+4. **Googlebot's Headless Chrome** renders the DOM after JavaScript executes, reads the homepage canonical, finds a mismatch with the blog content, and flags the page as a **Soft 404**!
 
 ---
 
