@@ -11,6 +11,8 @@ Source used: Google Search Console / AI citation audit dated 15 September 2026.
 5. `13_Government_Jobs_in_Pune_2026/BLOG.md`
 6. `14_Nagpur_Government_Bharti_2026/BLOG.md`
 7. `15_ZP_Nashik_Recruitment_2026/BLOG.md`
+8. `16_UPI_Charges_October_2026/16_upi-charges-october-2026.md`
+9. `17_Daily_UPSC_MPSC_Quiz_Assessment_2026/BLOG.md`
 
 ## Publishing rule
 
@@ -36,6 +38,8 @@ Use relevant internal links from SearchSarkariNaukri:
 * `/jobs-in-nagpur`
 * `/districts/nashik`
 * `/districts/latur`
+* `/daily-assessment`
+* `/quiz`
 
 ## External source rule
 
