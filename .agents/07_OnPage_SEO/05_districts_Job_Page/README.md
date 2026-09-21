@@ -2,8 +2,8 @@
 
 **Project:** SearchSarkariNaukri  
 **Target:** `/districts` Page and 36 District Landing Pages  
-**Status:** Implementation Ready  
-**Date:** 8 September 2026
+**Status:** Implementation Ready + 21 September 2026 Quality Addendum  
+**Date:** 21 September 2026
 
 ---
 
@@ -119,6 +119,11 @@ This package provides complete implementation specifications for transforming th
 **Purpose:** Quality assurance checklist  
 **Contents:** Comprehensive testing checklist for all aspects
 
+### 23 - Search Console Quality Remediation Checklist
+**File:** `23_SEARCH_CONSOLE_QUALITY_REMEDIATION_CHECKLIST.md`  
+**Purpose:** 21 September 2026 Search Console follow-up and ranking-quality remediation  
+**Contents:** Duplicate FAQ removal, Marathi rewrite, safer eligibility wording, freshness rules, canonical rules, JobPosting schema rules, district uniqueness, nearby links, SSR/prerender guidance, Core Web Vitals, trust and monitoring checklist
+
 ---
 
 ## Quick Start Guide
@@ -126,18 +131,19 @@ This package provides complete implementation specifications for transforming th
 ### For Developers
 
 1. **Read `00_MASTER_IMPLEMENTATION_MAP.md`** - Understand the overall scope
-2. **Read `10_DEVELOPER_IMPLEMENTATION_INSTRUCTIONS.md`** - Get step-by-step instructions
-3. **Implement Phase 1 (P0)** - Foundation changes
-4. **Test Phase 1** - Validate before proceeding
-5. **Implement Phase 2 (P1)** - Content expansion
-6. **Test Phase 2** - Validate before proceeding
-7. **Implement Phase 3 (P1)** - District pages
-8. **Test Phase 3** - Validate before proceeding
-9. **Implement Phase 4 (P1)** - SEO/GEO/AEO
-10. **Test Phase 4** - Validate before proceeding
-11. **Implement Phase 5 (P2)** - Enhancement
-12. **Test Phase 5** - Validate before proceeding
-13. **Run `13_FINAL_QA_CHECKLIST.md`** - Final validation
+2. **Read `23_SEARCH_CONSOLE_QUALITY_REMEDIATION_CHECKLIST.md` first** - Apply the latest 21 September 2026 ranking-quality corrections
+3. **Read `10_DEVELOPER_IMPLEMENTATION_INSTRUCTIONS.md`** - Get step-by-step instructions
+4. **Implement Phase 1 (P0)** - Foundation changes
+5. **Test Phase 1** - Validate before proceeding
+6. **Implement Phase 2 (P1)** - Content expansion, but avoid duplicated FAQ and oversized generic essays
+7. **Test Phase 2** - Validate before proceeding
+8. **Implement Phase 3 (P1)** - District pages
+9. **Test Phase 3** - Validate before proceeding
+10. **Implement Phase 4 (P1)** - SEO/GEO/AEO
+11. **Test Phase 4** - Validate before proceeding
+12. **Implement Phase 5 (P2)** - Enhancement
+13. **Test Phase 5** - Validate before proceeding
+14. **Run `13_FINAL_QA_CHECKLIST.md` and `23_SEARCH_CONSOLE_QUALITY_REMEDIATION_CHECKLIST.md`** - Final validation
 
 ---
 
@@ -150,6 +156,11 @@ This package provides complete implementation specifications for transforming th
 - ❌ Change existing footer, navbar, or header
 - ❌ Alter existing functionality
 - ❌ Remove any existing data
+- ❌ Add JobPosting schema to `/districts` or multi-job district listing pages
+- ❌ Canonical district child pages to `/districts`
+- ❌ Fake freshness with the current page-load date
+- ❌ Keep duplicate Quick Answers and FAQ sections with the same questions
+- ❌ Publish awkward or machine-translated Marathi copy
 
 ### DO:
 - ✅ All changes are additions
@@ -158,6 +169,11 @@ This package provides complete implementation specifications for transforming th
 - ✅ Add content and internal links
 - ✅ Correct demonstrably incorrect labels
 - ✅ Connect existing data dynamically
+- ✅ Use self-canonicals for `/districts` and every district child page
+- ✅ Use real dataset update timestamps for freshness and sitemap `<lastmod>`
+- ✅ Keep one useful FAQ/direct-answer section
+- ✅ Add JobPosting schema only on individual job detail pages
+- ✅ Keep zero-vacancy district pages useful with related links
 
 ---
 
@@ -205,6 +221,7 @@ This package provides complete implementation specifications for transforming th
 The implementation is complete only when:
 
 - [ ] H1 targets Maharashtra government jobs by district
+- [ ] `/districts` is treated as indexed; work focuses on ranking quality
 - [ ] Introduction explains district-wise recruitment
 - [ ] All 36 districts are listed with URLs
 - [ ] Regional grouping is comprehensive
@@ -215,6 +232,12 @@ The implementation is complete only when:
 - [ ] Internal linking is comprehensive
 - [ ] Schema markup is implemented
 - [ ] FAQ section is comprehensive
+- [ ] FAQ/direct-answer content is not duplicated
+- [ ] Marathi section is professionally rewritten
+- [ ] Last updated date reflects real data changes
+- [ ] No JobPosting schema exists on `/districts` or district listing pages
+- [ ] Every district page has a self-canonical
+- [ ] Nearby district links exist on district child pages
 - [ ] Mobile UX is excellent
 - [ ] Accessibility is compliant
 - [ ] Performance is optimized
@@ -323,6 +346,11 @@ For questions about this implementation package, refer to:
 
 ## Version History
 
+**Version 1.1 - 21 September 2026**
+- Added Search Console quality remediation checklist
+- Clarified `/districts` is now a ranking-quality task, not an indexing task
+- Added duplicate FAQ, Marathi, freshness, canonical, JobPosting, district uniqueness, SSR, Core Web Vitals, and trust requirements
+
 **Version 1.0 - 8 September 2026**
 - Initial implementation package created
 - All 13 specification files completed
@@ -330,6 +358,6 @@ For questions about this implementation package, refer to:
 
 ---
 
-**Package Status:** ✅ Implementation Ready  
-**Last Updated:** 8 September 2026  
-**Total Files:** 13 specification documents
+**Package Status:** ✅ Implementation Ready + Quality Addendum Required  
+**Last Updated:** 21 September 2026  
+**Total Files:** 23 specification documents

@@ -43,6 +43,24 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 
 ## Structured Data Types to Implement
 
+## 21 September 2026 Schema Boundary Update
+
+`/job-updates` is a multi-job alert/listing hub. It must not contain `JobPosting` schema.
+
+- [ ] Use `WebPage` for the page.
+- [ ] Use `BreadcrumbList` for `Home -> Job Updates`.
+- [ ] Use `ItemList` only for visible job-list links when useful.
+- [ ] Use `FAQPage` only when FAQ content is visible and eligible.
+- [ ] Do not use `JobPosting` on `/job-updates`.
+- [ ] Use `JobPosting` only on individual job detail pages that describe one job/recruitment.
+- [ ] Keep `datePosted` and `validThrough` accurate on job detail pages.
+- [ ] Remove expired jobs from active listings.
+
+Freshness fields:
+
+- `lastReviewed` and `dateModified` must reflect real page/content/job-alert dataset updates.
+- Do not generate schema freshness with current render time on every request.
+
 ### 1. WebPage Schema
 **Priority:** High  
 **Implementation:** Required

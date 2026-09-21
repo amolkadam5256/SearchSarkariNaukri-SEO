@@ -43,6 +43,18 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 
 ## Schema Markup Strategy
 
+## 21 September 2026 Schema Boundary Update
+
+`/districts` and `/districts/{district-slug}` are listing or hub pages. They must not contain `JobPosting` schema. `JobPosting` must be used only on a detail page that describes one specific recruitment/job.
+
+- [ ] No `JobPosting` schema on `/districts`.
+- [ ] No `JobPosting` schema on multi-job district listing pages.
+- [ ] `JobPosting` appears only on single-job detail pages.
+- [ ] `datePosted` is accurate.
+- [ ] `validThrough` is accurate.
+- [ ] Expired jobs are removed from active listings.
+- [ ] Closed recruitment pages clearly show that applications are closed.
+
 ### Main Districts Page
 
 #### WebPage Schema
@@ -53,7 +65,7 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
   "name": "Maharashtra Government Jobs by District",
   "description": "Find Maharashtra government jobs by district. Explore Pune, Mumbai, Nagpur, Nashik and all 36 districts for latest Sarkari Naukri.",
   "url": "https://www.searchsarkarinaukri.com/districts",
-  "dateModified": "2026-09-08",
+  "dateModified": "{latest-real-dataset-or-content-update-date}",
   "isPartOf": {
     "@type": "WebSite",
     "name": "SearchSarkariNaukri",
@@ -301,6 +313,8 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 ❌ Add fake schema data  
 ❌ Fabricate job counts or vacancy numbers  
 ❌ Add JobPosting schema to district listing pages  
+❌ Add JobPosting schema to `/districts`  
+❌ Add JobPosting schema to any page listing multiple jobs  
 ❌ Add FAQ schema for hidden/not-implemented FAQs  
 ❌ Use same schema on all district pages without customization  
 ❌ Add schema for pages that don't exist yet
@@ -323,6 +337,7 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 - [ ] BreadcrumbList schema implemented
 - [ ] ItemList schema for district directory
 - [ ] FAQ schema (if eligible)
+- [ ] No JobPosting schema
 - [ ] All URLs are accurate
 - [ ] All names are accurate
 - [ ] No duplicate schema types
@@ -334,10 +349,12 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 - [ ] URLs are district-specific
 - [ ] Names are district-specific
 - [ ] dateModified is dynamic
+- [ ] dateModified reflects real content/data updates only
+- [ ] No JobPosting schema on multi-job listing pages
 - [ ] No duplicate schema
 - [ ] Validated with testing tools
 
 ---
 
-**Last Updated:** 8 September 2026  
-**Status:** Implementation Ready
+**Last Updated:** 21 September 2026  
+**Status:** Implementation Ready + Quality Addendum Required

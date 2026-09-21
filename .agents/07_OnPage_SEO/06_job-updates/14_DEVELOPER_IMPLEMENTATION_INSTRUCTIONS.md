@@ -45,8 +45,14 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 
 ### Target Page
 **URL:** https://www.searchsarkarinaukri.com/job-updates  
-**Current State:** WhatsApp/Telegram channel landing page  
-**Target State:** Comprehensive Sarkari Naukri & Government Job Alerts hub
+**Current State:** Content-rich job alerts page discovered from sitemap; live Search Console test says page can be indexed; normal crawl/indexing still pending  
+**Target State:** Daily Sarkari Naukri updates and free government job alerts hub clearly differentiated from `/jobs`
+
+### 21 September 2026 Search Console Update
+This is not currently a Soft 404, robots, or noindex problem. Do not keep requesting indexing. Apply `17_SEARCH_CONSOLE_DISCOVERY_AND_INTENT_REMEDIATION.md` before shipping: strengthen homepage/navigation/`/jobs` links, separate `/job-updates` intent from `/jobs`, verify exact self-canonical, and check crawl/render health.
+
+### 21 September 2026 Page Section Update
+Apply `18_PAGE_SECTION_AUDIT_AND_UPDATE_REQUIREMENTS.md` before the next `/job-updates` release. The page is already content-rich; the missing work is freshness, daily updates, recently changed notifications, quick discovery, alert-type coverage, concise tables, category CTA accuracy, and trust-section cleanup.
 
 ### Implementation Approach
 Additive-only approach. Do not delete existing functionality. Add new sections, improve presentation, and add content.
@@ -57,7 +63,7 @@ Additive-only approach. Do not delete existing functionality. Add new sections, 
 
 ### Step 1: Update H1
 **Current H1:** (existing)  
-**New H1:** Sarkari Naukri & Government Job Alerts 2026
+**New H1:** Daily Sarkari Naukri Updates & Free Government Job Alerts 2026
 
 **Implementation:**
 - Locate H1 in page template
@@ -67,11 +73,11 @@ Additive-only approach. Do not delete existing functionality. Add new sections, 
 
 ### Step 2: Update SEO Title
 **Current Title:** (existing)  
-**New Title:** Sarkari Naukri & Government Job Alerts 2026 | Search Sarkari Naukri
+**New Title:** Daily Sarkari Naukri Updates 2026 - Free Government Job Alerts
 
 **Implementation:**
 - Update `<title>` tag
-- Update meta description to: "Find the latest Sarkari Naukri and government job alerts for 2026. Check vacancies, recruitment updates, deadlines and free WhatsApp & Telegram job alerts."
+- Update meta description to: "Get daily Sarkari Naukri updates and free government job alerts for UPSC, SSC, Railway, Banking, MPSC, Police Bharti and more. Track new vacancies, closing dates, WhatsApp and Telegram alerts."
 - Test in browser
 
 ### Step 3: Improve Breadcrumb
@@ -105,6 +111,31 @@ Additive-only approach. Do not delete existing functionality. Add new sections, 
 - Add disclaimer text
 - Test functionality
 
+### Step 5A: Add Critical Inbound Links
+**Section:** Site navigation and internal discovery  
+**Type:** Crawlable links
+
+**Implementation:**
+- Add homepage link to `/job-updates` in the job alert/community section.
+- Add main navigation or secondary navigation link labeled `Job Alerts`.
+- Add `/jobs` page link to `/job-updates` with anchor `Government Job Alerts`.
+- Add category/qualification page links to `/job-updates` where alert intent is relevant.
+- Render each internal link as a real crawlable anchor.
+- Keep WhatsApp and Telegram links working, but route users through `/job-updates` where possible.
+
+### Step 5B: Add Freshness Dashboard
+**Section:** Freshness dashboard  
+**Type:** Dynamic metrics from real job/update data
+
+**Implementation:**
+- Add Active Government Jobs.
+- Add New Today.
+- Add Updated Today.
+- Add Closing Today.
+- Add Closing This Week.
+- Show Last updated with date, time and IST.
+- Use real dataset update time; do not use current render time.
+
 ---
 
 ## Phase 2: Content Expansion (P1)
@@ -121,6 +152,10 @@ Additive-only approach. Do not delete existing functionality. Add new sections, 
 - Add section heading and introduction text
 - Test with real data
 - Ensure no hardcoded job data
+- Keep qualification snippets short in the listing table; detailed eligibility belongs on the job detail page
+- Ensure active listings exclude expired/closed jobs
+- Deduplicate jobs by recruiting authority, notice number, post, deadline and official PDF where possible
+- Keep all listing-table eligibility/qualification text short enough for scanning
 
 ### Step 7: Add Government Jobs Closing Soon Section
 **Section:** Government Jobs Closing Soon  
@@ -135,6 +170,30 @@ Additive-only approach. Do not delete existing functionality. Add new sections, 
 - Add section heading
 - Test with real data
 - Ensure no hardcoded job data
+- Prioritize this section because it differentiates `/job-updates` from `/jobs`
+
+### Step 7A: Add Daily Update Sections
+**Section:** Daily alert differentiators  
+**Type:** Dynamic sections from real job data
+
+**Implementation:**
+- Add New Today where data exists.
+- Add New This Week where data exists.
+- Add Closing Today where data exists.
+- Add Closing This Week where data exists.
+- Add Recently Updated where data exists.
+- Do not hardcode jobs or dates.
+
+### Step 7B: Add New Today and Recently Updated Tables
+**Section:** Live update differentiation  
+**Type:** Dynamic sections
+
+**Implementation:**
+- Add `New Government Jobs Today`.
+- Add `Recently Updated Government Notifications`.
+- Add `Important Recruitment Changes` for deadline extensions, corrigendum, application reopenings, revised vacancies and exam date changes.
+- Link each row to a relevant detail page.
+- Show useful fallback copy when no rows exist.
 
 ### Step 8: Expand Free Sarkari Naukri Alerts Section
 **Current Section:** (existing)  
@@ -147,6 +206,19 @@ Additive-only approach. Do not delete existing functionality. Add new sections, 
 - Add bullet points for what users receive
 - Add explanation of why alerts are useful
 - Test functionality
+
+### Step 8A: Add Quick Job Finder and Alert Types
+**Section:** Top-page discovery  
+**Type:** Search, chips and compact navigation
+
+**Implementation:**
+- Add `Find Government Jobs Quickly` near the top.
+- Include search input with accessible label.
+- Add qualification chips as crawlable anchors.
+- Add category chips as crawlable anchors.
+- Add location/state chips as crawlable anchors.
+- Add `Latest Sarkari Updates` covering New Jobs, Admit Cards, Results, Exam Dates and Recruitment News.
+- Link to existing destination pages only.
 
 ### Step 9: Add Government Jobs by Qualification Section
 **Section:** Government Jobs by Qualification  
@@ -220,6 +292,17 @@ Additive-only approach. Do not delete existing functionality. Add new sections, 
 - Add bullet points for verification steps
 - Test readability
 
+### Step 14A: Merge Overlapping Trust Sections
+**Section:** Trust and verification  
+**Type:** Content cleanup
+
+**Implementation:**
+- Merge overlapping verification sections into `How We Verify Government Job Updates`.
+- Add concise `Before You Apply` checklist.
+- Keep the independent platform disclaimer.
+- Keep editorial policy link.
+- Avoid repeating the same trust message in multiple sections.
+
 ---
 
 ## Phase 3: SEO/GEO/AEO (P1)
@@ -288,6 +371,8 @@ Additive-only approach. Do not delete existing functionality. Add new sections, 
 - Add WebSite schema
 - Add FAQPage schema (if FAQ content exists)
 - Add ItemList schema (for job listings)
+- Do not add JobPosting schema to `/job-updates`
+- Add JobPosting schema only on individual job detail pages
 - Validate with Google Rich Results Test
 - Validate with Schema.org validator
 - Fix any errors
@@ -321,8 +406,18 @@ Additive-only approach. Do not delete existing functionality. Add new sections, 
 
 **Implementation:**
 - Implement dynamic last updated date
-- Update when content changes
+- Update only when content or job-alert data actually changes
+- Do not use current page-load time to fake freshness
 - Test date display
+
+### Step 23A: Verify SSR/Prerender and API Failure Fallback
+**Type:** Crawl resilience
+
+**Implementation:**
+- Verify View Source/server response contains title, meta description, canonical, H1, breadcrumb, core explanation and important links where practical.
+- Do not render the entire page as an empty React root that depends only on client-side API success.
+- If the jobs API fails, still render SEO content, alert explanation, WhatsApp/Telegram links, qualification links, FAQ and official-source guidance.
+- Verify random nonexistent URLs return real HTTP 404, not HTTP 200 with a React "Page Not Found" view.
 
 ### Step 24: Optimize Performance
 **Type:** Performance optimization
@@ -369,6 +464,15 @@ Additive-only approach. Do not delete existing functionality. Add new sections, 
 - Add missing sections
 - Add content and internal links
 - Connect existing data dynamically
+
+### 21 September 2026 Rules
+- Do not repeatedly request indexing for `/job-updates`; request has already been submitted.
+- Do not canonicalize `/job-updates` to `/jobs`.
+- Do not add JobPosting schema to `/job-updates`.
+- Do not duplicate `/jobs` search/browse intent.
+- Do not fake freshness with current render time.
+- Add crawlable links from homepage, main navigation, `/jobs`, and relevant category/qualification pages.
+- Check server logs for Googlebot 429, 5xx, WAF, CAPTCHA, or bot-protection issues.
 
 ---
 

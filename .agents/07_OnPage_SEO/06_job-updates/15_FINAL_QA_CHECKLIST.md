@@ -73,9 +73,10 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 ## Content Checks
 
 ### [ ] H1 is correct
-- H1: "Sarkari Naukri & Government Job Alerts 2026"
+- H1: "Daily Sarkari Naukri Updates & Free Government Job Alerts 2026"
 - Only one H1 exists
 - H1 is not duplicated
+- H1 is clearly different from `/jobs`
 
 ### [ ] Introduction is search-focused
 - Introduction explains job alerts and recruitment updates
@@ -87,12 +88,44 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 - Introduction text is present
 - Dynamic job table is present
 - Real job data from database (not hardcoded)
+- Active listings exclude expired/closed jobs
+- Qualification snippets are short enough for a listing page
 
 ### [ ] Government Jobs Closing Soon section exists
 - Section heading is present
 - Dynamic closing-soon table is present
 - Real job data from database (not hardcoded)
 - Days remaining calculated dynamically
+- Closing-soon content is prominent because it differentiates `/job-updates` from `/jobs`
+
+### [ ] Daily update sections exist
+- New Today section present where data exists
+- New This Week section present where data exists
+- Closing Today section present where data exists
+- Closing This Week section present where data exists
+- Recently Updated section present where data exists
+- All sections use real dynamic data
+
+### [ ] Freshness dashboard exists
+- Active Government Jobs count present
+- New Today count present
+- Updated Today count present
+- Closing Today count present
+- Closing This Week count present
+- Last updated shows date, time and IST where available
+- All metrics come from real data
+
+### [ ] New Government Jobs Today section exists
+- Shows only jobs first published today
+- Job titles link to detail pages
+- Posts, qualification, location and last date are scannable
+- Useful fallback appears if no jobs were added today
+
+### [ ] Recently Updated / Corrigendum section exists
+- Recently updated notifications shown from real update data
+- Deadline extended/corrigendum/application reopened/revised vacancy changes are shown where available
+- Each item links to relevant detail page
+- No fake update examples are displayed
 
 ### [ ] Qualification section exists
 - 6 qualification cards present
@@ -100,11 +133,19 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 - CTA buttons present
 - Links to qualification-based job pages
 
+### [ ] Quick Job Finder exists
+- Search input present with accessible label
+- Qualification chips present as crawlable anchors
+- Category chips present as crawlable anchors
+- Location/state chips present as crawlable anchors
+
 ### [ ] Category section exists
 - 9 category cards present
 - Descriptions present
 - CTA buttons present
 - Links to category-specific pages
+- CTA text matches destination type
+- Exam-guide destinations are not labeled as `View jobs`
 
 ### [ ] State section exists
 - 10 state links present
@@ -134,6 +175,14 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 - 12 resource links present
 - All links work
 
+### [ ] Critical inbound links exist
+- Homepage links directly to `/job-updates`
+- Main navigation or secondary navigation links to `/job-updates` with `Job Alerts` label
+- `/jobs` links to `/job-updates` with a crawlable anchor
+- Relevant category pages link to `/job-updates`
+- Relevant qualification pages link to `/job-updates`
+- Homepage does not only send job-alert users directly to WhatsApp/Telegram
+
 ### [ ] FAQ section exists
 - 8 FAQ items present
 - Questions match visible content
@@ -143,25 +192,39 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 - Independent platform status mentioned
 - Official source verification emphasized
 - Editorial policy referenced
+- Overlapping trust/verification sections are merged or de-duplicated
+- Before You Apply checklist is concise
+
+### [ ] Latest Alerts by Type exists
+- New Jobs destination present
+- Admit Cards destination present
+- Results destination present
+- Exam Dates destination present
+- Recruitment News destination present
+- All destinations already exist
 
 ---
 
 ## SEO Checks
 
 ### [ ] Title tag is correct
-- Title: "Sarkari Naukri & Government Job Alerts 2026 | Search Sarkari Naukri"
+- Title: "Daily Sarkari Naukri Updates 2026 - Free Government Job Alerts"
 - Title includes primary keyword
 - Title is descriptive
+- Title is clearly different from `/jobs`
 
 ### [ ] Meta description is correct
-- Description: "Find the latest Sarkari Naukri and government job alerts for 2026. Check vacancies, recruitment updates, deadlines and free WhatsApp & Telegram job alerts."
+- Description: "Get daily Sarkari Naukri updates and free government job alerts for UPSC, SSC, Railway, Banking, MPSC, Police Bharti and more. Track new vacancies, closing dates, WhatsApp and Telegram alerts."
 - Description includes secondary keywords
-- Description is under 160 characters
+- Description is readable and not keyword-stuffed
 
 ### [ ] Canonical URL is correct
 - Canonical: https://www.searchsarkarinaukri.com/job-updates
 - Canonical is self-referencing
 - Canonical is absolute URL
+- Canonical is not `/job-updates/`
+- Canonical is not `/jobs`
+- Canonical is not `/`
 
 ### [ ] Breadcrumb is correct
 - Breadcrumb: Home → Job Updates
@@ -186,6 +249,7 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 - Descriptive anchor text
 - All links work
 - No broken links
+- All important internal links render as real crawlable anchors
 
 ### [ ] URL structure is correct
 - URL: /job-updates
@@ -231,6 +295,7 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 ### [ ] No JobPosting schema on landing page
 - JobPosting schema NOT used on this page
 - JobPosting only on individual job pages
+- Job detail pages keep `datePosted` and `validThrough` accurate
 
 ---
 
@@ -336,6 +401,12 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 ### [ ] Last updated date works
 - Last updated date displays correctly
 - Date updates when content changes
+- Date comes from real page/job-alert dataset update time
+- Date is not generated from current render time on every request
+
+### [ ] Sitemap freshness is accurate
+- `/job-updates` exists in XML sitemap
+- Sitemap lastmod changes only after meaningful page/data updates
 
 ---
 
@@ -400,6 +471,33 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 - All issues resolved
 - Documentation updated
 - Stakeholder approval
+
+### [ ] 21 September 2026 Search Console remediation complete
+- `/job-updates` treated as discovered/live-indexable, not Soft 404
+- Repeated indexing requests stopped
+- Homepage, navigation and `/jobs` inbound links added
+- `/job-updates` differentiated from `/jobs`
+- Exact self-canonical verified
+- No JobPosting schema on `/job-updates`
+- Active listing count verified against open jobs only
+- Duplicate job entries reviewed by authority, notice number, post, deadline and official PDF
+- Initial HTML/View Source checked for key SEO content where practical
+- API failure fallback leaves useful SEO content visible
+- Random nonexistent URLs return real HTTP 404
+- Googlebot logs checked for recurring 429, 5xx, WAF or CAPTCHA issues
+- Core Web Vitals measured: LCP <= 2.5s, INP < 200ms, CLS < 0.1
+
+### [ ] 21 September 2026 section audit complete
+- Freshness dashboard added
+- New Government Jobs Today added
+- Recently Updated / Corrigendum section added
+- Quick Job Finder added near top
+- Latest Alerts by Type added
+- Listing-table qualification text shortened
+- Category CTA labels corrected
+- Repetitive trust sections merged
+- Reviewer/reviewed date added only if truthful
+- Official government links compacted or organized
 
 ---
 

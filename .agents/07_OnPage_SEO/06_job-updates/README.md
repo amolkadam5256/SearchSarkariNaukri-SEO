@@ -2,8 +2,8 @@
 
 **Project:** SearchSarkariNaukri  
 **Target:** `/job-updates Page - Sarkari Naukri & Government Job Alerts Hub`  
-**Status:** Implementation Ready  
-**Date:** 10 September 2026
+**Status:** Implementation Ready + 21 September 2026 Discovery Addendum  
+**Date:** 21 September 2026
 
 ---
 
@@ -43,17 +43,26 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 
 ## Package Overview
 
-This package contains comprehensive developer documentation for transforming the `/job-updates` page from a WhatsApp/Telegram channel landing page into a complete Sarkari Naukri & Government Job Alerts hub.
+This package contains comprehensive developer documentation for maintaining and improving the `/job-updates` page as a daily Sarkari Naukri updates and free government job alerts hub.
 
 ### Target URL
 https://www.searchsarkarinaukri.com/job-updates
 
-### Transformation Goal
-Transform from:
-- WhatsApp/Telegram channel landing page
+### Current Search Console Status
+- Google discovered `/job-updates` from the sitemap.
+- The 21 September 2026 live test says the page can be indexed.
+- Breadcrumbs are valid.
+- An indexing request has already been submitted.
+- The normal indexing crawl is still pending as `Discovered - currently not indexed`.
 
-To:
-- Comprehensive Sarkari Naukri & Government Job Alerts hub
+### Remediation Goal
+- Strengthen homepage, navigation, `/jobs`, category, and qualification links to `/job-updates`.
+- Differentiate `/job-updates` from `/jobs`.
+- Emphasize daily updates, new notifications, closing-soon jobs, deadline alerts, WhatsApp alerts, and Telegram alerts.
+- Verify self-canonical, server-rendered content, real freshness, crawl health, and schema boundaries.
+
+### Target State
+- Daily Sarkari Naukri updates and free government job alerts hub
 - SEO-optimized for job alert keywords
 - AEO-optimized for answer engines
 - GEO-optimized for geographic entities
@@ -251,16 +260,44 @@ Quality assurance checklist with:
 - Final acceptance (5)
 - Total: 58 validation checkpoints
 
+### 17_SEARCH_CONSOLE_DISCOVERY_AND_INTENT_REMEDIATION.md
+21 September 2026 Search Console follow-up with:
+- Homepage to `/job-updates` link requirement
+- `/jobs` to `/job-updates` crawlable anchor requirement
+- Main navigation `Job Alerts` link requirement
+- `/jobs` vs `/job-updates` intent separation
+- Recommended H1/title/meta update
+- Exact canonical rules
+- Sitemap/freshness rules
+- No JobPosting schema on `/job-updates`
+- Job table quality and deduplication checks
+- SSR/prerender and API-failure requirements
+- Real 404, Googlebot log, WAF, and Core Web Vitals checks
+
+### 18_PAGE_SECTION_AUDIT_AND_UPDATE_REQUIREMENTS.md
+Live page section audit with:
+- Freshness dashboard requirements
+- New Government Jobs Today section
+- Recently Updated / Corrigendum section
+- Quick Job Finder
+- Latest Alerts by Type
+- Shorter job-table qualification text
+- Category CTA fixes
+- Trust-section merge requirements
+- Reviewer/reviewed-date guidance
+- Final recommended page order
+
 ---
 
 ## Implementation Priority
 
 ### Phase 1: Foundation (P0)
-1. Update H1
+1. Update H1 to daily updates / alert intent
 2. Update SEO title and meta description
 3. Improve breadcrumb with schema
 4. Rewrite introduction
 5. Add first CTA section
+6. Add homepage, main navigation, and `/jobs` links to `/job-updates`
 
 ### Phase 2: Content Expansion (P1)
 6. Add Latest Government Job Alerts section (dynamic)
@@ -305,6 +342,14 @@ Quality assurance checklist with:
 - Existing footer
 - Existing header
 - Existing links
+- `/job-updates` self-canonical
+- Existing sitemap discovery
+
+### Do NOT Add
+- JobPosting schema on `/job-updates`
+- Fake freshness dates
+- Duplicate `/jobs` content blocks
+- A canonical from `/job-updates` to `/jobs`
 
 ### Additive-Only
 - All changes are additions
@@ -312,6 +357,8 @@ Quality assurance checklist with:
 - Add missing sections
 - Add content and internal links
 - Connect existing data dynamically
+- Add crawlable internal links from homepage, `/jobs`, main navigation, categories, and qualification pages
+- Keep `/job-updates` focused on daily updates, alerts, and deadlines
 
 ---
 
@@ -319,8 +366,22 @@ Quality assurance checklist with:
 
 The implementation is complete only when:
 
-- [ ] H1 targets Sarkari Naukri & Government Job Alerts 2026
+- [ ] H1 targets daily Sarkari Naukri updates and free government job alerts
 - [ ] Introduction explains job alerts and recruitment updates
+- [ ] Homepage links directly to `/job-updates`
+- [ ] `/jobs` links directly to `/job-updates`
+- [ ] Main navigation includes `Job Alerts` link
+- [ ] `/job-updates` is clearly differentiated from `/jobs`
+- [ ] Self-canonical points exactly to `https://www.searchsarkarinaukri.com/job-updates`
+- [ ] No JobPosting schema exists on `/job-updates`
+- [ ] Freshness dates reflect real data changes
+- [ ] Freshness dashboard shows active, new, updated and closing counts
+- [ ] New Government Jobs Today section exists
+- [ ] Recently Updated / Corrigendum section exists
+- [ ] Quick Job Finder exists near the top
+- [ ] Latest Alerts by Type exists
+- [ ] Job-table qualification snippets are concise
+- [ ] Category CTAs do not say `View jobs` when pointing to exam guides
 - [ ] Latest Government Job Alerts section shows real dynamic jobs
 - [ ] Government Jobs Closing Soon section shows dynamic closing-soon listings
 - [ ] Qualification sections link to qualification-based job pages
@@ -382,6 +443,6 @@ For questions or clarifications about this implementation package, refer to the 
 
 ---
 
-**Last Updated:** 10 September 2026  
-**Version:** 1.0  
-**Status:** Ready for Implementation
+**Last Updated:** 21 September 2026  
+**Version:** 1.1  
+**Status:** Ready for Implementation + Discovery Addendum Required

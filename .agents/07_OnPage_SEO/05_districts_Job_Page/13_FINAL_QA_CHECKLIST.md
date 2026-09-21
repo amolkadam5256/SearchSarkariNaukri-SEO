@@ -76,6 +76,7 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 - [ ] SEO title: "Maharashtra Government Jobs by District | District Wise Sarkari Naukri"
 - [ ] Meta description implemented
 - [ ] Canonical: https://www.searchsarkarinaukri.com/districts
+- [ ] `/districts` has a self-canonical and is not canonicalized to another URL
 - [ ] Robots: index, follow
 - [ ] HTTPS enabled
 - [ ] HTTP status 200
@@ -93,6 +94,8 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 - [ ] SEO title template correct
 - [ ] Meta description template correct
 - [ ] Canonical URL pattern correct
+- [ ] Every district page self-canonicalizes to its own district URL
+- [ ] No district page canonicalizes to `/districts`
 - [ ] No duplicate URLs
 - [ ] Consistent slug usage
 - [ ] H1 template correct
@@ -121,12 +124,15 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 - [ ] "Important Information Before Applying for a Government Job" section present (12 information points)
 - [ ] "Verify Maharashtra Government Recruitment Information" section present (7 subsections)
 - [ ] Internal resource links section present (12+ pages linked)
-- [ ] "Maharashtra District Government Jobs – Quick Answers" section present (9 direct answers)
+- [ ] One FAQ/direct-answer section present; duplicate Quick Answers and FAQ blocks are not both present
 - [ ] Marathi content present (comprehensive with lang="mr" attribute)
 - [ ] "Browse Maharashtra Districts A–Z" section present
 - [ ] "Find Government Jobs Near You in Maharashtra" section present (10 major districts)
 - [ ] "How SearchSarkariNaukri Organizes District Job Information" section present (9 subsections)
-- [ ] FAQ section present (12 questions with H3 headings)
+- [ ] FAQ section present with unique, non-repeated questions
+- [ ] Generic department and exam content is concise and does not overwhelm district discovery intent
+- [ ] Eligibility and age-limit claims are qualified and direct users to official notifications
+- [ ] Last updated date reflects real dataset changes, not page-load time
 
 ### District Pages
 - [ ] Unique introduction present (1000-1500 characters)
@@ -136,6 +142,7 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 - [ ] Category links present
 - [ ] FAQ section present
 - [ ] Related districts linked
+- [ ] Nearby district links present with descriptive crawlable anchors
 - [ ] Internal resource links present
 - [ ] Content is unique per district
 - [ ] No duplicate content across districts
@@ -149,6 +156,7 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 - [ ] BreadcrumbList schema implemented
 - [ ] ItemList schema implemented
 - [ ] FAQ schema implemented (if eligible)
+- [ ] No JobPosting schema exists on `/districts`
 - [ ] No schema errors
 - [ ] No schema warnings
 - [ ] Validated with Rich Results Test
@@ -160,6 +168,7 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 - [ ] BreadcrumbList schema implemented
 - [ ] Place schema implemented (optional)
 - [ ] FAQ schema implemented (if eligible)
+- [ ] No JobPosting schema exists on multi-job district listing pages
 - [ ] No schema errors
 - [ ] No schema warnings
 - [ ] Validated with Rich Results Test
@@ -275,6 +284,9 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 - [ ] Job counts dynamic (not hardcoded)
 - [ ] District counts accurate
 - [ ] Last updated date dynamic
+- [ ] Last updated date comes from the latest real job/district dataset update
+- [ ] Sitemap lastmod follows real content/data changes only
+- [ ] No fake freshness generated with current render time
 - [ ] No "1 Jobs" (should be "1 Job")
 - [ ] No negative job counts
 - [ ] No fake vacancy numbers
@@ -306,6 +318,7 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 - [ ] Key information in Marathi
 - [ ] District names in Marathi
 - [ ] Accurate translations
+- [ ] Marathi copy is natural, professionally rewritten, and not literal machine translation
 - [ ] lang="mr" attribute added
 - [ ] UTF-8 encoding ensured
 - [ ] Font support for Devanagari
@@ -375,7 +388,7 @@ The implementation is accepted only when ALL of the following are met:
 - ✅ "Important Information Before Applying" (12 information points)
 - ✅ "Verify Maharashtra Government Recruitment Information" (7 subsections)
 - ✅ Internal resource links (12+ pages)
-- ✅ "Maharashtra District Government Jobs – Quick Answers" (9 direct answers)
+- ✅ One FAQ/direct-answer section with no duplicate question block
 - ✅ Marathi content (comprehensive with lang="mr")
 - ✅ "Browse Maharashtra Districts A–Z"
 - ✅ "Find Government Jobs Near You" (10 major districts)
@@ -418,7 +431,7 @@ The implementation is accepted only when ALL of the following are met:
 - ✅ Natural geographic language used
 
 ### AEO
-- ✅ Quick answer section present (9 direct answers)
+- ✅ One FAQ/direct-answer section present
 - ✅ Questions are clear and direct
 - ✅ Answers are factual and concise
 - ✅ Direct answers come first
@@ -427,6 +440,7 @@ The implementation is accepted only when ALL of the following are met:
 - ✅ FAQ section present (12 questions with H3 headings)
 - ✅ FAQ schema implemented (if eligible)
 - ✅ No duplicate questions
+- ✅ No duplicate FAQ block repeats the same intent
 - ✅ Questions match user intent
 
 ### Accessibility
@@ -472,6 +486,8 @@ The implementation is accepted only when ALL of the following are met:
 - ✅ Job counts dynamic (not hardcoded)
 - ✅ District counts accurate
 - ✅ Last updated date dynamic
+- ✅ Last updated date reflects real data changes
+- ✅ Sitemap lastmod reflects real data/content changes
 - ✅ Proper pluralization (1 Job, 2 Jobs)
 - ✅ No "1 Jobs" errors
 - ✅ No negative job counts
@@ -492,6 +508,7 @@ The implementation is accepted only when ALL of the following are met:
 - ✅ Each district page links back to /districts
 - ✅ Each district page links to /jobs
 - ✅ Each district page links to related districts
+- ✅ Each district page includes nearby district links with crawlable descriptive anchors
 - ✅ Each district page links to qualification pages
 - ✅ Each district page links to category pages
 - ✅ Each district page links to resource pages
@@ -499,6 +516,20 @@ The implementation is accepted only when ALL of the following are met:
 - ✅ Zero-job districts have helpful empty states
 - ✅ Metadata correct for each district page
 - ✅ Schema markup valid for each district page
+
+### 21 September 2026 Search Console Remediation
+- ✅ `/districts` is treated as indexed; ranking-quality work prioritized over repeated indexing requests
+- ✅ Duplicate/repetitive content removed
+- ✅ Marathi quality fixed
+- ✅ Live vacancy counts and visible timestamps synchronized
+- ✅ All 36 child district pages strengthened with unique content
+- ✅ Nearby-district links added
+- ✅ Zero-job district pages remain useful
+- ✅ Unknown URLs return real HTTP 404 instead of SPA fallback 200
+- ✅ Important SEO routes are SSR/prerendered where practical
+- ✅ Core Web Vitals measured against LCP <= 2.5s, INP < 200ms, CLS < 0.1
+- ✅ Official-source links and last-verification dates added on job detail pages where available
+- ✅ Editorial policy/about/contact pages linked where available
 
 ### District Data Check
 - ✅ All 36 districts spelled correctly
@@ -523,5 +554,5 @@ The implementation is accepted only when ALL of the following are met:
 
 ---
 
-**Last Updated:** 8 September 2026  
-**Status:** Implementation Ready
+**Last Updated:** 21 September 2026  
+**Status:** Implementation Ready + Quality Addendum Required

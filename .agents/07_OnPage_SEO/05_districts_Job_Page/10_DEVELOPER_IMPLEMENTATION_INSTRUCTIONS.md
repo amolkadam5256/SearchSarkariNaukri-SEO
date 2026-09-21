@@ -46,6 +46,9 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 ### Task Overview
 Transform `/districts` page into authoritative Maharashtra district-wise government jobs hub with complete SEO/GEO/AEO optimization, individual district landing pages, and comprehensive content architecture.
 
+### 21 September 2026 Search Console Update
+Search Console confirms `/districts` is indexed and live-indexable. Do not treat this as an indexing-resubmission task. Treat it as a ranking-quality, freshness, uniqueness, schema, and page-experience task. Apply `23_SEARCH_CONSOLE_QUALITY_REMEDIATION_CHECKLIST.md` before shipping.
+
 ### Non-Negotiable Rules
 
 1. **DO NOT DELETE EXISTING DATA**
@@ -159,7 +162,8 @@ Transform `/districts` page into authoritative Maharashtra district-wise governm
 #### 2.5 Add Department-wise Recruitment Section
 - Use content from `14_DEPARTMENT_WISE_RECRUITMENT_SPECIFICATION.md`
 - Add 10 departments with H3 headings: Education, Health, Police, Revenue, Rural Development, Municipal, Forest, PWD, Agriculture, Women & Child Development
-- Add descriptive text (200-400 characters per department)
+- Add concise descriptive text per department
+- Do not turn `/districts` into a long department-wise article; link to dedicated department pages for deeper content
 - Link to existing department pages where available
 
 #### 2.6 Add Exam-wise Opportunities Section
@@ -294,6 +298,7 @@ Transform `/districts` page into authoritative Maharashtra district-wise governm
   * Can candidates apply for government jobs from another Maharashtra district?
 - Each question must have a useful, direct answer
 - Use semantic HTML (<details> and <summary> or equivalent)
+- If a Quick Answers section already covers the same questions, merge the sections and keep only one visible FAQ/direct-answer area
 
 ---
 
@@ -309,6 +314,7 @@ Transform `/districts` page into authoritative Maharashtra district-wise governm
 - Ensure UTF-8 encoding and Devanagari font support
 - Implement language switch if needed
 - Use correct hreflang if separate URL
+- Replace awkward/literal Marathi with the approved Marathi copy in `23_SEARCH_CONSOLE_QUALITY_REMEDIATION_CHECKLIST.md`
 
 #### 5.2 Add "Browse Maharashtra Districts A–Z" Section
 - Use content from `19_ALPHABETICAL_DISCOVERY_SPECIFICATION.md`
@@ -381,6 +387,8 @@ Transform `/districts` page into authoritative Maharashtra district-wise governm
 - Ensure counts automatically update
 - Display job status indicators: Active, Closing Soon, Application Closed, Exam Scheduled, Admit Card Released, Result Announced, Recruitment Cancelled
 - Do not display expired recruitment as active
+- Use the latest real job/district dataset update time for visible "Last updated" and sitemap `<lastmod>`
+- Do not use current page-load time to fake freshness
 
 #### 5.9 Ensure Crawlable Links
 - Ensure district links are actual crawlable <a> elements
@@ -388,6 +396,19 @@ Transform `/districts` page into authoritative Maharashtra district-wise governm
 - Use href="/districts/pune" format
 - Search engines must be able to discover district pages
 - Ensure all important internal links are crawlable
+
+#### 5.10 Implement Schema Boundaries
+- Do not add JobPosting schema to `/districts`
+- Do not add JobPosting schema to multi-job district pages such as `/districts/pune`
+- Add JobPosting schema only on single-job detail pages
+- Keep `datePosted` and `validThrough` accurate on job detail pages
+- Remove expired jobs from active listings quickly
+
+#### 5.11 Add Nearby District Links
+- Add nearby-district links to each district page
+- Use descriptive anchors such as "Government Jobs in Satara"
+- Render links as crawlable anchors
+- Keep related districts geographically sensible
 
 ---
 
@@ -541,6 +562,11 @@ https://www.searchsarkarinaukri.com/districts/nashik
 13. **Trust and transparency.** Be honest about platform role and limitations.
 14. **No unsupported claims.** Do not claim "India's No. 1", "100% verified", or "guaranteed jobs".
 15. **Verify official sources.** Only use official government URLs where actually known and available.
+16. **No repeated indexing work for `/districts`.** The page is indexed; prioritize content quality and performance.
+17. **No duplicate FAQ blocks.** Merge Quick Answers and FAQ if they repeat the same questions.
+18. **No JobPosting on listing pages.** JobPosting belongs only on single-job detail pages.
+19. **No fake freshness.** Last updated and sitemap lastmod must reflect real data/content updates.
+20. **Canonical each page to itself.** Never canonical district child pages to `/districts`.
 
 ---
 
@@ -567,6 +593,6 @@ The implementation is complete only when:
 
 ---
 
-**Last Updated:** 8 September 2026  
-**Version:** 1.0  
-**Status:** Ready for Implementation
+**Last Updated:** 21 September 2026  
+**Version:** 1.1  
+**Status:** Ready for Implementation + Quality Addendum Required

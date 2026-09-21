@@ -112,6 +112,50 @@ https://www.searchsarkarinaukri.com/job-updates
 
 ## Additional Technical SEO Requirements
 
+## 21 September 2026 Metadata Update
+
+Use these values to separate `/job-updates` from `/jobs`.
+
+Recommended title:
+
+```html
+<title>Daily Sarkari Naukri Updates 2026 - Free Government Job Alerts</title>
+```
+
+Recommended H1:
+
+```html
+<h1>Daily Sarkari Naukri Updates & Free Government Job Alerts 2026</h1>
+```
+
+Recommended meta description:
+
+```html
+<meta
+  name="description"
+  content="Get daily Sarkari Naukri updates and free government job alerts for UPSC, SSC, Railway, Banking, MPSC, Police Bharti and more. Track new vacancies, closing dates, WhatsApp and Telegram alerts."
+>
+```
+
+Intent rule:
+
+- `/jobs` owns browse/search all active government vacancies.
+- `/job-updates` owns daily updates, new notifications, closing deadlines, WhatsApp alerts, and Telegram alerts.
+- Title, H1, meta description, and top sections must not duplicate `/jobs`.
+
+Canonical rule:
+
+- Canonical must be exactly `https://www.searchsarkarinaukri.com/job-updates`.
+- Do not canonicalize to `/job-updates/`.
+- Do not canonicalize to `/jobs`.
+- Do not canonicalize to `/`.
+
+Freshness rule:
+
+- Visible `Last updated`, `Last refreshed`, and sitemap `lastmod` must come from real page/job-alert dataset updates.
+- Do not use current page-load time to fake freshness.
+- Active listing count must exclude expired and closed jobs.
+
 ### URL Structure
 - Keep URL as `/job-updates`
 - Do not change URL unnecessarily
@@ -139,11 +183,14 @@ Include `/job-updates` in XML sitemap with:
 ### Internal Linking
 Link to `/job-updates` from:
 - Header navigation
+- Homepage job alert/community section
+- `/jobs` page alert/deadline section
 - Footer navigation
 - Related content sections
 - Job detail pages (breadcrumbs)
 - Category pages
 - State pages
+- Qualification pages where alert intent is relevant
 
 ---
 

@@ -43,6 +43,39 @@ Return ONLY the rewritten content unless explicitly asked for explanation or aud
 
 ## Main Job Updates Page Internal Links
 
+## 21 September 2026 Inbound Link Priority
+
+Search Console shows `Referring page: None detected` while `/job-updates` is still `Discovered - currently not indexed`. The sitemap is already doing discovery work, but the page needs stronger normal site navigation.
+
+Critical inbound links to add:
+
+- [ ] Homepage -> `/job-updates` from the job alert/community section.
+- [ ] Main navigation -> `/job-updates` with label `Job Alerts`.
+- [ ] `/jobs` -> `/job-updates` with a crawlable anchor such as `Government Job Alerts`.
+- [ ] Category pages -> `/job-updates` where alert intent is relevant.
+- [ ] Qualification pages -> `/job-updates` where alert intent is relevant.
+- [ ] Keep `/districts` -> `/job-updates` because that link is already useful.
+
+Homepage pattern:
+
+```html
+<a href="/job-updates">Latest Sarkari Naukri & Free Job Alerts</a>
+```
+
+`/jobs` pattern:
+
+```html
+<a href="/job-updates">Government Job Alerts</a>
+```
+
+Do not send homepage users only to WhatsApp/Telegram. The SEO path should be:
+
+```text
+Homepage -> /job-updates -> WhatsApp / Telegram
+```
+
+Do not rely on plain text mentions such as "from the Job Updates page"; the link must render as a real anchor.
+
 ### Contextual Internal Links (Within Main Content)
 
 #### 1. Sarkari Naukri
