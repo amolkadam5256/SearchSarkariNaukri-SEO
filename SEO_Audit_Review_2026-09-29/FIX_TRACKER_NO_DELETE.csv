@@ -1,0 +1,15 @@
+error_id,severity,gsc_or_live,problem,fix_action,no_delete_rule,owner,status_2026_09_29
+R1,CRITICAL,Live,sitemap.xml HTTP 500,Fix API sitemap generator; omit or guard empty child sitemaps; PM2/logs,Exclude broken URLs from XML only — do not delete pages,Backend,PENDING
+R2,CRITICAL,Live,Job slug vs wrong H1/content,Resolve job by ID; 301 to canonical slug; fix prerender cache key,Keep all job pages; 301 old slugs only,Backend+Frontend,PENDING
+R3,CRITICAL,GSC,Job Postings 0 valid,Emit JobPosting on active jobs only; remove schema when expired not page,Keep expired job HTML,Backend,PENDING
+R4,CRITICAL,GSC,613 Not found jobs,Restore 200 or 301 to slug or 410 if removed,No homepage mass redirect; no DB wipe,Backend,PENDING
+P1-REDIRECT,HIGH,GSC,/jobs?district_slug=pune redirect error,301 to /districts/pune or jobs-in-pune,Do not remove query handling — redirect only,Backend,PENDING
+P1-LINKS,HIGH,Audit,462 broken internal targets,Fix district slug validator + update link generators,Update hrefs only — keep pages,Backend,PENDING
+P1-ORPHAN,HIGH,Audit,3111 sitemap URLs zero inlinks,Add hub→job links in existing related sections,No new UI layout — add links only,Frontend,PENDING
+P1-ADMIT,HIGH,GSC,896 discovered not indexed,Expand admit-card template + FAQs + sitemap when quality passes,Keep all admit URLs; improve content,Backend+Content,PENDING
+P1-SOFT404,MEDIUM,GSC,81 soft 404,Add unique intro + related jobs + FAQs on empty hubs,Keep URLs 200,Content,PENDING
+P1-NOINDEX,MEDIUM,GSC,56 noindex,Remove noindex on valuable hubs only,Keep noindex on thin filters,Backend,PENDING
+P2-META,MEDIUM,Audit,764 dup titles / 719 dup descriptions,Regenerate from record fields,Same URLs — better metadata,Backend,PENDING
+P2-HREFLANG,MEDIUM,Audit,Same-URL hreflang,Remove invalid alternates; fix html lang,No page removal,Frontend,PENDING
+P2-SAMEAS,LOW,Audit,Organization sameAs empty,Add verified social profiles only,Additive schema,Frontend,PENDING
+P2-CWV,MEDIUM,GSC,No CWV field data,Performance fixes without layout change,No content removal,Frontend,PENDING
