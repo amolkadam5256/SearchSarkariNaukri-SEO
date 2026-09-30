@@ -20,6 +20,9 @@ Provide all-India state-wise government job discovery.
 
 Use live pages like `/jobs-in-maharashtra`, `/jobs-in-gujarat`, `/jobs-in-rajasthan`, `/jobs-in-karnataka`, `/jobs-in-tamil-nadu`, `/jobs-in-uttar-pradesh`.
 
+**Directory hub (competitor parity — add link, do not remove state chips):**  
+`/state-government-jobs` — full spec: `08_Standalone_Pages/05_STATE_JOBS_DIRECTORY/IMPLEMENTATION_SPEC.md`
+
 ## Rules
 
 No dead state links. No sitemap inclusion for thin/noindex state pages.

@@ -235,3 +235,16 @@ Deliverable:
 Run the checklist in `05_FINAL_QA_ACCEPTANCE_CHECKLIST.md`.
 
 The page is done only when all critical data, UX, SEO, accessibility, URL preservation, and internal-linking checks pass.
+
+## Phase 11 - MySarkariNaukri listing parity (additive)
+
+Reference: `00_Competitor_MySarkariNaukri/IMPLEMENTATION_INDEX.md`
+
+Tasks:
+
+- Add **official notification PDF** link on each card when `notification_url` exists (label: Official PDF).
+- Add **View & Apply** using official application URL only.
+- Show **location/city** and **vacancy count** on cards where data exists.
+- Show **Closing Soon** badge when last date within 7 days.
+- Implement state/department discovery per `06_STATE_DEPARTMENT_SEARCH_FILTER.md`.
+- Do not remove list or grid modes already live; extend card metadata only.

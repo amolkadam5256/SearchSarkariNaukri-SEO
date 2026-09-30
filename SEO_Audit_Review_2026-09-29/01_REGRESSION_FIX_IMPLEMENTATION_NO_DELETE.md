@@ -2,7 +2,7 @@
 
 **Site:** https://www.searchsarkarinaukri.com/  
 **Date:** 29 September 2026  
-**Rule:** Do **not** delete jobs, pages, URLs, DB rows, images, or UI sections. Only **add**, **correct**, **redirect**, **noindex**, or **exclude from sitemap** where required.
+**Rule:** Do **not** delete any content, page, section, job, URL, DB row, image, or nav/footer link. Only **add**, **update**, **correct**, **redirect**, **noindex**, or **exclude from sitemap** while **keeping the live page**. Full policy: `.agents/07_OnPage_SEO/09_Developer_Implementation_Pack/00_NO_DELETE_POLICY.md`
 
 **Production codebase:** `C:\Users\Administrator\Projects\SakariNaukariN` (API + frontend + prerender + sitemap routes).  
 **Reference (working baseline):** `SEO_Audit_Review_2026-08-25/outputs/remediation/DEVELOPER-REMEDIATION-REPORT.md`

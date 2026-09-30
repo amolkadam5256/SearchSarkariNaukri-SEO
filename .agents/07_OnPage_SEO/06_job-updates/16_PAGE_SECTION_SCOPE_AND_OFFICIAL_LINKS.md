@@ -49,12 +49,12 @@ Use this matrix so developers and content writers know exactly what to implement
 |-----------------|-----------|------------------------|
 | Sarkari Result | `/results` | Result intent — scorecards, merit lists |
 | Admit Card | `/admit-cards` | Hall ticket download intent |
-| Answer Key | `/answer-keys` (future) | Answer key intent |
+| Answer Key | `/answer-keys` | Answer key intent — spec: `08_Standalone_Pages/02_ANSWER_KEYS_HUB/IMPLEMENTATION_SPEC.md` |
 | Full job listing hub | `/jobs` | Main vacancy browse page |
 | Individual job detail | `/jobs/[slug]` | JobPosting schema lives here |
 | Exam syllabus deep pages | `/exams/[exam-slug]` | Exam preparation intent |
 | Government Schemes hub | `/government-schemes` (future) | Scheme/benefit intent |
-| Employment News hub | `/employment-news` (future) | Publication archive intent |
+| Employment News hub | `/employment-news` | Publication archive intent — spec: `08_Standalone_Pages/01_EMPLOYMENT_NEWS_HUB/IMPLEMENTATION_SPEC.md` |
 | Government News hub | `/government-news` (future) | News intent |
 | Full official links directory | `/official-government-links` (future) | Reference hub — job-updates gets curated subset only |
 | Current Affairs | `/current-affairs` | GK/news intent |
