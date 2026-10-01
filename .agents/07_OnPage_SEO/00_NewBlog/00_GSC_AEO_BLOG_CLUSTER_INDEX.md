@@ -13,6 +13,15 @@ Source used: Google Search Console / AI citation audit dated 15 September 2026.
 7. `15_ZP_Nashik_Recruitment_2026/BLOG.md`
 8. `16_UPI_Charges_October_2026/16_upi-charges-october-2026.md`
 9. `17_Daily_UPSC_MPSC_Quiz_Assessment_2026/BLOG.md`
+10. `18_SSC_CHSL_2026_Apply_Online_Guide/18_ssc-chsl-2026-apply-online-guide.md`
+11. `19_RRB_NTPC_Graduate_Recruitment_2026/19_rrb-ntpc-graduate-recruitment-2026.md`
+12. `20_12th_Pass_Sarkari_Naukri_2026/20_12th-pass-sarkari-naukri-2026.md`
+13. `21_Bank_Apprentice_Jobs_2026/21_bank-apprentice-jobs-2026.md`
+14. `22_Age_Limit_Government_Jobs_2026/22_age-limit-government-jobs-2026.md`
+
+Research: `00_COMPETITOR_RESEARCH_5_BLOG_TOPICS_OCT_2026.md`
+
+**Developer handoff (ranking, issues, tests, fixes):** `FINAL_BLOG_DEVELOPER_PUBLISHING_AND_RANKING_CHECKLIST.md`
 
 ## Publishing rule
 
