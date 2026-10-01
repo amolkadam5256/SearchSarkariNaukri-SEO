@@ -78,7 +78,7 @@ Do not pay anyone who promises a job on our site or on social media. Fees go onl
 ## H2 — Step 5: After you apply — admit card, exam, result
 
 - Admit card → `/admit-cards` and the official portal  
-- Answer key → `/answer-keys`  
+- Answer key → official commission website ( `/answer-keys` hub not live yet )  
 - Result → `/results`  
 
 If you miss an exam, there is usually no re-exam in the same cycle. If the commission cancels a paper, follow only their corrigendum.
@@ -92,7 +92,7 @@ If you miss an exam, there is usually no re-exam in the same cycle. If the commi
 - Someone asks for money to “guarantee selection”  
 - Last date or vacancy count changes every day on social media but not on the official site  
 
-We describe our own checks on `/recruitment-verification-process`. You should still open the PDF yourself.
+We describe our own checks on `/editorial-policy`. You should still open the official notification yourself.
 
 ---
 

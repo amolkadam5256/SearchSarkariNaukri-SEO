@@ -6,8 +6,8 @@
 
 ## Route
 
-- **Canonical:** `https://www.searchsarkarinaukri.com/guide/government-jobs-2026`  
-  (or extend `/how-to-apply-for-government-jobs` if it already exists — **301 only if consolidating duplicate thin URLs**)
+- **Canonical:** `https://www.searchsarkarinaukri.com/guide/government-jobs-2026` (**live** 30 Sep 2026)  
+  Do not use `/how-to-apply-government-jobs-2026` — update any internal docs that still reference the old slug.
 
 ## Purpose
 

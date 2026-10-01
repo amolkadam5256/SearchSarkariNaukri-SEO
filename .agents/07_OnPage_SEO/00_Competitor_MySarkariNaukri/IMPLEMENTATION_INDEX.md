@@ -9,9 +9,9 @@ Use **existing** spec if listed; otherwise implement from **NEW** path. Do not d
 | P0 | Technical SEO regression | — | `SEO_Audit_Review_2026-09-29/01_REGRESSION_FIX_IMPLEMENTATION_NO_DELETE.md` | Fix production |
 | P1 | Employment News hub | `/employment-news` | **NEW** `08_Standalone_Pages/01_EMPLOYMENT_NEWS_HUB/IMPLEMENTATION_SPEC.md` | Add page + nav link |
 | P1 | Answer Keys hub | `/answer-keys` | **NEW** `08_Standalone_Pages/02_ANSWER_KEYS_HUB/IMPLEMENTATION_SPEC.md` | Add page + nav link |
-| P1 | Exam syllabus & pattern hub | `/exam-syllabus-patterns` or enhance `/exams` | **NEW** `08_Standalone_Pages/03_EXAM_SYLLABUS_PATTERNS_HUB/IMPLEMENTATION_SPEC.md` | Add or expand |
-| P1 | State jobs directory | `/state-government-jobs` | **UPDATE** `01_Home_Page/21_STATE_JOBS/SECTION_SPEC.md` + **NEW** `08_Standalone_Pages/05_STATE_JOBS_DIRECTORY/IMPLEMENTATION_SPEC.md` | Add directory page |
-| P1 | Candidate guidance 2026 | `/how-to-apply-government-jobs-2026` | **UPDATE** `48_HOW_TO_APPLY/` + **NEW** `08_Standalone_Pages/04_CANDIDATE_GUIDANCE_2026/IMPLEMENTATION_SPEC.md` | Long-form guide |
+| P1 | Exam syllabus & pattern hub | `/exam-syllabus-patterns` (**live** 30 Sep 2026) | **NEW** `08_Standalone_Pages/03_EXAM_SYLLABUS_PATTERNS_HUB/IMPLEMENTATION_SPEC.md` | Done |
+| P1 | State jobs directory | `/state-government-jobs` (**live** 30 Sep 2026) | **UPDATE** `01_Home_Page/21_STATE_JOBS/SECTION_SPEC.md` + **NEW** `08_Standalone_Pages/05_STATE_JOBS_DIRECTORY/IMPLEMENTATION_SPEC.md` | Done — 5 UT location pages pending approval |
+| P1 | Candidate guidance 2026 | `/guide/government-jobs-2026` (**live** 30 Sep 2026) | **UPDATE** `48_HOW_TO_APPLY/` + **NEW** `08_Standalone_Pages/04_CANDIDATE_GUIDANCE_2026/IMPLEMENTATION_SPEC.md` | Long-form guide; optional copy expansion in `10_Post_Release_Audit_2026-09-30/03_GUIDE_PAGE_COPY_EXPANSION.md` |
 | P1 | Jobs state/department filter | `/jobs` query → hubs | **NEW** `04_Jobs_Page/06_STATE_DEPARTMENT_SEARCH_FILTER.md` | Filter UX + SEO |
 | P1 | Job card PDF + apply | `/jobs/[slug]` | **UPDATE** `04_Jobs_Page/02_IMPLEMENTATION_PLAN.md` | Add fields |
 | P2 | Hero active vacancy count | Homepage hero | **NEW** `01_Home_Page/61_HERO_ACTIVE_VACANCY_COUNT/SECTION_SPEC.md` | Dynamic count |

@@ -19,7 +19,10 @@
 
 | Step | Work | Folder |
 |------|------|--------|
-| 0 | Fix job slug + sitemap (blocking SEO) | `SEO_Audit_Review_2026-09-29/01_REGRESSION_FIX_IMPLEMENTATION_NO_DELETE.md` |
+| 0 | **P0 still open:** job canonical 301 by ID (stale slugs e.g. Canara + `--5015`) | `10_Post_Release_Audit_2026-09-30/09_DEVELOPER_PENDING_IMPLEMENTATION_INSTRUCTIONS.md` + `02_STALE_JOB_SLUG_ROUTING.md` |
+| 0b | Sitemap 410 fix + new hubs (30 Sep) | **Done on live** — do not rebuild |
+| 0c | Remaining pending (filters, §64, answer-keys, …) | `10_Post_Release_Audit_2026-09-30/09_DEVELOPER_PENDING_IMPLEMENTATION_INSTRUCTIONS.md` |
+| 0d | Fix job slug + sitemap (historical doc) | `SEO_Audit_Review_2026-09-29/01_REGRESSION_FIX_IMPLEMENTATION_NO_DELETE.md` |
 | 1 | New hub pages (P1) | `08_Standalone_Pages/*/DEVELOPER_INSTRUCTIONS.md` |
 | 2 | Homepage sections (P2) | `01_Home_Page/61_*` … `64_*` → `DEVELOPER_FULL_SPEC.md` |
 | 3 | Jobs listing parity | `04_Jobs_Page/06_*` + Phase 11 in `02_IMPLEMENTATION_PLAN.md` |

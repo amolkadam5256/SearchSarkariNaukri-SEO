@@ -15,13 +15,14 @@ BASE = "https://www.searchsarkarinaukri.com"
 UA = "SearchSarkariNaukri-SEO-Regression/1.0"
 
 # Sample jobs: (path_suffix, substring that should appear in HTML body)
+# Use job IDs whose slug and body match (5015/5020 are NHSRCL/ESIC — not Canara).
 JOB_SAMPLES = [
     (
-        "/jobs/canara-bank-graduate-apprentice-recruitment-2026-apply-online-for-3500-posts--5015",
+        "/jobs/canara-bank-graduate-apprentice-recruitment-2026-apply-online-for-3500-posts--6681",
         "Canara",
     ),
     (
-        "/jobs/canara-bank-graduate-apprentice-recruitment-2026-west-bengal-apply-online-for-150-posts--5020",
+        "/jobs/canara-bank-graduate-apprentice-recruitment-2026-west-bengal-apply-online-for-150-posts--6682",
         "Canara",
     ),
 ]
