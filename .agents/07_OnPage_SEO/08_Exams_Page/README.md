@@ -22,6 +22,7 @@ The current `/exams` page framework is good, but the page body is incomplete. It
 - `04_DEVELOPER_IMPLEMENTATION_INSTRUCTIONS.md` - Developer-ready implementation steps and performance guidance.
 - `05_FINAL_QA_CHECKLIST.md` - Complete acceptance checklist.
 - `06_COMPLETE_PAGE_CONTENT.md` - Production-ready content for every `/exams` section, including exam groups, tables, FAQs, official links and related resources.
+- `sections/README.md` - Index of separate developer instruction sheets for all 17 page sections, each with two required verification passes.
 
 ## Main Objective
 
