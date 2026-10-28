@@ -14,3 +14,7 @@ Each subfolder is one **new or expanded route**. Standard files:
 **Voice:** `../09_Developer_Implementation_Pack/01_BRAND_MESSAGING_AND_VOICE.md`
 
 **Rule:** Add and update only. **Do not delete** any content, page, section, or nav link. Full policy: `../09_Developer_Implementation_Pack/00_NO_DELETE_POLICY.md`
+
+## Page-specific implementation packs
+
+- [12th Pass Government Jobs listing page](06_12TH_PASS_GOVERNMENT_JOBS/README.md) — existing `/12th-pass-government-jobs` route, job-data freshness, full SEO/indexability checklist, and exact-URL `nofollow` audit. This listing remains distinct from its informational blog guide.
