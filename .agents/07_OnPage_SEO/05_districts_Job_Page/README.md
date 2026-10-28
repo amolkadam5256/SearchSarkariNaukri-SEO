@@ -119,10 +119,28 @@ This package provides complete implementation specifications for transforming th
 **Purpose:** Quality assurance checklist  
 **Contents:** Comprehensive testing checklist for all aspects
 
+### 14–22 - District Content and Discovery Specifications
+- `14_DEPARTMENT_WISE_RECRUITMENT_SPECIFICATION.md` — department-wise recruitment sections
+- `15_EXAM_WISE_OPPORTUNITIES_SPECIFICATION.md` — exam-based job discovery
+- `16_ELIGIBILITY_SECTION_SPECIFICATION.md` — eligibility content and caveats
+- `17_APPLICATION_INFORMATION_SPECIFICATION.md` — application process and information
+- `18_TRUST_VERIFICATION_SPECIFICATION.md` — trust, sources and verification
+- `19_ALPHABETICAL_DISCOVERY_SPECIFICATION.md` — A–Z district navigation
+- `20_NEAR_YOU_DISCOVERY_SPECIFICATION.md` — nearby/local discovery
+- `21_PLATFORM_ORGANIZATION_SPECIFICATION.md` — how the platform organizes recruitment information
+- `22_DOCUMENTATION_UPDATE_AUDIT.md` — documentation update history and audit notes
+
 ### 23 - Search Console Quality Remediation Checklist
 **File:** `23_SEARCH_CONSOLE_QUALITY_REMEDIATION_CHECKLIST.md`  
 **Purpose:** 21 September 2026 Search Console follow-up and ranking-quality remediation  
 **Contents:** Duplicate FAQ removal, Marathi rewrite, safer eligibility wording, freshness rules, canonical rules, JobPosting schema rules, district uniqueness, nearby links, SSR/prerender guidance, Core Web Vitals, trust and monitoring checklist
+
+
+### District recruitment subpages
+**Index:** [District Recruitment Subpages — Developer Audit Package](subpages/README.md)
+**Purpose:** Reusable checklists for focused routes such as `/districts/nanded/talathi`, organized by district and topic
+**Nanded Talathi package:** [Page-specific implementation and audit checklist](subpages/nanded/talathi/README.md)
+**Contents:** Complete supplied brief, 15-section page content, 15 FAQs, SEO/GEO/AEO and schema, source links, responsive UI, exact-URL noindex audit, two-pass QA, and a findings log. Other district/topic pages must use the reusable template and verify their own data and indexing independently.
 
 ---
 
