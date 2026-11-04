@@ -5,6 +5,8 @@
 **Audience:** Frontend developer, CMS operator, QA, TR (business sign-off)  
 **Scope:** All content under `.agents/07_OnPage_SEO/00_NewBlog/` plus live `/blogs/*` behaviour on production.
 
+> **For every new or revised blog draft, first follow [BLOG_CREATION_MASTER_RULES.md](BLOG_CREATION_MASTER_RULES.md).** This document remains the developer/publishing QA reference; recheck dated production findings before treating them as current.
+
 ---
 
 ## 1. Executive summary (ranking reality)

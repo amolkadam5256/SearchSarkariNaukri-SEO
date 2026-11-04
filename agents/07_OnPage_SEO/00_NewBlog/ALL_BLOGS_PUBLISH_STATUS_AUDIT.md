@@ -21,3 +21,7 @@ Published status cannot be marked PASS from local files alone. Prior audit files
 ## Package Added
 
 The package `Search_Sarkari_Naukri_Complete_Blog_Package` now contains 14 audited blog folders plus package-level audit files.
+
+## New draft package — 2026-11-04
+
+`37_government_job_probation_period_rules/` contains revision material and a checklist audit for the existing live URL `/blogs/what-happens-during-probation-in-a-government-job-can-you-lose-the-job`. It is **not a new URL or evidence that an update was deployed**. The live article's current technical/indexing state remains pending verification. See `00_README.md`, `08_PUBLISH_QA.md`, and `09_CHECKLIST_AUDIT_2026-11-04.md`.

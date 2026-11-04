@@ -1,7 +1,17 @@
 # SearchSarkariNaukri — Complete Sitewide Audit Package
 
 **Scope:** All public routes, page types, application components and relevant technical systems.  
-**Status:** Audit instructions prepared; audit execution and findings remain pending evidence collection.
+**Status:** Sitewide audit is in progress. The Nanded Talathi release report records a completed two-pass audit for that page and its release on 30 Oct 2026; the remaining sitewide routes and systems still need their own evidence and review.
+
+## Evidence-led status update
+
+The attached release report is `~/Downloads/SSN_SEO_Release_Evidence_2026-10-30_Nanded_Talathi.pdf`. It is evidence, not an instruction document. Treat its observations as evidence for the reported page and time only; do not apply its page-specific decisions sitewide without checking the applicable route and current behavior.
+
+- Reported page: `/districts/nanded/talathi` (`https://www.searchsarkarinaukri.com/districts/nanded/talathi`). The report says the content implementation passed Pass 1 and Pass 2, covers 15 sections and 15 FAQs, uses dated official sources, and had 12 issues corrected before release. It reports the page live since 30 Oct 2026 at 20:28 IST.
+- Reported crawl signals: HTTP 200, `index, follow` on both rendered surfaces, no `X-Robots-Tag`, self canonical, and sitemap inclusion. These are report findings, not a fresh verification by this audit.
+- Report limitation: Google Search Console was not inspected because API access was disabled. The report says manual verification in the Search Console UI remains due; an `index` directive does not guarantee indexing.
+- Recorded owner decisions: include this Nanded page despite a shared-rule conflict, and fix its React 404 rendering. The report says the other 481 shared React pages keep their existing content and robots rules. Revalidate these decisions before making related changes elsewhere.
+- The report describes an audit snapshot with 418 URLs and says a category-page behavior change caused a React app shell to replace the prior 404 response. Keep these as reported findings and verify against the current application before treating them as current state.
 
 ## Start here
 
@@ -40,6 +50,8 @@ Add one row per discovered public route or route pattern. Record reasons for int
 | Route/pattern | Page type | Purpose | Indexability decision and reason | Canonical | Title / description / H1 | Content and sources | Internal links | Schema | Performance evidence | Pass 1 | Pass 2 |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Pending discovery | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Pending | Not started | Not started |
+
+The release report supplies a starting record for the Nanded Talathi route, but its evidence has not been independently rechecked here. Add it to the inventory only after checking the current rendered route, source links, metadata, and relevant technical signals.
 
 ## Finding record template
 

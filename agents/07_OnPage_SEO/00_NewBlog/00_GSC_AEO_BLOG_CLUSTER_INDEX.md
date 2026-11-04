@@ -19,6 +19,11 @@ Source used: Google Search Console / AI citation audit dated 15 September 2026.
 13. `21_Bank_Apprentice_Jobs_2026/21_bank-apprentice-jobs-2026.md`
 14. `22_Age_Limit_Government_Jobs_2026/22_age-limit-government-jobs-2026.md`
 
+## New draft cluster candidate — 2026-11-04
+
+- `37_government_job_probation_period_rules/01_BLOG.md` — revision draft for the existing post-selection explainer targeting **government job probation period**. Preserve `/blogs/what-happens-during-probation-in-a-government-job-can-you-lose-the-job`; do not publish a second URL. See its audit report and README.
+- Link contextually to `/jobs`, `/career-guidance`, and relevant exam/service pages only after verifying each route. Avoid linking to an assumed employee-termination article until its live URL is confirmed.
+
 Research: `00_COMPETITOR_RESEARCH_5_BLOG_TOPICS_OCT_2026.md`
 
 **Developer handoff (ranking, issues, tests, fixes):** `FINAL_BLOG_DEVELOPER_PUBLISHING_AND_RANKING_CHECKLIST.md`
