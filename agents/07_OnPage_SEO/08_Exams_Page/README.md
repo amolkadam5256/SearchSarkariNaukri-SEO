@@ -23,6 +23,7 @@ The current `/exams` page framework is good, but the page body is incomplete. It
 - `05_FINAL_QA_CHECKLIST.md` - Complete acceptance checklist.
 - `06_COMPLETE_PAGE_CONTENT.md` - Production-ready content for every `/exams` section, including exam groups, tables, FAQs, official links and related resources.
 - `sections/README.md` - Index of separate developer instruction sheets for all 17 page sections, each with two required verification passes.
+- `SSC_CGL_Page/` - Standalone content, semantic structure, SEO/data contract and QA package for the existing `/exams/ssc-cgl` route.
 
 ## Main Objective
 
